@@ -9,7 +9,7 @@ const Header = () => {
           <div className="flex items-center space-x-2">
             <div className="h-8 w-8 rounded-lg bg-gradient-primary" />
             <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              CryptoInsights
+              Degen Blog
             </span>
           </div>
         </Link>
@@ -21,11 +21,14 @@ const Header = () => {
           <Link to="/?category=crypto" className="transition-colors hover:text-primary">
             Crypto
           </Link>
-          <Link to="/?category=casino" className="transition-colors hover:text-primary">
-            Crypto Casino
+          <Link to="/?category=gaming" className="transition-colors hover:text-primary">
+            Crypto Gaming
           </Link>
-          <Link to="/?category=signals" className="transition-colors hover:text-primary">
-            Trading Signals
+          <Link to="/?category=perpdex" className="transition-colors hover:text-primary">
+            Perp Dex
+          </Link>
+          <Link to="/?category=farming" className="transition-colors hover:text-primary">
+            Farming
           </Link>
         </nav>
 

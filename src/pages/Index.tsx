@@ -36,11 +36,10 @@ const Index = () => {
         <div className="container relative z-10 py-24 md:py-32">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-              Navigate the Crypto Future
+              Everything about Crypto
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8">
-              Expert insights on cryptocurrency, DeFi, trading signals, and crypto casinos. 
-              Stay ahead of the curve with in-depth analysis and actionable strategies.
+              Creating insights on the latest and best money-printing opportunities on web3 and crypto.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button variant="hero" size="lg">
@@ -88,7 +87,7 @@ const Index = () => {
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
                 <div className="h-8 w-8 rounded-lg bg-gradient-primary" />
-                <span className="text-xl font-bold">CryptoInsights</span>
+                <span className="text-xl font-bold">Degen Blog</span>
               </div>
               <p className="text-sm text-muted-foreground">
                 Your trusted source for cryptocurrency news, analysis, and trading insights.
@@ -99,8 +98,9 @@ const Index = () => {
               <h3 className="font-semibold mb-4">Categories</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li><a href="/?category=crypto" className="hover:text-primary transition-colors">Crypto</a></li>
-                <li><a href="/?category=casino" className="hover:text-primary transition-colors">Crypto Casino</a></li>
-                <li><a href="/?category=signals" className="hover:text-primary transition-colors">Trading Signals</a></li>
+                <li><a href="/?category=gaming" className="hover:text-primary transition-colors">Crypto Gaming</a></li>
+                <li><a href="/?category=perpdex" className="hover:text-primary transition-colors">Perp Dex</a></li>
+                <li><a href="/?category=farming" className="hover:text-primary transition-colors">Farming</a></li>
               </ul>
             </div>
             
@@ -115,7 +115,7 @@ const Index = () => {
           </div>
           
           <div className="mt-8 pt-8 border-t border-border/40 text-center text-sm text-muted-foreground">
-            <p>&copy; 2024 CryptoInsights. All rights reserved.</p>
+            <p>&copy; 2024 Degen Blog. All rights reserved.</p>
           </div>
         </div>
       </footer>
