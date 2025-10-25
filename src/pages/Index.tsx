@@ -57,7 +57,7 @@ const Index = () => {
       <section className="container py-16 md:py-24">
         <div className="mb-12">
           <h2 className="text-3xl font-bold mb-4">
-            {categoryFilter ? `${categoryFilter.charAt(0).toUpperCase() + categoryFilter.slice(1)} Articles` : 'Latest Articles'}
+            {categoryFilter ? `${categoryFilter.charAt(0).toUpperCase() + categoryFilter.slice(1)} Articles` : 'Latest Blog'}
           </h2>
           <p className="text-muted-foreground">
             Discover expert insights and stay updated with the latest trends in crypto
