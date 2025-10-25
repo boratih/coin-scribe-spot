@@ -60,7 +60,7 @@ const Index = () => {
             {categoryFilter ? `${categoryFilter.charAt(0).toUpperCase() + categoryFilter.slice(1)} Articles` : 'Latest Blog'}
           </h2>
           <p className="text-muted-foreground">
-            Discover expert insights and stay updated with the latest trends in crypto
+            Stay informed with expert analysis and the latest crypto trends
           </p>
         </div>
 
