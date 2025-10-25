@@ -36,7 +36,7 @@ const Index = () => {
         <div className="container relative z-10 py-24 md:py-32">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-              Everything about Crypto
+              Everything about Crypto and Web3
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8">
               Creating insights on the latest and best money-printing opportunities on web3 and crypto.
