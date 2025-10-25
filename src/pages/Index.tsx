@@ -43,7 +43,7 @@ const Index = () => {
             </p>
             <div className="flex flex-wrap gap-4">
               <Button variant="hero" size="lg">
-                Read Latest Articles
+                Read Latest Blog
               </Button>
               <Button variant="outline" size="lg">
                 Subscribe to Newsletter
