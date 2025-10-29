@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { articles } from "@/data/articles";
 import ArticleCard from "@/components/ArticleCard";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 const Article = () => {
   const { id } = useParams();
@@ -73,24 +74,76 @@ const Article = () => {
           </div>
 
           <div className="prose prose-lg prose-invert max-w-none">
-            {article.content.split('\n').map((paragraph, index) => {
-              if (paragraph.startsWith('# ')) {
-                return <h1 key={index} className="text-3xl font-bold mt-8 mb-4">{paragraph.slice(2)}</h1>;
+            {(() => {
+              const lines = article.content.split('\n');
+              const elements: JSX.Element[] = [];
+              let i = 0;
+
+              while (i < lines.length) {
+                const paragraph = lines[i];
+
+                // Handle tables
+                if (paragraph.trim().startsWith('|')) {
+                  const tableLines: string[] = [];
+                  while (i < lines.length && lines[i].trim().startsWith('|')) {
+                    tableLines.push(lines[i]);
+                    i++;
+                  }
+
+                  if (tableLines.length > 2) {
+                    const headers = tableLines[0].split('|').map(h => h.trim()).filter(h => h);
+                    const rows = tableLines.slice(2).map(row => 
+                      row.split('|').map(cell => cell.trim()).filter(cell => cell)
+                    );
+
+                    elements.push(
+                      <div key={elements.length} className="my-8 rounded-lg border border-border/40 overflow-hidden">
+                        <Table>
+                          <TableHeader>
+                            <TableRow className="bg-primary/10 hover:bg-primary/10">
+                              {headers.map((header, idx) => (
+                                <TableHead key={idx} className="font-bold text-foreground">
+                                  {header}
+                                </TableHead>
+                              ))}
+                            </TableRow>
+                          </TableHeader>
+                          <TableBody>
+                            {rows.map((row, rowIdx) => (
+                              <TableRow key={rowIdx} className="hover:bg-muted/50">
+                                {row.map((cell, cellIdx) => (
+                                  <TableCell key={cellIdx} className="text-muted-foreground">
+                                    {cell}
+                                  </TableCell>
+                                ))}
+                              </TableRow>
+                            ))}
+                          </TableBody>
+                        </Table>
+                      </div>
+                    );
+                  }
+                  continue;
+                }
+
+                // Handle headings
+                if (paragraph.startsWith('# ')) {
+                  elements.push(<h1 key={elements.length} className="text-3xl font-bold mt-8 mb-4">{paragraph.slice(2)}</h1>);
+                } else if (paragraph.startsWith('## ')) {
+                  elements.push(<h2 key={elements.length} className="text-2xl font-bold mt-6 mb-3">{paragraph.slice(3)}</h2>);
+                } else if (paragraph.startsWith('### ')) {
+                  elements.push(<h3 key={elements.length} className="text-xl font-bold mt-4 mb-2">{paragraph.slice(4)}</h3>);
+                } else if (paragraph.trim().startsWith('-')) {
+                  elements.push(<li key={elements.length} className="ml-6">{paragraph.slice(1).trim()}</li>);
+                } else if (paragraph.trim()) {
+                  elements.push(<p key={elements.length} className="mb-4 text-muted-foreground leading-relaxed">{paragraph}</p>);
+                }
+
+                i++;
               }
-              if (paragraph.startsWith('## ')) {
-                return <h2 key={index} className="text-2xl font-bold mt-6 mb-3">{paragraph.slice(3)}</h2>;
-              }
-              if (paragraph.startsWith('### ')) {
-                return <h3 key={index} className="text-xl font-bold mt-4 mb-2">{paragraph.slice(4)}</h3>;
-              }
-              if (paragraph.trim().startsWith('-')) {
-                return <li key={index} className="ml-6">{paragraph.slice(1).trim()}</li>;
-              }
-              if (paragraph.trim()) {
-                return <p key={index} className="mb-4 text-muted-foreground leading-relaxed">{paragraph}</p>;
-              }
-              return null;
-            })}
+
+              return elements;
+            })()}
           </div>
         </div>
       </article>
