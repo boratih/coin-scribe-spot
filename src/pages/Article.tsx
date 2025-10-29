@@ -79,6 +79,17 @@ const Article = () => {
               const elements: JSX.Element[] = [];
               let i = 0;
 
+              // Helper function to parse bold text
+              const parseBoldText = (text: string) => {
+                const parts = text.split(/(\*\*.*?\*\*)/g);
+                return parts.map((part, idx) => {
+                  if (part.startsWith('**') && part.endsWith('**')) {
+                    return <strong key={idx} className="font-bold text-foreground">{part.slice(2, -2)}</strong>;
+                  }
+                  return part;
+                });
+              };
+
               while (i < lines.length) {
                 const paragraph = lines[i];
 
@@ -103,7 +114,7 @@ const Article = () => {
                             <TableRow className="bg-primary/10 hover:bg-primary/10">
                               {headers.map((header, idx) => (
                                 <TableHead key={idx} className="font-bold text-foreground">
-                                  {header}
+                                  {parseBoldText(header)}
                                 </TableHead>
                               ))}
                             </TableRow>
@@ -113,7 +124,7 @@ const Article = () => {
                               <TableRow key={rowIdx} className="hover:bg-muted/50">
                                 {row.map((cell, cellIdx) => (
                                   <TableCell key={cellIdx} className="text-muted-foreground">
-                                    {cell}
+                                    {parseBoldText(cell)}
                                   </TableCell>
                                 ))}
                               </TableRow>
@@ -128,15 +139,15 @@ const Article = () => {
 
                 // Handle headings
                 if (paragraph.startsWith('# ')) {
-                  elements.push(<h1 key={elements.length} className="text-3xl font-bold mt-8 mb-4">{paragraph.slice(2)}</h1>);
+                  elements.push(<h1 key={elements.length} className="text-3xl font-bold mt-8 mb-4">{parseBoldText(paragraph.slice(2))}</h1>);
                 } else if (paragraph.startsWith('## ')) {
-                  elements.push(<h2 key={elements.length} className="text-2xl font-bold mt-6 mb-3">{paragraph.slice(3)}</h2>);
+                  elements.push(<h2 key={elements.length} className="text-2xl font-bold mt-6 mb-3">{parseBoldText(paragraph.slice(3))}</h2>);
                 } else if (paragraph.startsWith('### ')) {
-                  elements.push(<h3 key={elements.length} className="text-xl font-bold mt-4 mb-2">{paragraph.slice(4)}</h3>);
+                  elements.push(<h3 key={elements.length} className="text-xl font-bold mt-4 mb-2">{parseBoldText(paragraph.slice(4))}</h3>);
                 } else if (paragraph.trim().startsWith('-')) {
-                  elements.push(<li key={elements.length} className="ml-6">{paragraph.slice(1).trim()}</li>);
+                  elements.push(<li key={elements.length} className="ml-6">{parseBoldText(paragraph.slice(1).trim())}</li>);
                 } else if (paragraph.trim()) {
-                  elements.push(<p key={elements.length} className="mb-4 text-muted-foreground leading-relaxed">{paragraph}</p>);
+                  elements.push(<p key={elements.length} className="mb-4 text-muted-foreground leading-relaxed">{parseBoldText(paragraph)}</p>);
                 }
 
                 i++;
