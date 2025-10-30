@@ -88,7 +88,7 @@ const Index = () => {
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
                 <img src={degenBlogLogo} alt="Degen Blog" className="h-8 w-8" />
-                <span className="text-xl font-bold">Degen Blog</span>
+                <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">Degen Blog</span>
               </div>
               <p className="text-sm text-muted-foreground">
                 Your trusted source for cryptocurrency news, analysis, and trading insights.
