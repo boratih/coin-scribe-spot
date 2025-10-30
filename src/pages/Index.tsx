@@ -14,9 +14,17 @@ const Index = () => {
   const categoryFilter = searchParams.get("category");
   
   const filteredArticles = categoryFilter
-    ? articles.filter(article => 
-        article.category.toLowerCase().includes(categoryFilter.toLowerCase())
-      )
+    ? articles.filter(article => {
+        const normalizedCategory = article.category.toLowerCase();
+        const normalizedFilter = categoryFilter.toLowerCase();
+        
+        // Map "gaming" filter to "crypto casino" category
+        if (normalizedFilter === "gaming") {
+          return normalizedCategory.includes("crypto casino");
+        }
+        
+        return normalizedCategory.includes(normalizedFilter);
+      })
     : articles;
 
   return (
@@ -76,7 +84,11 @@ const Index = () => {
       <section id="latest-blog" className="container py-16 md:py-24">
         <div className="mb-12">
           <h2 className="text-3xl font-bold mb-4">
-            {categoryFilter ? `${categoryFilter.charAt(0).toUpperCase() + categoryFilter.slice(1)} Articles` : 'Latest Blog'}
+            {categoryFilter 
+              ? categoryFilter === "gaming" 
+                ? "Crypto Casino Articles"
+                : `${categoryFilter.charAt(0).toUpperCase() + categoryFilter.slice(1)} Articles`
+              : 'Latest Blog'}
           </h2>
           <p className="text-muted-foreground">
             Stay informed with expert analysis and the latest crypto trends
