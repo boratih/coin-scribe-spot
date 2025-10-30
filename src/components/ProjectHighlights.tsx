@@ -149,51 +149,49 @@ const ProjectHighlights = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {currentHighlights.map((highlight, index) => (
-            <Card key={highlight.id} className="group hover:shadow-glow-primary transition-all duration-300 hover:border-primary/50">
-              <CardHeader>
-                <div className="flex items-start justify-between gap-4">
-                  <div className="flex-1">
-                    <div className="flex items-center gap-2 mb-2">
-                      <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30">
-                        {highlight.badge}
-                      </Badge>
-                      {index === 0 && (
-                        <Badge variant="outline" className="border-primary/50">
-                          <Star className="w-3 h-3 mr-1 fill-primary text-primary" />
-                          Featured
-                        </Badge>
-                      )}
-                    </div>
-                    <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">
-                      {highlight.title}
-                    </h3>
-                    <div className="flex items-center gap-2 text-sm">
-                      <TrendingUp className="w-4 h-4 text-accent" />
-                      <span className="font-semibold text-accent">{highlight.rating}</span>
-                      <span className="text-muted-foreground">Rating</span>
-                    </div>
-                  </div>
-                  <div className="flex-shrink-0">
+            <Card key={highlight.id} className="group hover:shadow-glow-primary transition-all duration-300 hover:border-primary/50 hover:-translate-y-1 overflow-hidden">
+              <CardHeader className="relative pb-4">
+                <div className="absolute top-4 right-4 z-10">
+                  {index === 0 && (
+                    <Badge variant="outline" className="border-primary/50 bg-background/80 backdrop-blur-sm">
+                      <Star className="w-3 h-3 mr-1 fill-primary text-primary" />
+                      Featured
+                    </Badge>
+                  )}
+                </div>
+                <div className="flex flex-col items-center text-center mb-4">
+                  <div className="mb-4 p-4 rounded-2xl bg-muted/50 group-hover:bg-primary/10 transition-colors">
                     <img 
                       src={highlight.logo} 
                       alt={`${highlight.title} logo`}
-                      className="w-16 h-16 object-contain rounded-lg"
+                      className="w-24 h-24 object-contain"
                     />
+                  </div>
+                  <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30 mb-3">
+                    {highlight.badge}
+                  </Badge>
+                  <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">
+                    {highlight.title}
+                  </h3>
+                  <div className="flex items-center gap-2 text-sm">
+                    <TrendingUp className="w-4 h-4 text-accent" />
+                    <span className="font-semibold text-accent text-lg">{highlight.rating}</span>
+                    <span className="text-muted-foreground">Rating</span>
                   </div>
                 </div>
               </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 mb-4">
+              <CardContent className="pt-0">
+                <ul className="space-y-3 mb-6">
                   {highlight.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center text-sm text-muted-foreground">
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary mr-2" />
-                      {feature}
+                    <li key={idx} className="flex items-start text-sm text-muted-foreground">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary mr-2 mt-1.5 flex-shrink-0" />
+                      <span>{feature}</span>
                     </li>
                   ))}
                 </ul>
                 <Button 
-                  className="w-full" 
-                  variant="outline"
+                  className="w-full group-hover:shadow-lg" 
+                  variant="default"
                   asChild
                 >
                   <a href={highlight.link} target={highlight.link.startsWith('http') ? '_blank' : undefined} rel={highlight.link.startsWith('http') ? 'noopener noreferrer' : undefined}>
