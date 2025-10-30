@@ -338,7 +338,7 @@ You should look for casinos that provide clear tools for managing your playtime 
 
 Keep in mind, absence of stringent ID checks does not mean the absence of all safeguards. Many no KYC crypto casinos promote responsible gaming to ensure you maintain control and avoid harm.
     `,
-    category: "Crypto Gaming",
+    category: "Crypto Casino",
     date: "2024-03-14",
     image: casinoImg,
     readTime: "12 min read",
@@ -805,7 +805,7 @@ Some platforms are adopting play-to-earn models where players can earn tokens th
 
 As blockchain technology evolves, we can expect more sophisticated integrations of gaming mechanics with traditional casino games, creating entirely new categories of entertainment.
     `,
-    category: "Crypto Gaming",
+    category: "Crypto Casino",
     date: "2024-03-11",
     image: nftGamingImg,
     readTime: "5 min read",
@@ -1133,7 +1133,7 @@ As more players discover the benefits of crypto slots, we'll likely see continue
 
 The slot games that pay the best are the ones with the highest RTPs on reliable, transparent platforms. Now you know which games those are and where to find them.
     `,
-    category: "Crypto Gaming",
+    category: "Crypto Casino",
     date: "2024-03-08",
     image: p2eImg,
     readTime: "18 min read",
@@ -1360,7 +1360,7 @@ GameFi offers multiple ways to profit: playing games, trading NFTs, staking toke
 
 As technology improves and more traditional gamers discover blockchain gaming, GameFi is positioned to revolutionize the gaming industry.
     `,
-    category: "Crypto Gaming",
+    category: "Crypto Casino",
     date: "2024-03-03",
     image: gamefiImg,
     readTime: "6 min read",

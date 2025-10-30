@@ -22,7 +22,7 @@ const Header = () => {
             Crypto
           </Link>
           <Link to="/?category=gaming" className="transition-colors hover:text-primary">
-            Crypto Gaming
+            Crypto Casino
           </Link>
           <Link to="/?category=perpdex" className="transition-colors hover:text-primary">
             Perp Dex

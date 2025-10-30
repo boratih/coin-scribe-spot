@@ -131,7 +131,7 @@ const ProjectHighlights = () => {
             value="gaming"
             className="px-6 py-2 data-[state=on]:bg-primary data-[state=on]:text-primary-foreground"
           >
-            Crypto iGaming
+            Crypto Casino
           </ToggleGroupItem>
           <ToggleGroupItem 
             value="perpdex"
