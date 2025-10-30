@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import degenrollLogo from "@/assets/degenroll-logo.png";
 
 const Header = () => {
   return (
@@ -7,7 +8,7 @@ const Header = () => {
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
           <div className="flex items-center space-x-2">
-            <div className="h-8 w-8 rounded-lg bg-gradient-primary" />
+            <img src={degenrollLogo} alt="DegenRoll" className="h-8 w-8" />
             <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
               Degen Blog
             </span>
