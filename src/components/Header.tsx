@@ -6,13 +6,11 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center space-x-2">
-          <div className="flex items-center space-x-2">
-            <img src={degenrollLogo} alt="DegenRoll" className="h-8 w-8" />
-            <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              Degen Blog
-            </span>
-          </div>
+        <Link to="/" className="flex items-center space-x-3">
+          <img src={degenrollLogo} alt="DegenRoll Blog" className="h-10" />
+          <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+            Blog
+          </span>
         </Link>
         
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
