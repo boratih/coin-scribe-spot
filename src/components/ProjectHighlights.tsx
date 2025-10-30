@@ -113,7 +113,7 @@ const ProjectHighlights = () => {
     <section className="border-y border-border/40 bg-card/50">
       <div className="container py-16 md:py-20">
         <div className="mb-8">
-          <h2 className="text-3xl font-bold mb-2 bg-gradient-primary bg-clip-text text-transparent">
+          <h2 className="text-3xl font-bold mb-2 text-white">
             Project Highlights
           </h2>
           <p className="text-muted-foreground">
