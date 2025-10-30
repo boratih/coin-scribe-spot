@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import degenBlogLogo from "@/assets/degen-blog-logo.png";
+import NewsletterDialog from "@/components/NewsletterDialog";
 
 const Header = () => {
   return (
@@ -31,9 +32,24 @@ const Header = () => {
           </Link>
         </nav>
 
-        <Button variant="hero" size="sm">
-          Subscribe
-        </Button>
+        <div className="flex items-center gap-2">
+          <Button 
+            variant="outline" 
+            size="sm"
+            asChild
+          >
+            <a href="https://www.degenroll.xyz" target="_blank" rel="noopener noreferrer">
+              Play Now
+            </a>
+          </Button>
+          <NewsletterDialog 
+            trigger={
+              <Button variant="hero" size="sm">
+                Subscribe
+              </Button>
+            }
+          />
+        </div>
       </div>
     </header>
   );

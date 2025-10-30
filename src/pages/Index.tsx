@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { articles } from "@/data/articles";
 import heroImage from "@/assets/hero-bg.jpg";
 import degenBlogLogo from "@/assets/degen-blog-logo.png";
+import NewsletterDialog from "@/components/NewsletterDialog";
 
 const Index = () => {
   const [searchParams] = useSearchParams();
@@ -46,9 +47,22 @@ const Index = () => {
               <Button variant="hero" size="lg">
                 Read Latest Blog
               </Button>
-              <Button variant="outline" size="lg">
-                Subscribe to Newsletter
+              <Button 
+                variant="outline" 
+                size="lg"
+                asChild
+              >
+                <a href="https://www.degenroll.xyz" target="_blank" rel="noopener noreferrer">
+                  Play Now
+                </a>
               </Button>
+              <NewsletterDialog 
+                trigger={
+                  <Button variant="outline" size="lg">
+                    Subscribe to Newsletter
+                  </Button>
+                }
+              />
             </div>
           </div>
         </div>
