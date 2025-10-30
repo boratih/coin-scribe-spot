@@ -34,12 +34,12 @@ const Header = () => {
 
         <div className="flex items-center gap-2">
           <Button 
-            variant="outline" 
-            size="sm"
+            size="lg"
             asChild
+            className="bg-gradient-to-r from-accent to-primary text-background font-bold animate-glow-pulse hover:scale-105 transition-transform"
           >
             <a href="https://www.degenroll.xyz" target="_blank" rel="noopener noreferrer">
-              Play Now
+              🎮 Play Now
             </a>
           </Button>
           <NewsletterDialog 

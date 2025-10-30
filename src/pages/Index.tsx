@@ -44,17 +44,17 @@ const Index = () => {
               Creating insights on the latest and best money-printing opportunities on web3 and crypto.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button variant="hero" size="lg">
-                Read Latest Blog
-              </Button>
               <Button 
-                variant="outline" 
                 size="lg"
                 asChild
+                className="bg-gradient-to-r from-accent to-primary text-background font-bold text-lg px-8 py-6 animate-glow-pulse hover:scale-105 transition-transform"
               >
                 <a href="https://www.degenroll.xyz" target="_blank" rel="noopener noreferrer">
-                  Play Now
+                  🎮 Play Now
                 </a>
+              </Button>
+              <Button variant="hero" size="lg">
+                Read Latest Blog
               </Button>
               <NewsletterDialog 
                 trigger={
