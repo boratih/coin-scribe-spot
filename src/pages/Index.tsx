@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import Header from "@/components/Header";
 import ArticleCard from "@/components/ArticleCard";
+import ProjectHighlights from "@/components/ProjectHighlights";
 import { Button } from "@/components/ui/button";
 import { articles } from "@/data/articles";
 import heroImage from "@/assets/hero-bg.jpg";
@@ -67,6 +68,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Project Highlights Section */}
+      <ProjectHighlights />
 
       {/* Articles Section */}
       <section id="latest-blog" className="container py-16 md:py-24">
