@@ -47,14 +47,14 @@ const Index = () => {
               <Button 
                 size="lg"
                 asChild
-                className="bg-gradient-to-r from-accent to-primary text-background font-bold text-lg px-8 py-6 animate-glow-pulse hover:scale-105 transition-transform"
+                className="bg-gradient-to-r from-accent to-primary text-background font-bold text-lg px-8 py-6 hover:scale-105 transition-transform shadow-glow-accent"
               >
                 <a href="https://www.degenroll.xyz" target="_blank" rel="noopener noreferrer">
                   🎮 Play Now
                 </a>
               </Button>
-              <Button variant="hero" size="lg">
-                Read Latest Blog
+              <Button variant="hero" size="lg" asChild>
+                <a href="#latest-blog">Read Latest Blog</a>
               </Button>
               <NewsletterDialog 
                 trigger={
@@ -69,7 +69,7 @@ const Index = () => {
       </section>
 
       {/* Articles Section */}
-      <section className="container py-16 md:py-24">
+      <section id="latest-blog" className="container py-16 md:py-24">
         <div className="mb-12">
           <h2 className="text-3xl font-bold mb-4">
             {categoryFilter ? `${categoryFilter.charAt(0).toUpperCase() + categoryFilter.slice(1)} Articles` : 'Latest Blog'}

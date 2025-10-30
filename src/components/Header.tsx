@@ -36,7 +36,7 @@ const Header = () => {
           <Button 
             size="lg"
             asChild
-            className="bg-gradient-to-r from-accent to-primary text-background font-bold animate-glow-pulse hover:scale-105 transition-transform"
+            className="bg-gradient-to-r from-accent to-primary text-background font-bold hover:scale-105 transition-transform shadow-glow-accent"
           >
             <a href="https://www.degenroll.xyz" target="_blank" rel="noopener noreferrer">
               🎮 Play Now
