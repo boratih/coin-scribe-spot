@@ -12,7 +12,7 @@ const highlights = {
       title: "DegenRoll",
       rating: 9.5,
       badge: "BEST OVERALL",
-      features: ["Instant Payouts", "No KYC Required", "Provably Fair"],
+      features: ["Instant Payouts", "No KYC Required", "Accepts most crypto"],
       link: "https://www.degenroll.xyz"
     },
     {
@@ -20,16 +20,16 @@ const highlights = {
       title: "Stake",
       rating: 9.2,
       badge: "TRUSTED",
-      features: ["Sports Betting", "Live Casino", "Crypto Rewards"],
+      features: ["Trusted and Well Known", "Various Games", "Secure and Licensed Platform"],
       link: "https://stake.com"
     },
     {
       id: 3,
-      title: "Shuffle",
+      title: "BC Game",
       rating: 8.9,
-      badge: "RISING STAR",
-      features: ["Fast Withdrawals", "Wide Game Selection", "Bonus Program"],
-      link: "https://shuffle.com"
+      badge: "POPULAR",
+      features: ["Well Known Brand", "Fast Payouts", "Various Games"],
+      link: "https://bc.game"
     }
   ],
   perpdex: [
