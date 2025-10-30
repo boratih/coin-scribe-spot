@@ -99,47 +99,41 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-border/40 bg-primary">
+      <footer className="border-t border-border/40 bg-card">
         <div className="container py-8 md:py-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             <div>
-              <h3 className="font-semibold mb-4 text-primary-foreground">Popular Pages</h3>
-              <ul className="space-y-2 text-sm text-primary-foreground/80">
-                <li><a href="#" className="hover:text-primary-foreground transition-colors">No KYC Casinos</a></li>
-                <li><a href="#" className="hover:text-primary-foreground transition-colors">Crypto Bonuses</a></li>
-                <li><a href="#" className="hover:text-primary-foreground transition-colors">Crypto Games</a></li>
-                <li><a href="#" className="hover:text-primary-foreground transition-colors">Crypto Casino Guides</a></li>
-                <li><a href="#" className="hover:text-primary-foreground transition-colors">Crypto Payments</a></li>
+              <h3 className="font-semibold mb-4">Categories</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><a href="/?category=crypto" className="hover:text-primary transition-colors">Crypto</a></li>
+                <li><a href="/?category=gaming" className="hover:text-primary transition-colors">Crypto Casino</a></li>
+                <li><a href="/?category=perpdex" className="hover:text-primary transition-colors">Perp Dex</a></li>
+                <li><a href="/?category=farming" className="hover:text-primary transition-colors">Farming</a></li>
               </ul>
             </div>
             
             <div>
-              <h3 className="font-semibold mb-4 text-primary-foreground">Popular Crypto Casinos</h3>
-              <ul className="space-y-2 text-sm text-primary-foreground/80">
-                <li><a href="https://stake.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">BetPlay</a></li>
-                <li><a href="#" className="hover:text-primary-foreground transition-colors">Flush Casino</a></li>
-                <li><a href="https://bc.game" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">BC.Game</a></li>
-                <li><a href="#" className="hover:text-primary-foreground transition-colors">BitStarz</a></li>
-                <li><a href="#" className="hover:text-primary-foreground transition-colors">BetPanda</a></li>
+              <h3 className="font-semibold mb-4">Projects</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><a href="https://www.degenroll.xyz" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">DegenRoll</a></li>
+                <li><a href="https://stake.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Stake</a></li>
+                <li><a href="https://bc.game" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">BC Game</a></li>
+                <li><a href="https://lighter.xyz" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Lighter</a></li>
+                <li><a href="https://hyperliquid.xyz" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Hyperliquid</a></li>
               </ul>
             </div>
             
             <div>
-              <h3 className="font-semibold mb-4 text-primary-foreground">Information</h3>
-              <ul className="space-y-2 text-sm text-primary-foreground/80">
-                <li><a href="#" className="hover:text-primary-foreground transition-colors">About Us</a></li>
-                <li><a href="#" className="hover:text-primary-foreground transition-colors">Contact Us</a></li>
-                <li><a href="#" className="hover:text-primary-foreground transition-colors">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-primary-foreground transition-colors">Cookie Policy</a></li>
-                <li><a href="#" className="hover:text-primary-foreground transition-colors">Terms & Conditions</a></li>
-                <li><a href="#" className="hover:text-primary-foreground transition-colors">Responsible Gambling</a></li>
-                <li><a href="#" className="hover:text-primary-foreground transition-colors">Review Process</a></li>
-                <li><a href="#" className="hover:text-primary-foreground transition-colors">News</a></li>
+              <h3 className="font-semibold mb-4">Contact Us</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><a href="#" className="hover:text-primary transition-colors">Twitter</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">Telegram</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">Discord</a></li>
               </ul>
             </div>
           </div>
           
-          <div className="mt-8 pt-8 border-t border-primary-foreground/20 text-center text-sm text-primary-foreground/80">
+          <div className="mt-8 pt-8 border-t border-border/40 text-center text-sm text-muted-foreground">
             <p>&copy; 2024 Degen Blog. All rights reserved.</p>
           </div>
         </div>
