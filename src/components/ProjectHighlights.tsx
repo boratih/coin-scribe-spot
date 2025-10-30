@@ -4,6 +4,15 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Star, TrendingUp } from "lucide-react";
+import degenrollLogo from "@/assets/degenroll-logo.png";
+import stakeLogo from "@/assets/stake-logo.png";
+import bcgameLogo from "@/assets/bcgame-logo.png";
+import lighterLogo from "@/assets/lighter-logo.png";
+import hyperliquidLogo from "@/assets/hyperliquid-logo.png";
+import asterLogo from "@/assets/aster-logo.png";
+import aaveLogo from "@/assets/aave-logo.png";
+import curveLogo from "@/assets/curve-logo.png";
+import convexLogo from "@/assets/convex-logo.png";
 
 const highlights = {
   gaming: [
@@ -13,7 +22,8 @@ const highlights = {
       rating: 9.5,
       badge: "BEST OVERALL",
       features: ["Instant Payouts", "No KYC Required", "Accepts most crypto"],
-      link: "https://www.degenroll.xyz"
+      link: "https://www.degenroll.xyz",
+      logo: degenrollLogo
     },
     {
       id: 2,
@@ -21,7 +31,8 @@ const highlights = {
       rating: 9.2,
       badge: "TRUSTED",
       features: ["Trusted and Well Known", "Various Games", "Secure and Licensed Platform"],
-      link: "https://stake.com"
+      link: "https://stake.com",
+      logo: stakeLogo
     },
     {
       id: 3,
@@ -29,7 +40,8 @@ const highlights = {
       rating: 8.9,
       badge: "POPULAR",
       features: ["Well Known Brand", "Fast Payouts", "Various Games"],
-      link: "https://bc.game"
+      link: "https://bc.game",
+      logo: bcgameLogo
     }
   ],
   perpdex: [
@@ -39,7 +51,8 @@ const highlights = {
       rating: 9.1,
       badge: "INNOVATIVE",
       features: ["Order Book DEX", "Low Fees", "High Liquidity"],
-      link: "https://lighter.xyz"
+      link: "https://lighter.xyz",
+      logo: lighterLogo
     },
     {
       id: 5,
@@ -47,7 +60,8 @@ const highlights = {
       rating: 9.3,
       badge: "TOP PERFORMER",
       features: ["On-chain Perps", "Zero Gas Fees", "50x Leverage"],
-      link: "https://hyperliquid.xyz"
+      link: "https://hyperliquid.xyz",
+      logo: hyperliquidLogo
     },
     {
       id: 6,
@@ -55,7 +69,8 @@ const highlights = {
       rating: 8.8,
       badge: "NEW",
       features: ["Cross-chain Trading", "Advanced Orders", "Low Latency"],
-      link: "https://aster.trade"
+      link: "https://aster.trade",
+      logo: asterLogo
     }
   ],
   farming: [
@@ -65,7 +80,8 @@ const highlights = {
       rating: 9.4,
       badge: "BLUE CHIP",
       features: ["Multi-chain", "Battle-tested", "High TVL"],
-      link: "https://aave.com"
+      link: "https://aave.com",
+      logo: aaveLogo
     },
     {
       id: 8,
@@ -73,7 +89,8 @@ const highlights = {
       rating: 9.2,
       badge: "STABLE YIELDS",
       features: ["Stablecoin Focus", "Low Slippage", "veCRV Rewards"],
-      link: "https://curve.fi"
+      link: "https://curve.fi",
+      logo: curveLogo
     },
     {
       id: 9,
@@ -81,7 +98,8 @@ const highlights = {
       rating: 9.0,
       badge: "YIELD BOOSTER",
       features: ["Curve Optimizer", "Boosted APY", "Liquid Staking"],
-      link: "https://convexfinance.com"
+      link: "https://convexfinance.com",
+      logo: convexLogo
     }
   ]
 };
@@ -133,7 +151,7 @@ const ProjectHighlights = () => {
           {currentHighlights.map((highlight, index) => (
             <Card key={highlight.id} className="group hover:shadow-glow-primary transition-all duration-300 hover:border-primary/50">
               <CardHeader>
-                <div className="flex items-start justify-between">
+                <div className="flex items-start justify-between gap-4">
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-2">
                       <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30">
@@ -154,6 +172,13 @@ const ProjectHighlights = () => {
                       <span className="font-semibold text-accent">{highlight.rating}</span>
                       <span className="text-muted-foreground">Rating</span>
                     </div>
+                  </div>
+                  <div className="flex-shrink-0">
+                    <img 
+                      src={highlight.logo} 
+                      alt={`${highlight.title} logo`}
+                      className="w-16 h-16 object-contain rounded-lg"
+                    />
                   </div>
                 </div>
               </CardHeader>
