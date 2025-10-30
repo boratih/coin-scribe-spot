@@ -5,6 +5,7 @@ import ArticleCard from "@/components/ArticleCard";
 import { Button } from "@/components/ui/button";
 import { articles } from "@/data/articles";
 import heroImage from "@/assets/hero-bg.jpg";
+import degenBlogLogo from "@/assets/degen-blog-logo.png";
 
 const Index = () => {
   const [searchParams] = useSearchParams();
@@ -86,7 +87,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
-                <div className="h-8 w-8 rounded-lg bg-gradient-primary" />
+                <img src={degenBlogLogo} alt="Degen Blog" className="h-8 w-8" />
                 <span className="text-xl font-bold">Degen Blog</span>
               </div>
               <p className="text-sm text-muted-foreground">
