@@ -6,6 +6,7 @@ import ProjectHighlights from "@/components/ProjectHighlights";
 import { Button } from "@/components/ui/button";
 import { articles } from "@/data/articles";
 import heroImage from "@/assets/hero-bg.jpg";
+import degenBlogLogo from "@/assets/degen-blog-logo.png";
 import NewsletterDialog from "@/components/NewsletterDialog";
 
 const Index = () => {
@@ -101,7 +102,17 @@ const Index = () => {
       {/* Footer */}
       <footer className="border-t border-border/40 bg-card">
         <div className="container py-8 md:py-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="col-span-1 md:col-span-1">
+              <div className="flex items-center space-x-2 mb-4">
+                <img src={degenBlogLogo} alt="Degen Blog" className="h-8 w-8" />
+                <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">Degen Blog</span>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Your trusted source for cryptocurrency news, analysis, and trading insights.
+              </p>
+            </div>
+            
             <div>
               <h3 className="font-semibold mb-4">Categories</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
