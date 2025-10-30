@@ -6,82 +6,88 @@ import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Star, TrendingUp } from "lucide-react";
 
 const highlights = {
-  crypto: [
-    {
-      id: 1,
-      title: "Bitcoin ETF Analysis",
-      rating: 9.2,
-      badge: "HOT",
-      features: ["Comprehensive Guide", "Market Analysis"],
-      link: "/article/crypto-etf-guide"
-    },
-    {
-      id: 2,
-      title: "Altcoin Season Watch",
-      rating: 8.8,
-      badge: "TRENDING",
-      features: ["Real-time Updates", "Expert Insights"],
-      link: "/article/altcoin-opportunities"
-    }
-  ],
   gaming: [
     {
-      id: 3,
-      title: "DegenRoll Casino",
+      id: 1,
+      title: "DegenRoll",
       rating: 9.5,
-      badge: "FEATURED",
-      features: ["Instant Payouts", "No KYC Required"],
+      badge: "BEST OVERALL",
+      features: ["Instant Payouts", "No KYC Required", "Provably Fair"],
       link: "https://www.degenroll.xyz"
     },
     {
-      id: 4,
-      title: "GameFi Platforms",
+      id: 2,
+      title: "Stake",
+      rating: 9.2,
+      badge: "TRUSTED",
+      features: ["Sports Betting", "Live Casino", "Crypto Rewards"],
+      link: "https://stake.com"
+    },
+    {
+      id: 3,
+      title: "Shuffle",
       rating: 8.9,
-      badge: "NEW",
-      features: ["Play-to-Earn", "NFT Integration"],
-      link: "/article/gamefi-revolution"
+      badge: "RISING STAR",
+      features: ["Fast Withdrawals", "Wide Game Selection", "Bonus Program"],
+      link: "https://shuffle.com"
     }
   ],
   perpdex: [
     {
-      id: 5,
-      title: "Top Perp DEX Guide",
+      id: 4,
+      title: "Lighter",
       rating: 9.1,
-      badge: "EXPERT PICK",
-      features: ["High Leverage", "Low Fees"],
-      link: "/article/perp-dex-trading"
+      badge: "INNOVATIVE",
+      features: ["Order Book DEX", "Low Fees", "High Liquidity"],
+      link: "https://lighter.xyz"
+    },
+    {
+      id: 5,
+      title: "Hyperliquid",
+      rating: 9.3,
+      badge: "TOP PERFORMER",
+      features: ["On-chain Perps", "Zero Gas Fees", "50x Leverage"],
+      link: "https://hyperliquid.xyz"
     },
     {
       id: 6,
-      title: "Leverage Strategies",
-      rating: 8.7,
-      badge: "GUIDE",
-      features: ["Risk Management", "Technical Analysis"],
-      link: "/article/leverage-trading"
+      title: "Aster",
+      rating: 8.8,
+      badge: "NEW",
+      features: ["Cross-chain Trading", "Advanced Orders", "Low Latency"],
+      link: "https://aster.trade"
     }
   ],
   farming: [
     {
       id: 7,
-      title: "High APY Farms",
-      rating: 9.0,
-      badge: "TOP YIELD",
-      features: ["Audited Protocols", "Auto-Compound"],
-      link: "/article/yield-farming"
+      title: "Aave",
+      rating: 9.4,
+      badge: "BLUE CHIP",
+      features: ["Multi-chain", "Battle-tested", "High TVL"],
+      link: "https://aave.com"
     },
     {
       id: 8,
-      title: "DeFi Staking",
-      rating: 8.6,
-      badge: "SAFE",
-      features: ["Low Risk", "Stable Returns"],
-      link: "/article/defi-staking"
+      title: "Curve Finance",
+      rating: 9.2,
+      badge: "STABLE YIELDS",
+      features: ["Stablecoin Focus", "Low Slippage", "veCRV Rewards"],
+      link: "https://curve.fi"
+    },
+    {
+      id: 9,
+      title: "Convex Finance",
+      rating: 9.0,
+      badge: "YIELD BOOSTER",
+      features: ["Curve Optimizer", "Boosted APY", "Liquid Staking"],
+      link: "https://convexfinance.com"
     }
   ]
 };
 
 const ProjectHighlights = () => {
-  const [category, setCategory] = useState("crypto");
+  const [category, setCategory] = useState("gaming");
 
   const currentHighlights = highlights[category as keyof typeof highlights];
 
@@ -104,12 +110,6 @@ const ProjectHighlights = () => {
           className="justify-start mb-8 flex-wrap"
         >
           <ToggleGroupItem 
-            value="crypto" 
-            className="px-6 py-2 data-[state=on]:bg-primary data-[state=on]:text-primary-foreground"
-          >
-            Crypto
-          </ToggleGroupItem>
-          <ToggleGroupItem 
             value="gaming"
             className="px-6 py-2 data-[state=on]:bg-primary data-[state=on]:text-primary-foreground"
           >
@@ -129,7 +129,7 @@ const ProjectHighlights = () => {
           </ToggleGroupItem>
         </ToggleGroup>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {currentHighlights.map((highlight, index) => (
             <Card key={highlight.id} className="group hover:shadow-glow-primary transition-all duration-300 hover:border-primary/50">
               <CardHeader>
