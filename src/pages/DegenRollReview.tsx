@@ -184,45 +184,39 @@ const DegenRollReview = () => {
         </Card>
       </section>
 
-      {/* Bonus Section */}
+      {/* Combined CTA Banner */}
       <section className="container mb-16 px-4">
-        <Card className="bg-accent border-0 overflow-hidden">
-          <CardContent className="py-12 text-center">
-            <h3 className="text-3xl md:text-4xl font-bold text-accent-foreground mb-3">
-              Volume-Based Rewards
+        <Card className="bg-accent border-0 overflow-hidden relative">
+          <div className="absolute inset-0 bg-gradient-to-br from-accent via-accent to-accent/80"></div>
+          <CardContent className="py-12 px-6 md:px-12 text-center relative">
+            <Gamepad2 className="w-16 h-16 mx-auto mb-4 text-accent-foreground" />
+            <h3 className="text-3xl md:text-4xl font-bold text-accent-foreground mb-4">
+              Play Now at DegenRoll
             </h3>
-            <p className="text-accent-foreground/80 text-sm mb-6">18+</p>
+            <div className="flex flex-wrap justify-center gap-3 mb-6">
+              <Badge variant="secondary" className="text-sm px-4 py-2 bg-white/20 text-accent-foreground border-white/30">
+                🕵️‍♂️ No KYC Required
+              </Badge>
+              <Badge variant="secondary" className="text-sm px-4 py-2 bg-white/20 text-accent-foreground border-white/30">
+                ⚡ Instant Deposits
+              </Badge>
+              <Badge variant="secondary" className="text-sm px-4 py-2 bg-white/20 text-accent-foreground border-white/30">
+                🪙 All Major Crypto
+              </Badge>
+            </div>
+            <p className="text-accent-foreground/90 text-lg mb-8 max-w-2xl mx-auto">
+              Start playing with complete privacy. Volume-based rewards, instant payouts, and over 4,000 games waiting for you.
+            </p>
             <Button 
               asChild
               size="lg"
-              className="bg-white text-accent hover:bg-white/90 font-bold"
+              className="bg-white text-accent hover:bg-white/90 font-bold text-lg px-8 py-6"
             >
               <a href="https://www.degenroll.xyz" target="_blank" rel="noopener noreferrer">
                 CLAIM BONUS
               </a>
             </Button>
-          </CardContent>
-        </Card>
-      </section>
-
-      {/* CTA Banner */}
-      <section className="container mb-16">
-        <Card className="bg-gradient-primary border-0 overflow-hidden relative">
-          <CardContent className="p-8 text-center">
-            <Gamepad2 className="w-12 h-12 mx-auto mb-4 text-white" />
-            <h3 className="text-2xl font-bold text-white mb-2">
-              Play now at DegenRoll
-            </h3>
-            <p className="text-white/90 mb-6">No KYC. Fast Crypto. Big Wins.</p>
-            <Button 
-              asChild
-              size="lg"
-              className="bg-white text-primary hover:bg-white/90"
-            >
-              <a href="https://www.degenroll.xyz" target="_blank" rel="noopener noreferrer">
-                Start Playing Now
-              </a>
-            </Button>
+            <p className="text-accent-foreground/70 text-xs mt-4">18+ | Play Responsibly</p>
           </CardContent>
         </Card>
       </section>
