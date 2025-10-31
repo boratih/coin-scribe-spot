@@ -52,7 +52,7 @@ const Index = () => {
             <p className="text-lg md:text-xl text-muted-foreground mb-8">
               Creating insights on the latest and best money-printing opportunities on web3 and crypto.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-6">
               <Button 
                 size="lg"
                 asChild
