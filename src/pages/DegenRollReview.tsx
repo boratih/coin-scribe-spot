@@ -309,17 +309,39 @@ const DegenRollReview = () => {
             <div className="mt-8 pt-8 border-t border-border">
               <h3 className="text-xl font-bold text-white mb-4">Software Providers</h3>
               <p className="text-muted-foreground mb-4 text-sm">
-                DegenRoll partners with over 40 top-tier software providers:
+                DegenRoll partners with top-tier software providers:
               </p>
-              <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary">1x2games</Badge>
-                <Badge variant="secondary">Pragmatic Play</Badge>
-                <Badge variant="secondary">Evolution Gaming</Badge>
-                <Badge variant="secondary">NetEnt</Badge>
-                <Badge variant="secondary">Play'n GO</Badge>
-                <Badge variant="secondary">Microgaming</Badge>
-                <Badge variant="secondary">Big Time Gaming</Badge>
-                <Badge variant="secondary">Endorphina</Badge>
+              <div className="flex flex-wrap gap-4">
+                <div className="flex items-center gap-2 px-4 py-2 bg-muted/30 rounded-lg">
+                  <div className="w-8 h-8 rounded-full bg-red-500/20 flex items-center justify-center text-sm font-bold text-red-400">
+                    PP
+                  </div>
+                  <span className="text-sm font-medium text-foreground">Pragmatic Play</span>
+                </div>
+                <div className="flex items-center gap-2 px-4 py-2 bg-muted/30 rounded-lg">
+                  <div className="w-8 h-8 rounded-full bg-orange-500/20 flex items-center justify-center text-sm font-bold text-orange-400">
+                    EG
+                  </div>
+                  <span className="text-sm font-medium text-foreground">Evolution Gaming</span>
+                </div>
+                <div className="flex items-center gap-2 px-4 py-2 bg-muted/30 rounded-lg">
+                  <div className="w-8 h-8 rounded-full bg-green-500/20 flex items-center justify-center text-sm font-bold text-green-400">
+                    PG
+                  </div>
+                  <span className="text-sm font-medium text-foreground">Play'n GO</span>
+                </div>
+                <div className="flex items-center gap-2 px-4 py-2 bg-muted/30 rounded-lg">
+                  <div className="w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-400">
+                    HG
+                  </div>
+                  <span className="text-sm font-medium text-foreground">Hacksaw Gaming</span>
+                </div>
+                <div className="flex items-center gap-2 px-4 py-2 bg-muted/30 rounded-lg">
+                  <div className="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center text-sm font-bold text-blue-400">
+                    BG
+                  </div>
+                  <span className="text-sm font-medium text-foreground">BGaming</span>
+                </div>
               </div>
             </div>
           </CardContent>
