@@ -3,6 +3,12 @@ import { useSearchParams } from "react-router-dom";
 import Header from "@/components/Header";
 import ArticleCard from "@/components/ArticleCard";
 import ProjectHighlights from "@/components/ProjectHighlights";
+import StatsSection from "@/components/StatsSection";
+import TrustBadges from "@/components/TrustBadges";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import ComparisonTable from "@/components/ComparisonTable";
+import FAQSection from "@/components/FAQSection";
+import FloatingCTA from "@/components/FloatingCTA";
 import { Button } from "@/components/ui/button";
 import { articles } from "@/data/articles";
 import heroImage from "@/assets/hero-bg.jpg";
@@ -77,8 +83,20 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Trust Badges */}
+      <TrustBadges />
+
+      {/* Stats Section */}
+      <StatsSection />
+
       {/* Project Highlights Section */}
       <ProjectHighlights categoryFilter={categoryFilter} />
+
+      {/* Testimonials Section */}
+      <TestimonialsSection />
+
+      {/* Comparison Table */}
+      <ComparisonTable />
 
       {/* Articles Section */}
       <section id="latest-blog" className="container py-16 md:py-24">
@@ -110,6 +128,12 @@ const Index = () => {
           ))}
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSection />
+
+      {/* Floating CTA */}
+      <FloatingCTA />
 
       {/* Footer */}
       <footer className="border-t border-border/40 bg-card">
