@@ -108,27 +108,27 @@ const DegenRollReview = () => {
       </section>
 
       {/* Review Summary Box */}
-      <section className="container -mt-8 mb-16">
-        <Card className="border-primary/20">
-          <CardContent className="p-8">
-            <div className="grid md:grid-cols-2 gap-12">
+      <section className="container -mt-8 mb-16 px-4">
+        <Card className="border-primary/20 overflow-hidden">
+          <CardContent className="p-6 md:p-8 lg:p-10">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
               {/* Ratings Breakdown */}
-              <div>
+              <div className="space-y-4">
                 <h2 className="text-2xl font-bold text-white mb-6">Ratings Breakdown</h2>
-                <div className="space-y-6">
+                <div className="space-y-5">
                   {ratings.map((item) => (
-                    <div key={item.category}>
-                      <div className="flex items-center justify-between mb-2">
-                        <div className="flex items-center gap-2">
-                          <item.icon className="w-5 h-5 text-primary" />
-                          <span className="text-foreground">{item.category}</span>
+                    <div key={item.category} className="space-y-2">
+                      <div className="flex items-center justify-between flex-wrap gap-2">
+                        <div className="flex items-center gap-2 min-w-0">
+                          <item.icon className="w-5 h-5 text-primary shrink-0" />
+                          <span className="text-foreground text-sm md:text-base">{item.category}</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <div className="flex">
                             {[...Array(5)].map((_, i) => (
                               <Star
                                 key={i}
-                                className={`w-4 h-4 ${
+                                className={`w-3.5 h-3.5 md:w-4 md:h-4 ${
                                   i < Math.floor(item.rating)
                                     ? "fill-accent text-accent"
                                     : "text-muted"
@@ -136,7 +136,7 @@ const DegenRollReview = () => {
                               />
                             ))}
                           </div>
-                          <span className="text-white font-semibold">{item.rating}</span>
+                          <span className="text-white font-semibold text-sm md:text-base">{item.rating}</span>
                         </div>
                       </div>
                       <Progress value={item.value} className="h-2" />
@@ -146,33 +146,33 @@ const DegenRollReview = () => {
               </div>
 
               {/* Pros & Cons */}
-              <div>
+              <div className="space-y-4">
                 <h2 className="text-2xl font-bold text-white mb-6">Pros & Cons</h2>
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-green-500" />
+                    <h3 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                      <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0" />
                       Pros
                     </h3>
-                    <ul className="space-y-2">
+                    <ul className="space-y-2.5">
                       {pros.map((pro, idx) => (
-                        <li key={idx} className="flex items-start gap-2 text-muted-foreground">
-                          <CheckCircle className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
-                          <span>{pro}</span>
+                        <li key={idx} className="flex items-start gap-2.5 text-muted-foreground text-sm md:text-base">
+                          <CheckCircle className="w-4 h-4 md:w-5 md:h-5 text-green-500 shrink-0 mt-0.5" />
+                          <span className="min-w-0">{pro}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
-                      <XCircle className="w-5 h-5 text-destructive" />
+                    <h3 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                      <XCircle className="w-5 h-5 text-destructive shrink-0" />
                       Cons
                     </h3>
-                    <ul className="space-y-2">
+                    <ul className="space-y-2.5">
                       {cons.map((con, idx) => (
-                        <li key={idx} className="flex items-start gap-2 text-muted-foreground">
-                          <X className="w-5 h-5 text-destructive shrink-0 mt-0.5" />
-                          <span>{con}</span>
+                        <li key={idx} className="flex items-start gap-2.5 text-muted-foreground text-sm md:text-base">
+                          <X className="w-4 h-4 md:w-5 md:h-5 text-destructive shrink-0 mt-0.5" />
+                          <span className="min-w-0">{con}</span>
                         </li>
                       ))}
                     </ul>
