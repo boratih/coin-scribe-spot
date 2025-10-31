@@ -198,7 +198,11 @@ const DegenRollReview = () => {
         <Card className="bg-accent border-0 overflow-hidden relative">
           <div className="absolute inset-0 bg-gradient-to-br from-accent via-accent to-accent/80"></div>
           <CardContent className="py-12 px-6 md:px-12 text-center relative">
-            <Gamepad2 className="w-16 h-16 mx-auto mb-4 text-accent-foreground" />
+            <img 
+              src={degenrollLogo} 
+              alt="DegenRoll Logo" 
+              className="w-16 h-16 mx-auto mb-4 object-contain"
+            />
             <h3 className="text-3xl md:text-4xl font-bold text-accent-foreground mb-4">
               Play Now at DegenRoll
             </h3>
