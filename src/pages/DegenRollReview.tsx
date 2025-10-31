@@ -201,7 +201,7 @@ const DegenRollReview = () => {
             <img 
               src={degenrollLogo} 
               alt="DegenRoll Logo" 
-              className="w-16 h-16 mx-auto mb-4 object-contain"
+              className="w-24 h-24 mx-auto mb-4 object-contain"
             />
             <h3 className="text-3xl md:text-4xl font-bold text-accent-foreground mb-4">
               Play Now at DegenRoll
