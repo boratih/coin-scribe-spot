@@ -180,6 +180,56 @@ const DegenRollReview = () => {
                 </div>
               </div>
             </div>
+
+            <div className="mt-8 pt-8 border-t border-border">
+              <h3 className="text-xl font-bold text-white mb-4">Cryptos</h3>
+              <p className="text-muted-foreground mb-4 text-sm">
+                DegenRoll accepts over 20 cryptocurrencies with built-in swap feature:
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <Badge variant="secondary">₿ Bitcoin</Badge>
+                <Badge variant="secondary">◈ Ethereum</Badge>
+                <Badge variant="secondary">₮ USDT</Badge>
+                <Badge variant="secondary">₳ Cardano</Badge>
+                <Badge variant="secondary">◎ Solana</Badge>
+                <Badge variant="secondary">Ⓑ BNB</Badge>
+                <Badge variant="secondary">⬡ Polygon</Badge>
+                <Badge variant="secondary">🔷 Litecoin</Badge>
+              </div>
+            </div>
+
+            <div className="mt-8 pt-8 border-t border-border">
+              <h3 className="text-xl font-bold text-white mb-4">Game Selection</h3>
+              <p className="text-muted-foreground mb-4 text-sm">
+                Over 4,000 games across all major categories:
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <Badge variant="secondary">🎰 Slots</Badge>
+                <Badge variant="secondary">🃏 Table Games</Badge>
+                <Badge variant="secondary">🎡 Roulette</Badge>
+                <Badge variant="secondary">🎲 Jackpots</Badge>
+                <Badge variant="secondary">🎲 Dice Games</Badge>
+                <Badge variant="secondary">🎮 Live Casino</Badge>
+                <Badge variant="secondary">⚽ Sports Betting</Badge>
+              </div>
+            </div>
+
+            <div className="mt-8 pt-8 border-t border-border">
+              <h3 className="text-xl font-bold text-white mb-4">Software Providers</h3>
+              <p className="text-muted-foreground mb-4 text-sm">
+                DegenRoll partners with over 40 top-tier software providers:
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <Badge variant="secondary">1x2games</Badge>
+                <Badge variant="secondary">Pragmatic Play</Badge>
+                <Badge variant="secondary">Evolution Gaming</Badge>
+                <Badge variant="secondary">NetEnt</Badge>
+                <Badge variant="secondary">Play'n GO</Badge>
+                <Badge variant="secondary">Microgaming</Badge>
+                <Badge variant="secondary">Big Time Gaming</Badge>
+                <Badge variant="secondary">Endorphina</Badge>
+              </div>
+            </div>
           </CardContent>
         </Card>
       </section>
@@ -249,6 +299,29 @@ const DegenRollReview = () => {
               </div>
             </div>
 
+            <div className="grid md:grid-cols-2 gap-8 mt-8 pt-8 border-t border-border">
+              <div>
+                <div className="space-y-3">
+                  {features.map((feature, idx) => (
+                    <div key={idx} className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <div className="space-y-3">
+                  {negatives.map((negative, idx) => (
+                    <div key={idx} className="flex items-start gap-2">
+                      <X className="w-5 h-5 text-destructive shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">{negative}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
             <div className="mt-8 pt-8 border-t border-border">
               <h3 className="text-xl font-bold text-white mb-4">Cryptos</h3>
               <p className="text-muted-foreground mb-4 text-sm">
@@ -296,29 +369,6 @@ const DegenRollReview = () => {
                 <Badge variant="secondary">Microgaming</Badge>
                 <Badge variant="secondary">Big Time Gaming</Badge>
                 <Badge variant="secondary">Endorphina</Badge>
-              </div>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8 mt-8 pt-8 border-t border-border">
-              <div>
-                <div className="space-y-3">
-                  {features.map((feature, idx) => (
-                    <div key={idx} className="flex items-start gap-2">
-                      <CheckCircle className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground">{feature}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <div>
-                <div className="space-y-3">
-                  {negatives.map((negative, idx) => (
-                    <div key={idx} className="flex items-start gap-2">
-                      <X className="w-5 h-5 text-destructive shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground">{negative}</span>
-                    </div>
-                  ))}
-                </div>
               </div>
             </div>
           </CardContent>
