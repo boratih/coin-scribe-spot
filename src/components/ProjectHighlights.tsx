@@ -104,10 +104,26 @@ const highlights = {
   ]
 };
 
-const ProjectHighlights = () => {
-  const [category, setCategory] = useState("gaming");
+interface ProjectHighlightsProps {
+  categoryFilter?: string | null;
+}
 
-  const currentHighlights = highlights[category as keyof typeof highlights];
+const ProjectHighlights = ({ categoryFilter }: ProjectHighlightsProps) => {
+  // Map URL category filter to internal category
+  const getCategoryFromFilter = (filter: string | null | undefined): keyof typeof highlights => {
+    if (!filter) return "gaming";
+    if (filter === "gaming") return "gaming";
+    if (filter === "perpdex") return "perpdex";
+    if (filter === "farming") return "farming";
+    return "gaming";
+  };
+
+  const initialCategory = getCategoryFromFilter(categoryFilter);
+  const [category, setCategory] = useState<keyof typeof highlights>(initialCategory);
+
+  // If there's a category filter, use it; otherwise use the toggle state
+  const activeCategory = categoryFilter ? getCategoryFromFilter(categoryFilter) : category;
+  const currentHighlights = highlights[activeCategory];
 
   return (
     <section className="border-y border-border/40 bg-card/50">
@@ -121,31 +137,33 @@ const ProjectHighlights = () => {
           </p>
         </div>
 
-        <ToggleGroup 
-          type="single" 
-          value={category} 
-          onValueChange={(value) => value && setCategory(value)}
-          className="justify-start mb-8 flex-wrap"
-        >
-          <ToggleGroupItem 
-            value="gaming"
-            className="px-6 py-2 data-[state=on]:bg-primary data-[state=on]:text-primary-foreground"
+        {!categoryFilter && (
+          <ToggleGroup 
+            type="single" 
+            value={category} 
+            onValueChange={(value) => value && setCategory(value as keyof typeof highlights)}
+            className="justify-start mb-8 flex-wrap"
           >
-            Crypto Casino
-          </ToggleGroupItem>
-          <ToggleGroupItem 
-            value="perpdex"
-            className="px-6 py-2 data-[state=on]:bg-primary data-[state=on]:text-primary-foreground"
-          >
-            Perp Dex
-          </ToggleGroupItem>
-          <ToggleGroupItem 
-            value="farming"
-            className="px-6 py-2 data-[state=on]:bg-primary data-[state=on]:text-primary-foreground"
-          >
-            Farming
-          </ToggleGroupItem>
-        </ToggleGroup>
+            <ToggleGroupItem 
+              value="gaming"
+              className="px-6 py-2 data-[state=on]:bg-primary data-[state=on]:text-primary-foreground"
+            >
+              Crypto Casino
+            </ToggleGroupItem>
+            <ToggleGroupItem 
+              value="perpdex"
+              className="px-6 py-2 data-[state=on]:bg-primary data-[state=on]:text-primary-foreground"
+            >
+              Perp Dex
+            </ToggleGroupItem>
+            <ToggleGroupItem 
+              value="farming"
+              className="px-6 py-2 data-[state=on]:bg-primary data-[state=on]:text-primary-foreground"
+            >
+              Farming
+            </ToggleGroupItem>
+          </ToggleGroup>
+        )}
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {currentHighlights.map((highlight, index) => (

@@ -78,7 +78,7 @@ const Index = () => {
       </section>
 
       {/* Project Highlights Section */}
-      <ProjectHighlights />
+      <ProjectHighlights categoryFilter={categoryFilter} />
 
       {/* Articles Section */}
       <section id="latest-blog" className="container py-16 md:py-24">
