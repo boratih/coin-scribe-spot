@@ -50,7 +50,6 @@ const DegenRollReview = () => {
     { icon: Clock, label: "Year Established", value: "2024" },
     { icon: Wallet, label: "Min. deposit", value: "None" },
     { icon: Clock, label: "Payout time", value: "Instant" },
-    { icon: FileCheck, label: "Licenses", value: "Curacao" },
   ];
 
   const features = [
