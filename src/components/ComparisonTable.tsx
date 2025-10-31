@@ -27,22 +27,22 @@ const ComparisonTable = () => {
         <div className="grid grid-cols-4 gap-4 mb-4">
           <div className="col-span-1"></div>
           <Card className="bg-gradient-to-br from-primary/10 to-accent/10 border-primary/50">
-            <CardHeader className="text-center pb-3">
-              <CardTitle className="text-lg bg-gradient-primary bg-clip-text text-transparent text-center">
+            <CardHeader className="pb-3 flex items-center justify-center">
+              <CardTitle className="text-lg bg-gradient-primary bg-clip-text text-transparent">
                 DegenRoll
               </CardTitle>
             </CardHeader>
           </Card>
           <Card>
-            <CardHeader className="text-center pb-3">
-              <CardTitle className="text-lg text-muted-foreground text-center">
+            <CardHeader className="pb-3 flex items-center justify-center">
+              <CardTitle className="text-lg text-muted-foreground">
                 Stake
               </CardTitle>
             </CardHeader>
           </Card>
           <Card>
-            <CardHeader className="text-center pb-3">
-              <CardTitle className="text-lg text-muted-foreground text-center">
+            <CardHeader className="pb-3 flex items-center justify-center">
+              <CardTitle className="text-lg text-muted-foreground">
                 BC Game
               </CardTitle>
             </CardHeader>
