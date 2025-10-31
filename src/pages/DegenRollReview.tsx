@@ -317,25 +317,25 @@ const DegenRollReview = () => {
                 DegenRoll partners with top-tier software providers:
               </p>
               <div className="flex flex-wrap gap-4">
-                <div className="flex items-center gap-2 px-4 py-2 bg-muted/30 rounded-lg">
-                  <img src={pragmaticPlayLogo} alt="Pragmatic Play" className="h-6 w-6 object-contain" />
-                  <span className="text-sm font-medium text-foreground">Pragmatic Play</span>
+                <div className="flex items-center gap-3 px-5 py-2 bg-muted/30 rounded-lg">
+                  <img src={pragmaticPlayLogo} alt="Pragmatic Play" className="h-8 w-8 object-contain" />
+                  <span className="text-base font-medium text-foreground">Pragmatic Play</span>
                 </div>
-                <div className="flex items-center gap-2 px-4 py-2 bg-muted/30 rounded-lg">
-                  <img src={evolutionGamingLogo} alt="Evolution Gaming" className="h-6 w-6 object-contain" />
-                  <span className="text-sm font-medium text-foreground">Evolution Gaming</span>
+                <div className="flex items-center gap-3 px-5 py-2 bg-muted/30 rounded-lg">
+                  <img src={evolutionGamingLogo} alt="Evolution Gaming" className="h-8 w-8 object-contain" />
+                  <span className="text-base font-medium text-foreground">Evolution Gaming</span>
                 </div>
-                <div className="flex items-center gap-2 px-4 py-2 bg-muted/30 rounded-lg">
-                  <img src={playngoLogo} alt="Play'n GO" className="h-6 w-6 object-contain" />
-                  <span className="text-sm font-medium text-foreground">Play'n GO</span>
+                <div className="flex items-center gap-3 px-5 py-2 bg-muted/30 rounded-lg">
+                  <img src={playngoLogo} alt="Play'n GO" className="h-8 w-8 object-contain" />
+                  <span className="text-base font-medium text-foreground">Play'n GO</span>
                 </div>
-                <div className="flex items-center gap-2 px-4 py-2 bg-muted/30 rounded-lg">
-                  <img src={hacksawGamingLogo} alt="Hacksaw Gaming" className="h-6 w-6 object-contain" />
-                  <span className="text-sm font-medium text-foreground">Hacksaw Gaming</span>
+                <div className="flex items-center gap-3 px-5 py-2 bg-muted/30 rounded-lg">
+                  <img src={hacksawGamingLogo} alt="Hacksaw Gaming" className="h-8 w-8 object-contain" />
+                  <span className="text-base font-medium text-foreground">Hacksaw Gaming</span>
                 </div>
-                <div className="flex items-center gap-2 px-4 py-2 bg-muted/30 rounded-lg">
-                  <img src={bgamingLogo} alt="BGaming" className="h-6 w-6 object-contain" />
-                  <span className="text-sm font-medium text-foreground">BGaming</span>
+                <div className="flex items-center gap-3 px-5 py-2 bg-muted/30 rounded-lg">
+                  <img src={bgamingLogo} alt="BGaming" className="h-8 w-8 object-contain" />
+                  <span className="text-base font-medium text-foreground">BGaming</span>
                 </div>
               </div>
             </div>
