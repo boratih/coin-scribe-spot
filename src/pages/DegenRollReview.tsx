@@ -296,13 +296,13 @@ const DegenRollReview = () => {
                 Over 4,000 games across all major categories:
               </p>
               <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary">🎰 Slots</Badge>
-                <Badge variant="secondary">🃏 Table Games</Badge>
-                <Badge variant="secondary">🎡 Roulette</Badge>
-                <Badge variant="secondary">🎲 Jackpots</Badge>
-                <Badge variant="secondary">🎲 Dice Games</Badge>
-                <Badge variant="secondary">🎮 Live Casino</Badge>
-                <Badge variant="secondary">⚽ Sports Betting</Badge>
+                <Badge variant="secondary" className="text-base px-5 py-2">🎰 Slots</Badge>
+                <Badge variant="secondary" className="text-base px-5 py-2">🃏 Table Games</Badge>
+                <Badge variant="secondary" className="text-base px-5 py-2">🎡 Roulette</Badge>
+                <Badge variant="secondary" className="text-base px-5 py-2">🎲 Jackpots</Badge>
+                <Badge variant="secondary" className="text-base px-5 py-2">🎲 Dice Games</Badge>
+                <Badge variant="secondary" className="text-base px-5 py-2">🎮 Live Casino</Badge>
+                <Badge variant="secondary" className="text-base px-5 py-2">⚽ Sports Betting</Badge>
               </div>
             </div>
 
