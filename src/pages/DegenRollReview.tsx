@@ -93,6 +93,15 @@ const DegenRollReview = () => {
                 <Star className="w-5 h-5 mr-2 fill-current" />
                 4.6 / 5 Overall Rating
               </Badge>
+              <Button 
+                asChild
+                size="lg"
+                className="bg-accent hover:bg-accent/90 text-accent-foreground"
+              >
+                <a href="https://www.degenroll.xyz" target="_blank" rel="noopener noreferrer">
+                  Play Now
+                </a>
+              </Button>
             </div>
           </div>
         </div>
