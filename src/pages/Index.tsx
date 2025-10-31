@@ -62,12 +62,12 @@ const Index = () => {
                   🎮 Play Now
                 </a>
               </Button>
-              <Button variant="hero" size="lg" asChild className="px-6">
+              <Button variant="hero" size="lg" asChild className="px-6 min-w-[240px]">
                 <a href="#latest-blog">Read Latest Blog</a>
               </Button>
               <NewsletterDialog 
                 trigger={
-                  <Button variant="outline" size="lg" className="px-6">
+                  <Button variant="outline" size="lg" className="px-6 min-w-[240px]">
                     Subscribe to Newsletter
                   </Button>
                 }
