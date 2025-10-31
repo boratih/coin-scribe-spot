@@ -329,17 +329,85 @@ const DegenRollReview = () => {
       <section className="container mb-16">
         <div className="max-w-4xl mx-auto space-y-12">
           <Card>
-            <CardContent className="p-8">
-              <div className="flex items-center gap-3 mb-4">
+            <CardContent className="p-10">
+              <div className="flex items-center gap-3 mb-6">
                 <Wallet className="w-6 h-6 text-primary" />
                 <h2 className="text-2xl font-bold text-white">Deposits & Withdrawals</h2>
               </div>
-              <div className="prose prose-invert max-w-none">
+              <div className="prose prose-invert max-w-none mb-8">
                 <p className="text-muted-foreground leading-relaxed">
                   DegenRoll supports a wide range of cryptocurrencies including Bitcoin, Ethereum, USDT, Solana, and BNB. 
                   What sets it apart is the built-in swap feature that allows you to instantly exchange tokens before playing. 
                   Deposits are instant with no minimum requirements, and withdrawals are processed immediately to your wallet.
                 </p>
+              </div>
+              
+              {/* Main Cryptos */}
+              <div className="bg-muted/30 rounded-xl p-6 mb-4">
+                <h3 className="text-lg font-semibold text-white mb-4">Primary Cryptocurrencies</h3>
+                <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+                  <div className="flex flex-col items-center gap-2 p-4 bg-card rounded-lg hover:bg-card/80 transition-colors">
+                    <div className="w-12 h-12 rounded-full bg-orange-500/20 flex items-center justify-center text-2xl">
+                      ₿
+                    </div>
+                    <span className="text-sm font-medium text-white">Bitcoin</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 p-4 bg-card rounded-lg hover:bg-card/80 transition-colors">
+                    <div className="w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center text-2xl">
+                      ◈
+                    </div>
+                    <span className="text-sm font-medium text-white">Ethereum</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 p-4 bg-card rounded-lg hover:bg-card/80 transition-colors">
+                    <div className="w-12 h-12 rounded-full bg-purple-600/20 flex items-center justify-center text-2xl">
+                      ◎
+                    </div>
+                    <span className="text-sm font-medium text-white">Solana</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 p-4 bg-card rounded-lg hover:bg-card/80 transition-colors">
+                    <div className="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center text-2xl">
+                      ₮
+                    </div>
+                    <span className="text-sm font-medium text-white">USDT</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 p-4 bg-card rounded-lg hover:bg-card/80 transition-colors">
+                    <div className="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center text-2xl">
+                      $
+                    </div>
+                    <span className="text-sm font-medium text-white">USDC</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Additional Cryptos */}
+              <div className="bg-muted/30 rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-white mb-4">Also Supported</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  <div className="flex flex-col items-center gap-2 p-4 bg-card rounded-lg hover:bg-card/80 transition-colors">
+                    <div className="w-12 h-12 rounded-full bg-yellow-500/20 flex items-center justify-center text-2xl">
+                      Ⓑ
+                    </div>
+                    <span className="text-sm font-medium text-white">BNB</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 p-4 bg-card rounded-lg hover:bg-card/80 transition-colors">
+                    <div className="w-12 h-12 rounded-full bg-purple-400/20 flex items-center justify-center text-2xl">
+                      ⬡
+                    </div>
+                    <span className="text-sm font-medium text-white">Polygon</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 p-4 bg-card rounded-lg hover:bg-card/80 transition-colors">
+                    <div className="w-12 h-12 rounded-full bg-blue-400/20 flex items-center justify-center text-2xl">
+                      ✕
+                    </div>
+                    <span className="text-sm font-medium text-white">XRP</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 p-4 bg-card rounded-lg hover:bg-card/80 transition-colors">
+                    <div className="w-12 h-12 rounded-full bg-yellow-400/20 flex items-center justify-center text-2xl">
+                      Ð
+                    </div>
+                    <span className="text-sm font-medium text-white">Doge</span>
+                  </div>
+                </div>
               </div>
             </CardContent>
           </Card>
