@@ -22,7 +22,7 @@ const highlights = {
       rating: 9.5,
       badge: "BEST OVERALL",
       features: ["Instant Payouts", "No KYC Required", "Accepts most crypto"],
-      link: "https://www.degenroll.xyz",
+      link: "/degenroll-review",
       logo: degenrollLogo
     },
     {
