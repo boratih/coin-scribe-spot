@@ -19,6 +19,11 @@ import {
   CheckCircle,
   X
 } from "lucide-react";
+import pragmaticPlayLogo from "@/assets/pragmatic-play-logo.png";
+import evolutionGamingLogo from "@/assets/evolution-gaming-logo.png";
+import playngoLogo from "@/assets/playngo-logo.png";
+import hacksawGamingLogo from "@/assets/hacksaw-gaming-logo.png";
+import bgamingLogo from "@/assets/bgaming-logo.png";
 import degenrollLogo from "@/assets/degenroll-logo.png";
 
 const DegenRollReview = () => {
@@ -312,35 +317,20 @@ const DegenRollReview = () => {
                 DegenRoll partners with top-tier software providers:
               </p>
               <div className="flex flex-wrap gap-4">
-                <div className="flex items-center gap-3 px-5 py-2 bg-muted/30 rounded-lg">
-                  <div className="w-10 h-10 rounded-full bg-red-500/20 flex items-center justify-center text-base font-bold text-red-400">
-                    PP
-                  </div>
-                  <span className="text-base font-medium text-foreground">Pragmatic Play</span>
+                <div className="flex items-center gap-3 px-5 py-3 bg-muted/30 rounded-lg">
+                  <img src={pragmaticPlayLogo} alt="Pragmatic Play" className="h-8 w-auto object-contain" />
                 </div>
-                <div className="flex items-center gap-3 px-5 py-2 bg-muted/30 rounded-lg">
-                  <div className="w-10 h-10 rounded-full bg-orange-500/20 flex items-center justify-center text-base font-bold text-orange-400">
-                    EG
-                  </div>
-                  <span className="text-base font-medium text-foreground">Evolution Gaming</span>
+                <div className="flex items-center gap-3 px-5 py-3 bg-muted/30 rounded-lg">
+                  <img src={evolutionGamingLogo} alt="Evolution Gaming" className="h-8 w-auto object-contain" />
                 </div>
-                <div className="flex items-center gap-3 px-5 py-2 bg-muted/30 rounded-lg">
-                  <div className="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center text-base font-bold text-green-400">
-                    PG
-                  </div>
-                  <span className="text-base font-medium text-foreground">Play'n GO</span>
+                <div className="flex items-center gap-3 px-5 py-3 bg-muted/30 rounded-lg">
+                  <img src={playngoLogo} alt="Play'n GO" className="h-8 w-auto object-contain" />
                 </div>
-                <div className="flex items-center gap-3 px-5 py-2 bg-muted/30 rounded-lg">
-                  <div className="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center text-base font-bold text-purple-400">
-                    HG
-                  </div>
-                  <span className="text-base font-medium text-foreground">Hacksaw Gaming</span>
+                <div className="flex items-center gap-3 px-5 py-3 bg-muted/30 rounded-lg">
+                  <img src={hacksawGamingLogo} alt="Hacksaw Gaming" className="h-8 w-auto object-contain" />
                 </div>
-                <div className="flex items-center gap-3 px-5 py-2 bg-muted/30 rounded-lg">
-                  <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-base font-bold text-blue-400">
-                    BG
-                  </div>
-                  <span className="text-base font-medium text-foreground">BGaming</span>
+                <div className="flex items-center gap-3 px-5 py-3 bg-muted/30 rounded-lg">
+                  <img src={bgamingLogo} alt="BGaming" className="h-8 w-auto object-contain" />
                 </div>
               </div>
             </div>
