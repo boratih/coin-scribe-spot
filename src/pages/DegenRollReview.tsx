@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
+import StatsSection from "@/components/StatsSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import ComparisonTable from "@/components/ComparisonTable";
+import FloatingCTA from "@/components/FloatingCTA";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
@@ -544,6 +548,18 @@ const DegenRollReview = () => {
           </CardContent>
         </Card>
       </section>
+
+      {/* Stats Section */}
+      <StatsSection />
+
+      {/* Testimonials Section */}
+      <TestimonialsSection />
+
+      {/* Comparison Table */}
+      <ComparisonTable />
+
+      {/* Floating CTA */}
+      <FloatingCTA />
 
       {/* Back to Home */}
       <section className="container pb-16 text-center">

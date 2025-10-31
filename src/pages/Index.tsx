@@ -83,17 +83,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <StatsSection />
-
       {/* Project Highlights Section */}
       <ProjectHighlights categoryFilter={categoryFilter} />
-
-      {/* Testimonials Section */}
-      <TestimonialsSection />
-
-      {/* Comparison Table */}
-      <ComparisonTable />
 
       {/* Articles Section */}
       <section id="latest-blog" className="container py-16 md:py-24">
@@ -125,12 +116,6 @@ const Index = () => {
           ))}
         </div>
       </section>
-
-      {/* FAQ Section */}
-      <FAQSection />
-
-      {/* Floating CTA */}
-      <FloatingCTA />
 
       {/* Footer */}
       <footer className="border-t border-border/40 bg-card">
