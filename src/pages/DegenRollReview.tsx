@@ -184,6 +184,27 @@ const DegenRollReview = () => {
         </Card>
       </section>
 
+      {/* Bonus Section */}
+      <section className="container mb-16 px-4">
+        <Card className="bg-accent border-0 overflow-hidden">
+          <CardContent className="py-12 text-center">
+            <h3 className="text-3xl md:text-4xl font-bold text-accent-foreground mb-3">
+              Volume-Based Rewards
+            </h3>
+            <p className="text-accent-foreground/80 text-sm mb-6">18+</p>
+            <Button 
+              asChild
+              size="lg"
+              className="bg-white text-accent hover:bg-white/90 font-bold"
+            >
+              <a href="https://www.degenroll.xyz" target="_blank" rel="noopener noreferrer">
+                CLAIM BONUS
+              </a>
+            </Button>
+          </CardContent>
+        </Card>
+      </section>
+
       {/* CTA Banner */}
       <section className="container mb-16">
         <Card className="bg-gradient-primary border-0 overflow-hidden relative">
