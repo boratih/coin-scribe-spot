@@ -184,6 +184,97 @@ const DegenRollReview = () => {
         </Card>
       </section>
 
+      {/* Combined CTA Banner */}
+      <section className="container mb-16 px-4">
+        <Card className="bg-accent border-0 overflow-hidden relative">
+          <div className="absolute inset-0 bg-gradient-to-br from-accent via-accent to-accent/80"></div>
+          <CardContent className="py-12 px-6 md:px-12 text-center relative">
+            <Gamepad2 className="w-16 h-16 mx-auto mb-4 text-accent-foreground" />
+            <h3 className="text-3xl md:text-4xl font-bold text-accent-foreground mb-4">
+              Play Now at DegenRoll
+            </h3>
+            <div className="flex flex-wrap justify-center gap-3 mb-6">
+              <Badge variant="secondary" className="text-sm px-4 py-2 bg-white/20 text-accent-foreground border-white/30">
+                🕵️‍♂️ No KYC Required
+              </Badge>
+              <Badge variant="secondary" className="text-sm px-4 py-2 bg-white/20 text-accent-foreground border-white/30">
+                ⚡ Instant Deposits
+              </Badge>
+              <Badge variant="secondary" className="text-sm px-4 py-2 bg-white/20 text-accent-foreground border-white/30">
+                🪙 All Major Crypto
+              </Badge>
+            </div>
+            <p className="text-accent-foreground/90 text-lg mb-8 max-w-2xl mx-auto">
+              Start playing with complete privacy. Volume-based rewards, instant payouts, and over 4,000 games waiting for you.
+            </p>
+            <Button 
+              asChild
+              size="lg"
+              className="bg-white text-accent hover:bg-white/90 font-bold text-lg px-8 py-6"
+            >
+              <a href="https://www.degenroll.xyz" target="_blank" rel="noopener noreferrer">
+                CLAIM BONUS
+              </a>
+            </Button>
+            <p className="text-accent-foreground/70 text-xs mt-4">18+ | Play Responsibly</p>
+          </CardContent>
+        </Card>
+      </section>
+
+      {/* Quick Facts */}
+      <section className="container mb-16">
+        <Card>
+          <CardContent className="p-8">
+            <h2 className="text-3xl font-bold text-white mb-8">Quick Facts</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {quickFacts.map((fact, idx) => (
+                <div key={idx} className="flex items-start gap-3">
+                  <div className="p-2 rounded-lg bg-primary/10">
+                    <fact.icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <div className="font-bold text-white">{fact.value}</div>
+                    <div className="text-sm text-muted-foreground">{fact.label}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-8 pt-8 border-t border-border">
+              <h3 className="text-xl font-bold text-white mb-4">Languages Supported</h3>
+              <div className="flex flex-wrap gap-2">
+                {["English", "Spanish", "Turkish", "Russian", "Japanese"].map((lang) => (
+                  <Badge key={lang} variant="secondary">{lang}</Badge>
+                ))}
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 mt-8 pt-8 border-t border-border">
+              <div>
+                <div className="space-y-3">
+                  {features.map((feature, idx) => (
+                    <div key={idx} className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <div className="space-y-3">
+                  {negatives.map((negative, idx) => (
+                    <div key={idx} className="flex items-start gap-2">
+                      <X className="w-5 h-5 text-destructive shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">{negative}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+
       {/* Cryptos Section */}
       <section className="container mb-16 px-4">
         <Card>
@@ -301,97 +392,6 @@ const DegenRollReview = () => {
               <Badge variant="secondary" className="text-sm px-4 py-2">
                 Endorphina
               </Badge>
-            </div>
-          </CardContent>
-        </Card>
-      </section>
-
-      {/* Combined CTA Banner */}
-      <section className="container mb-16 px-4">
-        <Card className="bg-accent border-0 overflow-hidden relative">
-          <div className="absolute inset-0 bg-gradient-to-br from-accent via-accent to-accent/80"></div>
-          <CardContent className="py-12 px-6 md:px-12 text-center relative">
-            <Gamepad2 className="w-16 h-16 mx-auto mb-4 text-accent-foreground" />
-            <h3 className="text-3xl md:text-4xl font-bold text-accent-foreground mb-4">
-              Play Now at DegenRoll
-            </h3>
-            <div className="flex flex-wrap justify-center gap-3 mb-6">
-              <Badge variant="secondary" className="text-sm px-4 py-2 bg-white/20 text-accent-foreground border-white/30">
-                🕵️‍♂️ No KYC Required
-              </Badge>
-              <Badge variant="secondary" className="text-sm px-4 py-2 bg-white/20 text-accent-foreground border-white/30">
-                ⚡ Instant Deposits
-              </Badge>
-              <Badge variant="secondary" className="text-sm px-4 py-2 bg-white/20 text-accent-foreground border-white/30">
-                🪙 All Major Crypto
-              </Badge>
-            </div>
-            <p className="text-accent-foreground/90 text-lg mb-8 max-w-2xl mx-auto">
-              Start playing with complete privacy. Volume-based rewards, instant payouts, and over 4,000 games waiting for you.
-            </p>
-            <Button 
-              asChild
-              size="lg"
-              className="bg-white text-accent hover:bg-white/90 font-bold text-lg px-8 py-6"
-            >
-              <a href="https://www.degenroll.xyz" target="_blank" rel="noopener noreferrer">
-                CLAIM BONUS
-              </a>
-            </Button>
-            <p className="text-accent-foreground/70 text-xs mt-4">18+ | Play Responsibly</p>
-          </CardContent>
-        </Card>
-      </section>
-
-      {/* Quick Facts */}
-      <section className="container mb-16">
-        <Card>
-          <CardContent className="p-8">
-            <h2 className="text-3xl font-bold text-white mb-8">Quick Facts</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {quickFacts.map((fact, idx) => (
-                <div key={idx} className="flex items-start gap-3">
-                  <div className="p-2 rounded-lg bg-primary/10">
-                    <fact.icon className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <div className="font-bold text-white">{fact.value}</div>
-                    <div className="text-sm text-muted-foreground">{fact.label}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-8 pt-8 border-t border-border">
-              <h3 className="text-xl font-bold text-white mb-4">Languages Supported</h3>
-              <div className="flex flex-wrap gap-2">
-                {["English", "Spanish", "Turkish", "Russian", "Japanese"].map((lang) => (
-                  <Badge key={lang} variant="secondary">{lang}</Badge>
-                ))}
-              </div>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8 mt-8 pt-8 border-t border-border">
-              <div>
-                <div className="space-y-3">
-                  {features.map((feature, idx) => (
-                    <div key={idx} className="flex items-start gap-2">
-                      <CheckCircle className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground">{feature}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <div>
-                <div className="space-y-3">
-                  {negatives.map((negative, idx) => (
-                    <div key={idx} className="flex items-start gap-2">
-                      <X className="w-5 h-5 text-destructive shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground">{negative}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
             </div>
           </CardContent>
         </Card>
