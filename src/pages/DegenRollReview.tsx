@@ -184,6 +184,128 @@ const DegenRollReview = () => {
         </Card>
       </section>
 
+      {/* Cryptos Section */}
+      <section className="container mb-16 px-4">
+        <Card>
+          <CardContent className="p-8">
+            <h2 className="text-3xl font-bold text-white mb-4">Cryptos</h2>
+            <p className="text-muted-foreground mb-6">
+              DegenRoll accepts over 20 cryptocurrencies with built-in swap feature:
+            </p>
+            <div className="flex flex-wrap gap-3 mb-8">
+              <Badge variant="secondary" className="text-sm px-4 py-2">
+                ₿ Bitcoin
+              </Badge>
+              <Badge variant="secondary" className="text-sm px-4 py-2">
+                ◈ Ethereum
+              </Badge>
+              <Badge variant="secondary" className="text-sm px-4 py-2">
+                ₮ USDT
+              </Badge>
+              <Badge variant="secondary" className="text-sm px-4 py-2">
+                ₳ Cardano
+              </Badge>
+              <Badge variant="secondary" className="text-sm px-4 py-2">
+                ◎ Solana
+              </Badge>
+              <Badge variant="secondary" className="text-sm px-4 py-2">
+                Ⓑ BNB
+              </Badge>
+              <Badge variant="secondary" className="text-sm px-4 py-2">
+                ⬡ Polygon
+              </Badge>
+              <Badge variant="secondary" className="text-sm px-4 py-2">
+                🔷 Litecoin
+              </Badge>
+            </div>
+            <div className="border-t border-border pt-6">
+              <h3 className="text-xl font-bold text-white mb-3">
+                Instant Crypto Swaps On-Site
+              </h3>
+              <p className="text-muted-foreground">
+                DegenRoll features a built-in swap powered by decentralized exchanges. You can instantly 
+                convert between supported cryptocurrencies directly on the platform without leaving to use 
+                external exchanges.
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+
+      {/* Games Section */}
+      <section className="container mb-16 px-4">
+        <Card>
+          <CardContent className="p-8">
+            <h2 className="text-3xl font-bold text-white mb-4">Game Selection</h2>
+            <p className="text-muted-foreground mb-6">
+              Over 4,000 games across all major categories:
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <Badge variant="secondary" className="text-sm px-4 py-2">
+                🎰 Slots
+              </Badge>
+              <Badge variant="secondary" className="text-sm px-4 py-2">
+                🃏 Table Games
+              </Badge>
+              <Badge variant="secondary" className="text-sm px-4 py-2">
+                🎡 Roulette
+              </Badge>
+              <Badge variant="secondary" className="text-sm px-4 py-2">
+                🎲 Jackpots
+              </Badge>
+              <Badge variant="secondary" className="text-sm px-4 py-2">
+                🎲 Dice Games
+              </Badge>
+              <Badge variant="secondary" className="text-sm px-4 py-2">
+                🎮 Live Casino
+              </Badge>
+              <Badge variant="secondary" className="text-sm px-4 py-2">
+                ⚽ Sports Betting
+              </Badge>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+
+      {/* Software Providers Section */}
+      <section className="container mb-16 px-4">
+        <Card>
+          <CardContent className="p-8">
+            <h2 className="text-3xl font-bold text-white mb-4">Software Providers</h2>
+            <p className="text-muted-foreground mb-6">
+              DegenRoll partners with over 40 top-tier software providers, including DegenRoll Originals. 
+              Some featured providers:
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <Badge variant="secondary" className="text-sm px-4 py-2">
+                1x2games
+              </Badge>
+              <Badge variant="secondary" className="text-sm px-4 py-2">
+                Pragmatic Play
+              </Badge>
+              <Badge variant="secondary" className="text-sm px-4 py-2">
+                Evolution Gaming
+              </Badge>
+              <Badge variant="secondary" className="text-sm px-4 py-2">
+                NetEnt
+              </Badge>
+              <Badge variant="secondary" className="text-sm px-4 py-2">
+                Play'n GO
+              </Badge>
+              <Badge variant="secondary" className="text-sm px-4 py-2">
+                Microgaming
+              </Badge>
+              <Badge variant="secondary" className="text-sm px-4 py-2">
+                Big Time Gaming
+              </Badge>
+              <Badge variant="secondary" className="text-sm px-4 py-2">
+                Endorphina
+              </Badge>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+
       {/* Combined CTA Banner */}
       <section className="container mb-16 px-4">
         <Card className="bg-accent border-0 overflow-hidden relative">
