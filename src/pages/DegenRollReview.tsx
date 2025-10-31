@@ -108,8 +108,8 @@ const DegenRollReview = () => {
       </section>
 
       {/* Review Summary Box */}
-      <section className="container -mt-8 mb-16 px-4">
-        <Card className="border-primary/20 overflow-hidden">
+      <section className="container mb-16 px-4">
+        <Card className="border-primary/20 overflow-visible shadow-xl">
           <CardContent className="p-6 md:p-8 lg:p-10">
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
               {/* Ratings Breakdown */}
