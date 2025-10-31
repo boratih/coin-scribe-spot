@@ -549,9 +549,6 @@ const DegenRollReview = () => {
         </Card>
       </section>
 
-      {/* Stats Section */}
-      <StatsSection />
-
       {/* Testimonials Section */}
       <TestimonialsSection />
 
