@@ -83,9 +83,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Trust Badges */}
-      <TrustBadges />
-
       {/* Stats Section */}
       <StatsSection />
 
