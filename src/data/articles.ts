@@ -540,7 +540,7 @@ Test new indicators and strategies in small size before committing significant c
 
 Mastering perpetual trading signals is a journey requiring dedication, discipline, and continuous learning. Focus on building robust systems that combine multiple signal types, maintain strict risk management, and adapt to changing market conditions. With proper execution, perpetual contracts offer some of the best profit opportunities in cryptocurrency markets.
     `,
-    category: "Perp Dex",
+    category: "Perpetuals",
     date: "2024-03-13",
     image: perpImg,
     readTime: "18 min read",
@@ -844,7 +844,7 @@ Unique to crypto, this pattern shows sudden price pumps followed by gradual dump
 
 The most successful crypto traders combine traditional technical analysis with on-chain metrics for a more comprehensive view of market conditions.
     `,
-    category: "Perp Dex",
+    category: "Perpetuals",
     date: "2024-03-10",
     image: techAnalysisImg,
     readTime: "8 min read",
@@ -1178,7 +1178,7 @@ Exploit funding rate imbalances between different platforms for market-neutral r
 
 Choose DEXs with deep liquidity, low slippage, and proven smart contract security. Popular options include GMX, dYdX, and Gains Network.
     `,
-    category: "Perp Dex",
+    category: "Perpetuals",
     date: "2024-03-07",
     image: leverageImg,
     readTime: "9 min read",
@@ -1407,7 +1407,7 @@ Target trades with at least 2:1 or 3:1 risk-reward ratios. This means you can be
 
 Stick to your risk management rules even when emotions run high. Use automation and pre-planned strategies to maintain discipline.
     `,
-    category: "Perp Dex",
+    category: "Perpetuals",
     date: "2024-03-02",
     image: riskMgmtImg,
     readTime: "7 min read",

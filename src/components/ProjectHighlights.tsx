@@ -154,7 +154,7 @@ const ProjectHighlights = ({ categoryFilter }: ProjectHighlightsProps) => {
               value="perpdex"
               className="px-6 py-2 data-[state=on]:bg-primary data-[state=on]:text-primary-foreground"
             >
-              Perp Dex
+              Perpetuals
             </ToggleGroupItem>
             <ToggleGroupItem 
               value="farming"

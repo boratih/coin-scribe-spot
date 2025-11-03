@@ -25,7 +25,7 @@ const Header = () => {
             Crypto Casino
           </Link>
           <Link to="/?category=perpdex" className="transition-colors hover:text-primary">
-            Perp Dex
+            Perpetuals
           </Link>
           <Link to="/?category=farming" className="transition-colors hover:text-primary">
             Farming
