@@ -142,7 +142,7 @@ const Index = () => {
             </div>
             
             <div>
-              <h3 className="font-semibold mb-4">Projects</h3>
+              <h3 className="font-semibold mb-4">Top Projects</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li><a href="https://www.degenroll.xyz" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">DegenRoll</a></li>
                 <li><a href="https://stake.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Stake</a></li>
