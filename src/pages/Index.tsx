@@ -69,7 +69,7 @@ const Index = () => {
                 </a>
               </Button>
               <Button variant="hero" size="lg" asChild className="px-6 min-w-[240px]">
-                <a href="#latest-blog">Read Latest Blog</a>
+                <a href="#latest-blog">Read Latest Article</a>
               </Button>
               <NewsletterDialog 
                 trigger={
