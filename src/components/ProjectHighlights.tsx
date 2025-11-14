@@ -160,7 +160,7 @@ const ProjectHighlights = ({ categoryFilter }: ProjectHighlightsProps) => {
               value="farming"
               className="px-6 py-2 data-[state=on]:bg-primary data-[state=on]:text-primary-foreground"
             >
-              Farming
+              DeFi Farming
             </ToggleGroupItem>
           </ToggleGroup>
         )}

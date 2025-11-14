@@ -28,7 +28,7 @@ const Header = () => {
             Perpetuals
           </Link>
           <Link to="/?category=farming" className="transition-colors hover:text-primary">
-            Farming
+            DeFi Farming
           </Link>
         </nav>
 

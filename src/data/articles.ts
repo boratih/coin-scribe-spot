@@ -1226,7 +1226,7 @@ Use yield aggregators that automatically compound rewards for maximum efficiency
 
 Look for audited protocols with proven track records, strong communities, and sustainable tokenomics.
     `,
-    category: "Farming",
+    category: "DeFi Farming",
     date: "2024-03-06",
     image: yieldFarmImg,
     readTime: "8 min read",
@@ -1274,7 +1274,7 @@ When token prices diverge, you may end up with less value than if you'd simply h
 
 Track all liquidity additions, removals, and rewards for tax reporting purposes.
     `,
-    category: "Farming",
+    category: "DeFi Farming",
     date: "2024-03-05",
     image: liquidityImg,
     readTime: "6 min read",
@@ -1469,7 +1469,7 @@ Focus on established protocols offering moderate but sustainable yields (10-30% 
 
 Track all yield earnings for tax reporting. Compounded rewards may be taxable events depending on your jurisdiction.
     `,
-    category: "Farming",
+    category: "DeFi Farming",
     date: "2024-03-01",
     image: apyImg,
     readTime: "8 min read",
