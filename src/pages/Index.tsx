@@ -12,7 +12,7 @@ import FloatingCTA from "@/components/FloatingCTA";
 import { Button } from "@/components/ui/button";
 import { articles } from "@/data/articles";
 import heroImage from "@/assets/hero-bg.jpg";
-import degenBlogLogo from "@/assets/degen-blog-logo.png";
+import degenrollLogo from "@/assets/degenroll-logo.webp";
 import NewsletterDialog from "@/components/NewsletterDialog";
 
 const Index = () => {
@@ -123,8 +123,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-1">
               <div className="flex items-center space-x-2 mb-4">
-                <img src={degenBlogLogo} alt="Degen Blog" className="h-8 w-8" />
-                <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">Degen Blog</span>
+                <img src={degenrollLogo} alt="Degenroll" className="h-10" />
               </div>
               <p className="text-sm text-muted-foreground">
                 Your trusted source for cryptocurrency news, analysis, and trading insights.
@@ -163,7 +162,7 @@ const Index = () => {
           </div>
           
           <div className="mt-8 pt-8 border-t border-border/40 text-center text-sm text-muted-foreground">
-            <p>&copy; 2024 Degen Blog. All rights reserved.</p>
+            <p>&copy; 2024 Degenroll. All rights reserved.</p>
           </div>
         </div>
       </footer>

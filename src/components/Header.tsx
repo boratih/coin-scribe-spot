@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import degenBlogLogo from "@/assets/degen-blog-logo.webp";
+import degenrollLogo from "@/assets/degenroll-logo.webp";
 import NewsletterDialog from "@/components/NewsletterDialog";
 
 const Header = () => {
@@ -8,10 +8,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
-          <img src={degenBlogLogo} alt="Degen Blog" className="h-8 w-8" />
-          <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-            Degen Blog
-          </span>
+          <img src={degenrollLogo} alt="Degenroll" className="h-10" />
         </Link>
         
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
