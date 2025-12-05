@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import degenBlogLogo from "@/assets/degen-blog-logo.png";
+import degenBlogLogo from "@/assets/degen-blog-logo.webp";
 import NewsletterDialog from "@/components/NewsletterDialog";
 
 const Header = () => {
