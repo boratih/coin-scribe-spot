@@ -15,17 +15,11 @@ const Header = () => {
           <Link to="/" className="transition-colors hover:text-primary">
             Home
           </Link>
-          <Link to="/?category=crypto" className="transition-colors hover:text-primary">
-            Crypto
-          </Link>
           <Link to="/?category=gaming" className="transition-colors hover:text-primary">
             Crypto Casino
           </Link>
           <Link to="/?category=perpdex" className="transition-colors hover:text-primary">
             Perpetuals
-          </Link>
-          <Link to="/?category=farming" className="transition-colors hover:text-primary">
-            DeFi Farming
           </Link>
         </nav>
 

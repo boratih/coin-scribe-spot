@@ -10,9 +10,6 @@ import bcgameLogo from "@/assets/bcgame-logo.png";
 import lighterLogo from "@/assets/lighter-logo.png";
 import hyperliquidLogo from "@/assets/hyperliquid-logo.png";
 import asterLogo from "@/assets/aster-logo.png";
-import aaveLogo from "@/assets/aave-logo.png";
-import curveLogo from "@/assets/curve-logo.png";
-import convexLogo from "@/assets/convex-logo.png";
 
 const highlights = {
   gaming: [
@@ -72,35 +69,6 @@ const highlights = {
       link: "https://aster.trade",
       logo: asterLogo
     }
-  ],
-  farming: [
-    {
-      id: 7,
-      title: "Aave",
-      rating: 9.4,
-      badge: "BLUE CHIP",
-      features: ["Multi-chain", "Battle-tested", "High TVL"],
-      link: "https://aave.com",
-      logo: aaveLogo
-    },
-    {
-      id: 8,
-      title: "Curve Finance",
-      rating: 9.2,
-      badge: "STABLE YIELDS",
-      features: ["Stablecoin Focus", "Low Slippage", "veCRV Rewards"],
-      link: "https://curve.fi",
-      logo: curveLogo
-    },
-    {
-      id: 9,
-      title: "Convex Finance",
-      rating: 9.0,
-      badge: "YIELD BOOSTER",
-      features: ["Curve Optimizer", "Boosted APY", "Liquid Staking"],
-      link: "https://convexfinance.com",
-      logo: convexLogo
-    }
   ]
 };
 
@@ -114,7 +82,6 @@ const ProjectHighlights = ({ categoryFilter }: ProjectHighlightsProps) => {
     if (!filter) return "gaming";
     if (filter === "gaming") return "gaming";
     if (filter === "perpdex") return "perpdex";
-    if (filter === "farming") return "farming";
     return "gaming";
   };
 
@@ -155,12 +122,6 @@ const ProjectHighlights = ({ categoryFilter }: ProjectHighlightsProps) => {
               className="px-6 py-2 data-[state=on]:bg-primary data-[state=on]:text-primary-foreground"
             >
               Perpetuals
-            </ToggleGroupItem>
-            <ToggleGroupItem 
-              value="farming"
-              className="px-6 py-2 data-[state=on]:bg-primary data-[state=on]:text-primary-foreground"
-            >
-              DeFi Farming
             </ToggleGroupItem>
           </ToggleGroup>
         )}
