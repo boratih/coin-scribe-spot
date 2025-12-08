@@ -1,47 +1,106 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { Menu, X, Search } from "lucide-react";
+import { useState } from "react";
 import degenrollLogo from "@/assets/degenroll-logo.webp";
 import NewsletterDialog from "@/components/NewsletterDialog";
 
 const Header = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <div className="container flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center space-x-2">
+        <Link to="/" className="flex items-center gap-2">
           <img src={degenrollLogo} alt="Degenroll" className="h-10" />
         </Link>
         
-        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
-          <Link to="/" className="transition-colors hover:text-primary">
+        <nav className="hidden md:flex items-center gap-8">
+          <Link 
+            to="/" 
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          >
             Home
           </Link>
-          <Link to="/?category=gaming" className="transition-colors hover:text-primary">
+          <Link 
+            to="/?category=gaming" 
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          >
             Crypto Casino
           </Link>
-          <Link to="/?category=perpdex" className="transition-colors hover:text-primary">
+          <Link 
+            to="/?category=perpdex" 
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          >
             Perpetuals
           </Link>
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="hidden md:flex items-center gap-3">
           <Button 
-            size="lg"
             asChild
-            className="bg-gradient-to-r from-accent to-primary text-background font-bold hover:scale-105 transition-transform shadow-glow-accent"
+            className="bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold hover:opacity-90 transition-opacity rounded-full"
           >
             <a href="https://www.degenroll.xyz" target="_blank" rel="noopener noreferrer">
-              🎮 Play Now
+              Play Now
             </a>
           </Button>
           <NewsletterDialog 
             trigger={
-              <Button variant="hero" size="sm">
+              <Button variant="outline" size="sm" className="rounded-full">
                 Subscribe
               </Button>
             }
           />
         </div>
+
+        {/* Mobile menu button */}
+        <button 
+          className="md:hidden p-2"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        >
+          {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+        </button>
       </div>
+
+      {/* Mobile menu */}
+      {mobileMenuOpen && (
+        <div className="md:hidden border-t border-border/40 bg-background">
+          <nav className="container py-4 flex flex-col gap-4">
+            <Link 
+              to="/" 
+              className="text-sm font-medium py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Home
+            </Link>
+            <Link 
+              to="/?category=gaming" 
+              className="text-sm font-medium py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Crypto Casino
+            </Link>
+            <Link 
+              to="/?category=perpdex" 
+              className="text-sm font-medium py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Perpetuals
+            </Link>
+            <div className="flex gap-2 pt-2">
+              <Button 
+                asChild
+                className="flex-1 bg-gradient-to-r from-primary to-accent text-primary-foreground rounded-full"
+              >
+                <a href="https://www.degenroll.xyz" target="_blank" rel="noopener noreferrer">
+                  Play Now
+                </a>
+              </Button>
+            </div>
+          </nav>
+        </div>
+      )}
     </header>
   );
 };
