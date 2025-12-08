@@ -19,8 +19,14 @@ const Index = () => {
   const [searchParams] = useSearchParams();
   const categoryFilter = searchParams.get("category");
   
+  // Filter to only show gaming (crypto casino) and perpdex articles
+  const degenArticles = articles.filter(article => {
+    const normalizedCategory = article.category.toLowerCase();
+    return normalizedCategory.includes("crypto casino") || normalizedCategory.includes("perpdex");
+  });
+
   const filteredArticles = categoryFilter
-    ? articles.filter(article => {
+    ? degenArticles.filter(article => {
         const normalizedCategory = article.category.toLowerCase();
         const normalizedFilter = categoryFilter.toLowerCase();
         
@@ -31,7 +37,7 @@ const Index = () => {
         
         return normalizedCategory.includes(normalizedFilter);
       })
-    : articles;
+    : degenArticles;
 
   return (
     <div className="min-h-screen">
@@ -53,10 +59,10 @@ const Index = () => {
         <div className="container relative z-10 py-24 md:py-32">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-              Everything about Crypto and Web3
+              Everything for Degen Gamblers
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8">
-              Creating insights on the latest and best money-printing opportunities on web3 and crypto.
+              Your ultimate guide to crypto casinos and perpetual trading - high risk, high reward.
             </p>
             <div className="flex flex-wrap gap-6">
               <Button 
@@ -126,17 +132,15 @@ const Index = () => {
                 <img src={degenrollLogo} alt="Degenroll" className="h-10" />
               </div>
               <p className="text-sm text-muted-foreground">
-                Your trusted source for cryptocurrency news, analysis, and trading insights.
+                Your ultimate guide to crypto casinos and perpetual trading.
               </p>
             </div>
             
             <div>
               <h3 className="font-semibold mb-4">Categories</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="/?category=crypto" className="hover:text-primary transition-colors">Crypto</a></li>
                 <li><a href="/?category=gaming" className="hover:text-primary transition-colors">Crypto Casino</a></li>
                 <li><a href="/?category=perpdex" className="hover:text-primary transition-colors">Perpetuals</a></li>
-                <li><a href="/?category=farming" className="hover:text-primary transition-colors">DeFi Farming</a></li>
               </ul>
             </div>
             
