@@ -6,7 +6,9 @@ import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { z } from "zod";
 
-const emailSchema = z.string().email("Please enter a valid email address");
+const emailSchema = z.string()
+  .email("Please enter a valid email address")
+  .max(255, "Email must be less than 255 characters");
 
 interface NewsletterDialogProps {
   trigger: React.ReactNode;
