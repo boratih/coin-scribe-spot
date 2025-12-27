@@ -1,9 +1,13 @@
 # =========================================================
-#  degenroll.co - Crawling & AI Access Policy
+#  degenroll.co | Crypto & DeFi Content Hub
 # =========================================================
-#  Search Engine Indexing: ALLOWED
-#  AI Retrieval & Grounding: ALLOWED
-#  AI Model Training: BLOCKED
+#
+#  This file controls how bots interact with our content.
+#
+#  - Google, Bing, DuckDuckGo: Welcome to index everything
+#  - Perplexity, Apple, Amazon: Can use our content for answers
+#  - OpenAI, Anthropic, Meta: No training on our articles
+#
 # =========================================================
 
 # Default: Allow all crawlers for content discovery
