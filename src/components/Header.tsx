@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Search } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import degenrollLogo from "@/assets/degenroll-logo.webp";
-import NewsletterDialog from "@/components/NewsletterDialog";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -45,13 +44,6 @@ const Header = () => {
               Play Now
             </a>
           </Button>
-          <NewsletterDialog 
-            trigger={
-              <Button variant="outline" size="sm" className="rounded-full">
-                Subscribe
-              </Button>
-            }
-          />
         </div>
 
         {/* Mobile menu button */}

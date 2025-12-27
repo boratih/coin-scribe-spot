@@ -8,7 +8,6 @@ import ArticleCard from "@/components/ArticleCard";
 import { Button } from "@/components/ui/button";
 import { articles } from "@/data/articles";
 import degenrollLogo from "@/assets/degenroll-logo.webp";
-import NewsletterDialog from "@/components/NewsletterDialog";
 import { Twitter, MessageCircle, Send } from "lucide-react";
 
 const Index = () => {
@@ -103,24 +102,26 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Newsletter CTA */}
+      {/* CTA Section */}
       <section className="py-16 md:py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent" />
         <div className="container relative z-10">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Stay Ahead of the Game
+              Ready to Play?
             </h2>
             <p className="text-muted-foreground mb-8">
-              Get the latest crypto casino reviews, perpetual trading strategies, and degen alpha straight to your inbox.
+              Experience the best crypto casino with instant deposits, provably fair games, and fast withdrawals.
             </p>
-            <NewsletterDialog 
-              trigger={
-                <Button size="lg" className="h-14 px-8 text-lg rounded-full">
-                  Subscribe to Newsletter
-                </Button>
-              }
-            />
+            <Button 
+              asChild
+              size="lg" 
+              className="h-14 px-8 text-lg rounded-full bg-gradient-to-r from-primary to-accent"
+            >
+              <a href="https://www.degenroll.xyz" target="_blank" rel="noopener noreferrer">
+                Play Now on DegenRoll
+              </a>
+            </Button>
           </div>
         </div>
       </section>
