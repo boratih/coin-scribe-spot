@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Clock, ArrowRight } from "lucide-react";
+import { getSlugFromArticleId } from "@/lib/slugs";
 
 interface ArticleCardProps {
   id: string;
@@ -14,8 +15,10 @@ interface ArticleCardProps {
 }
 
 const ArticleCard = ({ id, title, excerpt, category, date, image, readTime }: ArticleCardProps) => {
+  const slug = getSlugFromArticleId(id);
+  
   return (
-    <Link to={`/article/${id}`}>
+    <Link to={`/article/${slug}`}>
       <Card className="group h-full overflow-hidden bg-gradient-card border-border/50 hover-glow cursor-pointer">
         <div className="aspect-[16/10] overflow-hidden relative">
           <img 
