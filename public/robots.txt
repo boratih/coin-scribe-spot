@@ -84,4 +84,4 @@ Disallow: /_next/
 Disallow: /private/
 
 # Sitemap location
-Sitemap: https://degen-blog.lovable.app/sitemap.xml
+Sitemap: https://degenroll.co/sitemap.xml
