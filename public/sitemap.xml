@@ -1,137 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  
-  <!-- Homepage -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://degenroll.co/</loc>
     <lastmod>2025-12-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
   </url>
-  
-  <!-- DegenRoll Casino Review -->
   <url>
     <loc>https://degenroll.co/degenroll-review</loc>
     <lastmod>2025-12-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
   </url>
-  
-  <!-- DeFi & Crypto Articles -->
   <url>
     <loc>https://degenroll.co/article/future-of-decentralized-finance-2025</loc>
     <lastmod>2025-12-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
-  
-  <url>
-    <loc>https://degenroll.co/article/bitcoin-etf-approval-market-impact</loc>
-    <lastmod>2025-12-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://degenroll.co/article/altcoin-season-2025-hidden-gems</loc>
-    <lastmod>2025-12-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://degenroll.co/article/defi-yield-farming-strategies-2025</loc>
-    <lastmod>2025-12-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://degenroll.co/article/liquidity-mining-beginners-guide</loc>
-    <lastmod>2025-12-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://degenroll.co/article/layer-2-solutions-ethereum-scaling</loc>
-    <lastmod>2025-12-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://degenroll.co/article/understanding-apy-defi-maximizing-returns</loc>
-    <lastmod>2025-12-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Trading & Analysis Articles -->
-  <url>
-    <loc>https://degenroll.co/article/mastering-perpetual-trading-signals</loc>
-    <lastmod>2025-12-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://degenroll.co/article/advanced-technical-analysis-crypto-traders</loc>
-    <lastmod>2025-12-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://degenroll.co/article/leverage-trading-perpetual-dex-strategies</loc>
-    <lastmod>2025-12-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://degenroll.co/article/risk-management-crypto-trading</loc>
-    <lastmod>2025-12-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Gaming & Casino Articles -->
   <url>
     <loc>https://degenroll.co/article/top-5-safest-crypto-casino-no-kyc</loc>
     <lastmod>2025-12-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
-  
+  <url>
+    <loc>https://degenroll.co/article/mastering-perpetual-trading-signals</loc>
+    <lastmod>2025-12-27</lastmod>
+  </url>
+  <url>
+    <loc>https://degenroll.co/article/bitcoin-etf-approval-market-impact</loc>
+    <lastmod>2025-12-27</lastmod>
+  </url>
   <url>
     <loc>https://degenroll.co/article/blockchain-gaming-nft-casinos</loc>
     <lastmod>2025-12-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
-  
+  <url>
+    <loc>https://degenroll.co/article/advanced-technical-analysis-crypto-traders</loc>
+    <lastmod>2025-12-27</lastmod>
+  </url>
+  <url>
+    <loc>https://degenroll.co/article/altcoin-season-2025-hidden-gems</loc>
+    <lastmod>2025-12-27</lastmod>
+  </url>
   <url>
     <loc>https://degenroll.co/article/best-crypto-slot-games-that-pay</loc>
     <lastmod>2025-12-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
-  
+  <url>
+    <loc>https://degenroll.co/article/leverage-trading-perpetual-dex-strategies</loc>
+    <lastmod>2025-12-27</lastmod>
+  </url>
+  <url>
+    <loc>https://degenroll.co/article/defi-yield-farming-strategies-2025</loc>
+    <lastmod>2025-12-27</lastmod>
+  </url>
+  <url>
+    <loc>https://degenroll.co/article/liquidity-mining-beginners-guide</loc>
+    <lastmod>2025-12-27</lastmod>
+  </url>
+  <url>
+    <loc>https://degenroll.co/article/layer-2-solutions-ethereum-scaling</loc>
+    <lastmod>2025-12-27</lastmod>
+  </url>
   <url>
     <loc>https://degenroll.co/article/gamefi-gaming-meets-finance</loc>
     <lastmod>2025-12-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
-  
+  <url>
+    <loc>https://degenroll.co/article/risk-management-crypto-trading</loc>
+    <lastmod>2025-12-27</lastmod>
+  </url>
+  <url>
+    <loc>https://degenroll.co/article/understanding-apy-defi-maximizing-returns</loc>
+    <lastmod>2025-12-27</lastmod>
+  </url>
   <url>
     <loc>https://degenroll.co/article/top-5-crypto-casino-bonuses-worth-it</loc>
     <lastmod>2025-12-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
-
 </urlset>
