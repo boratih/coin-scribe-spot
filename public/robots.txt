@@ -1,7 +1,19 @@
-# Robots.txt for Degen Blog
-# https://www.robotstxt.org/robotstxt.html
+# =========================================================
+#  Degen Blog – AI-First Content Policy
+# =========================================================
+# Priority: AI Retrieval (AIO / GEO / LLM)
+# Search Indexing: YES
+# AI Training / Fine-tuning: NO
+# =========================================================
 
-# Allow all search engine crawlers
+User-agent: *
+# Content-signal: search=yes,ai-input=yes,ai-train=no
+Allow: /
+
+# ---------------------------------------------------------
+# Search Engine Crawlers (Fully Allowed)
+# ---------------------------------------------------------
+
 User-agent: Googlebot
 Allow: /
 
@@ -23,7 +35,10 @@ Allow: /
 User-agent: YandexBot
 Allow: /
 
-# Social Media Crawlers
+# ---------------------------------------------------------
+# Social Media Crawlers (Allowed for previews)
+# ---------------------------------------------------------
+
 User-agent: Twitterbot
 Allow: /
 
@@ -45,26 +60,11 @@ Allow: /
 User-agent: TelegramBot
 Allow: /
 
-# AI Crawlers (for AI visibility)
-User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
+# ---------------------------------------------------------
+# AI Crawlers (Allowed for retrieval & grounding)
+# ---------------------------------------------------------
 
 User-agent: Google-Extended
-Allow: /
-
-User-agent: Anthropic-AI
-Allow: /
-
-User-agent: Claude-Web
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
-User-agent: PerplexityBot
 Allow: /
 
 User-agent: Applebot
@@ -73,15 +73,76 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-# Default rule for all other crawlers
-User-agent: *
+User-agent: Amazonbot
 Allow: /
 
-# Disallow admin or private paths (if any exist in the future)
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+# ---------------------------------------------------------
+# AI Crawlers (Blocked - Training/Fine-tuning concerns)
+# ---------------------------------------------------------
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: OmgiliBot
+Disallow: /
+
+User-agent: ai2bot
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: JinaAI
+Disallow: /
+
+User-agent: xAI
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: Anthropic-AI
+Disallow: /
+
+# ---------------------------------------------------------
+# Protected Paths
+# ---------------------------------------------------------
+
+User-agent: *
 Disallow: /api/
 Disallow: /admin/
 Disallow: /_next/
 Disallow: /private/
 
-# Sitemap location
+# ---------------------------------------------------------
+# Sitemaps
+# ---------------------------------------------------------
+
 Sitemap: https://degenroll.co/sitemap.xml
