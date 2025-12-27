@@ -6,10 +6,12 @@ import { Badge } from "@/components/ui/badge";
 import { articles } from "@/data/articles";
 import ArticleCard from "@/components/ArticleCard";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { getArticleIdFromSlug, getSlugFromArticleId } from "@/lib/slugs";
 
 const Article = () => {
-  const { id } = useParams();
-  const article = articles.find(a => a.id === id);
+  const { slug } = useParams();
+  const articleId = getArticleIdFromSlug(slug || "");
+  const article = articles.find(a => a.id === articleId);
 
   if (!article) {
     return (
