@@ -1,17 +1,17 @@
 # =========================================================
-#  Degen Blog – AI-First Content Policy
+#  degenroll.co - Crawling & AI Access Policy
 # =========================================================
-# Priority: AI Retrieval (AIO / GEO / LLM)
-# Search Indexing: YES
-# AI Training / Fine-tuning: NO
+#  Search Engine Indexing: ALLOWED
+#  AI Retrieval & Grounding: ALLOWED
+#  AI Model Training: BLOCKED
 # =========================================================
 
+# Default: Allow all crawlers for content discovery
 User-agent: *
-# Content-signal: search=yes,ai-input=yes,ai-train=no
 Allow: /
 
 # ---------------------------------------------------------
-# Search Engine Crawlers (Fully Allowed)
+# Major Search Engines - Full Access
 # ---------------------------------------------------------
 
 User-agent: Googlebot
@@ -35,8 +35,11 @@ Allow: /
 User-agent: YandexBot
 Allow: /
 
+User-agent: AdsBot-Google
+Allow: /
+
 # ---------------------------------------------------------
-# Social Media Crawlers (Allowed for previews)
+# Social Platforms - Enable Link Previews & Sharing
 # ---------------------------------------------------------
 
 User-agent: Twitterbot
@@ -60,8 +63,12 @@ Allow: /
 User-agent: TelegramBot
 Allow: /
 
+User-agent: WhatsApp
+Allow: /
+
 # ---------------------------------------------------------
-# AI Crawlers (Allowed for retrieval & grounding)
+# AI Retrieval Bots - Allowed for Search & Answers
+# These crawlers power AI search results and grounding
 # ---------------------------------------------------------
 
 User-agent: Google-Extended
@@ -79,14 +86,22 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: AdsBot-Google
+User-agent: YouBot
+Allow: /
+
+User-agent: Neeva
 Allow: /
 
 # ---------------------------------------------------------
-# AI Crawlers (Blocked - Training/Fine-tuning concerns)
+# AI Training Crawlers - Blocked
+# These crawlers collect data for model training
+# We block them to protect original content
 # ---------------------------------------------------------
 
 User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
 Disallow: /
 
 User-agent: ClaudeBot
@@ -95,10 +110,13 @@ Disallow: /
 User-agent: Claude-Web
 Disallow: /
 
-User-agent: ChatGPT-User
+User-agent: Anthropic-AI
 Disallow: /
 
 User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: FacebookBot
 Disallow: /
 
 User-agent: Bytespider
@@ -107,32 +125,26 @@ Disallow: /
 User-agent: CCBot
 Disallow: /
 
-User-agent: OmgiliBot
-Disallow: /
-
-User-agent: ai2bot
-Disallow: /
-
 User-agent: cohere-ai
-Disallow: /
-
-User-agent: JinaAI
-Disallow: /
-
-User-agent: xAI
 Disallow: /
 
 User-agent: Diffbot
 Disallow: /
 
-User-agent: ImagesiftBot
+User-agent: ai2bot
 Disallow: /
 
-User-agent: Anthropic-AI
+User-agent: OmgiliBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: Scrapy
 Disallow: /
 
 # ---------------------------------------------------------
-# Protected Paths
+# System & Private Paths - Always Blocked
 # ---------------------------------------------------------
 
 User-agent: *
@@ -140,9 +152,10 @@ Disallow: /api/
 Disallow: /admin/
 Disallow: /_next/
 Disallow: /private/
+Disallow: /*.json$
 
 # ---------------------------------------------------------
-# Sitemaps
+# Sitemap Location
 # ---------------------------------------------------------
 
 Sitemap: https://degenroll.co/sitemap.xml
