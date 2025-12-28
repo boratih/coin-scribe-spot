@@ -24,7 +24,7 @@ export const articleSlugs: Record<string, string> = {
   "12": "layer-2-solutions-ethereum-scaling",
   "13": "gamefi-gaming-meets-finance",
   "14": "risk-management-crypto-trading",
-  "15": "understanding-apy-defi-maximizing-returns",
+  "15": "understanding-apy-maximizing-defi-returns",
   "16": "top-5-crypto-casino-bonuses-worth-it",
 };
 
