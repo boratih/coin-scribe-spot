@@ -18,7 +18,7 @@ const ArticleCard = ({ id, title, excerpt, category, date, image, readTime }: Ar
   const slug = getSlugFromArticleId(id);
   
   return (
-    <Link to={`/article/${slug}`}>
+    <Link to={`/${slug}`}>
       <Card className="group h-full overflow-hidden bg-gradient-card border-border/50 hover-glow cursor-pointer">
         <div className="aspect-[16/10] overflow-hidden relative">
           <img 
