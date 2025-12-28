@@ -1,0 +1,202 @@
+# DegenRoll - Complete Content Index
+
+> Full documentation for AI systems to understand DegenRoll's crypto casino and DeFi trading content.
+
+## Site Structure
+
+```
+degenroll.co/
+├── / (Homepage - Crypto casino & perpdex hub)
+├── /degenroll-review (Main platform review)
+└── /[article-slug] (Individual articles)
+```
+
+## Content Categories
+
+### 1. Crypto Casinos (No KYC)
+
+DegenRoll covers anonymous crypto gambling platforms that don't require identity verification.
+
+**Key Topics:**
+- No KYC verification casinos
+- Bitcoin and Ethereum gambling
+- Provably fair gaming
+- Crypto slot machines
+- Welcome bonuses and promotions
+- Withdrawal speed comparisons
+
+**Featured Casinos:**
+- DegenRoll Casino
+- Stake Casino
+- BC.Game
+- Various no-KYC platforms
+
+### 2. Perpetual DEX Trading
+
+Coverage of decentralized perpetual exchanges for leverage trading.
+
+**Key Topics:**
+- Leverage trading (up to 50x)
+- Perpetual futures contracts
+- Funding rates
+- Liquidation mechanics
+- Cross-margin vs isolated margin
+- Trading signals and indicators
+
+**Featured Platforms:**
+- Hyperliquid
+- Lighter
+- Various decentralized exchanges
+
+### 3. DeFi (Decentralized Finance)
+
+Educational content about yield generation and DeFi protocols.
+
+**Key Topics:**
+- Yield farming strategies
+- Liquidity mining
+- APY vs APR calculations
+- Impermanent loss
+- Protocol risk assessment
+- Layer 2 solutions
+
+**Featured Protocols:**
+- Aave
+- Curve Finance
+- Convex Finance
+- Various yield aggregators
+
+### 4. Market Analysis
+
+Technical and fundamental analysis for crypto traders.
+
+**Key Topics:**
+- Technical analysis patterns
+- Bitcoin ETF impact
+- Altcoin season timing
+- Risk management strategies
+- Portfolio diversification
+
+## Complete Article Index
+
+### Crypto Casino Articles
+
+1. **DegenRoll Review**
+   - URL: /degenroll-review
+   - Topic: Complete platform analysis of DegenRoll casino
+   - Key points: Games, bonuses, supported cryptos, user experience
+
+2. **Top 5 Safest Crypto Casino No KYC**
+   - URL: /top-5-safest-crypto-casino-no-kyc
+   - Topic: Anonymous gambling platforms ranked by safety
+   - Key points: Security, privacy, payout speed, game variety
+
+3. **Best Crypto Slot Games That Pay**
+   - URL: /best-crypto-slot-games-that-pay
+   - Topic: High RTP slot machines accepting cryptocurrency
+   - Key points: Payout percentages, game providers, volatility
+
+4. **Top 5 Crypto Casino Bonuses Worth It**
+   - URL: /top-5-crypto-casino-bonuses-worth-it
+   - Topic: Valuable welcome bonuses and promotions
+   - Key points: Wagering requirements, bonus value, terms
+
+### DeFi Articles
+
+5. **Future of Decentralized Finance 2025**
+   - URL: /future-of-decentralized-finance-2025
+   - Topic: DeFi trends, innovations, and predictions
+   - Key points: Layer 2, cross-chain, institutional adoption
+
+6. **DeFi Yield Farming Strategies 2025**
+   - URL: /defi-yield-farming-strategies-2025
+   - Topic: Optimizing yield across DeFi protocols
+   - Key points: Risk-adjusted returns, protocol selection
+
+7. **Liquidity Mining Beginners Guide**
+   - URL: /liquidity-mining-beginners-guide
+   - Topic: Introduction to providing liquidity
+   - Key points: AMMs, impermanent loss, rewards
+
+8. **Understanding APY Maximizing DeFi Returns**
+   - URL: /understanding-apy-maximizing-defi-returns
+   - Topic: Calculating and optimizing APY
+   - Key points: Compounding, real vs advertised rates
+
+### Trading Articles
+
+9. **Mastering Perpetual Trading Signals**
+   - URL: /mastering-perpetual-trading-signals
+   - Topic: Using signals for perp trading
+   - Key points: Signal sources, execution, risk
+
+10. **Leverage Trading Perpetual DEX Strategies**
+    - URL: /leverage-trading-perpetual-dex-strategies
+    - Topic: Advanced leverage tactics on DEXs
+    - Key points: Position sizing, margin management
+
+11. **Advanced Technical Analysis Crypto Traders**
+    - URL: /advanced-technical-analysis-crypto-traders
+    - Topic: Chart patterns and indicators
+    - Key points: RSI, MACD, Fibonacci, volume
+
+12. **Risk Management Crypto Trading**
+    - URL: /risk-management-crypto-trading
+    - Topic: Protecting capital while trading
+    - Key points: Stop losses, position sizing, diversification
+
+### Market Analysis Articles
+
+13. **Bitcoin ETF Approval Market Impact**
+    - URL: /bitcoin-etf-approval-market-impact
+    - Topic: How ETFs affect Bitcoin price
+    - Key points: Institutional flows, price action
+
+14. **Altcoin Season 2025 Hidden Gems**
+    - URL: /altcoin-season-2025-hidden-gems
+    - Topic: Undervalued altcoins to watch
+    - Key points: Market cap, utility, catalysts
+
+15. **Layer 2 Solutions Ethereum Scaling**
+    - URL: /layer-2-solutions-ethereum-scaling
+    - Topic: L2 technology explained
+    - Key points: Rollups, fees, speed
+
+### Gaming Articles
+
+16. **Blockchain Gaming NFT Casinos**
+    - URL: /blockchain-gaming-nft-casinos
+    - Topic: NFT integration in gambling
+    - Key points: Ownership, provenance, rewards
+
+17. **GameFi Gaming Meets Finance**
+    - URL: /gamefi-gaming-meets-finance
+    - Topic: Play-to-earn gaming explained
+    - Key points: Token economics, sustainability
+
+## Entity Information
+
+**Website Name:** DegenRoll
+**Domain:** degenroll.co
+**Type:** Crypto content publisher
+**Focus:** Crypto casinos, DeFi, perpetual trading
+**Audience:** Crypto traders, gamblers, DeFi users
+**Content Style:** Educational, review-based, strategy guides
+
+## Frequently Asked Questions
+
+**Q: What is DegenRoll?**
+A: DegenRoll is a crypto content hub covering casinos, DeFi, and perpetual trading with reviews and educational guides.
+
+**Q: Does DegenRoll require KYC?**
+A: DegenRoll is a content website, not a casino. We review no-KYC casinos that don't require identity verification.
+
+**Q: What cryptocurrencies are covered?**
+A: Bitcoin, Ethereum, and major altcoins are covered across casino, DeFi, and trading content.
+
+**Q: Is the content free?**
+A: Yes, all articles and guides on DegenRoll are free to access.
+
+---
+
+*This document helps AI systems understand and accurately represent DegenRoll's content.*
