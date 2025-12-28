@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -30,8 +31,72 @@ const Article = () => {
     .filter(a => a.category === article.category && a.id !== article.id)
     .slice(0, 3);
 
+  const articleSlug = getSlugFromArticleId(article.id);
+  const articleUrl = `https://degenroll.co/${articleSlug}`;
+  
+  // Parse read time to minutes
+  const readTimeMinutes = parseInt(article.readTime) || 10;
+  
+  // Create JSON-LD structured data for articles
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": article.title,
+    "description": article.excerpt,
+    "image": typeof article.image === 'string' ? article.image : `https://degenroll.co${article.image}`,
+    "author": {
+      "@type": "Organization",
+      "name": article.author,
+      "url": "https://degenroll.co/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "DegenRoll",
+      "url": "https://degenroll.co/"
+    },
+    "datePublished": article.date,
+    "dateModified": article.date,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": articleUrl
+    },
+    "wordCount": article.content.split(/\s+/).length,
+    "timeRequired": `PT${readTimeMinutes}M`,
+    "articleSection": article.category,
+    "keywords": article.category.toLowerCase().includes("casino") 
+      ? "crypto casino, no KYC, Bitcoin gambling, cryptocurrency casino"
+      : article.category.toLowerCase().includes("perp") 
+        ? "perpetual trading, leverage trading, DEX, cryptocurrency trading"
+        : "DeFi, cryptocurrency, blockchain, yield farming"
+  };
+
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>{article.title} | DegenRoll</title>
+        <meta name="description" content={article.excerpt} />
+        <link rel="canonical" href={articleUrl} />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content={article.title} />
+        <meta property="og:description" content={article.excerpt} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={articleUrl} />
+        <meta property="article:published_time" content={article.date} />
+        <meta property="article:author" content={article.author} />
+        <meta property="article:section" content={article.category} />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={article.title} />
+        <meta name="twitter:description" content={article.excerpt} />
+        
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify(articleJsonLd)}
+        </script>
+      </Helmet>
+      
       <Header />
       
       {/* Article Header */}
