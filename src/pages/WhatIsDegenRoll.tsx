@@ -96,16 +96,18 @@ const WhatIsDegenRoll = () => {
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
-                  It is not part of the{" "}
-                  <a
-                    href="https://gmgengine.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary hover:text-primary/80 underline underline-offset-4 transition-colors"
-                  >
-                    GMG Engine
-                  </a>{" "}
-                  and makes no engine-level claims.
+                  <span>
+                    It is not part of the{" "}
+                    <a
+                      href="https://gmgengine.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:text-primary/80 underline underline-offset-4 transition-colors"
+                    >
+                      GMG Engine
+                    </a>{" "}
+                    and makes no engine-level claims.
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
