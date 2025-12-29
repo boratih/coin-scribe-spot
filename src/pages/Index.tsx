@@ -52,12 +52,6 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>DegenRoll | No-KYC Crypto Casino & Perpetual Trading Guides</title>
-        <meta
-          name="description"
-          content="DegenRoll is a no-KYC crypto casino that offers instant deposits, instant withdrawals, and supports 9+ blockchain networks for seamless, high-velocity gameplay."
-        />
-        <link rel="canonical" href="https://degenroll.co" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
