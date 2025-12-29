@@ -9,6 +9,7 @@ degenroll.co/
 ├── / (Homepage - Crypto casino & perpdex hub)
 ├── /degenroll-review (Main platform review)
 ├── /technology (GMG Engine infrastructure)
+├── /glossary (Crypto terminology definitions)
 └── /[article-slug] (Individual articles)
 ```
 
@@ -181,6 +182,14 @@ Technical and fundamental analysis for crypto traders.
     - URL: /technology
     - Topic: Crypto settlement infrastructure
     - Key points: Deterministic accounting, verifiable transactions, replay-based verification, multi-network payments
+
+### Reference
+
+19. **Glossary**
+    - URL: /glossary
+    - Topic: Crypto terminology and definitions
+    - Key points: DeFi terms, trading vocabulary, blockchain infrastructure definitions
+    - Terms included: GMG Engine
 
 ## Technology Partners
 

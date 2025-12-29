@@ -39,6 +39,12 @@ const Header = () => {
           >
             Technology
           </Link>
+          <Link 
+            to="/glossary" 
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          >
+            Glossary
+          </Link>
         </nav>
 
         <div className="hidden md:flex items-center gap-3">
@@ -92,6 +98,13 @@ const Header = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               Technology
+            </Link>
+            <Link 
+              to="/glossary" 
+              className="text-sm font-medium py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Glossary
             </Link>
             <div className="flex gap-2 pt-2">
               <Button 
