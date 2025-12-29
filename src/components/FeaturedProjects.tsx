@@ -118,7 +118,7 @@ const FeaturedProjects = ({ categoryFilter }: FeaturedProjectsProps) => {
       <div className="container">
         <div className="mb-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-2">
-            {activeCategory === "gaming" ? "Top Crypto Casinos" : "Top Perpetual DEXs"} — {new Date().getFullYear()}
+            {activeCategory === "gaming" ? "Top Crypto Casinos" : "Top Perpetual DEXs"} {new Date().getFullYear()}
           </h2>
           <p className="text-muted-foreground">
             Reviewed and ranked by our team of degen experts

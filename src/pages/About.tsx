@@ -57,7 +57,7 @@ const About = () => {
               </p>
 
               <p>
-                For a precise definition of what DegenRoll is—and is not—see our dedicated page:{" "}
+                For a precise definition of what DegenRoll is (and is not), see our dedicated page:{" "}
                 <Link
                   to="/about/what-is-degenroll"
                   className="text-primary hover:text-primary/80 underline underline-offset-4 transition-colors"

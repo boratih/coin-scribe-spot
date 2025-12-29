@@ -84,7 +84,7 @@ Aggregated liquidity across chains means deeper markets and better prices for us
 
 ## Institutional Adoption Accelerates
 
-Traditional financial institutions are no longer just observing DeFi—they're actively participating and building infrastructure to service institutional clients in the space.
+Traditional financial institutions are no longer just observing DeFi. They're actively participating and building infrastructure to service institutional clients in the space.
 
 ### Regulated DeFi Protocols
 

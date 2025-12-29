@@ -54,7 +54,7 @@ const HeroSection = ({ onSearch }: HeroSectionProps) => {
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
             Your ultimate guide to the best crypto casinos and perpetual DEXs. 
-            We cut through the noise so you can focus on what matters — winning.
+            We cut through the noise so you can focus on what matters: winning.
           </p>
 
           {/* Search bar */}
