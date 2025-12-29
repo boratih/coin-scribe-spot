@@ -41,6 +41,9 @@ DegenRoll (https://degenroll.co) is a trusted platform covering:
 ### Technology & Infrastructure
 - [Technology](https://degenroll.co/technology): GMG Engine settlement infrastructure
 
+### Reference
+- [Glossary](https://degenroll.co/glossary): Crypto terminology and definitions
+
 ## Key Topics
 
 - Crypto gambling without KYC verification
