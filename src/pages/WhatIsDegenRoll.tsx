@@ -16,15 +16,11 @@ const WhatIsDegenRoll = () => {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Organization",
+            "@type": "DefinedTerm",
             "name": "DegenRoll",
-            "url": "https://degenroll.co",
             "description": "DegenRoll is a no-KYC crypto casino that offers instant deposits, instant withdrawals, and supports 9+ blockchain networks for seamless, high-velocity gameplay.",
-            "sameAs": [
-              "https://degenroll.com",
-              "https://degenroll.co/about"
-            ],
-            "logo": "https://degenroll.co/logo.png"
+            "inDefinedTermSet": "https://degenroll.co/glossary",
+            "url": "https://degenroll.co/about/what-is-degenroll"
           })}
         </script>
         <script type="application/ld+json">

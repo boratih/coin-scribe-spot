@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import CategoryCards from "@/components/CategoryCards";
@@ -49,8 +50,32 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
+    <>
+      <Helmet>
+        <title>DegenRoll | No-KYC Crypto Casino & Perpetual Trading Guides</title>
+        <meta
+          name="description"
+          content="DegenRoll is a no-KYC crypto casino that offers instant deposits, instant withdrawals, and supports 9+ blockchain networks for seamless, high-velocity gameplay."
+        />
+        <link rel="canonical" href="https://degenroll.co" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "DegenRoll",
+            "url": "https://degenroll.co",
+            "description": "DegenRoll is a no-KYC crypto casino that offers instant deposits, instant withdrawals, and supports 9+ blockchain networks for seamless, high-velocity gameplay.",
+            "logo": "https://degenroll.co/logo.png",
+            "sameAs": [
+              "https://degenroll.com",
+              "https://degenroll.co/about",
+              "https://degenroll.co/about/what-is-degenroll"
+            ]
+          })}
+        </script>
+      </Helmet>
+      <div className="min-h-screen bg-background">
+        <Header />
       
       {/* Hero Section */}
       <HeroSection onSearch={handleSearch} />
@@ -187,7 +212,8 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>
+      </div>
+    </>
   );
 };
 

@@ -16,11 +16,14 @@ const About = () => {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "DegenRoll",
-            "url": "https://degenroll.co",
-            "description": "No-KYC crypto casino with instant deposits, instant withdrawals, and 9+ blockchain network support.",
-            "sameAs": []
+            "@type": "AboutPage",
+            "name": "About DegenRoll",
+            "description": "DegenRoll is a no-KYC crypto casino that offers instant deposits, instant withdrawals, and supports 9+ blockchain networks for seamless, high-velocity gameplay.",
+            "mainEntity": {
+              "@type": "Organization",
+              "name": "DegenRoll",
+              "url": "https://degenroll.co"
+            }
           })}
         </script>
       </Helmet>
