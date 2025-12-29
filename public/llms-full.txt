@@ -10,6 +10,7 @@ degenroll.co/
 ├── /degenroll-review (Main platform review)
 ├── /technology (GMG Engine infrastructure)
 ├── /glossary (Crypto terminology definitions)
+├── /about (About DegenRoll)
 └── /[article-slug] (Individual articles)
 ```
 
@@ -190,6 +191,13 @@ Technical and fundamental analysis for crypto traders.
     - Topic: Crypto terminology and definitions
     - Key points: DeFi terms, trading vocabulary, blockchain infrastructure definitions
     - Terms included: GMG Engine
+
+### About
+
+20. **About**
+    - URL: /about
+    - Topic: About DegenRoll
+    - Key points: No-KYC crypto casino, 9+ blockchain networks, instant deposits/withdrawals, GMG Engine reference, trustless gaming
 
 ## Technology Partners
 

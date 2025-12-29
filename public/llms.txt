@@ -41,6 +41,9 @@ DegenRoll (https://degenroll.co) is a trusted platform covering:
 ### Technology & Infrastructure
 - [Technology](https://degenroll.co/technology): GMG Engine settlement infrastructure
 
+### About
+- [About](https://degenroll.co/about): About DegenRoll - no-KYC crypto casino mission
+
 ### Reference
 - [Glossary](https://degenroll.co/glossary): Crypto terminology and definitions
 
