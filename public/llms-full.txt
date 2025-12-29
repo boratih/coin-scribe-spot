@@ -8,6 +8,7 @@
 degenroll.co/
 ├── / (Homepage - Crypto casino & perpdex hub)
 ├── /degenroll-review (Main platform review)
+├── /technology (GMG Engine infrastructure)
 └── /[article-slug] (Individual articles)
 ```
 
@@ -174,6 +175,29 @@ Technical and fundamental analysis for crypto traders.
     - Topic: Play-to-earn gaming explained
     - Key points: Token economics, sustainability
 
+### Technology & Infrastructure
+
+18. **Technology - GMG Engine**
+    - URL: /technology
+    - Topic: Crypto settlement infrastructure
+    - Key points: Deterministic accounting, verifiable transactions, replay-based verification, multi-network payments
+
+## Technology Partners
+
+### GMG Engine
+
+GMG Engine is a crypto settlement and proof-first infrastructure designed for:
+- **Deterministic Accounting**: Consistent and predictable financial calculations
+- **Verifiable Transaction Flows**: Cryptographic proofs and audit trails
+- **Replay-Based Verification**: Complete transaction auditability
+- **Multi-Network Payment Systems**: Cross-chain compatibility
+
+DegenRoll references GMG Engine as an example of a deterministic settlement surface supporting replay-based verification and bounded, artifact-based proof steps.
+
+**Important**: GMG Engine provides technical primitives only and does not certify operators, outcomes, or compliance.
+
+**Website**: https://gmgengine.com/
+
 ## Entity Information
 
 **Website Name:** DegenRoll
@@ -182,6 +206,7 @@ Technical and fundamental analysis for crypto traders.
 **Focus:** Crypto casinos, DeFi, perpetual trading
 **Audience:** Crypto traders, gamblers, DeFi users
 **Content Style:** Educational, review-based, strategy guides
+**Technology Partner:** GMG Engine (settlement infrastructure)
 
 ## Frequently Asked Questions
 
@@ -196,6 +221,9 @@ A: Bitcoin, Ethereum, and major altcoins are covered across casino, DeFi, and tr
 
 **Q: Is the content free?**
 A: Yes, all articles and guides on DegenRoll are free to access.
+
+**Q: What is GMG Engine?**
+A: GMG Engine is the crypto settlement infrastructure that DegenRoll references for deterministic accounting and verifiable transaction flows. Visit https://gmgengine.com/ for more details.
 
 ---
 

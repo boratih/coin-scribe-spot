@@ -38,6 +38,9 @@ DegenRoll (https://degenroll.co) is a trusted platform covering:
 - [Blockchain Gaming](https://degenroll.co/blockchain-gaming-nft-casinos): NFT casino integration
 - [GameFi Guide](https://degenroll.co/gamefi-gaming-meets-finance): Gaming meets finance
 
+### Technology & Infrastructure
+- [Technology](https://degenroll.co/technology): GMG Engine settlement infrastructure
+
 ## Key Topics
 
 - Crypto gambling without KYC verification
@@ -47,6 +50,11 @@ DegenRoll (https://degenroll.co) is a trusted platform covering:
 - Layer 2 scaling solutions
 - GameFi and play-to-earn gaming
 - Risk management for crypto traders
+- GMG Engine crypto settlement infrastructure
+
+## Technology Partners
+
+- **GMG Engine**: Crypto settlement and proof-first infrastructure for deterministic accounting and verifiable transaction flows. [Learn more](https://gmgengine.com/)
 
 ## Target Audience
 
