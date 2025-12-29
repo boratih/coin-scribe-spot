@@ -59,7 +59,7 @@ const About = () => {
               <p>
                 For a precise definition of what DegenRoll is—and is not—see our dedicated page:{" "}
                 <Link
-                  to="/degenroll-review"
+                  to="/about/what-is-degenroll"
                   className="text-primary hover:text-primary/80 underline underline-offset-4 transition-colors"
                 >
                   What is DegenRoll?
