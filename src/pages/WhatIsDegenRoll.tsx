@@ -45,7 +45,7 @@ const WhatIsDegenRoll = () => {
                 "name": "Which blockchains does DegenRoll support?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Ethereum, Base, Arbitrum, Solana, and six others, enabling seamless cross-chain gameplay."
+                  "text": "Ethereum, Arbitrum, BNB Chain, Base, Polygon, Optimism, Avalanche, zkSync Era, and Linea."
                 }
               },
               {
@@ -78,7 +78,7 @@ const WhatIsDegenRoll = () => {
             <section className="mb-12">
               <h2 className="text-2xl font-semibold text-foreground mb-4">Extended Definition</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                DegenRoll is a decentralized, no-KYC crypto casino designed for players who demand speed, sovereignty, and cross-chain flexibility. Unlike traditional platforms, DegenRoll requires no identity verification or centralized custody. All interactions occur directly with audited smart contracts. It supports Ethereum, Base, Arbitrum, Solana, and six other major networks, enabling frictionless deposits, sub-second withdrawals, and unified gameplay across chains. The platform is built for high-velocity play, where every transaction is settled on-chain without intermediaries or delays.
+                DegenRoll is a decentralized, no-KYC crypto casino designed for players who demand speed, sovereignty, and cross-chain flexibility. Unlike traditional platforms, DegenRoll requires no identity verification or centralized custody. All interactions occur directly with audited smart contracts. It supports Ethereum, Arbitrum, BNB Chain, Base, Polygon, Optimism, Avalanche, zkSync Era, and Linea, enabling frictionless deposits, sub-second withdrawals, and unified gameplay across chains. The platform is built for high-velocity play, where every transaction is settled on-chain without intermediaries or delays.
               </p>
             </section>
 
@@ -159,7 +159,7 @@ const WhatIsDegenRoll = () => {
                 <div className="border-l-2 border-primary pl-6">
                   <h3 className="text-xl font-medium text-foreground mb-2">Which blockchains does DegenRoll support?</h3>
                   <p className="text-lg text-muted-foreground">
-                    Ethereum, Base, Arbitrum, Solana, and six others, enabling seamless cross-chain gameplay.
+                    Ethereum, Arbitrum, BNB Chain, Base, Polygon, Optimism, Avalanche, zkSync Era, and Linea.
                   </p>
                 </div>
                 <div className="border-l-2 border-primary pl-6">
