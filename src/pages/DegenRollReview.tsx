@@ -40,7 +40,7 @@ const DegenRollReview = () => {
   ];
 
   const pros = [
-    "No KYC — full privacy",
+    "No KYC, full privacy",
     "Accepts all major cryptos",
     "Massive game library",
     "Sports betting included",
@@ -514,7 +514,7 @@ const DegenRollReview = () => {
           <CardContent className="p-12 text-center relative">
             <Badge className="text-2xl px-6 py-3 bg-gradient-primary border-0 mb-6">
               <Star className="w-6 h-6 mr-2 fill-current" />
-              Our Verdict — 4.6 / 5
+              Our Verdict: 4.6 / 5
             </Badge>
             <h2 className="text-3xl font-bold text-white mb-4">
               A Fresh, No-KYC Crypto Casino with Huge Potential
