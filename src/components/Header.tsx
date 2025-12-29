@@ -33,6 +33,12 @@ const Header = () => {
           >
             Perpetuals
           </Link>
+          <Link 
+            to="/technology" 
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          >
+            Technology
+          </Link>
         </nav>
 
         <div className="hidden md:flex items-center gap-3">
@@ -79,6 +85,13 @@ const Header = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               Perpetuals
+            </Link>
+            <Link 
+              to="/technology" 
+              className="text-sm font-medium py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Technology
             </Link>
             <div className="flex gap-2 pt-2">
               <Button 
