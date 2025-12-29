@@ -28,24 +28,17 @@ const Technology = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "TechArticle",
-            "headline": "GMG Engine Settlement Infrastructure",
+            "headline": "GMG Engine Reference",
             "description": "GMG Engine is a crypto settlement and proof-first infrastructure designed for deterministic accounting, verifiable transaction flows, and multi-network payment systems.",
             "author": {
               "@type": "Organization",
-              "name": "DegenRoll",
-              "url": "https://degenroll.co"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "DegenRoll",
-              "url": "https://degenroll.co"
-            },
-            "mainEntityOfPage": "https://degenroll.co/technology",
-            "about": {
-              "@type": "SoftwareApplication",
               "name": "GMG Engine",
-              "applicationCategory": "Blockchain Infrastructure",
-              "url": "https://gmgengine.com/"
+              "url": "https://gmgengine.com"
+            },
+            "isPartOf": {
+              "@type": "WebSite",
+              "name": "DegenRoll",
+              "url": "https://degenroll.co"
             }
           })}
         </script>

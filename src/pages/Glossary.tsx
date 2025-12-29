@@ -53,13 +53,15 @@ const Glossary = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "DefinedTermSet",
-            "name": "DegenRoll Crypto Glossary",
-            "description": "Comprehensive glossary of cryptocurrency, DeFi, and blockchain terminology.",
+            "name": "DegenRoll Glossary",
+            "description": "Official definitions for terms used across DegenRoll and related protocols.",
             "url": "https://degenroll.co/glossary",
             "hasDefinedTerm": glossaryTerms.map(t => ({
               "@type": "DefinedTerm",
+              "termCode": t.term.toLowerCase().replace(/\s+/g, '-'),
               "name": t.term,
-              "description": t.definition
+              "description": t.definition,
+              "inDefinedTermSet": "https://degenroll.co/glossary"
             }))
           })}
         </script>
