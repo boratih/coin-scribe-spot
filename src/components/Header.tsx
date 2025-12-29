@@ -45,6 +45,12 @@ const Header = () => {
           >
             Glossary
           </Link>
+          <Link 
+            to="/about" 
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          >
+            About
+          </Link>
         </nav>
 
         <div className="hidden md:flex items-center gap-3">
@@ -105,6 +111,13 @@ const Header = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               Glossary
+            </Link>
+            <Link 
+              to="/about" 
+              className="text-sm font-medium py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              About
             </Link>
             <div className="flex gap-2 pt-2">
               <Button 

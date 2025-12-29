@@ -8,6 +8,7 @@ import Article from "./pages/Article";
 import DegenRollReview from "./pages/DegenRollReview";
 import Technology from "./pages/Technology";
 import Glossary from "./pages/Glossary";
+import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/degenroll-review" element={<DegenRollReview />} />
           <Route path="/technology" element={<Technology />} />
           <Route path="/glossary" element={<Glossary />} />
+          <Route path="/about" element={<About />} />
           <Route path="/:slug" element={<Article />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         </Routes>
