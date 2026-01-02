@@ -6,8 +6,10 @@ import HeroSection from "@/components/HeroSection";
 import CategoryCards from "@/components/CategoryCards";
 import FeaturedProjects from "@/components/FeaturedProjects";
 import ArticleCard from "@/components/ArticleCard";
+import GuideCard from "@/components/GuideCard";
 import { Button } from "@/components/ui/button";
 import { articles } from "@/data/articles";
+import { cryptoCasinoGuides } from "@/data/cryptoCasinoGuides";
 import degenrollLogo from "@/assets/degenroll-logo.webp";
 import { Twitter, MessageCircle, Send } from "lucide-react";
 
@@ -35,13 +37,23 @@ const Index = () => {
       })
     : degenArticles;
 
-  // Apply search filter
+  // Apply search filter to articles
   const searchedArticles = searchQuery 
     ? filteredArticles.filter(article => 
         article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
         article.excerpt.toLowerCase().includes(searchQuery.toLowerCase())
       )
     : filteredArticles;
+
+  // Filter guides for crypto casino category
+  const searchedGuides = categoryFilter === "gaming"
+    ? (searchQuery 
+        ? cryptoCasinoGuides.filter(guide => 
+            guide.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            guide.excerpt.toLowerCase().includes(searchQuery.toLowerCase())
+          )
+        : cryptoCasinoGuides)
+    : [];
 
   const handleSearch = (query: string) => {
     setSearchQuery(query);
@@ -98,6 +110,25 @@ const Index = () => {
             </div>
           </div>
 
+          {/* Show guides first when on crypto casino tab */}
+          {categoryFilter === "gaming" && searchedGuides.length > 0 && (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+              {searchedGuides.map((guide) => (
+                <GuideCard
+                  key={guide.slug}
+                  slug={guide.slug}
+                  title={guide.title}
+                  excerpt={guide.excerpt}
+                  category={guide.category}
+                  date={guide.date}
+                  image={guide.image}
+                  readTime={guide.readTime}
+                />
+              ))}
+            </div>
+          )}
+
+          {/* Show articles */}
           {searchedArticles.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {searchedArticles.map((article) => (
@@ -114,9 +145,11 @@ const Index = () => {
               ))}
             </div>
           ) : (
-            <div className="text-center py-12">
-              <p className="text-muted-foreground">No articles found matching your search.</p>
-            </div>
+            categoryFilter !== "gaming" && (
+              <div className="text-center py-12">
+                <p className="text-muted-foreground">No articles found matching your search.</p>
+              </div>
+            )
           )}
         </div>
       </section>
