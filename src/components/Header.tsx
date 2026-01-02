@@ -22,12 +22,6 @@ const Header = () => {
             Home
           </Link>
           <Link 
-            to="/guides" 
-            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-          >
-            Crypto Casino Guides
-          </Link>
-          <Link 
             to="/?category=gaming" 
             className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
