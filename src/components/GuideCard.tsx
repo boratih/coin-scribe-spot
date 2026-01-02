@@ -15,7 +15,7 @@ interface GuideCardProps {
 
 const GuideCard = ({ slug, title, excerpt, category, date, image, readTime }: GuideCardProps) => {
   return (
-    <Link to={`/guides/${slug}`}>
+    <Link to={`/${slug}`}>
       <Card className="group h-full overflow-hidden bg-gradient-card border-border/50 hover-glow cursor-pointer">
         <div className="aspect-[16/10] overflow-hidden relative">
           <img 
