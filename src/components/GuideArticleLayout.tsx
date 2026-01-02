@@ -18,13 +18,13 @@ interface GuideArticleLayoutProps {
   metaDescription: string;
   canonicalUrl: string;
   heroImage: string;
-  heroImageAlt: string;
+  heroImageAlt?: string;
   publishDate: string;
-  readTime: string;
-  introduction: React.ReactNode;
+  readTime?: string;
+  introduction?: React.ReactNode;
   children: React.ReactNode;
   faqs: FAQ[];
-  summary: string;
+  summary?: string;
 }
 
 const GuideArticleLayout = ({
@@ -96,20 +96,25 @@ const GuideArticleLayout = ({
             <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">{title}</h1>
             <div className="flex items-center gap-4 text-muted-foreground text-sm mb-6">
               <span>{publishDate}</span>
-              <span>•</span>
-              <span>{readTime}</span>
+              {readTime && (
+                <>
+                  <span>•</span>
+                  <span>{readTime}</span>
+                </>
+              )}
             </div>
             <div className="rounded-xl overflow-hidden mb-6">
               <img
                 src={heroImage}
-                alt={heroImageAlt}
+                alt={heroImageAlt || title}
                 className="w-full h-64 md:h-80 object-cover"
               />
             </div>
-            {/* Key takeaway box */}
-            <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-6 rounded-xl border-l-4 border-primary">
-              {introduction}
-            </div>
+            {introduction && (
+              <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-6 rounded-xl border-l-4 border-primary">
+                {introduction}
+              </div>
+            )}
           </header>
 
           {/* Main Content */}
@@ -151,12 +156,14 @@ const GuideArticleLayout = ({
           </section>
 
           {/* Summary Section */}
-          <section className="mt-10">
-            <div className="bg-card p-6 rounded-xl border border-border/50">
-              <h2 className="text-xl font-bold mb-3">Key Takeaways</h2>
-              <p className="text-muted-foreground leading-relaxed">{summary}</p>
-            </div>
-          </section>
+          {summary && (
+            <section className="mt-10">
+              <div className="bg-card p-6 rounded-xl border border-border/50">
+                <h2 className="text-xl font-bold mb-3">Key Takeaways</h2>
+                <p className="text-muted-foreground leading-relaxed">{summary}</p>
+              </div>
+            </section>
+          )}
         </article>
       </main>
     </>
