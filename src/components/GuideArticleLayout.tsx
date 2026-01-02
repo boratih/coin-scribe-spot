@@ -1,0 +1,166 @@
+import { Helmet } from "react-helmet-async";
+import Header from "@/components/Header";
+import { Link } from "react-router-dom";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
+interface FAQ {
+  question: string;
+  answer: string;
+}
+
+interface GuideArticleLayoutProps {
+  title: string;
+  metaDescription: string;
+  canonicalUrl: string;
+  heroImage: string;
+  heroImageAlt: string;
+  publishDate: string;
+  readTime: string;
+  introduction: React.ReactNode;
+  children: React.ReactNode;
+  faqs: FAQ[];
+  summary: string;
+}
+
+const GuideArticleLayout = ({
+  title,
+  metaDescription,
+  canonicalUrl,
+  heroImage,
+  heroImageAlt,
+  publishDate,
+  readTime,
+  introduction,
+  children,
+  faqs,
+  summary,
+}: GuideArticleLayoutProps) => {
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description: metaDescription,
+    author: { "@type": "Organization", name: "DegenRoll" },
+    publisher: { "@type": "Organization", name: "DegenRoll", url: "https://degenroll.co" },
+    datePublished: publishDate,
+    dateModified: publishDate,
+    mainEntityOfPage: canonicalUrl,
+    image: heroImage,
+  };
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+
+  return (
+    <>
+      <Helmet>
+        <title>{title} | DegenRoll</title>
+        <meta name="description" content={metaDescription} />
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content={heroImage} />
+        <script type="application/ld+json">{JSON.stringify(articleJsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
+      </Helmet>
+
+      <Header />
+
+      <main className="container max-w-4xl py-8 md:py-12">
+        <nav className="mb-6">
+          <Link to="/?category=gaming" className="text-primary hover:underline text-sm">
+            ← Back to Crypto Casino Guides
+          </Link>
+        </nav>
+
+        <article className="prose prose-lg prose-invert max-w-none">
+          {/* Hero Section */}
+          <header className="mb-10">
+            <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">{title}</h1>
+            <div className="flex items-center gap-4 text-muted-foreground text-sm mb-6">
+              <span>{publishDate}</span>
+              <span>•</span>
+              <span>{readTime}</span>
+            </div>
+            <div className="rounded-xl overflow-hidden mb-6">
+              <img
+                src={heroImage}
+                alt={heroImageAlt}
+                className="w-full h-64 md:h-80 object-cover"
+              />
+            </div>
+            {/* Key takeaway box */}
+            <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-6 rounded-xl border-l-4 border-primary">
+              {introduction}
+            </div>
+          </header>
+
+          {/* Main Content */}
+          <div className="space-y-10">
+            {children}
+          </div>
+
+          {/* FAQ Section - Visible in HTML for AI, interactive for users */}
+          <section className="mt-12 pt-8 border-t border-border/40">
+            <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+            
+            {/* Hidden div with full FAQ content for AI crawlers - visually hidden but in DOM */}
+            <div className="sr-only" aria-hidden="false">
+              {faqs.map((faq, index) => (
+                <div key={`faq-hidden-${index}`}>
+                  <h3>{faq.question}</h3>
+                  <p>{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+            
+            {/* Interactive accordion for users */}
+            <Accordion type="single" collapsible className="w-full space-y-3">
+              {faqs.map((faq, index) => (
+                <AccordionItem
+                  key={index}
+                  value={`faq-${index}`}
+                  className="bg-card/50 rounded-lg border border-border/50 px-4"
+                >
+                  <AccordionTrigger className="text-left hover:text-primary py-4 text-base font-medium">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground pb-4">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </section>
+
+          {/* Summary Section */}
+          <section className="mt-10">
+            <div className="bg-card p-6 rounded-xl border border-border/50">
+              <h2 className="text-xl font-bold mb-3">Key Takeaways</h2>
+              <p className="text-muted-foreground leading-relaxed">{summary}</p>
+            </div>
+          </section>
+        </article>
+      </main>
+    </>
+  );
+};
+
+export default GuideArticleLayout;
