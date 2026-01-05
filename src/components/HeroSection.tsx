@@ -45,7 +45,7 @@ const HeroSection = ({ onSearch }: HeroSectionProps) => {
 
           {/* Main heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            Crypto Casinos & Perpetuals
+            Crypto Casinos
             <span className="block text-gradient">
               For Degens, By Degens
             </span>
@@ -53,7 +53,7 @@ const HeroSection = ({ onSearch }: HeroSectionProps) => {
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Your ultimate guide to the best crypto casinos and perpetual DEXs. 
+            Your ultimate guide to the best crypto casinos with no KYC, instant payouts, and provably fair games. 
             We cut through the noise so you can focus on what matters: winning.
           </p>
 
@@ -62,7 +62,7 @@ const HeroSection = ({ onSearch }: HeroSectionProps) => {
             <div className="relative">
               <Input
                 type="text"
-                placeholder="Search casinos, perpetuals, guides..."
+                placeholder="Search casinos, guides, glossary..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full h-14 pl-6 pr-14 text-lg bg-card/80 border-border/50 rounded-full backdrop-blur-sm focus-visible:ring-primary"
