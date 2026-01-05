@@ -1,32 +1,8 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
-import { BookOpen, ExternalLink } from "lucide-react";
+import { BookOpen, ExternalLink, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
-
-interface GlossaryTerm {
-  term: string;
-  definition: string;
-  link?: { url: string; label: string };
-}
-
-const glossaryTerms: GlossaryTerm[] = [
-  {
-    term: "GMG Engine",
-    definition: "A crypto settlement and proof-first infrastructure designed for deterministic accounting, verifiable transaction flows, and multi-network payment systems.",
-    link: { url: "https://gmgengine.com/", label: "gmgengine.com" }
-  }
-];
-
-// Sort terms alphabetically
-const sortedTerms = [...glossaryTerms].sort((a, b) => a.term.localeCompare(b.term));
-
-// Group by first letter
-const groupedTerms = sortedTerms.reduce((acc, term) => {
-  const letter = term.term[0].toUpperCase();
-  if (!acc[letter]) acc[letter] = [];
-  acc[letter].push(term);
-  return acc;
-}, {} as Record<string, GlossaryTerm[]>);
+import { glossaryTerms, groupedTerms } from "@/data/glossaryTerms";
 
 const Glossary = () => {
   return (
@@ -58,9 +34,10 @@ const Glossary = () => {
             "url": "https://degenroll.co/glossary",
             "hasDefinedTerm": glossaryTerms.map(t => ({
               "@type": "DefinedTerm",
-              "termCode": t.term.toLowerCase().replace(/\s+/g, '-'),
+              "termCode": t.slug,
               "name": t.term,
               "description": t.definition,
+              "url": `https://degenroll.co/glossary/${t.slug}`,
               "inDefinedTermSet": "https://degenroll.co/glossary"
             }))
           })}
@@ -123,28 +100,33 @@ const Glossary = () => {
                   </div>
                   
                   <div className="space-y-4">
-                    {groupedTerms[letter].map(({ term, definition, link }) => (
-                      <div
-                        key={term}
-                        id={term.toLowerCase().replace(/\s+/g, '-')}
-                        className="p-6 rounded-2xl bg-card border border-border hover:border-primary/30 transition-colors scroll-mt-32"
+                    {groupedTerms[letter].map(({ term, slug, definition, link }) => (
+                      <Link
+                        key={slug}
+                        to={`/glossary/${slug}`}
+                        id={slug}
+                        className="block p-6 rounded-2xl bg-card border border-border hover:border-primary/30 transition-colors scroll-mt-32 group"
                       >
-                        <h2 className="text-xl font-semibold mb-3">{term}</h2>
-                        <p className="text-muted-foreground leading-relaxed mb-4">
-                          {definition}
-                        </p>
+                        <div className="flex items-start justify-between gap-4">
+                          <div className="flex-1">
+                            <h2 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
+                              {term}
+                            </h2>
+                            <p className="text-muted-foreground leading-relaxed line-clamp-2">
+                              {definition}
+                            </p>
+                          </div>
+                          <ChevronRight className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0 mt-1" />
+                        </div>
                         {link && (
-                          <a
-                            href={link.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 text-sm text-primary hover:underline"
-                          >
-                            {link.label}
-                            <ExternalLink className="w-3 h-3" />
-                          </a>
+                          <div className="mt-4">
+                            <span className="inline-flex items-center gap-2 text-sm text-primary">
+                              {link.label}
+                              <ExternalLink className="w-3 h-3" />
+                            </span>
+                          </div>
                         )}
-                      </div>
+                      </Link>
                     ))}
                   </div>
                 </div>
