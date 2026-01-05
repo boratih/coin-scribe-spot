@@ -9,6 +9,7 @@ import cryptoBonusesArticle from "@/assets/crypto-bonuses-article.jpg";
 import layer2Article from "@/assets/layer2-article.jpg";
 import liquidityArticle from "@/assets/liquidity-article.jpg";
 import apyArticle from "@/assets/apy-article.jpg";
+import nftGamingArticle from "@/assets/nft-gaming-article.jpg";
 
 export interface CryptoCasinoGuide {
   slug: string;
@@ -22,6 +23,48 @@ export interface CryptoCasinoGuide {
 }
 
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
+  // Top Articles (Priority)
+  { 
+    slug: "top-safest-no-kyc-crypto-casinos", 
+    title: "Top 5 Safest No KYC Crypto Casinos", 
+    category: "Top Picks", 
+    excerpt: "Discover the top 5 safest no KYC crypto casinos offering secure, anonymous gambling with reliable payouts and attractive bonuses.",
+    metaDescription: "Discover the top 5 safest no KYC crypto casinos offering secure, anonymous gambling with reliable payouts and attractive bonuses in 2025.",
+    image: casinoArticle,
+    date: "Jan 4, 2025",
+    readTime: "12 min read"
+  },
+  { 
+    slug: "top-crypto-casino-bonuses", 
+    title: "Top 5 Crypto Casino Bonuses That Are Actually Worth It", 
+    category: "Top Picks", 
+    excerpt: "After testing countless crypto casinos, here are the bonus offers that actually deliver value without hidden traps.",
+    metaDescription: "Discover the top 5 crypto casino bonuses that actually deliver value in 2025. Learn which platforms offer the best rakeback, deposit matches, and rewards.",
+    image: cryptoBonusesArticle,
+    date: "Jan 5, 2025",
+    readTime: "10 min read"
+  },
+  { 
+    slug: "best-crypto-slot-games", 
+    title: "Best Crypto Slot Games That Actually Pay Out", 
+    category: "Top Picks", 
+    excerpt: "Our tested list of high RTP crypto slots with the best payout rates and bonus features for serious players.",
+    metaDescription: "Discover the best crypto slot games with high RTP rates and genuine payout potential. Learn about volatility, bonus features, and provably fair verification.",
+    image: gamingArticle,
+    date: "Jan 4, 2025",
+    readTime: "8 min read"
+  },
+  { 
+    slug: "blockchain-gaming-nft-casinos", 
+    title: "Blockchain Gaming and NFT Casinos", 
+    category: "Top Picks", 
+    excerpt: "The convergence of blockchain gaming and online gambling is creating new opportunities in the crypto casino space.",
+    metaDescription: "Explore how blockchain gaming and NFT integration are transforming crypto casinos. Learn about play-to-earn mechanics, NFT utilities, and the future of gambling.",
+    image: nftGamingArticle,
+    date: "Jan 4, 2025",
+    readTime: "7 min read"
+  },
+
   // Fundamentals
   { 
     slug: "what-is-crypto-casino", 
