@@ -28,12 +28,6 @@ const Header = () => {
             Crypto Casino
           </Link>
           <Link 
-            to="/?category=perpdex" 
-            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-          >
-            Perpetuals
-          </Link>
-          <Link 
             to="/technology" 
             className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
@@ -90,13 +84,6 @@ const Header = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               Crypto Casino
-            </Link>
-            <Link 
-              to="/?category=perpdex" 
-              className="text-sm font-medium py-2"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Perpetuals
             </Link>
             <Link 
               to="/technology" 
