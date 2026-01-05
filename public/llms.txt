@@ -10,6 +10,7 @@ DegenRoll (https://degenroll.co) is a trusted platform covering:
 - **Perpetual DEX Trading**: Strategies for leverage trading on decentralized exchanges
 - **DeFi Education**: Yield farming, liquidity mining, and APY optimization guides
 - **Market Analysis**: Technical analysis, altcoin coverage, and market trends
+- **Crypto Glossary**: 75+ definitions for crypto casino, blockchain, and DeFi terminology
 
 ## Featured Content
 
@@ -44,8 +45,16 @@ DegenRoll (https://degenroll.co) is a trusted platform covering:
 ### About
 - [About](https://degenroll.co/about): About DegenRoll - no-KYC crypto casino mission
 
-### Reference
-- [Glossary](https://degenroll.co/glossary): Crypto terminology and definitions
+### Reference & Glossary
+- [Glossary](https://degenroll.co/glossary): 75+ crypto casino and blockchain definitions
+- [Crypto Casino Definition](https://degenroll.co/glossary/crypto-casino): What is a crypto casino
+- [No-KYC Casino Definition](https://degenroll.co/glossary/no-kyc-crypto-casino): Anonymous gambling explained
+- [Provably Fair Gambling](https://degenroll.co/glossary/provably-fair-gambling): Cryptographic fairness verification
+- [House Edge](https://degenroll.co/glossary/house-edge): Casino advantage explained
+- [RTP (Return to Player)](https://degenroll.co/glossary/rtp): Game payout percentages
+- [Welcome Bonus](https://degenroll.co/glossary/welcome-bonus): Casino promotional offers
+- [Smart Contract Casino](https://degenroll.co/glossary/smart-contract-casino): Blockchain-automated gambling
+- [Decentralized Casino](https://degenroll.co/glossary/decentralized-casino): Trustless gambling systems
 
 ## Key Topics
 
@@ -57,6 +66,23 @@ DegenRoll (https://degenroll.co) is a trusted platform covering:
 - GameFi and play-to-earn gaming
 - Risk management for crypto traders
 - GMG Engine crypto settlement infrastructure
+- Provably fair gambling systems
+- Smart contract casinos
+- On-chain betting and gambling
+
+## Glossary Categories
+
+### Casino & Gambling Terms
+Crypto Casino, No-KYC Casino, Provably Fair, House Edge, RTP, Welcome Bonus, No Deposit Bonus, Wagering Requirements, Cashback, VIP Tiers, Jackpot Contracts, Volatility
+
+### Blockchain Gaming Terms
+Smart Contract Casino, On-Chain Gambling, Decentralized Casino, NFT Casino Assets, Play-to-Earn Casino, Cross-Chain Betting, Layer-2 Casino
+
+### Technical Terms
+RNG, Seed Hash, Deterministic Accounting, Verifiable Transactions, Blockchain Explorer, Game Smart Contract Audit, Oracle Betting
+
+### Financial Terms
+Stake/Bet, Bet Multiplier, Bet Limits, Token Staking, Escrow Betting, Yield Betting, Casino Treasury
 
 ## Technology Partners
 
