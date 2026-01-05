@@ -1,181 +1,605 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
+  <!-- Main Pages -->
   <url>
-
     <loc>https://degenroll.co/</loc>
-
-    <lastmod>2025-12-28</lastmod>
-
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
-
   <url>
-
-    <loc>https://degenroll.co/degenroll-review</loc>
-
-    <lastmod>2025-12-28</lastmod>
-
-  </url>
-
-  <url>
-
-    <loc>https://degenroll.co/future-of-decentralized-finance-2025</loc>
-
-    <lastmod>2025-12-28</lastmod>
-
-  </url>
-
-  <url>
-
-    <loc>https://degenroll.co/top-5-safest-crypto-casino-no-kyc</loc>
-
-    <lastmod>2025-12-28</lastmod>
-
-  </url>
-
-  <url>
-
-    <loc>https://degenroll.co/mastering-perpetual-trading-signals</loc>
-
-    <lastmod>2025-12-28</lastmod>
-
-  </url>
-
-  <url>
-
-    <loc>https://degenroll.co/bitcoin-etf-approval-market-impact</loc>
-
-    <lastmod>2025-12-28</lastmod>
-
-  </url>
-
-  <url>
-
-    <loc>https://degenroll.co/blockchain-gaming-nft-casinos</loc>
-
-    <lastmod>2025-12-28</lastmod>
-
-  </url>
-
-  <url>
-
-    <loc>https://degenroll.co/advanced-technical-analysis-crypto-traders</loc>
-
-    <lastmod>2025-12-28</lastmod>
-
-  </url>
-
-  <url>
-
-    <loc>https://degenroll.co/altcoin-season-2025-hidden-gems</loc>
-
-    <lastmod>2025-12-28</lastmod>
-
-  </url>
-
-  <url>
-
-    <loc>https://degenroll.co/best-crypto-slot-games-that-pay</loc>
-
-    <lastmod>2025-12-28</lastmod>
-
-  </url>
-
-  <url>
-
-    <loc>https://degenroll.co/leverage-trading-perpetual-dex-strategies</loc>
-
-    <lastmod>2025-12-28</lastmod>
-
-  </url>
-
-  <url>
-
-    <loc>https://degenroll.co/defi-yield-farming-strategies-2025</loc>
-
-    <lastmod>2025-12-28</lastmod>
-
-  </url>
-
-  <url>
-
-    <loc>https://degenroll.co/liquidity-mining-beginners-guide</loc>
-
-    <lastmod>2025-12-28</lastmod>
-
-  </url>
-
-  <url>
-
-    <loc>https://degenroll.co/layer-2-solutions-ethereum-scaling</loc>
-
-    <lastmod>2025-12-28</lastmod>
-
-  </url>
-
-  <url>
-
-    <loc>https://degenroll.co/gamefi-gaming-meets-finance</loc>
-
-    <lastmod>2025-12-28</lastmod>
-
-  </url>
-
-  <url>
-
-    <loc>https://degenroll.co/risk-management-crypto-trading</loc>
-
-    <lastmod>2025-12-28</lastmod>
-
-  </url>
-
-  <url>
-
-    <loc>https://degenroll.co/understanding-apy-maximizing-defi-returns</loc>
-
-    <lastmod>2025-12-28</lastmod>
-
-  </url>
-
-  <url>
-
-    <loc>https://degenroll.co/top-5-crypto-casino-bonuses-worth-it</loc>
-
-    <lastmod>2025-12-28</lastmod>
-
-  </url>
-
-  <url>
-
-    <loc>https://degenroll.co/technology</loc>
-
-    <lastmod>2025-12-29</lastmod>
-
-  </url>
-
-  <url>
-
     <loc>https://degenroll.co/glossary</loc>
-
-    <lastmod>2025-12-29</lastmod>
-
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
-
   <url>
-
+    <loc>https://degenroll.co/technology</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://degenroll.co/about</loc>
-
-    <lastmod>2025-12-29</lastmod>
-
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/about/what-is-degenroll</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/degenroll-review</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
+  <!-- Articles -->
   <url>
+    <loc>https://degenroll.co/future-of-decentralized-finance-2025</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/top-5-safest-crypto-casino-no-kyc</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/mastering-perpetual-trading-signals</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/bitcoin-etf-approval-market-impact</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/blockchain-gaming-nft-casinos</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/advanced-technical-analysis-crypto-traders</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/altcoin-season-2025-hidden-gems</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/best-crypto-slot-games-that-pay</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/leverage-trading-perpetual-dex-strategies</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/defi-yield-farming-strategies-2025</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/liquidity-mining-beginners-guide</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/layer-2-solutions-ethereum-scaling</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/gamefi-gaming-meets-finance</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/risk-management-crypto-trading</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/understanding-apy-maximizing-defi-returns</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/top-5-crypto-casino-bonuses-worth-it</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-    <loc>https://degenroll.co/about/what-is-degenroll</loc>
-
-    <lastmod>2025-12-29</lastmod>
-
+  <!-- Glossary Terms (76 terms) -->
+  <url>
+    <loc>https://degenroll.co/glossary/affiliate-program</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/automated-payout-contract</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/bet-limits</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/bet-multiplier</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/blockchain-explorer</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/blockchain-gambling</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/blockchain-provably-fair-audit</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/cashback-lossback</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/casino-ecosystem-layer</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/casino-infrastructure-layer</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/casino-token-economy</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/chain-agnostic-casino</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/chainlink-oracle-betting</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/cold-storage-casino-funds</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/cross-chain-betting</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/cross-platform-wallet</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/crypto-betting-market</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/crypto-casino</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/crypto-casino-governance-token</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/crypto-casino-platform</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/crypto-casino-risk-assessment</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/crypto-casino-treasury</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/crypto-gambling-risks</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/custodial-vs-non-custodial-gambling</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/custodial-vs-non-custodial-wagers</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/decentralized-autonomous-casino</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/decentralized-casino</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/decentralized-jackpot</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/deterministic-accounting</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/deterministic-casino-accounting</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/escrow-betting</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/faucet-casino</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/game-smart-contract-audit</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/game-tokenomics</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/gmg-engine</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/hot-wallet-cold-wallet</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/house-edge</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/instant-crypto-deposits-withdrawals</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/instant-crypto-withdrawals</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/jackpot-contract</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/jackpot-pool</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/jurisdictional-restrictions</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/layer-2-casino</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/loyalty-program-vip-tier</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/multi-chain-support</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/nft-casino-assets</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/no-deposit-bonus</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/no-kyc-crypto-casino</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/on-chain-betting</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/on-chain-gambling</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/peer-to-peer-casino</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/play-to-earn-casino</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/provably-fair-card-games</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/provably-fair-dice-slots-roulette</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/provably-fair-gambling</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/provably-fair-games</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/provably-fair-slots</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/provably-fair-verification-tool</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/provably-random-number</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/replay-based-verification</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/rng</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/rtp</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/seed-hash</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/self-custody-casino-wallet</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/smart-contract-casino</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/smart-contract-games</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/stake-bet</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/token-staking-casino</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/token-swap-exchange</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/tokenized-rewards-loyalty-tokens</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/verifiable-transactions</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/vip-membership-nft</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/volatility</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/volatility-index</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/wagering-requirements</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/welcome-bonus</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://degenroll.co/glossary/yield-betting</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
 </urlset>

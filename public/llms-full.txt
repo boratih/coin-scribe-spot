@@ -9,7 +9,11 @@ degenroll.co/
 ├── / (Homepage - Crypto casino & perpdex hub)
 ├── /degenroll-review (Main platform review)
 ├── /technology (GMG Engine infrastructure)
-├── /glossary (Crypto terminology definitions)
+├── /glossary (Crypto terminology - 75+ definitions)
+│   ├── /glossary/crypto-casino
+│   ├── /glossary/no-kyc-crypto-casino
+│   ├── /glossary/provably-fair-gambling
+│   ├── /glossary/[term-slug] (Individual term pages)
 ├── /about (About DegenRoll)
 └── /[article-slug] (Individual articles)
 ```
@@ -189,8 +193,7 @@ Technical and fundamental analysis for crypto traders.
 19. **Glossary**
     - URL: /glossary
     - Topic: Crypto terminology and definitions
-    - Key points: DeFi terms, trading vocabulary, blockchain infrastructure definitions
-    - Terms included: GMG Engine
+    - Key points: 75+ terms covering crypto casinos, blockchain gambling, DeFi, and trading
 
 ### About
 
@@ -198,6 +201,133 @@ Technical and fundamental analysis for crypto traders.
     - URL: /about
     - Topic: About DegenRoll
     - Key points: No-KYC crypto casino, 9+ blockchain networks, instant deposits/withdrawals, GMG Engine reference, trustless gaming
+
+---
+
+## Complete Glossary Index (75+ Terms)
+
+Each term has a dedicated page at /glossary/[term-slug] with definition, extended explanation, and related information.
+
+### A
+- **Affiliate Program** (/glossary/affiliate-program): Referral system where promoters earn commissions for bringing new users.
+- **Automated Payout Contract** (/glossary/automated-payout-contract): Smart contract executing withdrawals automatically.
+
+### B
+- **Bet Limits** (/glossary/bet-limits): Maximum and minimum allowable wagers.
+- **Bet Multiplier** (/glossary/bet-multiplier): A factor by which a player's stake is multiplied in a game.
+- **Blockchain Explorer** (/glossary/blockchain-explorer): Tool to verify on-chain transactions related to wagers or payouts.
+- **Blockchain Gambling** (/glossary/blockchain-gambling): Gambling systems that use blockchain technology to record transactions, verify outcomes, or manage balances.
+- **Blockchain Provably Fair Audit** (/glossary/blockchain-provably-fair-audit): Verification of game fairness on-chain.
+
+### C
+- **Cashback / Lossback** (/glossary/cashback-lossback): A system where players receive a percentage of losses back from the casino.
+- **Casino Ecosystem Layer** (/glossary/casino-ecosystem-layer): The infrastructure supporting multiple games, wallets, and smart contracts.
+- **Casino Infrastructure Layer** (/glossary/casino-infrastructure-layer): Technical foundation supporting gambling systems, including settlement, verification, and accounting components.
+- **Casino Token Economy** (/glossary/casino-token-economy): Internal crypto ecosystem of a casino.
+- **Chain Agnostic Casino** (/glossary/chain-agnostic-casino): Platform capable of operating on multiple blockchain networks.
+- **Chainlink / Oracle Betting** (/glossary/chainlink-oracle-betting): Use of oracles to bring off-chain data into smart contract games.
+- **Cold Storage Casino Funds** (/glossary/cold-storage-casino-funds): Crypto funds stored offline to protect against hacks.
+- **Cross-Chain Betting** (/glossary/cross-chain-betting): Wagers or settlements that occur across multiple blockchain networks.
+- **Cross-Platform Wallet** (/glossary/cross-platform-wallet): Wallet compatible with multiple casino apps or blockchains.
+- **Crypto Betting Market** (/glossary/crypto-betting-market): The environment of crypto-based gambling opportunities.
+- **Crypto Casino** (/glossary/crypto-casino): Online gambling platform using cryptocurrencies and blockchain technology for deposits, gameplay settlement, and withdrawals.
+- **Crypto Casino Governance Token** (/glossary/crypto-casino-governance-token): Token used to vote on platform decisions.
+- **Crypto Casino Platform** (/glossary/crypto-casino-platform): Digital interface or system enabling interaction with crypto-based gambling mechanisms.
+- **Crypto Casino Risk Assessment** (/glossary/crypto-casino-risk-assessment): Evaluation of financial, technical, and regulatory risks.
+- **Crypto Casino Treasury** (/glossary/crypto-casino-treasury): Reserve funds managed by the platform for payouts and operations.
+- **Crypto Gambling Risks** (/glossary/crypto-gambling-risks): Financial loss, asset volatility, technical failures, and regulatory uncertainty.
+- **Custodial vs Non-Custodial Gambling** (/glossary/custodial-vs-non-custodial-gambling): Custodial platforms hold user funds; non-custodial systems allow users to retain control through personal wallets.
+- **Custodial vs Non-Custodial Wagers** (/glossary/custodial-vs-non-custodial-wagers): Custodial wagers hold player funds on platform; non-custodial keep funds in player's wallet.
+
+### D
+- **Decentralized Autonomous Casino** (/glossary/decentralized-autonomous-casino): Casino governed by smart contracts and community voting rather than a centralized operator.
+- **Decentralized Casino** (/glossary/decentralized-casino): Gambling system that minimizes centralized control using smart contracts and distributed infrastructure.
+- **Decentralized Jackpot** (/glossary/decentralized-jackpot): Lottery-style jackpot managed entirely on-chain.
+- **Deterministic Accounting** (/glossary/deterministic-accounting): Financial system where all balances and state transitions are derived from reproducible rules and recorded events.
+- **Deterministic Casino Accounting** (/glossary/deterministic-casino-accounting): System where all balances and game outcomes are derived from reproducible, verifiable rules.
+
+### E
+- **Escrow Betting** (/glossary/escrow-betting): Temporary holding of bets in smart contracts until outcomes are confirmed.
+
+### F
+- **Faucet Casino** (/glossary/faucet-casino): Casino offering small crypto rewards to users for signing up or playing.
+
+### G
+- **Game Smart Contract Audit** (/glossary/game-smart-contract-audit): Security review of a casino's smart contract code.
+- **Game Tokenomics** (/glossary/game-tokenomics): Economics governing tokens used within a casino game.
+- **GMG Engine** (/glossary/gmg-engine): Crypto settlement and proof-first infrastructure designed for deterministic accounting, verifiable transaction flows, and multi-network payment systems.
+
+### H
+- **Hot Wallet / Cold Wallet** (/glossary/hot-wallet-cold-wallet): Methods of storing player and casino funds. Hot wallets are online; cold wallets are offline and secure.
+- **House Edge** (/glossary/house-edge): The statistical advantage a casino has over players in a game.
+
+### I
+- **Instant Crypto Deposits / Withdrawals** (/glossary/instant-crypto-deposits-withdrawals): Mechanisms allowing users to fund accounts or withdraw winnings immediately using cryptocurrency.
+- **Instant Crypto Withdrawals** (/glossary/instant-crypto-withdrawals): Payout mechanisms allowing users to receive funds immediately or within minutes.
+
+### J
+- **Jackpot Contract** (/glossary/jackpot-contract): Smart contract that manages pooled jackpot funds and payouts in decentralized games.
+- **Jackpot Pool** (/glossary/jackpot-pool): Aggregate funds for jackpot prizes.
+- **Jurisdictional Restrictions** (/glossary/jurisdictional-restrictions): Legal limitations on gambling activities based on geographic location.
+
+### L
+- **Layer-2 Casino** (/glossary/layer-2-casino): Casino built on a blockchain's secondary layer to reduce fees and increase speed.
+- **Loyalty Program / VIP Tier** (/glossary/loyalty-program-vip-tier): Rewards structure for frequent players.
+
+### M
+- **Multi-Chain Support** (/glossary/multi-chain-support): Casinos operating across multiple blockchain networks, allowing users to play with different cryptocurrencies.
+
+### N
+- **NFT Casino Assets** (/glossary/nft-casino-assets): Non-fungible tokens representing in-game items, VIP status, or membership benefits.
+- **No Deposit Bonus** (/glossary/no-deposit-bonus): Casino bonus awarded without requiring any initial deposit from the user.
+- **No-KYC Crypto Casino** (/glossary/no-kyc-crypto-casino): Crypto-based gambling platform allowing users to participate without mandatory identity verification (KYC).
+
+### O
+- **On-Chain Betting** (/glossary/on-chain-betting): Betting where transactions, wagers, or results are fully recorded on a blockchain.
+- **On-Chain Gambling** (/glossary/on-chain-gambling): Gambling mechanisms where bets, outcomes, or settlements are executed directly on a blockchain network.
+
+### P
+- **Peer-to-Peer Casino** (/glossary/peer-to-peer-casino): Casino where players directly bet against each other.
+- **Play-to-Earn Casino** (/glossary/play-to-earn-casino): Casino where players can earn crypto through gameplay.
+- **Provably Fair Card Games** (/glossary/provably-fair-card-games): Blockchain-based poker, blackjack, and other card games with verifiable outcomes.
+- **Provably Fair Dice / Slots / Roulette** (/glossary/provably-fair-dice-slots-roulette): Specific casino games designed to be auditable for fairness.
+- **Provably Fair Gambling** (/glossary/provably-fair-gambling): System allowing players to independently verify the fairness of game outcomes using cryptographic techniques.
+- **Provably Fair Games** (/glossary/provably-fair-games): Games whose outcomes can be independently verified using cryptography.
+- **Provably Fair Slots** (/glossary/provably-fair-slots): Slot games whose outcomes are verifiable using cryptography.
+- **Provably Fair Verification Tool** (/glossary/provably-fair-verification-tool): Interface allowing players to confirm game fairness.
+- **Provably Random Number** (/glossary/provably-random-number): Method for generating game outcomes in a verifiable and unpredictable manner.
+
+### R
+- **Replay-Based Verification** (/glossary/replay-based-verification): Method of validating system behavior by reprocessing historical transaction data to reproduce outcomes.
+- **RNG** (/glossary/rng): Algorithm that produces unpredictable game outcomes.
+- **RTP** (/glossary/rtp): Percentage indicating how much a game returns to players over time.
+
+### S
+- **Seed Hash** (/glossary/seed-hash): Cryptographic data used to generate provably fair outcomes.
+- **Self-Custody Casino Wallet** (/glossary/self-custody-casino-wallet): User-held wallet for interacting with non-custodial casinos.
+- **Smart Contract Casino** (/glossary/smart-contract-casino): Casino using blockchain-based smart contracts to automate aspects of gameplay, settlement, or accounting.
+- **Smart Contract Games** (/glossary/smart-contract-games): Games where rules, outcomes, and payouts are automated via smart contracts.
+- **Stake / Bet** (/glossary/stake-bet): The amount of cryptocurrency a player wagers on a game.
+
+### T
+- **Token Staking Casino** (/glossary/token-staking-casino): Casinos where players stake tokens to access rewards or games.
+- **Token Swap / Exchange** (/glossary/token-swap-exchange): Conversion of one crypto token to another within the casino platform.
+- **Tokenized Rewards / Loyalty Tokens** (/glossary/tokenized-rewards-loyalty-tokens): Casino-issued crypto tokens given as rewards for loyalty or completing tasks.
+
+### V
+- **Verifiable Transactions** (/glossary/verifiable-transactions): Financial or gameplay-related transactions that can be independently audited using cryptographic or ledger-based evidence.
+- **VIP Membership NFT** (/glossary/vip-membership-nft): NFT granting special perks and access in a crypto casino.
+- **Volatility** (/glossary/volatility): Measure of risk associated with a casino game, indicating the frequency and size of payouts.
+- **Volatility Index** (/glossary/volatility-index): Rating showing a game's risk profile.
+
+### W
+- **Wagering Requirements** (/glossary/wagering-requirements): Rules specifying how many times bonus funds must be bet before withdrawal.
+- **Welcome Bonus** (/glossary/welcome-bonus): Promotional incentive offered by crypto casinos to attract new players.
+
+### Y
+- **Yield Betting** (/glossary/yield-betting): Wagering integrated with DeFi mechanisms to generate passive returns.
+
+---
 
 ## Technology Partners
 
@@ -224,6 +354,7 @@ DegenRoll references GMG Engine as an example of a deterministic settlement surf
 **Audience:** Crypto traders, gamblers, DeFi users
 **Content Style:** Educational, review-based, strategy guides
 **Technology Partner:** GMG Engine (settlement infrastructure)
+**Glossary Terms:** 75+ definitions
 
 ## Frequently Asked Questions
 
@@ -241,6 +372,15 @@ A: Yes, all articles and guides on DegenRoll are free to access.
 
 **Q: What is GMG Engine?**
 A: GMG Engine is the crypto settlement infrastructure that DegenRoll references for deterministic accounting and verifiable transaction flows. Visit https://gmgengine.com/ for more details.
+
+**Q: What is a crypto casino?**
+A: A crypto casino is an online gambling platform using cryptocurrencies and blockchain technology. See our full definition at /glossary/crypto-casino.
+
+**Q: What is provably fair gambling?**
+A: Provably fair gambling allows players to independently verify game fairness using cryptographic techniques. See /glossary/provably-fair-gambling.
+
+**Q: What is a no-KYC casino?**
+A: A no-KYC casino allows users to gamble without identity verification. See /glossary/no-kyc-crypto-casino.
 
 ---
 
