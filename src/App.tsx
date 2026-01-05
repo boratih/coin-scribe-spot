@@ -41,6 +41,8 @@ import TopCryptoCasinoBonuses from "./pages/guides/TopCryptoCasinoBonuses";
 import BestCryptoSlotGames from "./pages/guides/BestCryptoSlotGames";
 import BlockchainGamingNftCasinos from "./pages/guides/BlockchainGamingNftCasinos";
 
+import CryptoCasino from "./pages/CryptoCasino";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -51,6 +53,8 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/crypto-casino" element={<CryptoCasino />} />
+          <Route path="/degenroll-review" element={<DegenRollReview />} />
           <Route path="/degenroll-review" element={<DegenRollReview />} />
           <Route path="/technology" element={<Technology />} />
           <Route path="/glossary" element={<Glossary />} />
