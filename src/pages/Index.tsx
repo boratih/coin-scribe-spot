@@ -18,24 +18,8 @@ const Index = () => {
   const categoryFilter = searchParams.get("category");
   const [searchQuery, setSearchQuery] = useState("");
   
-  // Filter to only show gaming (crypto casino) and perpdex articles
-  const degenArticles = articles.filter(article => {
-    const normalizedCategory = article.category.toLowerCase();
-    return normalizedCategory.includes("crypto casino") || normalizedCategory.includes("perpdex");
-  });
-
-  const filteredArticles = categoryFilter
-    ? degenArticles.filter(article => {
-        const normalizedCategory = article.category.toLowerCase();
-        const normalizedFilter = categoryFilter.toLowerCase();
-        
-        if (normalizedFilter === "gaming") {
-          return normalizedCategory.includes("crypto casino");
-        }
-        
-        return normalizedCategory.includes(normalizedFilter);
-      })
-    : degenArticles;
+  // All articles are crypto casino now
+  const filteredArticles = articles;
 
   // Apply search filter to articles
   const searchedArticles = searchQuery 
@@ -90,7 +74,7 @@ const Index = () => {
       {!categoryFilter && <CategoryCards />}
 
       {/* Featured Projects Section */}
-      <FeaturedProjects categoryFilter={categoryFilter} />
+      <FeaturedProjects />
 
       {/* Articles Section */}
       <section id="latest-blog" className="py-16 md:py-20 bg-card/30">
@@ -98,14 +82,12 @@ const Index = () => {
           <div className="flex items-center justify-between mb-10">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-2">
-                {categoryFilter 
-                  ? categoryFilter === "gaming" 
-                    ? "Crypto Casino Guides"
-                    : "Perpetual Trading Guides"
+                {categoryFilter === "gaming" 
+                  ? "Crypto Casino Guides"
                   : 'Latest Articles'}
               </h2>
               <p className="text-muted-foreground">
-                Expert insights and strategies for degens
+                Expert insights and strategies for crypto casino players
               </p>
             </div>
           </div>
@@ -181,13 +163,13 @@ const Index = () => {
       {/* Footer */}
       <footer className="border-t border-border/40 bg-card/50">
         <div className="container py-12 md:py-16">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
-            <div className="col-span-1 md:col-span-1">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div className="col-span-1">
               <div className="flex items-center mb-4">
                 <img src={degenrollLogo} alt="Degenroll" className="h-10" />
               </div>
               <p className="text-sm text-muted-foreground mb-4">
-                Your ultimate guide to crypto casinos and perpetual trading. Built by degens, for degens.
+                Your ultimate guide to crypto casinos. Built by degens, for degens.
               </p>
               <div className="flex gap-3">
                 <a href="#" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary/20 transition-colors">
@@ -203,10 +185,12 @@ const Index = () => {
             </div>
             
             <div>
-              <h3 className="font-semibold mb-4">Categories</h3>
+              <h3 className="font-semibold mb-4">Guides</h3>
               <ul className="space-y-3 text-sm text-muted-foreground">
-                <li><a href="/?category=gaming" className="hover:text-primary transition-colors">Crypto Casino</a></li>
-                <li><a href="/?category=perpdex" className="hover:text-primary transition-colors">Perpetuals</a></li>
+                <li><a href="/what-is-crypto-casino" className="hover:text-primary transition-colors">What is a Crypto Casino?</a></li>
+                <li><a href="/what-is-no-kyc-crypto-casino" className="hover:text-primary transition-colors">No KYC Casinos Explained</a></li>
+                <li><a href="/what-is-provably-fair-system" className="hover:text-primary transition-colors">Provably Fair Gaming</a></li>
+                <li><a href="/glossary" className="hover:text-primary transition-colors">Glossary</a></li>
               </ul>
             </div>
             
@@ -216,15 +200,6 @@ const Index = () => {
                 <li><a href="https://www.degenroll.xyz" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">DegenRoll</a></li>
                 <li><a href="https://stake.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Stake</a></li>
                 <li><a href="https://bc.game" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">BC Game</a></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="font-semibold mb-4">Top Perp DEXs</h3>
-              <ul className="space-y-3 text-sm text-muted-foreground">
-                <li><a href="https://hyperliquid.xyz" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Hyperliquid</a></li>
-                <li><a href="https://lighter.xyz" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Lighter</a></li>
-                <li><a href="https://aster.trade" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Aster</a></li>
               </ul>
             </div>
           </div>

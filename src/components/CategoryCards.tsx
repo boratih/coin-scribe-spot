@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
-import { Dices, TrendingUp, ChevronRight } from "lucide-react";
+import { Dices, ChevronRight } from "lucide-react";
 
 const categories = [
   {
@@ -8,18 +8,9 @@ const categories = [
     title: "Crypto Casino",
     description: "Top-rated crypto casinos with instant payouts, no KYC, and exclusive bonuses for degens.",
     icon: Dices,
-    count: 12,
+    count: 20,
     href: "/?category=gaming",
     gradient: "from-orange-500 to-red-500"
-  },
-  {
-    id: "perpdex",
-    title: "Perpetuals",
-    description: "The best perpetual DEXs for leveraged trading. High risk, high reward opportunities.",
-    icon: TrendingUp,
-    count: 8,
-    href: "/?category=perpdex",
-    gradient: "from-blue-500 to-purple-500"
   }
 ];
 
@@ -34,7 +25,7 @@ const CategoryCards = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 gap-6 max-w-2xl">
           {categories.map((category) => (
             <Link key={category.id} to={category.href}>
               <Card className="group h-full overflow-hidden hover-glow bg-gradient-card border-border/50 cursor-pointer">
@@ -53,7 +44,7 @@ const CategoryCards = () => {
                       {category.description}
                     </p>
                     <span className="text-sm text-primary font-medium">
-                      {category.count} articles
+                      {category.count}+ guides & articles
                     </span>
                   </div>
                 </CardContent>
