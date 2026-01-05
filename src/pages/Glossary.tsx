@@ -75,22 +75,15 @@ const Glossary = () => {
         <section className="border-b border-border sticky top-16 bg-background/95 backdrop-blur z-40">
           <div className="container py-4">
             <div className="flex flex-wrap gap-2 justify-center">
-              {ALPHABET.map(letter => {
-                const hasTerms = !!groupedTerms[letter];
-                return (
-                  <a
-                    key={letter}
-                    href={hasTerms ? `#letter-${letter}` : undefined}
-                    className={`w-8 h-8 rounded-lg flex items-center justify-center text-sm font-medium transition-colors ${
-                      hasTerms 
-                        ? "bg-primary/10 hover:bg-primary/20 text-primary cursor-pointer" 
-                        : "bg-muted/50 text-muted-foreground/50 cursor-default"
-                    }`}
-                  >
-                    {letter}
-                  </a>
-                );
-              })}
+              {ALPHABET.map(letter => (
+                <a
+                  key={letter}
+                  href={`#letter-${letter}`}
+                  className="w-8 h-8 rounded-lg flex items-center justify-center text-sm font-medium transition-colors bg-primary/10 hover:bg-primary/20 text-primary cursor-pointer"
+                >
+                  {letter}
+                </a>
+              ))}
             </div>
           </div>
         </section>
@@ -104,17 +97,13 @@ const Glossary = () => {
                 return (
                   <div key={letter} id={`letter-${letter}`} className="scroll-mt-32">
                     <div className="flex items-center gap-4 mb-6">
-                      <span className={`w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold ${
-                        terms.length > 0 
-                          ? "bg-gradient-to-br from-primary to-accent text-primary-foreground" 
-                          : "bg-muted text-muted-foreground"
-                      }`}>
+                      <span className="w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold bg-gradient-to-br from-primary to-accent text-primary-foreground">
                         {letter}
                       </span>
                       <div className="h-px flex-1 bg-border" />
                     </div>
                     
-                    {terms.length > 0 ? (
+                    {terms.length > 0 && (
                       <div className="space-y-4">
                         {terms.map(({ term, slug, definition, link }) => (
                           <Link
@@ -145,8 +134,6 @@ const Glossary = () => {
                           </Link>
                         ))}
                       </div>
-                    ) : (
-                      <p className="text-muted-foreground/60 italic pl-4">No terms yet</p>
                     )}
                   </div>
                 );
