@@ -94,7 +94,7 @@ const HeroSection = ({ onSearch }: HeroSectionProps) => {
               asChild 
               className="h-14 px-8 text-lg font-semibold rounded-full border-border/50 hover:bg-card"
             >
-              <a href="#categories">Explore Categories</a>
+              <a href="#latest-blog">Explore Guides</a>
             </Button>
           </div>
         </div>
