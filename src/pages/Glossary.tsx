@@ -4,6 +4,8 @@ import { BookOpen, ExternalLink, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { glossaryTerms, groupedTerms } from "@/data/glossaryTerms";
 
+const ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+
 const Glossary = () => {
   return (
     <>
@@ -73,15 +75,22 @@ const Glossary = () => {
         <section className="border-b border-border sticky top-16 bg-background/95 backdrop-blur z-40">
           <div className="container py-4">
             <div className="flex flex-wrap gap-2 justify-center">
-              {Object.keys(groupedTerms).sort().map(letter => (
-                <a
-                  key={letter}
-                  href={`#letter-${letter}`}
-                  className="w-8 h-8 rounded-lg bg-primary/10 hover:bg-primary/20 flex items-center justify-center text-sm font-medium text-primary transition-colors"
-                >
-                  {letter}
-                </a>
-              ))}
+              {ALPHABET.map(letter => {
+                const hasTerms = !!groupedTerms[letter];
+                return (
+                  <a
+                    key={letter}
+                    href={hasTerms ? `#letter-${letter}` : undefined}
+                    className={`w-8 h-8 rounded-lg flex items-center justify-center text-sm font-medium transition-colors ${
+                      hasTerms 
+                        ? "bg-primary/10 hover:bg-primary/20 text-primary cursor-pointer" 
+                        : "bg-muted/50 text-muted-foreground/50 cursor-default"
+                    }`}
+                  >
+                    {letter}
+                  </a>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -90,47 +99,58 @@ const Glossary = () => {
         <section className="py-12 md:py-16">
           <div className="container">
             <div className="max-w-4xl mx-auto space-y-12">
-              {Object.keys(groupedTerms).sort().map(letter => (
-                <div key={letter} id={`letter-${letter}`} className="scroll-mt-32">
-                  <div className="flex items-center gap-4 mb-6">
-                    <span className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center text-xl font-bold text-primary-foreground">
-                      {letter}
-                    </span>
-                    <div className="h-px flex-1 bg-border" />
+              {ALPHABET.map(letter => {
+                const terms = groupedTerms[letter] || [];
+                return (
+                  <div key={letter} id={`letter-${letter}`} className="scroll-mt-32">
+                    <div className="flex items-center gap-4 mb-6">
+                      <span className={`w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold ${
+                        terms.length > 0 
+                          ? "bg-gradient-to-br from-primary to-accent text-primary-foreground" 
+                          : "bg-muted text-muted-foreground"
+                      }`}>
+                        {letter}
+                      </span>
+                      <div className="h-px flex-1 bg-border" />
+                    </div>
+                    
+                    {terms.length > 0 ? (
+                      <div className="space-y-4">
+                        {terms.map(({ term, slug, definition, link }) => (
+                          <Link
+                            key={slug}
+                            to={`/glossary/${slug}`}
+                            id={slug}
+                            className="block p-6 rounded-2xl bg-card border border-border hover:border-primary/30 transition-colors scroll-mt-32 group"
+                          >
+                            <div className="flex items-start justify-between gap-4">
+                              <div className="flex-1">
+                                <h2 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
+                                  {term}
+                                </h2>
+                                <p className="text-muted-foreground leading-relaxed line-clamp-2">
+                                  {definition}
+                                </p>
+                              </div>
+                              <ChevronRight className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0 mt-1" />
+                            </div>
+                            {link && (
+                              <div className="mt-4">
+                                <span className="inline-flex items-center gap-2 text-sm text-primary">
+                                  {link.label}
+                                  <ExternalLink className="w-3 h-3" />
+                                </span>
+                              </div>
+                            )}
+                          </Link>
+                        ))}
+                      </div>
+                    ) : (
+                      <p className="text-muted-foreground/60 italic pl-4">No terms yet</p>
+                    )}
                   </div>
-                  
-                  <div className="space-y-4">
-                    {groupedTerms[letter].map(({ term, slug, definition, link }) => (
-                      <Link
-                        key={slug}
-                        to={`/glossary/${slug}`}
-                        id={slug}
-                        className="block p-6 rounded-2xl bg-card border border-border hover:border-primary/30 transition-colors scroll-mt-32 group"
-                      >
-                        <div className="flex items-start justify-between gap-4">
-                          <div className="flex-1">
-                            <h2 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
-                              {term}
-                            </h2>
-                            <p className="text-muted-foreground leading-relaxed line-clamp-2">
-                              {definition}
-                            </p>
-                          </div>
-                          <ChevronRight className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0 mt-1" />
-                        </div>
-                        {link && (
-                          <div className="mt-4">
-                            <span className="inline-flex items-center gap-2 text-sm text-primary">
-                              {link.label}
-                              <ExternalLink className="w-3 h-3" />
-                            </span>
-                          </div>
-                        )}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>
