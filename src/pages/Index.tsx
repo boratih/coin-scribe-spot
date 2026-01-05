@@ -5,10 +5,8 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import CategoryCards from "@/components/CategoryCards";
 import FeaturedProjects from "@/components/FeaturedProjects";
-import ArticleCard from "@/components/ArticleCard";
 import GuideCard from "@/components/GuideCard";
 import { Button } from "@/components/ui/button";
-import { articles } from "@/data/articles";
 import { cryptoCasinoGuides } from "@/data/cryptoCasinoGuides";
 import degenrollLogo from "@/assets/degenroll-logo.webp";
 import { Twitter, MessageCircle, Send } from "lucide-react";
@@ -17,31 +15,18 @@ const Index = () => {
   const [searchParams] = useSearchParams();
   const categoryFilter = searchParams.get("category");
   const [searchQuery, setSearchQuery] = useState("");
-  
-  // All articles are crypto casino now
-  const filteredArticles = articles;
 
-  // Apply search filter to articles
-  const searchedArticles = searchQuery 
-    ? filteredArticles.filter(article => 
-        article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        article.excerpt.toLowerCase().includes(searchQuery.toLowerCase())
+  // Filter guides based on search
+  const searchedGuides = searchQuery 
+    ? cryptoCasinoGuides.filter(guide => 
+        guide.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        guide.excerpt.toLowerCase().includes(searchQuery.toLowerCase())
       )
-    : filteredArticles;
-
-  // Filter guides for crypto casino category
-  const searchedGuides = categoryFilter === "gaming"
-    ? (searchQuery 
-        ? cryptoCasinoGuides.filter(guide => 
-            guide.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            guide.excerpt.toLowerCase().includes(searchQuery.toLowerCase())
-          )
-        : cryptoCasinoGuides)
-    : [];
+    : cryptoCasinoGuides;
 
   const handleSearch = (query: string) => {
     setSearchQuery(query);
-    // Scroll to articles section
+    // Scroll to guides section
     document.getElementById('latest-blog')?.scrollIntoView({ behavior: 'smooth' });
   };
 
@@ -76,15 +61,13 @@ const Index = () => {
       {/* Featured Projects Section */}
       <FeaturedProjects />
 
-      {/* Articles Section */}
+      {/* Guides Section */}
       <section id="latest-blog" className="py-16 md:py-20 bg-card/30">
         <div className="container">
           <div className="flex items-center justify-between mb-10">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-2">
-                {categoryFilter === "gaming" 
-                  ? "Crypto Casino Guides"
-                  : 'Latest Articles'}
+                Crypto Casino Guides
               </h2>
               <p className="text-muted-foreground">
                 Expert insights and strategies for crypto casino players
@@ -92,9 +75,8 @@ const Index = () => {
             </div>
           </div>
 
-          {/* Show guides first when on crypto casino tab */}
-          {categoryFilter === "gaming" && searchedGuides.length > 0 && (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          {searchedGuides.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {searchedGuides.map((guide) => (
                 <GuideCard
                   key={guide.slug}
@@ -108,30 +90,10 @@ const Index = () => {
                 />
               ))}
             </div>
-          )}
-
-          {/* Show articles */}
-          {searchedArticles.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {searchedArticles.map((article) => (
-                <ArticleCard
-                  key={article.id}
-                  id={article.id}
-                  title={article.title}
-                  excerpt={article.excerpt}
-                  category={article.category}
-                  date={article.date}
-                  image={article.image}
-                  readTime={article.readTime}
-                />
-              ))}
-            </div>
           ) : (
-            categoryFilter !== "gaming" && (
-              <div className="text-center py-12">
-                <p className="text-muted-foreground">No articles found matching your search.</p>
-              </div>
-            )
+            <div className="text-center py-12">
+              <p className="text-muted-foreground">No guides found matching your search.</p>
+            </div>
           )}
         </div>
       </section>

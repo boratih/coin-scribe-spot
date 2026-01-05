@@ -35,6 +35,12 @@ import CryptoCasinoBonusesExplained from "./pages/guides/CryptoCasinoBonusesExpl
 import FiatVsCryptoCasinosDifferences from "./pages/guides/FiatVsCryptoCasinosDifferences";
 import AnonymityCryptoGambling from "./pages/guides/AnonymityCryptoGambling";
 
+// Top Picks Guides
+import TopSafestNoKycCasinos from "./pages/guides/TopSafestNoKycCasinos";
+import TopCryptoCasinoBonuses from "./pages/guides/TopCryptoCasinoBonuses";
+import BestCryptoSlotGames from "./pages/guides/BestCryptoSlotGames";
+import BlockchainGamingNftCasinos from "./pages/guides/BlockchainGamingNftCasinos";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -51,6 +57,12 @@ const App = () => (
           <Route path="/glossary/:slug" element={<GlossaryTerm />} />
           <Route path="/about" element={<About />} />
           <Route path="/about/what-is-degenroll" element={<WhatIsDegenRoll />} />
+          
+          {/* Crypto Casino Guides - Top Picks */}
+          <Route path="/top-safest-no-kyc-crypto-casinos" element={<TopSafestNoKycCasinos />} />
+          <Route path="/top-crypto-casino-bonuses" element={<TopCryptoCasinoBonuses />} />
+          <Route path="/best-crypto-slot-games" element={<BestCryptoSlotGames />} />
+          <Route path="/blockchain-gaming-nft-casinos" element={<BlockchainGamingNftCasinos />} />
           
           {/* Crypto Casino Guides - Fundamentals */}
           <Route path="/what-is-crypto-casino" element={<WhatIsCryptoCasino />} />
