@@ -8,6 +8,7 @@ import Article from "./pages/Article";
 import DegenRollReview from "./pages/DegenRollReview";
 import Technology from "./pages/Technology";
 import Glossary from "./pages/Glossary";
+import CryptoCasino from "./pages/CryptoCasino";
 import About from "./pages/About";
 import WhatIsDegenRoll from "./pages/WhatIsDegenRoll";
 import NotFound from "./pages/NotFound";
@@ -47,6 +48,7 @@ const App = () => (
           <Route path="/degenroll-review" element={<DegenRollReview />} />
           <Route path="/technology" element={<Technology />} />
           <Route path="/glossary" element={<Glossary />} />
+          <Route path="/crypto-casino" element={<CryptoCasino />} />
           <Route path="/about" element={<About />} />
           <Route path="/about/what-is-degenroll" element={<WhatIsDegenRoll />} />
           
