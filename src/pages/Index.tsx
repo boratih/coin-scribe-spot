@@ -1,9 +1,7 @@
 import { useState } from "react";
-import { useSearchParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import CategoryCards from "@/components/CategoryCards";
 import FeaturedProjects from "@/components/FeaturedProjects";
 import GuideCard from "@/components/GuideCard";
 import { Button } from "@/components/ui/button";
@@ -12,8 +10,6 @@ import degenrollLogo from "@/assets/degenroll-logo.webp";
 import { Twitter, MessageCircle, Send } from "lucide-react";
 
 const Index = () => {
-  const [searchParams] = useSearchParams();
-  const categoryFilter = searchParams.get("category");
   const [searchQuery, setSearchQuery] = useState("");
 
   // Filter guides based on search
@@ -54,9 +50,6 @@ const Index = () => {
       
       {/* Hero Section */}
       <HeroSection onSearch={handleSearch} />
-
-      {/* Category Cards - Only show on homepage without category filter */}
-      {!categoryFilter && <CategoryCards />}
 
       {/* Featured Projects Section */}
       <FeaturedProjects />
