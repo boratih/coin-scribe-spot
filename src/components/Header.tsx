@@ -22,7 +22,7 @@ const Header = () => {
             Home
           </Link>
           <Link 
-            to="/?category=gaming" 
+            to="/#latest-blog" 
             className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
             Crypto Casino
@@ -79,7 +79,7 @@ const Header = () => {
               Home
             </Link>
             <Link 
-              to="/?category=gaming" 
+              to="/#latest-blog" 
               className="text-sm font-medium py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
