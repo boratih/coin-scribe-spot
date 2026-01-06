@@ -47,6 +47,10 @@ import Methodology from "./pages/Methodology";
 import EditorialPolicy from "./pages/EditorialPolicy";
 import SourcesReferences from "./pages/SourcesReferences";
 
+// Answers
+import Answers from "./pages/Answers";
+import WhatIsACryptoCasino from "./pages/answers/WhatIsACryptoCasino";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -105,6 +109,10 @@ const App = () => (
           <Route path="/crypto-casino-bonuses-explained" element={<CryptoCasinoBonusesExplained />} />
           <Route path="/fiat-vs-crypto-casinos-differences" element={<FiatVsCryptoCasinosDifferences />} />
           <Route path="/anonymity-crypto-gambling" element={<AnonymityCryptoGambling />} />
+          
+          {/* Answers */}
+          <Route path="/answers" element={<Answers />} />
+          <Route path="/answers/what-is-a-crypto-casino" element={<WhatIsACryptoCasino />} />
           
           <Route path="/:slug" element={<Article />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
