@@ -60,6 +60,51 @@ const answers: Answer[] = [
     title: "What Are the Risks of Crypto Casinos?",
     excerpt: "Crypto casinos carry risks including cryptocurrency volatility, regulatory uncertainty, irreversible transactions, and limited consumer protection.",
   },
+  {
+    slug: "do-crypto-casinos-require-kyc",
+    title: "Do Crypto Casinos Require KYC?",
+    excerpt: "KYC requirements vary by platform. Some allow minimal verification for small transactions, while others enforce KYC for regulatory compliance.",
+  },
+  {
+    slug: "how-to-verify-provably-fair-games",
+    title: "How to Verify Provably Fair Games",
+    excerpt: "Provably fair games allow players to verify outcomes using cryptographic hashes, seeds, and client inputs to confirm results independently.",
+  },
+  {
+    slug: "provably-fair-vs-rng",
+    title: "Provably Fair vs RNG",
+    excerpt: "Provably fair systems allow cryptographic verification of outcomes, while RNG relies solely on the casino's software for random results.",
+  },
+  {
+    slug: "crypto-casino-security-and-scam-detection",
+    title: "Crypto Casino Security and Scam Detection",
+    excerpt: "Security includes encryption, cold wallets, and 2FA. Scam detection involves checking licenses, reviews, and withdrawal policies.",
+  },
+  {
+    slug: "crypto-casino-deposits-fees-speed-limits",
+    title: "Crypto Casino Deposits: Fees, Speed & Limits",
+    excerpt: "Deposit speed, fees, and limits vary by blockchain. Bitcoin, Ethereum, and stablecoins differ in transaction times and costs.",
+  },
+  {
+    slug: "decentralized-vs-centralized-crypto-casinos",
+    title: "Decentralized vs Centralized Crypto Casinos",
+    excerpt: "Centralized casinos operate like traditional platforms. Decentralized casinos run on blockchain smart contracts with no central operator.",
+  },
+  {
+    slug: "mobile-crypto-casino-experience",
+    title: "Mobile Crypto Casino Experience",
+    excerpt: "Mobile crypto casinos allow gameplay via smartphones with wallet integration for deposits and withdrawals on the go.",
+  },
+  {
+    slug: "responsible-gambling-crypto-casinos",
+    title: "Responsible Gambling in Crypto Casinos",
+    excerpt: "Responsible gambling involves managing bankrolls, setting limits, and understanding cryptocurrency volatility during gameplay.",
+  },
+  {
+    slug: "expanded-crypto-casino-faqs",
+    title: "Expanded Crypto Casino FAQs",
+    excerpt: "A comprehensive FAQ covering deposits, withdrawals, safety, legality, games, and platform practices for crypto casinos.",
+  },
 ];
 
 const Answers = () => {

@@ -59,6 +59,15 @@ import WhatIsProvablyFairGambling from "./pages/answers/WhatIsProvablyFairGambli
 import HowDoCryptoCasinoWithdrawalsWork from "./pages/answers/HowDoCryptoCasinoWithdrawalsWork";
 import WhatCryptocurrenciesDoCasinosAccept from "./pages/answers/WhatCryptocurrenciesDoCasinosAccept";
 import WhatAreTheRisksOfCryptoCasinos from "./pages/answers/WhatAreTheRisksOfCryptoCasinos";
+import DoCryptoCasinosRequireKyc from "./pages/answers/DoCryptoCasinosRequireKyc";
+import HowToVerifyProvablyFairGames from "./pages/answers/HowToVerifyProvablyFairGames";
+import ProvablyFairVsRng from "./pages/answers/ProvablyFairVsRng";
+import CryptoCasinoSecurityScamDetection from "./pages/answers/CryptoCasinoSecurityScamDetection";
+import CryptoCasinoDepositsFeesSpeedLimits from "./pages/answers/CryptoCasinoDepositsFeesSpeedLimits";
+import DecentralizedVsCentralizedCryptoCasinos from "./pages/answers/DecentralizedVsCentralizedCryptoCasinos";
+import MobileCryptoCasinoExperience from "./pages/answers/MobileCryptoCasinoExperience";
+import ResponsibleGamblingCryptoCasinos from "./pages/answers/ResponsibleGamblingCryptoCasinos";
+import ExpandedCryptoCasinoFaqs from "./pages/answers/ExpandedCryptoCasinoFaqs";
 
 const queryClient = new QueryClient();
 
@@ -131,6 +140,15 @@ const App = () => (
           <Route path="/answers/how-do-crypto-casino-withdrawals-work" element={<HowDoCryptoCasinoWithdrawalsWork />} />
           <Route path="/answers/what-cryptocurrencies-do-casinos-accept" element={<WhatCryptocurrenciesDoCasinosAccept />} />
           <Route path="/answers/what-are-the-risks-of-crypto-casinos" element={<WhatAreTheRisksOfCryptoCasinos />} />
+          <Route path="/answers/do-crypto-casinos-require-kyc" element={<DoCryptoCasinosRequireKyc />} />
+          <Route path="/answers/how-to-verify-provably-fair-games" element={<HowToVerifyProvablyFairGames />} />
+          <Route path="/answers/provably-fair-vs-rng" element={<ProvablyFairVsRng />} />
+          <Route path="/answers/crypto-casino-security-and-scam-detection" element={<CryptoCasinoSecurityScamDetection />} />
+          <Route path="/answers/crypto-casino-deposits-fees-speed-limits" element={<CryptoCasinoDepositsFeesSpeedLimits />} />
+          <Route path="/answers/decentralized-vs-centralized-crypto-casinos" element={<DecentralizedVsCentralizedCryptoCasinos />} />
+          <Route path="/answers/mobile-crypto-casino-experience" element={<MobileCryptoCasinoExperience />} />
+          <Route path="/answers/responsible-gambling-crypto-casinos" element={<ResponsibleGamblingCryptoCasinos />} />
+          <Route path="/answers/expanded-crypto-casino-faqs" element={<ExpandedCryptoCasinoFaqs />} />
           
           <Route path="/:slug" element={<Article />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
