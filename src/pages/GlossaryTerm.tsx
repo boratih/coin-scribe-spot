@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { Link, useParams, Navigate } from "react-router-dom";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { getTermBySlug, glossaryTerms } from "@/data/glossaryTerms";
 import { ArrowLeft } from "lucide-react";
 
@@ -132,6 +133,8 @@ const GlossaryTerm = () => {
             </section>
           </article>
         </main>
+
+        <Footer />
       </div>
     </>
   );
