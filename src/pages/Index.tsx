@@ -147,24 +147,23 @@ const Index = () => {
                 <li><Link to="/what-is-crypto-casino" className="hover:text-primary transition-colors">What is a Crypto Casino?</Link></li>
                 <li><Link to="/what-is-no-kyc-crypto-casino" className="hover:text-primary transition-colors">No KYC Casinos Explained</Link></li>
                 <li><Link to="/what-is-provably-fair-system" className="hover:text-primary transition-colors">Provably Fair Gaming</Link></li>
-                <li><Link to="/glossary" className="hover:text-primary transition-colors">Glossary</Link></li>
+                <li><Link to="/crypto-casino" className="hover:text-primary transition-colors">All Guides</Link></li>
               </ul>
             </div>
             
             <div>
-              <h3 className="font-semibold mb-4">Top Casinos</h3>
+              <h3 className="font-semibold mb-4">Resources</h3>
               <ul className="space-y-3 text-sm text-muted-foreground">
-                <li><a href="https://www.degenroll.xyz" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">DegenRoll</a></li>
-                <li><a href="https://stake.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Stake</a></li>
-                <li><a href="https://bc.game" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">BC Game</a></li>
+                <li><Link to="/glossary" className="hover:text-primary transition-colors">Glossary</Link></li>
+                <li><Link to="/about" className="hover:text-primary transition-colors">About</Link></li>
+                <li><Link to="/technology" className="hover:text-primary transition-colors">Technology</Link></li>
+                <li><a href="https://degenroll.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">DegenRoll Casino →</a></li>
               </ul>
             </div>
 
             <div>
               <h3 className="font-semibold mb-4">Policies</h3>
               <ul className="space-y-3 text-sm text-muted-foreground">
-                <li><Link to="/about" className="hover:text-primary transition-colors">About</Link></li>
-                <li><Link to="/technology" className="hover:text-primary transition-colors">Technology</Link></li>
                 <li><Link to="/methodology" className="hover:text-primary transition-colors">Methodology</Link></li>
                 <li><Link to="/editorial-policy" className="hover:text-primary transition-colors">Editorial Policy</Link></li>
                 <li><Link to="/sources-and-references" className="hover:text-primary transition-colors">Sources & References</Link></li>
