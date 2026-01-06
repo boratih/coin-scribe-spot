@@ -4,10 +4,12 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import FeaturedProjects from "@/components/FeaturedProjects";
 import GuideCard from "@/components/GuideCard";
+import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { cryptoCasinoGuides } from "@/data/cryptoCasinoGuides";
 import degenrollLogo from "@/assets/degenroll-logo.webp";
 import { Twitter, MessageCircle, Send } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -118,7 +120,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="border-t border-border/40 bg-card/50">
         <div className="container py-12 md:py-16">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
             <div className="col-span-1">
               <div className="flex items-center mb-4">
                 <img src={degenrollLogo} alt="Degenroll" className="h-10" />
@@ -142,10 +144,10 @@ const Index = () => {
             <div>
               <h3 className="font-semibold mb-4">Guides</h3>
               <ul className="space-y-3 text-sm text-muted-foreground">
-                <li><a href="/what-is-crypto-casino" className="hover:text-primary transition-colors">What is a Crypto Casino?</a></li>
-                <li><a href="/what-is-no-kyc-crypto-casino" className="hover:text-primary transition-colors">No KYC Casinos Explained</a></li>
-                <li><a href="/what-is-provably-fair-system" className="hover:text-primary transition-colors">Provably Fair Gaming</a></li>
-                <li><a href="/glossary" className="hover:text-primary transition-colors">Glossary</a></li>
+                <li><Link to="/what-is-crypto-casino" className="hover:text-primary transition-colors">What is a Crypto Casino?</Link></li>
+                <li><Link to="/what-is-no-kyc-crypto-casino" className="hover:text-primary transition-colors">No KYC Casinos Explained</Link></li>
+                <li><Link to="/what-is-provably-fair-system" className="hover:text-primary transition-colors">Provably Fair Gaming</Link></li>
+                <li><Link to="/glossary" className="hover:text-primary transition-colors">Glossary</Link></li>
               </ul>
             </div>
             
@@ -155,6 +157,17 @@ const Index = () => {
                 <li><a href="https://www.degenroll.xyz" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">DegenRoll</a></li>
                 <li><a href="https://stake.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Stake</a></li>
                 <li><a href="https://bc.game" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">BC Game</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-semibold mb-4">Policies</h3>
+              <ul className="space-y-3 text-sm text-muted-foreground">
+                <li><Link to="/about" className="hover:text-primary transition-colors">About</Link></li>
+                <li><Link to="/technology" className="hover:text-primary transition-colors">Technology</Link></li>
+                <li><Link to="/methodology" className="hover:text-primary transition-colors">Methodology</Link></li>
+                <li><Link to="/editorial-policy" className="hover:text-primary transition-colors">Editorial Policy</Link></li>
+                <li><Link to="/sources-and-references" className="hover:text-primary transition-colors">Sources & References</Link></li>
               </ul>
             </div>
           </div>

@@ -43,6 +43,9 @@ import BlockchainGamingNftCasinos from "./pages/guides/BlockchainGamingNftCasino
 
 import CryptoCasino from "./pages/CryptoCasino";
 import ScrollToTop from "./components/ScrollToTop";
+import Methodology from "./pages/Methodology";
+import EditorialPolicy from "./pages/EditorialPolicy";
+import SourcesReferences from "./pages/SourcesReferences";
 
 const queryClient = new QueryClient();
 
@@ -63,6 +66,9 @@ const App = () => (
           <Route path="/glossary/:slug" element={<GlossaryTerm />} />
           <Route path="/about" element={<About />} />
           <Route path="/about/what-is-degenroll" element={<WhatIsDegenRoll />} />
+          <Route path="/methodology" element={<Methodology />} />
+          <Route path="/editorial-policy" element={<EditorialPolicy />} />
+          <Route path="/sources-and-references" element={<SourcesReferences />} />
           
           {/* Crypto Casino Guides - Top Picks */}
           <Route path="/top-safest-no-kyc-crypto-casinos" element={<TopSafestNoKycCasinos />} />
