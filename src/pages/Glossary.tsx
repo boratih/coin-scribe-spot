@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { BookOpen, ExternalLink, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { glossaryTerms, groupedTerms } from "@/data/glossaryTerms";
@@ -142,14 +143,7 @@ const Glossary = () => {
           </div>
         </section>
 
-        {/* Footer */}
-        <footer className="border-t border-border py-12">
-          <div className="container text-center">
-            <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors">
-              ← Back to DegenRoll
-            </Link>
-          </div>
-        </footer>
+        <Footer />
       </main>
     </>
   );

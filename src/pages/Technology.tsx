@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { ExternalLink, Shield, Repeat, CheckCircle, Cpu } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -154,14 +155,7 @@ const Technology = () => {
           </div>
         </section>
 
-        {/* Footer */}
-        <footer className="border-t border-border py-12">
-          <div className="container text-center">
-            <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors">
-              ← Back to DegenRoll
-            </Link>
-          </div>
-        </footer>
+        <Footer />
       </main>
     </>
   );

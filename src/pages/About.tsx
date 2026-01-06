@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -87,11 +88,7 @@ const About = () => {
           </article>
         </main>
 
-        <footer className="border-t border-border/40 py-8 mt-16">
-          <div className="container mx-auto px-4 text-center text-muted-foreground">
-            <p>© {new Date().getFullYear()} Degen Blog. All rights reserved.</p>
-          </div>
-        </footer>
+        <Footer />
       </div>
     </>
   );
