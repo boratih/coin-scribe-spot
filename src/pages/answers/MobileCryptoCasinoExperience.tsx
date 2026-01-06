@@ -3,11 +3,31 @@ import AnswerLayout from "@/components/AnswerLayout";
 const faqs = [
   {
     question: "Can I play all games on mobile?",
-    answer: "Most slots and table games are optimized; some live dealer features may be limited.",
+    answer: "Most slots and table games; some live dealer games may be limited.",
   },
   {
-    question: "Is mobile crypto casino secure?",
-    answer: "Yes, if you use a licensed platform and enable security features like 2FA.",
+    question: "Is mobile secure?",
+    answer: "Yes, if using licensed platforms and 2FA.",
+  },
+  {
+    question: "Can I deposit/withdraw crypto on mobile?",
+    answer: "Yes, wallet integration allows it.",
+  },
+  {
+    question: "Are mobile bonuses available?",
+    answer: "Often, depends on platform.",
+  },
+  {
+    question: "Does mobile affect provably fair verification?",
+    answer: "No, PF works same on mobile.",
+  },
+  {
+    question: "Can I use multiple wallets?",
+    answer: "Yes.",
+  },
+  {
+    question: "Are apps or browser better?",
+    answer: "Depends on UX; both secure if official.",
   },
 ];
 
@@ -27,37 +47,37 @@ const MobileCryptoCasinoExperience = () => {
       lastUpdated="January 2026"
       quickAnswer={
         <p>
-          Mobile crypto casinos allow gameplay via smartphones and tablets. Many platforms offer responsive websites or apps that integrate crypto wallets for deposits and withdrawals.
+          Mobile crypto casinos let players gamble and manage crypto via smartphones or tablets, offering responsive websites or apps with integrated wallet functionality.
         </p>
       }
       faqs={faqs}
       relatedTopics={relatedTopics}
-      summary="Mobile crypto casinos offer convenience and flexibility, allowing players to gamble and manage crypto funds on the go while maintaining security."
+      summary="Mobile crypto casinos provide flexibility while maintaining security; ideal for players on the go."
     >
       <section>
         <h2 className="text-2xl font-bold mb-4">Features</h2>
         <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-          <li>Mobile-friendly games</li>
-          <li>Wallet integration for fast deposits/withdrawals</li>
-          <li>Push notifications for bonuses and promotions</li>
-          <li>Security measures such as biometric login</li>
+          <li>Mobile-optimized games</li>
+          <li>Wallet integration</li>
+          <li>Push notifications</li>
+          <li>Biometric security</li>
         </ul>
       </section>
 
       <section>
         <h2 className="text-2xl font-bold mb-4">Advantages</h2>
         <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-          <li>Play anywhere, anytime</li>
-          <li>Convenient wallet management</li>
-          <li>Access to full crypto casino features on mobile</li>
+          <li>Play anywhere</li>
+          <li>Convenient deposits/withdrawals</li>
+          <li>Full crypto casino features on mobile</li>
         </ul>
       </section>
 
       <section>
         <h2 className="text-2xl font-bold mb-4">Limitations</h2>
         <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-          <li>Screen size may affect user experience</li>
-          <li>Mobile network issues can slow blockchain confirmations</li>
+          <li>Screen size may affect gameplay</li>
+          <li>Network delays can slow blockchain confirmations</li>
         </ul>
       </section>
     </AnswerLayout>
