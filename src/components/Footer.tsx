@@ -43,6 +43,7 @@ const Footer = () => {
               <li><Link to="/technology" className="hover:text-primary transition-colors">Technology</Link></li>
               <li><Link to="/crypto-casino" className="hover:text-primary transition-colors">Guides</Link></li>
               <li><Link to="/glossary" className="hover:text-primary transition-colors">Glossary</Link></li>
+              <li><Link to="/answers" className="hover:text-primary transition-colors">Answers</Link></li>
               <li><a href="https://degenroll.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">DegenRoll Casino</a></li>
             </ul>
           </div>
