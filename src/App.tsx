@@ -50,6 +50,15 @@ import SourcesReferences from "./pages/SourcesReferences";
 // Answers
 import Answers from "./pages/Answers";
 import WhatIsACryptoCasino from "./pages/answers/WhatIsACryptoCasino";
+import HowDoCryptoCasinosWork from "./pages/answers/HowDoCryptoCasinosWork";
+import AreCryptoCasinosLegalAnswer from "./pages/answers/AreCryptoCasinosLegal";
+import AreCryptoCasinosSafe from "./pages/answers/AreCryptoCasinosSafe";
+import WhatIsANoKycCryptoCasino from "./pages/answers/WhatIsANoKycCryptoCasino";
+import AreNoKycCryptoCasinosLegal from "./pages/answers/AreNoKycCryptoCasinosLegal";
+import WhatIsProvablyFairGambling from "./pages/answers/WhatIsProvablyFairGambling";
+import HowDoCryptoCasinoWithdrawalsWork from "./pages/answers/HowDoCryptoCasinoWithdrawalsWork";
+import WhatCryptocurrenciesDoCasinosAccept from "./pages/answers/WhatCryptocurrenciesDoCasinosAccept";
+import WhatAreTheRisksOfCryptoCasinos from "./pages/answers/WhatAreTheRisksOfCryptoCasinos";
 
 const queryClient = new QueryClient();
 
@@ -113,6 +122,15 @@ const App = () => (
           {/* Answers */}
           <Route path="/answers" element={<Answers />} />
           <Route path="/answers/what-is-a-crypto-casino" element={<WhatIsACryptoCasino />} />
+          <Route path="/answers/how-do-crypto-casinos-work" element={<HowDoCryptoCasinosWork />} />
+          <Route path="/answers/are-crypto-casinos-legal" element={<AreCryptoCasinosLegalAnswer />} />
+          <Route path="/answers/are-crypto-casinos-safe" element={<AreCryptoCasinosSafe />} />
+          <Route path="/answers/what-is-a-no-kyc-crypto-casino" element={<WhatIsANoKycCryptoCasino />} />
+          <Route path="/answers/are-no-kyc-crypto-casinos-legal" element={<AreNoKycCryptoCasinosLegal />} />
+          <Route path="/answers/what-is-provably-fair-gambling" element={<WhatIsProvablyFairGambling />} />
+          <Route path="/answers/how-do-crypto-casino-withdrawals-work" element={<HowDoCryptoCasinoWithdrawalsWork />} />
+          <Route path="/answers/what-cryptocurrencies-do-casinos-accept" element={<WhatCryptocurrenciesDoCasinosAccept />} />
+          <Route path="/answers/what-are-the-risks-of-crypto-casinos" element={<WhatAreTheRisksOfCryptoCasinos />} />
           
           <Route path="/:slug" element={<Article />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

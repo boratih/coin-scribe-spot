@@ -28,9 +28,10 @@ const faqs = [
 ];
 
 const relatedTopics = [
-  { title: "What Is a No-KYC Crypto Casino?", href: "/guides/what-is-no-kyc-crypto-casino" },
-  { title: "What Is Provably Fair Gambling?", href: "/guides/what-is-provably-fair-system" },
-  { title: "Are Crypto Casinos Legal?", href: "/guides/are-crypto-casinos-legal" },
+  { title: "How Do Crypto Casinos Work?", href: "/answers/how-do-crypto-casinos-work" },
+  { title: "What Is a No-KYC Crypto Casino?", href: "/answers/what-is-a-no-kyc-crypto-casino" },
+  { title: "What Is Provably Fair Gambling?", href: "/answers/what-is-provably-fair-gambling" },
+  { title: "Are Crypto Casinos Legal?", href: "/answers/are-crypto-casinos-legal" },
 ];
 
 const WhatIsACryptoCasino = () => {
