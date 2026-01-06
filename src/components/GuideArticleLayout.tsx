@@ -20,6 +20,7 @@ interface GuideArticleLayoutProps {
   heroImage: string;
   heroImageAlt?: string;
   publishDate: string;
+  lastUpdated?: string;
   readTime?: string;
   introduction?: React.ReactNode;
   children: React.ReactNode;
@@ -34,6 +35,7 @@ const GuideArticleLayout = ({
   heroImage,
   heroImageAlt,
   publishDate,
+  lastUpdated,
   readTime,
   introduction,
   children,
@@ -48,7 +50,7 @@ const GuideArticleLayout = ({
     author: { "@type": "Organization", name: "DegenRoll" },
     publisher: { "@type": "Organization", name: "DegenRoll", url: "https://degenroll.co" },
     datePublished: publishDate,
-    dateModified: publishDate,
+    dateModified: lastUpdated || publishDate,
     mainEntityOfPage: canonicalUrl,
     image: heroImage,
   };
@@ -94,8 +96,14 @@ const GuideArticleLayout = ({
           {/* Hero Section */}
           <header className="mb-10">
             <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">{title}</h1>
-            <div className="flex items-center gap-4 text-muted-foreground text-sm mb-6">
-              <span>{publishDate}</span>
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-muted-foreground text-sm mb-6">
+              <span>Published: {publishDate}</span>
+              {lastUpdated && (
+                <>
+                  <span>•</span>
+                  <span>Last Updated: {lastUpdated}</span>
+                </>
+              )}
               {readTime && (
                 <>
                   <span>•</span>
