@@ -112,6 +112,7 @@ const GuideArticleLayout = ({
             </div>
             {introduction && (
               <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-6 rounded-xl border-l-4 border-primary">
+                <p className="text-xs font-semibold uppercase tracking-wider text-primary mb-2">Quick Answer</p>
                 {introduction}
               </div>
             )}
