@@ -42,6 +42,7 @@ import BestCryptoSlotGames from "./pages/guides/BestCryptoSlotGames";
 import BlockchainGamingNftCasinos from "./pages/guides/BlockchainGamingNftCasinos";
 
 import CryptoCasino from "./pages/CryptoCasino";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -51,6 +52,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/crypto-casino" element={<CryptoCasino />} />
