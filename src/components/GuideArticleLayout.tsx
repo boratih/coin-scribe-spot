@@ -48,12 +48,16 @@ const GuideArticleLayout = ({
     "@type": "Article",
     headline: title,
     description: metaDescription,
-    author: { "@type": "Organization", name: "DegenRoll" },
+    author: { "@type": "Organization", name: "DegenRoll", url: "https://degenroll.co" },
     publisher: { "@type": "Organization", name: "DegenRoll", url: "https://degenroll.co" },
     datePublished: publishDate,
     dateModified: lastUpdated || publishDate,
     mainEntityOfPage: canonicalUrl,
-    image: heroImage,
+    image: {
+      "@type": "ImageObject",
+      url: heroImage,
+      caption: heroImageAlt || `Educational illustration for ${title}`,
+    },
   };
 
   const faqJsonLd = {
@@ -69,6 +73,17 @@ const GuideArticleLayout = ({
     })),
   };
 
+  // Speakable schema - tells AI which content is suitable for citation/voice
+  const speakableJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [".quick-answer", ".key-takeaways", "h1"],
+    },
+    url: canonicalUrl,
+  };
+
   return (
     <>
       <Helmet>
@@ -80,8 +95,15 @@ const GuideArticleLayout = ({
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="article" />
         <meta property="og:image" content={heroImage} />
+        <meta property="og:image:alt" content={heroImageAlt || `Educational illustration for ${title}`} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={metaDescription} />
+        <meta name="twitter:image" content={heroImage} />
+        <meta name="twitter:image:alt" content={heroImageAlt || `Educational illustration for ${title}`} />
         <script type="application/ld+json">{JSON.stringify(articleJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(speakableJsonLd)}</script>
       </Helmet>
 
       <Header />
@@ -120,7 +142,7 @@ const GuideArticleLayout = ({
               />
             </div>
             {introduction && (
-              <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-6 rounded-xl border-l-4 border-primary">
+              <div className="quick-answer bg-gradient-to-r from-primary/10 to-primary/5 p-6 rounded-xl border-l-4 border-primary">
                 <p className="text-xs font-semibold uppercase tracking-wider text-primary mb-2">Quick Answer</p>
                 {introduction}
               </div>
@@ -165,9 +187,9 @@ const GuideArticleLayout = ({
             </Accordion>
           </section>
 
-          {/* Summary Section */}
+          {/* Summary Section - marked for AI citation via speakable schema */}
           {summary && (
-            <section className="mt-10">
+            <section className="key-takeaways mt-10">
               <div className="bg-card p-6 rounded-xl border border-border/50">
                 <h2 className="text-xl font-bold mb-3">Key Takeaways</h2>
                 <p className="text-muted-foreground leading-relaxed">{summary}</p>

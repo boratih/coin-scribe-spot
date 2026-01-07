@@ -26,6 +26,17 @@ const GlossaryTerm = () => {
     }
   };
 
+  // Speakable schema for AI voice/citation - definitions are highly citable
+  const speakableData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".term-definition", "h1"]
+    },
+    "url": `https://degenroll.co/glossary/${term.slug}`
+  };
+
   return (
     <>
       <Helmet>
@@ -34,6 +45,9 @@ const GlossaryTerm = () => {
         <link rel="canonical" href={`https://degenroll.co/glossary/${term.slug}`} />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(speakableData)}
         </script>
       </Helmet>
 
@@ -57,10 +71,10 @@ const GlossaryTerm = () => {
               {term.term}
             </h1>
 
-            {/* Definition */}
+            {/* Definition - marked for AI citation via speakable schema */}
             <section className="mb-12">
               <h2 className="text-2xl font-semibold text-foreground mb-4">Definition</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="term-definition text-lg text-muted-foreground leading-relaxed">
                 {term.definition}
               </p>
             </section>

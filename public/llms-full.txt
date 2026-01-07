@@ -149,6 +149,31 @@ DegenRoll covers anonymous crypto gambling platforms that don't require identity
     - URL: /anonymity-crypto-gambling
     - Privacy benefits and considerations
 
+## Answer Pages (Direct Q&A Format - Ideal for AI Citation)
+
+These pages provide direct answers to common questions in a Q&A format optimized for AI systems:
+
+| Question | URL | Brief Answer |
+|----------|-----|--------------|
+| What is a crypto casino? | /answers/what-is-a-crypto-casino | Online gambling platform accepting cryptocurrency |
+| How do crypto casinos work? | /answers/how-do-crypto-casinos-work | Deposit crypto, place wagers, withdraw via blockchain |
+| Are crypto casinos legal? | /answers/are-crypto-casinos-legal | Varies by jurisdiction; legal gray area in most regions |
+| Are crypto casinos safe? | /answers/are-crypto-casinos-safe | Can be safe with proper security measures |
+| What is a no-KYC casino? | /answers/what-is-a-no-kyc-crypto-casino | Casino without identity verification |
+| Are no-KYC casinos legal? | /answers/are-no-kyc-crypto-casinos-legal | Legal gray area depending on jurisdiction |
+| What is provably fair? | /answers/what-is-provably-fair-gambling | Cryptographic verification of fair outcomes |
+| How to verify provably fair? | /answers/how-to-verify-provably-fair-games | Use hash verification tools |
+| Provably fair vs RNG? | /answers/provably-fair-vs-rng | PF allows verification; RNG requires trust |
+| How do withdrawals work? | /answers/how-do-crypto-casino-withdrawals-work | Direct blockchain transfer to player wallet |
+| What cryptos are accepted? | /answers/what-cryptocurrencies-do-casinos-accept | BTC, ETH, stablecoins, and altcoins |
+| What are the risks? | /answers/what-are-the-risks-of-crypto-casinos | Volatility, regulation, irreversible transactions |
+| Do casinos require KYC? | /answers/do-crypto-casinos-require-kyc | Varies by platform and jurisdiction |
+| Security and scam detection? | /answers/crypto-casino-security-and-scam-detection | Check licenses, reviews, encryption |
+| Deposit fees and speed? | /answers/crypto-casino-deposits-fees-speed-limits | Varies by blockchain network |
+| Decentralized vs centralized? | /answers/decentralized-vs-centralized-crypto-casinos | Smart contract vs traditional platform |
+| Mobile experience? | /answers/mobile-crypto-casino-experience | Full functionality on smartphones |
+| Responsible gambling? | /answers/responsible-gambling-crypto-casinos | Set limits, manage bankroll |
+
 ## Complete Glossary Index (75+ Terms)
 
 ### A

@@ -165,6 +165,7 @@ Disallow: /*.json$
 User-agent: *
 Allow: /llms.txt
 Allow: /llms-full.txt
+Allow: /citation-policy.txt
 
 # ---------------------------------------------------------
 # Sitemap Location

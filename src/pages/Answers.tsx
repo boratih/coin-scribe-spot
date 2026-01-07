@@ -103,6 +103,21 @@ const answers: Answer[] = [
 ];
 
 const Answers = () => {
+  // ItemList schema for AI to understand the collection of Q&A pages
+  const itemListJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Crypto Casino FAQ Collection",
+    description: "Comprehensive answers to common questions about cryptocurrency casinos and blockchain gambling",
+    numberOfItems: answers.length,
+    itemListElement: answers.map((answer, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      url: `https://degenroll.co/answers/${answer.slug}`,
+      name: answer.title,
+    })),
+  };
+
   return (
     <>
       <Helmet>
@@ -112,6 +127,7 @@ const Answers = () => {
           content="Get clear, concise answers to common questions about crypto casinos, blockchain gambling, and cryptocurrency gaming."
         />
         <link rel="canonical" href="https://degenroll.co/answers" />
+        <script type="application/ld+json">{JSON.stringify(itemListJsonLd)}</script>
       </Helmet>
 
       <Header />
