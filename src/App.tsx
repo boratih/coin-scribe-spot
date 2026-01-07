@@ -67,8 +67,6 @@ import CryptoCasinoDepositsFeesSpeedLimits from "./pages/answers/CryptoCasinoDep
 import DecentralizedVsCentralizedCryptoCasinos from "./pages/answers/DecentralizedVsCentralizedCryptoCasinos";
 import MobileCryptoCasinoExperience from "./pages/answers/MobileCryptoCasinoExperience";
 import ResponsibleGamblingCryptoCasinos from "./pages/answers/ResponsibleGamblingCryptoCasinos";
-import ExpandedCryptoCasinoFaqs from "./pages/answers/ExpandedCryptoCasinoFaqs";
-
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -148,7 +146,6 @@ const App = () => (
           <Route path="/answers/decentralized-vs-centralized-crypto-casinos" element={<DecentralizedVsCentralizedCryptoCasinos />} />
           <Route path="/answers/mobile-crypto-casino-experience" element={<MobileCryptoCasinoExperience />} />
           <Route path="/answers/responsible-gambling-crypto-casinos" element={<ResponsibleGamblingCryptoCasinos />} />
-          <Route path="/answers/expanded-crypto-casino-faqs" element={<ExpandedCryptoCasinoFaqs />} />
           
           <Route path="/:slug" element={<Article />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

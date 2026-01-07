@@ -100,11 +100,6 @@ const answers: Answer[] = [
     title: "Responsible Gambling in Crypto Casinos",
     excerpt: "Responsible gambling involves managing bankrolls, setting limits, and understanding cryptocurrency volatility during gameplay.",
   },
-  {
-    slug: "expanded-crypto-casino-faqs",
-    title: "Expanded Crypto Casino FAQs",
-    excerpt: "A comprehensive FAQ covering deposits, withdrawals, safety, legality, games, and platform practices for crypto casinos.",
-  },
 ];
 
 const Answers = () => {
