@@ -47,10 +47,28 @@ const AnswerLayout = ({
     "@type": "Article",
     headline: title,
     description: metaDescription,
-    author: { "@type": "Organization", name: "DegenRoll" },
+    author: { "@type": "Organization", name: "DegenRoll", url: "https://degenroll.co" },
     publisher: { "@type": "Organization", name: "DegenRoll", url: "https://degenroll.co" },
     dateModified: lastUpdated,
     mainEntityOfPage: canonicalUrl,
+  };
+
+  // QAPage schema for AI systems - better for direct Q&A citation
+  const qaPageJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "QAPage",
+    mainEntity: {
+      "@type": "Question",
+      name: title,
+      text: title,
+      answerCount: 1,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: summary,
+        author: { "@type": "Organization", name: "DegenRoll" },
+        url: canonicalUrl,
+      },
+    },
   };
 
   const faqJsonLd = {
@@ -66,6 +84,17 @@ const AnswerLayout = ({
     })),
   };
 
+  // Speakable schema - tells AI which content is suitable for citation/voice
+  const speakableJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [".quick-answer", ".summary-section", "h1"],
+    },
+    url: canonicalUrl,
+  };
+
   return (
     <>
       <Helmet>
@@ -77,7 +106,9 @@ const AnswerLayout = ({
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="article" />
         <script type="application/ld+json">{JSON.stringify(articleJsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(qaPageJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(speakableJsonLd)}</script>
       </Helmet>
 
       <Header />
@@ -95,8 +126,8 @@ const AnswerLayout = ({
             <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">{title}</h1>
             <p className="text-muted-foreground text-sm mb-6">Last updated: {lastUpdated}</p>
             
-            {/* Quick Answer */}
-            <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-6 rounded-xl border-l-4 border-primary">
+            {/* Quick Answer - marked for AI citation via speakable schema */}
+            <div className="quick-answer bg-gradient-to-r from-primary/10 to-primary/5 p-6 rounded-xl border-l-4 border-primary">
               <p className="text-xs font-semibold uppercase tracking-wider text-primary mb-2">Quick Answer</p>
               <div className="text-muted-foreground leading-relaxed">{quickAnswer}</div>
             </div>
@@ -107,8 +138,8 @@ const AnswerLayout = ({
             {children}
           </div>
 
-          {/* In Summary */}
-          <section className="mt-10">
+          {/* In Summary - marked for AI citation via speakable schema */}
+          <section className="summary-section mt-10">
             <div className="bg-card p-6 rounded-xl border border-border/50">
               <h2 className="text-xl font-bold mb-3">In Summary</h2>
               <p className="text-muted-foreground leading-relaxed">{summary}</p>
