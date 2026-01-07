@@ -1,15 +1,22 @@
-// Crypto Casino Guide articles data
-import casinoArticle from "@/assets/casino-article.jpg";
-import cryptoArticle from "@/assets/crypto-article.jpg";
-import defiArticle from "@/assets/defi-article.jpg";
-import gamingArticle from "@/assets/gaming-article.jpg";
-import riskMgmtArticle from "@/assets/risk-mgmt-article.jpg";
-import techAnalysisArticle from "@/assets/tech-analysis-article.jpg";
-import cryptoBonusesArticle from "@/assets/crypto-bonuses-article.jpg";
-import layer2Article from "@/assets/layer2-article.jpg";
-import liquidityArticle from "@/assets/liquidity-article.jpg";
-import apyArticle from "@/assets/apy-article.jpg";
-import nftGamingArticle from "@/assets/nft-gaming-article.jpg";
+// Crypto Casino Guide articles data - with DegenRoll branded thumbnails
+import noKycCasinosThumb from "@/assets/thumbnails/no-kyc-casinos-thumb.jpg";
+import cryptoBonusesThumb from "@/assets/thumbnails/crypto-bonuses-thumb.jpg";
+import cryptoSlotsThumb from "@/assets/thumbnails/crypto-slots-thumb.jpg";
+import nftGamingThumb from "@/assets/thumbnails/nft-gaming-thumb.jpg";
+import cryptoFundamentalsThumb from "@/assets/thumbnails/crypto-fundamentals-thumb.jpg";
+import decentralizedThumb from "@/assets/thumbnails/decentralized-thumb.jpg";
+import provablyFairThumb from "@/assets/thumbnails/provably-fair-thumb.jpg";
+import instantTransactionsThumb from "@/assets/thumbnails/instant-transactions-thumb.jpg";
+import blockchainTechThumb from "@/assets/thumbnails/blockchain-tech-thumb.jpg";
+import smartContractsThumb from "@/assets/thumbnails/smart-contracts-thumb.jpg";
+import cryptoWalletThumb from "@/assets/thumbnails/crypto-wallet-thumb.jpg";
+import gasFeesThumb from "@/assets/thumbnails/gas-fees-thumb.jpg";
+import securityThumb from "@/assets/thumbnails/security-thumb.jpg";
+import legalThumb from "@/assets/thumbnails/legal-thumb.jpg";
+import transparencyThumb from "@/assets/thumbnails/transparency-thumb.jpg";
+import rngVsPfThumb from "@/assets/thumbnails/rng-vs-pf-thumb.jpg";
+import anonymityThumb from "@/assets/thumbnails/anonymity-thumb.jpg";
+import fiatVsCryptoThumb from "@/assets/thumbnails/fiat-vs-crypto-thumb.jpg";
 
 export interface CryptoCasinoGuide {
   slug: string;
@@ -30,7 +37,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Top Picks", 
     excerpt: "Discover the top 5 safest no KYC crypto casinos offering secure, anonymous gambling with reliable payouts and attractive bonuses.",
     metaDescription: "Discover the top 5 safest no KYC crypto casinos offering secure, anonymous gambling with reliable payouts and attractive bonuses in 2025.",
-    image: casinoArticle,
+    image: noKycCasinosThumb,
     date: "Jan 4, 2025",
     readTime: "12 min read"
   },
@@ -40,7 +47,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Top Picks", 
     excerpt: "After testing countless crypto casinos, here are the bonus offers that actually deliver value without hidden traps.",
     metaDescription: "Discover the top 5 crypto casino bonuses that actually deliver value in 2025. Learn which platforms offer the best rakeback, deposit matches, and rewards.",
-    image: cryptoBonusesArticle,
+    image: cryptoBonusesThumb,
     date: "Jan 5, 2025",
     readTime: "10 min read"
   },
@@ -50,7 +57,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Top Picks", 
     excerpt: "Our tested list of high RTP crypto slots with the best payout rates and bonus features for serious players.",
     metaDescription: "Discover the best crypto slot games with high RTP rates and genuine payout potential. Learn about volatility, bonus features, and provably fair verification.",
-    image: gamingArticle,
+    image: cryptoSlotsThumb,
     date: "Jan 4, 2025",
     readTime: "8 min read"
   },
@@ -60,7 +67,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Top Picks", 
     excerpt: "The convergence of blockchain gaming and online gambling is creating new opportunities in the crypto casino space.",
     metaDescription: "Explore how blockchain gaming and NFT integration are transforming crypto casinos. Learn about play-to-earn mechanics, NFT utilities, and the future of gambling.",
-    image: nftGamingArticle,
+    image: nftGamingThumb,
     date: "Jan 4, 2025",
     readTime: "7 min read"
   },
@@ -72,7 +79,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Fundamentals", 
     excerpt: "A crypto casino is an online gambling platform that accepts cryptocurrency as payment. Learn how they work and their key features.",
     metaDescription: "A crypto casino is an online gambling platform that accepts cryptocurrency as payment. Learn how crypto casinos work, their key features, advantages, and regulatory considerations.",
-    image: casinoArticle,
+    image: cryptoFundamentalsThumb,
     date: "Jan 2, 2025",
     readTime: "8 min read"
   },
@@ -82,7 +89,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Fundamentals", 
     excerpt: "No KYC crypto casinos allow gambling without identity verification. Understand how they work and their implications.",
     metaDescription: "No KYC crypto casinos allow gambling without identity verification. Learn how they work, their advantages, limitations, and regulatory implications.",
-    image: cryptoArticle,
+    image: anonymityThumb,
     date: "Jan 2, 2025",
     readTime: "7 min read"
   },
@@ -92,7 +99,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Fundamentals", 
     excerpt: "Decentralized crypto casinos operate on blockchain without central authority using smart contracts for trustless gambling.",
     metaDescription: "A decentralized crypto casino operates on blockchain without central authority. Learn how smart contracts enable trustless gambling.",
-    image: defiArticle,
+    image: decentralizedThumb,
     date: "Jan 2, 2025",
     readTime: "9 min read"
   },
@@ -102,7 +109,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Fundamentals", 
     excerpt: "Provably fair systems use cryptographic algorithms to verify game fairness. Learn how to verify outcomes independently.",
     metaDescription: "Provably fair systems use cryptographic algorithms to verify game fairness. Learn how players can independently verify outcomes.",
-    image: techAnalysisArticle,
+    image: provablyFairThumb,
     date: "Jan 2, 2025",
     readTime: "8 min read"
   },
@@ -112,7 +119,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Fundamentals", 
     excerpt: "Crypto casinos enable near-instant deposits and withdrawals via blockchain. Understand transaction speeds and confirmations.",
     metaDescription: "Crypto casinos enable near-instant deposits and withdrawals via blockchain. Learn how transaction speeds and confirmations work.",
-    image: liquidityArticle,
+    image: instantTransactionsThumb,
     date: "Jan 2, 2025",
     readTime: "7 min read"
   },
@@ -124,7 +131,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Technical", 
     excerpt: "Blockchain technology enables transparent, immutable transactions in crypto casinos through distributed ledgers.",
     metaDescription: "Blockchain technology enables transparent, immutable transactions in crypto casinos. Learn how distributed ledgers power gambling platforms.",
-    image: layer2Article,
+    image: blockchainTechThumb,
     date: "Jan 2, 2025",
     readTime: "8 min read"
   },
@@ -134,7 +141,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Technical", 
     excerpt: "Smart contracts are self-executing programs that automate gambling operations and enable trustless betting.",
     metaDescription: "Smart contracts are self-executing programs that automate gambling operations. Learn how they enable trustless betting.",
-    image: defiArticle,
+    image: smartContractsThumb,
     date: "Jan 2, 2025",
     readTime: "7 min read"
   },
@@ -144,7 +151,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Technical", 
     excerpt: "Crypto casino wallets store and manage cryptocurrency for gambling. Learn about custodial vs non-custodial options.",
     metaDescription: "Crypto casino wallets store and manage cryptocurrency for gambling. Learn about custodial vs non-custodial wallets and security.",
-    image: cryptoArticle,
+    image: cryptoWalletThumb,
     date: "Jan 2, 2025",
     readTime: "6 min read"
   },
@@ -154,7 +161,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Technical", 
     excerpt: "Crypto casinos support various blockchain networks including Bitcoin, Ethereum, and Layer 2 solutions.",
     metaDescription: "Crypto casinos support various blockchain networks including Bitcoin, Ethereum, and Layer 2 solutions. Learn about network differences.",
-    image: layer2Article,
+    image: blockchainTechThumb,
     date: "Jan 2, 2025",
     readTime: "7 min read"
   },
@@ -164,7 +171,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Technical", 
     excerpt: "Gas fees and transaction speeds vary by blockchain network. Learn how they affect crypto casino operations.",
     metaDescription: "Gas fees and transaction speeds vary by blockchain network. Learn how they affect crypto casino deposits, withdrawals, and gameplay.",
-    image: apyArticle,
+    image: gasFeesThumb,
     date: "Jan 2, 2025",
     readTime: "6 min read"
   },
@@ -176,7 +183,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Fairness & Security", 
     excerpt: "Crypto casinos use provably fair algorithms and smart contracts to ensure game fairness and transparency.",
     metaDescription: "Crypto casinos use provably fair algorithms and smart contracts to ensure game fairness. Learn about verification methods.",
-    image: techAnalysisArticle,
+    image: provablyFairThumb,
     date: "Jan 2, 2025",
     readTime: "7 min read"
   },
@@ -186,7 +193,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Fairness & Security", 
     excerpt: "RNG and provably fair are different fairness mechanisms with distinct transparency and verification properties.",
     metaDescription: "RNG and provably fair are different fairness mechanisms. Learn how each works and their transparency differences.",
-    image: gamingArticle,
+    image: rngVsPfThumb,
     date: "Jan 2, 2025",
     readTime: "8 min read"
   },
@@ -196,7 +203,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Fairness & Security", 
     excerpt: "Blockchain gambling enables unprecedented transparency through public ledgers and verifiable transactions.",
     metaDescription: "Blockchain gambling enables unprecedented transparency through public ledgers. Learn how players can verify transactions and outcomes.",
-    image: defiArticle,
+    image: transparencyThumb,
     date: "Jan 2, 2025",
     readTime: "7 min read"
   },
@@ -206,7 +213,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Fairness & Security", 
     excerpt: "Crypto casinos face unique security risks including smart contract vulnerabilities and wallet security challenges.",
     metaDescription: "Crypto casinos face unique security risks including smart contract vulnerabilities and wallet security. Learn about protection measures.",
-    image: riskMgmtArticle,
+    image: securityThumb,
     date: "Jan 2, 2025",
     readTime: "8 min read"
   },
@@ -218,7 +225,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Legal", 
     excerpt: "Crypto casino legality varies by jurisdiction. Understand regulatory frameworks and legal considerations.",
     metaDescription: "Crypto casino legality varies by jurisdiction. Learn about regulatory frameworks, licensing, and legal considerations for players.",
-    image: riskMgmtArticle,
+    image: legalThumb,
     date: "Jan 2, 2025",
     readTime: "9 min read"
   },
@@ -228,7 +235,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Legal", 
     excerpt: "Jurisdiction determines crypto gambling legality and regulations. Learn how different countries approach regulation.",
     metaDescription: "Jurisdiction determines crypto gambling legality and regulations. Learn how different countries approach crypto casino regulation.",
-    image: cryptoArticle,
+    image: legalThumb,
     date: "Jan 2, 2025",
     readTime: "8 min read"
   },
@@ -238,7 +245,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Legal", 
     excerpt: "Some crypto casinos operate without KYC requirements. Understand the reasons and regulatory implications.",
     metaDescription: "Some crypto casinos operate without KYC requirements. Learn the reasons, implications, and regulatory considerations.",
-    image: casinoArticle,
+    image: noKycCasinosThumb,
     date: "Jan 2, 2025",
     readTime: "7 min read"
   },
@@ -250,7 +257,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "User Experience", 
     excerpt: "Crypto casinos offer various bonuses including welcome bonuses, rakeback, and token rewards.",
     metaDescription: "Crypto casinos offer various bonuses including welcome bonuses, rakeback, and token rewards. Learn how bonus structures work.",
-    image: cryptoBonusesArticle,
+    image: cryptoBonusesThumb,
     date: "Jan 2, 2025",
     readTime: "7 min read"
   },
@@ -260,7 +267,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "User Experience", 
     excerpt: "Crypto casinos differ from traditional fiat casinos in payment methods, privacy, and verification requirements.",
     metaDescription: "Crypto casinos differ from traditional fiat casinos in payment methods, privacy, and verification. Learn the key differences.",
-    image: gamingArticle,
+    image: fiatVsCryptoThumb,
     date: "Jan 2, 2025",
     readTime: "8 min read"
   },
@@ -270,7 +277,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "User Experience", 
     excerpt: "Crypto gambling offers varying levels of anonymity through pseudonymous blockchain transactions.",
     metaDescription: "Crypto gambling offers varying levels of anonymity through pseudonymous transactions. Learn how privacy works in crypto casinos.",
-    image: cryptoArticle,
+    image: anonymityThumb,
     date: "Jan 2, 2025",
     readTime: "7 min read"
   },
