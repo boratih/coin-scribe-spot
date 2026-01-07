@@ -10,17 +10,18 @@ interface GuideCardProps {
   category: string;
   date: string;
   image: string;
+  imageAlt?: string;
   readTime: string;
 }
 
-const GuideCard = ({ slug, title, excerpt, category, date, image, readTime }: GuideCardProps) => {
+const GuideCard = ({ slug, title, excerpt, category, date, image, imageAlt, readTime }: GuideCardProps) => {
   return (
     <Link to={`/${slug}`}>
       <Card className="group h-full overflow-hidden bg-gradient-card border-border/50 hover-glow cursor-pointer">
         <div className="aspect-[16/10] overflow-hidden relative">
           <img 
             src={image} 
-            alt={title}
+            alt={imageAlt || `Educational illustration for ${title} - DegenRoll crypto casino guide`}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent" />
