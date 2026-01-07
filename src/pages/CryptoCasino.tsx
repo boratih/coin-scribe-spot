@@ -65,6 +65,7 @@ const CryptoCasino = () => {
                     category={guide.category}
                     date={guide.date}
                     image={guide.image}
+                    imageAlt={guide.imageAlt}
                     readTime={guide.readTime}
                   />
                 ))}
