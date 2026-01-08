@@ -1,5 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
-import layer2Article from "@/assets/layer2-article.jpg";
+import blockchainTechThumb from "@/assets/thumbnails/blockchain-tech-thumb.jpg";
 
 const SupportedBlockchainNetworks = () => {
   const faqs = [
@@ -42,7 +42,8 @@ const SupportedBlockchainNetworks = () => {
       title="Supported Blockchain Networks in Crypto Casinos"
       metaDescription="Crypto casinos support various blockchain networks including Bitcoin, Ethereum, and Layer 2 solutions. Learn about network differences."
       canonicalUrl="https://degenroll.co/supported-blockchain-networks-crypto-casinos"
-      heroImage={layer2Article}
+      heroImage={blockchainTechThumb}
+      heroImageAlt="Network diagram showing supported blockchain protocols in crypto casinos including Bitcoin, Ethereum, and Layer 2 solutions"
       publishDate="2025-01-02"
       faqs={faqs}
     >

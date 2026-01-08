@@ -1,5 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
-import apyArticle from "@/assets/apy-article.jpg";
+import gasFeesThumb from "@/assets/thumbnails/gas-fees-thumb.jpg";
 
 const GasFeesTransactionSpeed = () => {
   const faqs = [
@@ -42,7 +42,8 @@ const GasFeesTransactionSpeed = () => {
       title="Gas Fees and Transaction Speed in Crypto Gambling"
       metaDescription="Gas fees and transaction speeds vary by blockchain network. Learn how they affect crypto casino deposits, withdrawals, and gameplay."
       canonicalUrl="https://degenroll.co/gas-fees-transaction-speed-crypto-gambling"
-      heroImage={apyArticle}
+      heroImage={gasFeesThumb}
+      heroImageAlt="Comparison chart of blockchain gas fees and transaction speeds across different networks used in cryptocurrency gambling"
       publishDate="2025-01-02"
       faqs={faqs}
     >

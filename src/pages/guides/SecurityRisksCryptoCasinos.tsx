@@ -1,5 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
-import riskMgmtArticle from "@/assets/risk-mgmt-article.jpg";
+import securityThumb from "@/assets/thumbnails/security-thumb.jpg";
 
 const SecurityRisksCryptoCasinos = () => {
   const faqs = [
@@ -26,8 +26,8 @@ const SecurityRisksCryptoCasinos = () => {
       title="Security Risks in Crypto Casinos"
       metaDescription="Crypto casinos face unique security risks including smart contract vulnerabilities, exit scams, and wallet security challenges. Learn about protection measures."
       canonicalUrl="https://degenroll.co/security-risks-crypto-casinos"
-      heroImage={riskMgmtArticle}
-      heroImageAlt="Crypto casino security risks illustration"
+      heroImage={securityThumb}
+      heroImageAlt="Security threat diagram for crypto casinos showing smart contract vulnerabilities, phishing risks, and wallet protection"
       publishDate="January 2, 2025"
       readTime="8 min read"
       introduction={

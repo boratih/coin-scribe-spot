@@ -1,5 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
-import techAnalysisArticle from "@/assets/tech-analysis-article.jpg";
+import provablyFairThumb from "@/assets/thumbnails/provably-fair-thumb.jpg";
 
 const HowCryptoCasinosEnsureGameFairness = () => {
   const faqs = [
@@ -34,7 +34,8 @@ const HowCryptoCasinosEnsureGameFairness = () => {
       title="How Crypto Casinos Ensure Game Fairness"
       metaDescription="Crypto casinos use provably fair algorithms and smart contracts to ensure game fairness. Learn about verification methods."
       canonicalUrl="https://degenroll.co/how-crypto-casinos-ensure-game-fairness"
-      heroImage={techAnalysisArticle}
+      heroImage={provablyFairThumb}
+      heroImageAlt="Illustration of game fairness verification methods in crypto casinos including provably fair algorithms and auditing"
       publishDate="2025-01-02"
       faqs={faqs}
     >

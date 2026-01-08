@@ -1,5 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
-import cryptoArticle from "@/assets/crypto-article.jpg";
+import anonymityThumb from "@/assets/thumbnails/anonymity-thumb.jpg";
 
 const AnonymityCryptoGambling = () => {
   const faqs = [
@@ -26,8 +26,8 @@ const AnonymityCryptoGambling = () => {
       title="Anonymity in Crypto Gambling: How It Works"
       metaDescription="Crypto gambling offers varying levels of anonymity through pseudonymous blockchain transactions. Learn how privacy works in crypto casinos."
       canonicalUrl="https://degenroll.co/anonymity-crypto-gambling"
-      heroImage={cryptoArticle}
-      heroImageAlt="Anonymity in cryptocurrency gambling"
+      heroImage={anonymityThumb}
+      heroImageAlt="Privacy levels diagram showing anonymity features in cryptocurrency gambling from pseudonymous transactions to full privacy"
       publishDate="January 2, 2025"
       readTime="7 min read"
       introduction={

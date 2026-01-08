@@ -1,5 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
-import casinoArticle from "@/assets/casino-article.jpg";
+import cryptoFundamentalsThumb from "@/assets/thumbnails/crypto-fundamentals-thumb.jpg";
 
 const WhatIsCryptoCasino = () => {
   const faqs = [
@@ -42,8 +42,8 @@ const WhatIsCryptoCasino = () => {
       title="What Is a Crypto Casino?"
       metaDescription="A crypto casino is an online gambling platform that accepts cryptocurrency as payment. Learn how crypto casinos work, their key features, advantages, and regulatory considerations."
       canonicalUrl="https://degenroll.co/guides/what-is-crypto-casino"
-      heroImage={casinoArticle}
-      heroImageAlt="Digital casino interface with cryptocurrency symbols and blockchain elements"
+      heroImage={cryptoFundamentalsThumb}
+      heroImageAlt="Educational diagram explaining cryptocurrency casino fundamentals including deposit flows, blockchain transactions, and platform architecture"
       publishDate="Jan 2, 2025"
       readTime="8 min read"
       introduction={

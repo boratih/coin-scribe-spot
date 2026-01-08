@@ -1,5 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
-import casinoArticle from "@/assets/casino-article.jpg";
+import noKycCasinosThumb from "@/assets/thumbnails/no-kyc-casinos-thumb.jpg";
 
 const WhyCryptoCasinosAvoidKyc = () => {
   const faqs = [
@@ -26,8 +26,8 @@ const WhyCryptoCasinosAvoidKyc = () => {
       title="Why Some Crypto Casinos Avoid KYC"
       metaDescription="Some crypto casinos operate without KYC requirements to offer privacy-focused gambling, reduce operational costs, and enable global access. Learn the reasons and implications."
       canonicalUrl="https://degenroll.co/why-crypto-casinos-avoid-kyc"
-      heroImage={casinoArticle}
-      heroImageAlt="No KYC crypto casino concept"
+      heroImage={noKycCasinosThumb}
+      heroImageAlt="Flowchart explaining why certain crypto casinos operate without KYC verification including privacy and regulatory factors"
       publishDate="January 2, 2025"
       readTime="7 min read"
       introduction={

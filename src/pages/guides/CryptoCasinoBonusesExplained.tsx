@@ -1,5 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
-import cryptoBonusesArticle from "@/assets/crypto-bonuses-article.jpg";
+import cryptoBonusesThumb from "@/assets/thumbnails/crypto-bonuses-thumb.jpg";
 
 const CryptoCasinoBonusesExplained = () => {
   const faqs = [
@@ -26,8 +26,8 @@ const CryptoCasinoBonusesExplained = () => {
       title="Crypto Casino Bonuses Explained"
       metaDescription="Crypto casinos offer various bonuses including welcome bonuses, rakeback, and token rewards. Learn how bonus structures work and their terms."
       canonicalUrl="https://degenroll.co/crypto-casino-bonuses-explained"
-      heroImage={cryptoBonusesArticle}
-      heroImageAlt="Crypto casino bonuses and rewards"
+      heroImage={cryptoBonusesThumb}
+      heroImageAlt="Breakdown diagram of crypto casino bonus types including welcome bonuses, rakeback systems, and token rewards"
       publishDate="January 2, 2025"
       readTime="7 min read"
       introduction={
