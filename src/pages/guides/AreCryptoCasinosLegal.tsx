@@ -1,5 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
-import riskMgmtArticle from "@/assets/risk-mgmt-article.jpg";
+import legalThumb from "@/assets/thumbnails/legal-thumb.jpg";
 
 const AreCryptoCasinosLegal = () => {
   const faqs = [
@@ -34,7 +34,8 @@ const AreCryptoCasinosLegal = () => {
       title="Are Crypto Casinos Legal?"
       metaDescription="Crypto casino legality varies by jurisdiction. Learn about regulatory frameworks, licensing, and legal considerations for players."
       canonicalUrl="https://degenroll.co/are-crypto-casinos-legal"
-      heroImage={riskMgmtArticle}
+      heroImage={legalThumb}
+      heroImageAlt="World map illustration showing cryptocurrency gambling legal status by jurisdiction with regulatory framework indicators"
       publishDate="2025-01-02"
       faqs={faqs}
     >

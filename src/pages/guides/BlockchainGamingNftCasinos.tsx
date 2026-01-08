@@ -1,5 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
-import nftGamingArticle from "@/assets/nft-gaming-article.jpg";
+import nftGamingThumb from "@/assets/thumbnails/nft-gaming-thumb.jpg";
 
 const BlockchainGamingNftCasinos = () => {
   const faqs = [
@@ -30,8 +30,8 @@ const BlockchainGamingNftCasinos = () => {
       title="Blockchain Gaming and NFT Casinos"
       metaDescription="Explore how blockchain gaming and NFT integration are transforming crypto casinos. Learn about play-to-earn mechanics, NFT utilities, and the future of gambling."
       canonicalUrl="https://degenroll.co/blockchain-gaming-nft-casinos"
-      heroImage={nftGamingArticle}
-      heroImageAlt="Blockchain gaming and NFT casinos"
+      heroImage={nftGamingThumb}
+      heroImageAlt="Conceptual diagram showing NFT integration in blockchain gambling with token utilities, play-to-earn mechanics, and digital asset ownership"
       publishDate="January 4, 2025"
       readTime="7 min read"
       introduction={

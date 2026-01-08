@@ -1,5 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
-import cryptoArticle from "@/assets/crypto-article.jpg";
+import legalThumb from "@/assets/thumbnails/legal-thumb.jpg";
 
 const HowJurisdictionAffectsCryptoGambling = () => {
   const faqs = [
@@ -34,7 +34,8 @@ const HowJurisdictionAffectsCryptoGambling = () => {
       title="How Jurisdiction Affects Crypto Gambling"
       metaDescription="Jurisdiction determines crypto gambling legality and regulations. Learn how different countries approach crypto casino regulation."
       canonicalUrl="https://degenroll.co/how-jurisdiction-affects-crypto-gambling"
-      heroImage={cryptoArticle}
+      heroImage={legalThumb}
+      heroImageAlt="Regulatory comparison chart showing how different jurisdictions handle cryptocurrency gambling laws and licensing"
       publishDate="2025-01-02"
       faqs={faqs}
     >

@@ -1,5 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
-import defiArticle from "@/assets/defi-article.jpg";
+import decentralizedThumb from "@/assets/thumbnails/decentralized-thumb.jpg";
 
 const WhatIsDecentralizedCryptoCasino = () => {
   const faqs = [
@@ -42,7 +42,8 @@ const WhatIsDecentralizedCryptoCasino = () => {
       title="What Is a Decentralized Crypto Casino?"
       metaDescription="A decentralized crypto casino operates on blockchain without central authority. Learn how smart contracts enable trustless gambling."
       canonicalUrl="https://degenroll.co/what-is-decentralized-crypto-casino"
-      heroImage={defiArticle}
+      heroImage={decentralizedThumb}
+      heroImageAlt="Technical diagram showing decentralized casino architecture with smart contract execution, distributed nodes, and peer-to-peer betting"
       publishDate="2025-01-02"
       faqs={faqs}
     >

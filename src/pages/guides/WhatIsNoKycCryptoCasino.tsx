@@ -1,5 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
-import cryptoArticle from "@/assets/crypto-article.jpg";
+import anonymityThumb from "@/assets/thumbnails/anonymity-thumb.jpg";
 
 const WhatIsNoKycCryptoCasino = () => {
   const faqs = [
@@ -42,7 +42,8 @@ const WhatIsNoKycCryptoCasino = () => {
       title='What Does "No KYC Crypto Casino" Mean?'
       metaDescription="No KYC crypto casinos allow gambling without identity verification. Learn how they work, their advantages, limitations, and regulatory implications."
       canonicalUrl="https://degenroll.co/what-is-no-kyc-crypto-casino"
-      heroImage={cryptoArticle}
+      heroImage={anonymityThumb}
+      heroImageAlt="Illustration explaining no-KYC crypto casino operations with privacy protection concepts and anonymous transaction flows"
       publishDate="2025-01-02"
       faqs={faqs}
     >

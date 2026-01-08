@@ -1,5 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
-import defiArticle from "@/assets/defi-article.jpg";
+import transparencyThumb from "@/assets/thumbnails/transparency-thumb.jpg";
 
 const TransparencyBlockchainGambling = () => {
   const faqs = [
@@ -34,7 +34,8 @@ const TransparencyBlockchainGambling = () => {
       title="How Transparency Works in Blockchain Gambling"
       metaDescription="Blockchain gambling enables unprecedented transparency through public ledgers. Learn how players can verify transactions and outcomes."
       canonicalUrl="https://degenroll.co/transparency-blockchain-gambling"
-      heroImage={defiArticle}
+      heroImage={transparencyThumb}
+      heroImageAlt="Diagram showing transparency mechanisms in blockchain gambling including public transaction records and verifiable outcomes"
       publishDate="2025-01-02"
       faqs={faqs}
     >

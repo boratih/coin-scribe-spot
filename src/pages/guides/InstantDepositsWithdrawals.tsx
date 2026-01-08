@@ -1,5 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
-import liquidityArticle from "@/assets/liquidity-article.jpg";
+import instantTransactionsThumb from "@/assets/thumbnails/instant-transactions-thumb.jpg";
 
 const InstantDepositsWithdrawals = () => {
   const faqs = [
@@ -42,7 +42,8 @@ const InstantDepositsWithdrawals = () => {
       title="How Do Instant Deposits and Withdrawals Work in Crypto Casinos?"
       metaDescription="Crypto casinos enable near-instant deposits and withdrawals via blockchain. Learn how transaction speeds and confirmations work."
       canonicalUrl="https://degenroll.co/instant-deposits-withdrawals-crypto-casinos"
-      heroImage={liquidityArticle}
+      heroImage={instantTransactionsThumb}
+      heroImageAlt="Flowchart illustrating instant cryptocurrency deposit and withdrawal processes in online casinos with blockchain confirmation timelines"
       publishDate="2025-01-02"
       faqs={faqs}
     >

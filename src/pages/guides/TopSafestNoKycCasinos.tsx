@@ -1,5 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
-import casinoArticle from "@/assets/casino-article.jpg";
+import noKycCasinosThumb from "@/assets/thumbnails/no-kyc-casinos-thumb.jpg";
 
 const TopSafestNoKycCasinos = () => {
   const faqs = [
@@ -30,8 +30,8 @@ const TopSafestNoKycCasinos = () => {
       title="Top 5 Safest No KYC Crypto Casinos"
       metaDescription="Discover the top 5 safest no KYC crypto casinos offering secure, anonymous gambling with reliable payouts and attractive bonuses in 2025."
       canonicalUrl="https://degenroll.co/top-safest-no-kyc-crypto-casinos"
-      heroImage={casinoArticle}
-      heroImageAlt="Top 5 safest no KYC crypto casinos"
+      heroImage={noKycCasinosThumb}
+      heroImageAlt="Educational illustration showing anonymous crypto casino access with privacy shield icons and blockchain verification symbols"
       publishDate="January 4, 2025"
       readTime="12 min read"
       introduction={

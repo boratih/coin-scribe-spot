@@ -1,5 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
-import layer2Article from "@/assets/layer2-article.jpg";
+import blockchainTechThumb from "@/assets/thumbnails/blockchain-tech-thumb.jpg";
 
 const BlockchainTransactionsCryptoCasinos = () => {
   const faqs = [
@@ -42,8 +42,8 @@ const BlockchainTransactionsCryptoCasinos = () => {
       title="How Blockchain Transactions Power Crypto Casinos"
       metaDescription="Blockchain technology enables transparent, immutable transactions in crypto casinos. Learn how distributed ledgers power gambling platforms."
       canonicalUrl="https://degenroll.co/guides/blockchain-transactions-crypto-casinos"
-      heroImage={layer2Article}
-      heroImageAlt="Blockchain network with distributed nodes processing casino transactions"
+      heroImage={blockchainTechThumb}
+      heroImageAlt="Technical illustration of blockchain transaction architecture in gambling platforms showing distributed ledger technology"
       publishDate="Jan 2, 2025"
       readTime="8 min read"
       introduction={

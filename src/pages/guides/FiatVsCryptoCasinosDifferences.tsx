@@ -1,5 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
-import gamingArticle from "@/assets/gaming-article.jpg";
+import fiatVsCryptoThumb from "@/assets/thumbnails/fiat-vs-crypto-thumb.jpg";
 
 const FiatVsCryptoCasinosDifferences = () => {
   const faqs = [
@@ -26,8 +26,8 @@ const FiatVsCryptoCasinosDifferences = () => {
       title="Differences Between Fiat Casinos and Crypto Casinos"
       metaDescription="Crypto casinos differ from traditional fiat casinos in payment methods, privacy, verification requirements, and fairness verification. Learn the key differences."
       canonicalUrl="https://degenroll.co/fiat-vs-crypto-casinos-differences"
-      heroImage={gamingArticle}
-      heroImageAlt="Fiat vs crypto casinos comparison"
+      heroImage={fiatVsCryptoThumb}
+      heroImageAlt="Comparison chart showing key differences between traditional fiat casinos and cryptocurrency casinos"
       publishDate="January 2, 2025"
       readTime="8 min read"
       introduction={

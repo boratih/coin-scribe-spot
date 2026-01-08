@@ -1,5 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
-import defiArticle from "@/assets/defi-article.jpg";
+import smartContractsThumb from "@/assets/thumbnails/smart-contracts-thumb.jpg";
 
 const SmartContractsCryptoCasinos = () => {
   const faqs = [
@@ -42,7 +42,8 @@ const SmartContractsCryptoCasinos = () => {
       title="What Are Smart Contracts in Crypto Casinos?"
       metaDescription="Smart contracts are self-executing programs that automate gambling operations. Learn how they enable trustless betting."
       canonicalUrl="https://degenroll.co/smart-contracts-crypto-casinos"
-      heroImage={defiArticle}
+      heroImage={smartContractsThumb}
+      heroImageAlt="Diagram explaining smart contract execution in crypto gambling showing automated payout logic and trustless operations"
       publishDate="2025-01-02"
       faqs={faqs}
     >

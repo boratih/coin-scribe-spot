@@ -1,5 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
-import gamingArticle from "@/assets/gaming-article.jpg";
+import rngVsPfThumb from "@/assets/thumbnails/rng-vs-pf-thumb.jpg";
 
 const RngVsProvablyFair = () => {
   const faqs = [
@@ -26,8 +26,8 @@ const RngVsProvablyFair = () => {
       title="What Is RNG vs Provably Fair in Crypto Casinos?"
       metaDescription="RNG and provably fair are different fairness mechanisms in crypto casinos. Learn how each works and their transparency differences."
       canonicalUrl="https://degenroll.co/rng-vs-provably-fair-crypto-casinos"
-      heroImage={gamingArticle}
-      heroImageAlt="RNG vs provably fair comparison"
+      heroImage={rngVsPfThumb}
+      heroImageAlt="Side-by-side comparison of RNG and provably fair systems showing verification methods and transparency levels"
       publishDate="January 2, 2025"
       readTime="8 min read"
       introduction={

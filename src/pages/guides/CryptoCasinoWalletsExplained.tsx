@@ -1,5 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
-import cryptoArticle from "@/assets/crypto-article.jpg";
+import cryptoWalletThumb from "@/assets/thumbnails/crypto-wallet-thumb.jpg";
 
 const CryptoCasinoWalletsExplained = () => {
   const faqs = [
@@ -42,7 +42,8 @@ const CryptoCasinoWalletsExplained = () => {
       title="Crypto Casino Wallets Explained"
       metaDescription="Crypto casino wallets store and manage cryptocurrency for gambling. Learn about custodial vs non-custodial wallets and security."
       canonicalUrl="https://degenroll.co/crypto-casino-wallets-explained"
-      heroImage={cryptoArticle}
+      heroImage={cryptoWalletThumb}
+      heroImageAlt="Comparison diagram of crypto casino wallet types showing custodial versus non-custodial wallets with security features"
       publishDate="2025-01-02"
       faqs={faqs}
     >

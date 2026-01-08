@@ -1,5 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
-import techAnalysisArticle from "@/assets/tech-analysis-article.jpg";
+import provablyFairThumb from "@/assets/thumbnails/provably-fair-thumb.jpg";
 
 const WhatIsProvablyFairSystem = () => {
   const faqs = [
@@ -42,7 +42,8 @@ const WhatIsProvablyFairSystem = () => {
       title="What Is a Provably Fair System in Crypto Gambling?"
       metaDescription="Provably fair systems use cryptographic algorithms to verify game fairness. Learn how players can independently verify outcomes."
       canonicalUrl="https://degenroll.co/what-is-provably-fair-system"
-      heroImage={techAnalysisArticle}
+      heroImage={provablyFairThumb}
+      heroImageAlt="Cryptographic verification diagram showing provably fair system components including server seeds, client seeds, and hash algorithms"
       publishDate="2025-01-02"
       faqs={faqs}
     >
