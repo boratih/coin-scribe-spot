@@ -138,7 +138,7 @@ const GuideArticleLayout = ({
               <img
                 src={heroImage}
                 alt={heroImageAlt || title}
-                className="w-full h-64 md:h-80 object-cover"
+                className="w-full h-auto object-contain"
               />
             </div>
             {introduction && (
