@@ -1,6 +1,19 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
 import noKycCasinosThumb from "@/assets/thumbnails/no-kyc-casinos-thumb.jpg";
 
+// Citation component for inline references
+const Cite = ({ num }: { num: number }) => (
+  <sup>
+    <a 
+      href={`#ref-${num}`} 
+      className="text-primary hover:underline text-xs ml-0.5"
+      title={`See reference [${num}]`}
+    >
+      [{num}]
+    </a>
+  </sup>
+);
+
 const WhyCryptoCasinosAvoidKyc = () => {
   const faqs = [
     {
@@ -21,6 +34,21 @@ const WhyCryptoCasinosAvoidKyc = () => {
     }
   ];
 
+  const references = [
+    {
+      num: 1,
+      title: "Know Your Customer (KYC) - Investopedia",
+      url: "https://www.investopedia.com/terms/k/knowyourclient.asp",
+      description: "Definition and overview of KYC requirements in financial services."
+    },
+    {
+      num: 2,
+      title: "Cryptocurrency and Digital Assets - UK Gambling Commission",
+      url: "https://www.gamblingcommission.gov.uk/about-us/guide/cryptocurrency-and-digital-assets",
+      description: "Regulatory guidance on cryptocurrency gambling and compliance requirements."
+    }
+  ];
+
   return (
     <GuideArticleLayout
       title="Why Some Crypto Casinos Avoid KYC"
@@ -37,11 +65,12 @@ const WhyCryptoCasinosAvoidKyc = () => {
       }
       faqs={faqs}
       summary="Crypto casinos avoid KYC to provide player privacy, reduce operational costs, enable global access, and align with cryptocurrency's pseudonymous values. No-KYC operation typically means operating without traditional gambling licenses, trading regulatory compliance for user privacy and accessibility."
+      references={references}
     >
       <section>
         <h2 className="text-2xl font-bold mb-4">Understanding No-KYC Operations</h2>
         <p className="text-muted-foreground mb-4">
-          KYC (Know Your Customer) requirements force users to verify their identity with documents like passports or driver's licenses. Many crypto casinos deliberately skip this process, attracting players who prioritize privacy.
+          KYC (Know Your Customer) requirements force users to verify their identity with documents like passports or driver's licenses<Cite num={1} />. Many crypto casinos deliberately skip this process, attracting players who prioritize privacy. This approach contrasts with traditional gambling platforms that must comply with anti-money laundering regulations<Cite num={2} />.
         </p>
       </section>
 
@@ -73,6 +102,9 @@ const WhyCryptoCasinosAvoidKyc = () => {
 
       <section>
         <h2 className="text-2xl font-bold mb-4">Trade-offs to Consider</h2>
+        <p className="text-muted-foreground mb-4">
+          Operating without KYC means operating outside the traditional regulatory framework<Cite num={2} />. While this provides privacy benefits, players should understand the trade-offs involved.
+        </p>
         <ul className="space-y-2 text-muted-foreground">
           <li className="flex items-start gap-2">
             <span className="text-primary">•</span>
