@@ -1,6 +1,19 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
 import anonymityThumb from "@/assets/thumbnails/anonymity-thumb.jpg";
 
+// Citation component for inline references
+const Cite = ({ num }: { num: number }) => (
+  <sup>
+    <a 
+      href={`#ref-${num}`} 
+      className="text-primary hover:underline text-xs ml-0.5"
+      title={`See reference [${num}]`}
+    >
+      [{num}]
+    </a>
+  </sup>
+);
+
 const WhatIsNoKycCryptoCasino = () => {
   const faqs = [
     {
@@ -37,6 +50,21 @@ const WhatIsNoKycCryptoCasino = () => {
     }
   ];
 
+  const references = [
+    {
+      num: 1,
+      title: "Know Your Customer (KYC) - Investopedia",
+      url: "https://www.investopedia.com/terms/k/knowyourclient.asp",
+      description: "Definition and explanation of KYC requirements in financial services."
+    },
+    {
+      num: 2,
+      title: "Cryptocurrency - Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Cryptocurrency",
+      description: "Overview of cryptocurrency pseudonymity and blockchain transaction characteristics."
+    }
+  ];
+
   return (
     <GuideArticleLayout
       title='What Does "No KYC Crypto Casino" Mean?'
@@ -46,11 +74,12 @@ const WhatIsNoKycCryptoCasino = () => {
       heroImageAlt="Illustration explaining no-KYC crypto casino operations with privacy protection concepts and anonymous transaction flows"
       publishDate="2025-01-02"
       faqs={faqs}
+      references={references}
     >
       {/* Definition */}
       <section className="mb-12">
         <p className="text-lg bg-muted/30 p-6 rounded-lg border-l-4 border-primary">
-          A <strong>no KYC crypto casino</strong> is an online gambling platform that allows players to deposit, wager, and withdraw cryptocurrency without submitting identity verification documents. KYC stands for "Know Your Customer," a regulatory compliance process requiring identity verification. No KYC casinos bypass this requirement, enabling anonymous or pseudonymous gambling using cryptocurrency.
+          A <strong>no KYC crypto casino</strong> is an online gambling platform that allows players to deposit, wager, and withdraw cryptocurrency without submitting identity verification documents. KYC stands for "Know Your Customer," a regulatory compliance process requiring identity verification<Cite num={1} />. No KYC casinos bypass this requirement, enabling anonymous or pseudonymous gambling using cryptocurrency.
         </p>
       </section>
 
@@ -61,10 +90,10 @@ const WhatIsNoKycCryptoCasino = () => {
           No KYC crypto casinos represent a distinct category within the cryptocurrency gambling ecosystem. These platforms deliberately operate without requiring players to submit personal identification documents, contrasting with traditional online casinos and many regulated crypto gambling sites that mandate identity verification.
         </p>
         <p className="mb-4">
-          The term "KYC" originates from banking and financial services regulations designed to prevent money laundering, fraud, and other financial crimes. Traditional casinos and licensed online gambling platforms typically require players to verify their identity by submitting government-issued identification documents, proof of address, and sometimes proof of funds.
+          The term "KYC" originates from banking and financial services regulations designed to prevent money laundering, fraud, and other financial crimes<Cite num={1} />. Traditional casinos and licensed online gambling platforms typically require players to verify their identity by submitting government-issued identification documents, proof of address, and sometimes proof of funds.
         </p>
         <p>
-          No KYC crypto casinos exploit the <strong>pseudonymous nature of cryptocurrency transactions</strong> to offer gambling services without these verification requirements. Players interact with the platform using only their cryptocurrency wallet address, which provides a degree of privacy not available at traditional gambling platforms.
+          No KYC crypto casinos exploit the <strong>pseudonymous nature of cryptocurrency transactions</strong> to offer gambling services without these verification requirements<Cite num={2} />. Players interact with the platform using only their cryptocurrency wallet address, which provides a degree of privacy not available at traditional gambling platforms.
         </p>
       </section>
 

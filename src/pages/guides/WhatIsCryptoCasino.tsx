@@ -93,7 +93,7 @@ const WhatIsCryptoCasino = () => {
       <section>
         <h2 className="text-2xl font-bold mb-4">Understanding Crypto Casinos</h2>
         <p className="mb-4">
-          Crypto casinos represent a significant evolution in online gambling, combining traditional casino games with cryptocurrency payment systems and blockchain technology. Unlike conventional online casinos that process payments through banks and credit card networks, crypto casinos leverage decentralized financial infrastructure to handle player funds.
+          Crypto casinos represent a significant evolution in online gambling, combining traditional casino games with cryptocurrency payment systems and blockchain technology<Cite num={1} />. Unlike conventional online casinos that process payments through banks and credit card networks, crypto casinos leverage decentralized financial infrastructure to handle player funds.
         </p>
         <p className="mb-4">
           The fundamental concept involves players depositing cryptocurrency into a casino wallet, placing bets using crypto-denominated credits, and withdrawing winnings back to their personal cryptocurrency wallets. This eliminates traditional banking intermediaries and enables features not possible in fiat-based gambling platforms.
@@ -133,7 +133,7 @@ const WhatIsCryptoCasino = () => {
           </div>
           <div className="bg-card/30 p-4 rounded-lg border border-border/30">
             <h3 className="font-semibold mb-2">🎭 Pseudonymous Play</h3>
-            <p className="text-sm text-muted-foreground">Players are identified by wallet addresses rather than personal identity in many cases<Cite num={1} />.</p>
+            <p className="text-sm text-muted-foreground">Players are identified by wallet addresses rather than personal identity in many cases.</p>
           </div>
           <div className="bg-card/30 p-4 rounded-lg border border-border/30">
             <h3 className="font-semibold mb-2">🌍 Global Accessibility</h3>
@@ -171,9 +171,9 @@ const WhatIsCryptoCasino = () => {
           <div className="bg-red-500/10 p-5 rounded-xl border border-red-500/20">
             <h3 className="text-xl font-semibold mb-4 text-red-400">✗ Limitations</h3>
             <ul className="space-y-2 text-sm">
-              <li><strong>Price Volatility:</strong> Values can fluctuate during gameplay<Cite num={2} /></li>
+              <li><strong>Price Volatility:</strong> Values can fluctuate during gameplay</li>
               <li><strong>Technical Complexity:</strong> Requires crypto wallet knowledge</li>
-              <li><strong>Regulatory Uncertainty:</strong> Legal status varies by location<Cite num={3} /></li>
+              <li><strong>Regulatory Uncertainty:</strong> Legal status varies by location</li>
               <li><strong>Irreversible Transactions:</strong> Errors result in permanent loss</li>
               <li><strong>Limited Consumer Protections:</strong> Fewer regulatory safeguards</li>
               <li><strong>Network Congestion:</strong> Can delay transactions at peak times</li>
@@ -189,11 +189,11 @@ const WhatIsCryptoCasino = () => {
         <div className="space-y-4">
           <div className="border-l-4 border-yellow-500/50 pl-4 py-2">
             <p className="font-semibold">"Crypto casinos are completely anonymous"</p>
-            <p className="text-muted-foreground text-sm">While offering more privacy than traditional casinos, blockchain transactions are pseudonymous and potentially traceable<Cite num={1} />. Complete anonymity is not guaranteed.</p>
+            <p className="text-muted-foreground text-sm">While offering more privacy than traditional casinos, blockchain transactions are pseudonymous and potentially traceable. Complete anonymity is not guaranteed.</p>
           </div>
           <div className="border-l-4 border-yellow-500/50 pl-4 py-2">
             <p className="font-semibold">"All crypto casinos are unregulated"</p>
-            <p className="text-muted-foreground text-sm">Some crypto casinos hold gambling licenses and comply with regulatory requirements<Cite num={3} />. Licensing status varies by platform.</p>
+            <p className="text-muted-foreground text-sm">Some crypto casinos hold gambling licenses and comply with regulatory requirements. Licensing status varies by platform.</p>
           </div>
           <div className="border-l-4 border-yellow-500/50 pl-4 py-2">
             <p className="font-semibold">"Crypto casino games are rigged"</p>
@@ -214,7 +214,7 @@ const WhatIsCryptoCasino = () => {
       <section>
         <h2 className="text-2xl font-bold mb-4">Regulatory Considerations</h2>
         <p className="mb-4">
-          The regulatory landscape for crypto casinos remains fragmented and evolving. Different jurisdictions classify and regulate crypto gambling differently, creating a complex compliance environment<Cite num={3} />.
+          The regulatory landscape for crypto casinos remains fragmented and evolving<Cite num={2} />. Different jurisdictions classify and regulate crypto gambling differently, creating a complex compliance environment<Cite num={3} />.
         </p>
         <p className="mb-4">
           Some jurisdictions treat crypto casinos identically to traditional online casinos, requiring gambling licenses. Others have not specifically addressed cryptocurrency gambling, creating regulatory ambiguity. A few have explicitly banned crypto gambling operations.

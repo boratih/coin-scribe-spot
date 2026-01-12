@@ -1,6 +1,19 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
 import decentralizedThumb from "@/assets/thumbnails/decentralized-thumb.jpg";
 
+// Citation component for inline references
+const Cite = ({ num }: { num: number }) => (
+  <sup>
+    <a 
+      href={`#ref-${num}`} 
+      className="text-primary hover:underline text-xs ml-0.5"
+      title={`See reference [${num}]`}
+    >
+      [{num}]
+    </a>
+  </sup>
+);
+
 const WhatIsDecentralizedCryptoCasino = () => {
   const faqs = [
     {
@@ -37,6 +50,21 @@ const WhatIsDecentralizedCryptoCasino = () => {
     }
   ];
 
+  const references = [
+    {
+      num: 1,
+      title: "Smart Contract - Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Smart_contract",
+      description: "Overview of smart contracts and their applications in automated agreement execution."
+    },
+    {
+      num: 2,
+      title: "Introduction to Ethereum - Ethereum.org",
+      url: "https://ethereum.org/en/developers/docs/intro-to-ethereum/",
+      description: "Official documentation on Ethereum smart contracts and decentralized applications."
+    }
+  ];
+
   return (
     <GuideArticleLayout
       title="What Is a Decentralized Crypto Casino?"
@@ -46,11 +74,12 @@ const WhatIsDecentralizedCryptoCasino = () => {
       heroImageAlt="Technical diagram showing decentralized casino architecture with smart contract execution, distributed nodes, and peer-to-peer betting"
       publishDate="2025-01-02"
       faqs={faqs}
+      references={references}
     >
       {/* Definition */}
       <section className="mb-12">
         <p className="text-lg bg-muted/30 p-6 rounded-lg border-l-4 border-primary">
-          A <strong>decentralized crypto casino</strong> is an online gambling platform that operates on blockchain technology using smart contracts, eliminating the need for a central authority to control game outcomes, manage funds, or process transactions. All gambling operations execute automatically through code, with game logic, random number generation, and payouts handled by immutable smart contracts rather than a traditional casino operator.
+          A <strong>decentralized crypto casino</strong> is an online gambling platform that operates on blockchain technology using smart contracts, eliminating the need for a central authority to control game outcomes, manage funds, or process transactions<Cite num={1} />. All gambling operations execute automatically through code, with game logic, random number generation, and payouts handled by immutable smart contracts rather than a traditional casino operator.
         </p>
       </section>
 
@@ -58,13 +87,13 @@ const WhatIsDecentralizedCryptoCasino = () => {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Understanding Decentralized Casinos</h2>
         <p className="mb-4">
-          Decentralized crypto casinos represent the most technologically advanced form of blockchain gambling, applying the principles of <strong>decentralized finance (DeFi)</strong> to casino operations. Unlike centralized crypto casinos that simply accept cryptocurrency payments but still operate like traditional online casinos, decentralized casinos run entirely on blockchain smart contracts.
+          Decentralized crypto casinos represent the most technologically advanced form of blockchain gambling, applying the principles of <strong>decentralized finance (DeFi)</strong> to casino operations. Unlike centralized crypto casinos that simply accept cryptocurrency payments but still operate like traditional online casinos, decentralized casinos run entirely on blockchain smart contracts<Cite num={2} />.
         </p>
         <p className="mb-4">
           The core innovation is the <strong>elimination of trust requirements</strong>. In traditional and centralized crypto casinos, players must trust the operator to pay winnings, generate fair random numbers, and not manipulate game outcomes. Decentralized casinos replace this trust with cryptographic verification—smart contract code executes game logic transparently and immutably.
         </p>
         <p>
-          These platforms typically operate on smart contract-capable blockchains such as Ethereum, BNB Chain, Polygon, Arbitrum, or Solana. The casino's entire business logic—from accepting bets to generating random outcomes to paying winners—is encoded in smart contracts that anyone can audit.
+          These platforms typically operate on smart contract-capable blockchains such as Ethereum, BNB Chain, Polygon, Arbitrum, or Solana<Cite num={2} />. The casino's entire business logic—from accepting bets to generating random outcomes to paying winners—is encoded in smart contracts that anyone can audit.
         </p>
       </section>
 

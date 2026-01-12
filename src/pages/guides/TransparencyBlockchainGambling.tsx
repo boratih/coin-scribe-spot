@@ -1,6 +1,19 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
 import transparencyThumb from "@/assets/thumbnails/transparency-thumb.jpg";
 
+// Citation component for inline references
+const Cite = ({ num }: { num: number }) => (
+  <sup>
+    <a 
+      href={`#ref-${num}`} 
+      className="text-primary hover:underline text-xs ml-0.5"
+      title={`See reference [${num}]`}
+    >
+      [{num}]
+    </a>
+  </sup>
+);
+
 const TransparencyBlockchainGambling = () => {
   const faqs = [
     {
@@ -29,6 +42,21 @@ const TransparencyBlockchainGambling = () => {
     }
   ];
 
+  const references = [
+    {
+      num: 1,
+      title: "Blockchain - Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Blockchain",
+      description: "Overview of blockchain technology and its properties including immutability and transparency."
+    },
+    {
+      num: 2,
+      title: "Smart Contract - Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Smart_contract",
+      description: "Explanation of smart contracts and their role in automated, transparent execution."
+    }
+  ];
+
   return (
     <GuideArticleLayout
       title="How Transparency Works in Blockchain Gambling"
@@ -38,11 +66,12 @@ const TransparencyBlockchainGambling = () => {
       heroImageAlt="Diagram showing transparency mechanisms in blockchain gambling including public transaction records and verifiable outcomes"
       publishDate="2025-01-02"
       faqs={faqs}
+      references={references}
     >
       {/* Definition */}
       <section className="mb-12">
         <p className="text-lg bg-muted/30 p-6 rounded-lg border-l-4 border-primary">
-          <strong>Blockchain gambling transparency</strong> refers to the public visibility of all transactions, game outcomes, and smart contract code on decentralized ledgers. Players can independently verify deposits, withdrawals, bet settlements, and game logic through blockchain explorers and contract audits.
+          <strong>Blockchain gambling transparency</strong> refers to the public visibility of all transactions, game outcomes, and smart contract code on decentralized ledgers<Cite num={1} />. Players can independently verify deposits, withdrawals, bet settlements, and game logic through blockchain explorers and contract audits.
         </p>
       </section>
 
@@ -53,7 +82,7 @@ const TransparencyBlockchainGambling = () => {
           Traditional online casinos operate as black boxes—players trust the operator's claims about fairness, payouts, and fund management without any way to verify them independently.
         </p>
         <p>
-          Blockchain technology changes this by recording all transactions on a <strong>public, immutable ledger</strong>. Every deposit, withdrawal, and bet settlement is visible to anyone. Smart contract casinos go further by making their entire game logic publicly auditable.
+          Blockchain technology changes this by recording all transactions on a <strong>public, immutable ledger</strong><Cite num={1} />. Every deposit, withdrawal, and bet settlement is visible to anyone. Smart contract casinos go further by making their entire game logic publicly auditable<Cite num={2} />.
         </p>
       </section>
 
