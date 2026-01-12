@@ -58,7 +58,7 @@ const GasFeesTransactionSpeed = () => {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Understanding Gas Fees</h2>
         <p className="mb-4">
-          Every blockchain transaction requires computational resources from the network. Gas fees compensate validators (or miners) for this work. The term "gas" originated with Ethereum but the concept applies across all blockchain networks, though terminology varies.
+          Every blockchain transaction requires computational resources from the network. Gas fees compensate validators (or miners) for this work. The term "gas" originated with Ethereum—as <a href="https://ethereum.org/en/developers/docs/gas/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Ethereum's gas documentation</a> explains, it measures computational effort required for operations, with fees paid in the network's native currency. The concept applies across all blockchain networks, though terminology varies.
         </p>
         <p className="mb-4">
           Transaction speed depends on network capacity, consensus mechanism, and the fee paid. <strong>Higher fees typically result in faster processing</strong> as validators prioritize more profitable transactions. During network congestion, fees spike and speeds decrease.

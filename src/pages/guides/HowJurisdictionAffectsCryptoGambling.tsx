@@ -50,7 +50,7 @@ const HowJurisdictionAffectsCryptoGambling = () => {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Understanding Jurisdictional Impact</h2>
         <p className="mb-4">
-          Cryptocurrency's borderless nature doesn't make gambling laws irrelevant. Where you're located and where a casino is licensed both matter for determining what's legal and what protections exist.
+          Cryptocurrency's borderless nature doesn't make gambling laws irrelevant. Where you're located and where a casino is licensed both matter for determining what's legal and what protections exist. The <a href="https://www.fatf-gafi.org/en/topics/virtual-assets.html" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Financial Action Task Force (FATF)</a> sets international standards that many countries follow when regulating virtual assets and gambling—creating a patchwork of requirements that affects both operators and players.
         </p>
         <p>
           Operators typically register in jurisdictions with favorable gambling laws, while players must navigate their own local regulations—which may differ significantly from where the casino operates.

@@ -58,7 +58,7 @@ const BlockchainTransactionsCryptoCasinos = () => {
       <section>
         <h2 className="text-2xl font-bold mb-4">How Blockchain Powers Gambling</h2>
         <p className="mb-4">
-          Blockchain technology provides the infrastructure that makes crypto casinos possible. Unlike traditional online casinos that rely on banks, credit card processors, and payment gateways, crypto casinos process financial transactions directly on blockchain networks.
+          Blockchain technology provides the infrastructure that makes crypto casinos possible. Unlike traditional online casinos that rely on banks, credit card processors, and payment gateways, crypto casinos process financial transactions directly on blockchain networks. As <a href="https://www.ibm.com/topics/blockchain" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">IBM's blockchain overview</a> explains, this technology creates a shared, immutable ledger that records transactions across a network of computers—eliminating the need for central authorities while maintaining complete transaction integrity.
         </p>
         <p className="mb-4">
           A blockchain is a <strong>distributed ledger</strong>—a database replicated across thousands of computers worldwide. When a player deposits cryptocurrency to a casino, that transaction is broadcast to the network, validated by nodes, included in a block, and permanently recorded.
@@ -204,7 +204,7 @@ const BlockchainTransactionsCryptoCasinos = () => {
         <div className="space-y-4">
           <div className="border-l-4 border-yellow-500/50 pl-4 py-2">
             <p className="font-semibold">"Blockchain transactions are anonymous"</p>
-            <p className="text-muted-foreground text-sm">They are pseudonymous. Transactions are publicly visible and can potentially be traced to identities through analysis of patterns and exchange records.</p>
+            <p className="text-muted-foreground text-sm">They are pseudonymous, not anonymous. As <a href="https://www.chainalysis.com/blog/blockchain-analysis-101/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Chainalysis explains</a>, blockchain analysis can trace transaction flows and link addresses to real-world identities through exchange records and behavioral patterns—meaning privacy is limited rather than absolute.</p>
           </div>
           <div className="border-l-4 border-yellow-500/50 pl-4 py-2">
             <p className="font-semibold">"All blockchain transactions are instant"</p>

@@ -41,7 +41,7 @@ const SecurityRisksCryptoCasinos = () => {
       <section>
         <h2 className="text-2xl font-bold mb-4">Understanding the Risks</h2>
         <p className="text-muted-foreground mb-4">
-          While crypto casinos offer unique advantages, they also present security challenges that traditional platforms don't face. Understanding these risks is crucial for protecting your funds.
+          While crypto casinos offer unique advantages, they also present security challenges that traditional platforms don't face. The <a href="https://www.nist.gov/blockchain" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">National Institute of Standards and Technology</a> notes that blockchain systems introduce novel security considerations including smart contract vulnerabilities and key management challenges—risks that don't exist in traditional online gambling. Understanding these risks is crucial for protecting your funds.
         </p>
       </section>
 
@@ -50,7 +50,7 @@ const SecurityRisksCryptoCasinos = () => {
         <div className="space-y-4">
           <div className="bg-red-500/10 p-4 rounded-lg border border-red-500/30">
             <h3 className="font-semibold text-red-400 mb-2">Smart Contract Bugs</h3>
-            <p className="text-muted-foreground">Code vulnerabilities that can be exploited to drain funds from the platform or manipulate game outcomes.</p>
+            <p className="text-muted-foreground">Code vulnerabilities that can be exploited to drain funds from the platform or manipulate game outcomes. As documented by <a href="https://ethereum.org/en/developers/docs/smart-contracts/security/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Ethereum's security guidelines</a>, even small coding errors can lead to catastrophic fund losses, making professional audits essential.</p>
           </div>
           <div className="bg-red-500/10 p-4 rounded-lg border border-red-500/30">
             <h3 className="font-semibold text-red-400 mb-2">Exit Scams</h3>

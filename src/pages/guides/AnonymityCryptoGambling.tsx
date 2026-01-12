@@ -41,7 +41,7 @@ const AnonymityCryptoGambling = () => {
       <section>
         <h2 className="text-2xl font-bold mb-4">How Anonymity Works</h2>
         <p className="text-muted-foreground mb-4">
-          Cryptocurrency enables gambling without traditional identity verification because blockchain networks don't require personal information to create wallets or transact. This creates a layer of privacy not possible with bank-linked gambling.
+          Cryptocurrency enables gambling without traditional identity verification because blockchain networks don't require personal information to create wallets or transact. As <a href="https://www.investopedia.com/terms/p/pseudonymous.asp" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Investopedia notes</a>, blockchain addresses are pseudonymous rather than anonymous—they don't contain your name, but transaction patterns can potentially be analyzed to link addresses to real identities. This creates a layer of privacy not possible with bank-linked gambling, though it falls short of true anonymity.
         </p>
       </section>
 
@@ -62,7 +62,7 @@ const AnonymityCryptoGambling = () => {
           </div>
           <div className="bg-card/50 p-4 rounded-lg border border-border/50">
             <h3 className="font-semibold text-primary mb-2">Privacy Coins</h3>
-            <p className="text-muted-foreground">Monero and Zcash offer enhanced transaction privacy through cryptographic techniques.</p>
+            <p className="text-muted-foreground">Monero and Zcash offer enhanced transaction privacy through cryptographic techniques. According to <a href="https://www.getmonero.org/resources/about/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Monero's documentation</a>, ring signatures and stealth addresses obscure sender, receiver, and amounts—providing stronger privacy guarantees than transparent blockchains.</p>
           </div>
           <div className="bg-card/50 p-4 rounded-lg border border-border/50">
             <h3 className="font-semibold text-primary mb-2">VPN Usage</h3>

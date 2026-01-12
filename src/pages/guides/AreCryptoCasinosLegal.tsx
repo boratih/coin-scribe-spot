@@ -50,7 +50,7 @@ const AreCryptoCasinosLegal = () => {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Understanding the Legal Landscape</h2>
         <p className="mb-4">
-          The legality of crypto casinos is complex because it sits at the intersection of two rapidly evolving regulatory areas: <strong>online gambling law</strong> and <strong>cryptocurrency regulation</strong>.
+          The legality of crypto casinos is complex because it sits at the intersection of two rapidly evolving regulatory areas: <strong>online gambling law</strong> and <strong>cryptocurrency regulation</strong>. According to the <a href="https://www.loc.gov/collections/cryptocurrency-digital-currency/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Library of Congress</a>, cryptocurrency regulations vary dramatically worldwide—from outright bans to permissive frameworks—and gambling adds another layer of jurisdictional complexity.
         </p>
         <p className="mb-4">
           Most gambling laws were written before cryptocurrency existed, creating ambiguity about how they apply. Some jurisdictions have updated laws to address crypto gambling specifically, while others rely on existing frameworks that may or may not cover it.

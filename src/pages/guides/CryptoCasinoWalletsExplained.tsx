@@ -58,7 +58,7 @@ const CryptoCasinoWalletsExplained = () => {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Understanding Crypto Wallets</h2>
         <p className="mb-4">
-          Cryptocurrency wallets are essential for interacting with crypto casinos. Unlike traditional online casinos where players deposit fiat currency to casino accounts, crypto casinos require players to manage cryptocurrency through wallets.
+          Cryptocurrency wallets are essential for interacting with crypto casinos. Unlike traditional online casinos where players deposit fiat currency to casino accounts, crypto casinos require players to manage cryptocurrency through wallets. As <a href="https://bitcoin.org/en/choose-your-wallet" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Bitcoin.org explains</a>, wallets come in many forms—each with different tradeoffs between convenience and security.
         </p>
         <p className="mb-4">
           A cryptocurrency wallet doesn't actually store coins—it stores the <strong>private keys</strong> that prove ownership of cryptocurrency on the blockchain. Whoever controls the private keys controls the funds. This fundamental concept determines the security model of different wallet types.
