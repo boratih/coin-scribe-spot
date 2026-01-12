@@ -1,19 +1,6 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
 import cryptoFundamentalsThumb from "@/assets/thumbnails/crypto-fundamentals-thumb.jpg";
 
-// Citation component for inline references
-const Cite = ({ num }: { num: number }) => (
-  <sup>
-    <a 
-      href={`#ref-${num}`} 
-      className="text-primary hover:underline text-xs ml-0.5"
-      title={`See reference [${num}]`}
-    >
-      [{num}]
-    </a>
-  </sup>
-);
-
 const WhatIsCryptoCasino = () => {
   const faqs = [
     {
@@ -50,27 +37,6 @@ const WhatIsCryptoCasino = () => {
     }
   ];
 
-  const references = [
-    {
-      num: 1,
-      title: "Cryptocurrency",
-      siteName: "Wikipedia",
-      url: "https://en.wikipedia.org/wiki/Cryptocurrency"
-    },
-    {
-      num: 2,
-      title: "Crypto Assets",
-      siteName: "FINRA",
-      url: "https://www.finra.org/investors/insights/crypto-assets"
-    },
-    {
-      num: 3,
-      title: "Cryptocurrency and Digital Assets",
-      siteName: "UK Gambling Commission",
-      url: "https://www.gamblingcommission.gov.uk/about-us/guide/cryptocurrency-and-digital-assets"
-    }
-  ];
-
   return (
     <GuideArticleLayout
       title="What Is a Crypto Casino?"
@@ -87,13 +53,12 @@ const WhatIsCryptoCasino = () => {
       }
       faqs={faqs}
       summary="Crypto casinos are online gambling platforms accepting cryptocurrency payments. They offer advantages like faster withdrawals, enhanced privacy, and provably fair games, while presenting considerations around volatility, technical complexity, and varying regulatory status. Players should evaluate platform reputation, security measures, and their local regulations before participating."
-      references={references}
     >
       {/* Overview Section */}
       <section>
         <h2 className="text-2xl font-bold mb-4">Understanding Crypto Casinos</h2>
         <p className="mb-4">
-          Crypto casinos represent a significant evolution in online gambling, combining traditional casino games with cryptocurrency payment systems and blockchain technology<Cite num={1} />. Unlike conventional online casinos that process payments through banks and credit card networks, crypto casinos leverage decentralized financial infrastructure to handle player funds.
+          Crypto casinos represent a significant evolution in online gambling, combining traditional casino games with cryptocurrency payment systems and blockchain technology. Unlike conventional online casinos that process payments through banks and credit card networks, crypto casinos leverage decentralized financial infrastructure to handle player funds—a distinction that fundamentally changes how transactions, privacy, and trust operate in the gambling ecosystem.
         </p>
         <p className="mb-4">
           The fundamental concept involves players depositing cryptocurrency into a casino wallet, placing bets using crypto-denominated credits, and withdrawing winnings back to their personal cryptocurrency wallets. This eliminates traditional banking intermediaries and enables features not possible in fiat-based gambling platforms.
@@ -214,10 +179,10 @@ const WhatIsCryptoCasino = () => {
       <section>
         <h2 className="text-2xl font-bold mb-4">Regulatory Considerations</h2>
         <p className="mb-4">
-          The regulatory landscape for crypto casinos remains fragmented and evolving<Cite num={2} />. Different jurisdictions classify and regulate crypto gambling differently, creating a complex compliance environment<Cite num={3} />.
+          The regulatory landscape for crypto casinos remains fragmented and evolving. Different jurisdictions classify and regulate crypto gambling differently—some treat it identically to traditional online gambling, while others have yet to address it specifically. As the <a href="https://www.gamblingcommission.gov.uk/about-us/guide/cryptocurrency-and-digital-assets" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">UK Gambling Commission notes</a>, operators accepting cryptocurrency must still comply with existing gambling regulations where applicable, meaning licensed crypto casinos face the same anti-money laundering and player protection requirements as fiat-based operators.
         </p>
         <p className="mb-4">
-          Some jurisdictions treat crypto casinos identically to traditional online casinos, requiring gambling licenses. Others have not specifically addressed cryptocurrency gambling, creating regulatory ambiguity. A few have explicitly banned crypto gambling operations.
+          This creates a complex compliance environment where some jurisdictions treat crypto casinos identically to traditional online casinos, requiring gambling licenses. Others have not specifically addressed cryptocurrency gambling, creating regulatory ambiguity. A few have explicitly banned crypto gambling operations entirely.
         </p>
         <p className="mb-4">
           Players face varying levels of legal risk depending on their location. While operators may face prosecution for unlicensed gambling, individual players are rarely prosecuted in most jurisdictions. However, players should understand their local laws before participating.
