@@ -1,19 +1,6 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
 import blockchainTechThumb from "@/assets/thumbnails/blockchain-tech-thumb.jpg";
 
-// Citation component for inline references
-const Cite = ({ num }: { num: number }) => (
-  <sup>
-    <a 
-      href={`#ref-${num}`} 
-      className="text-primary hover:underline text-xs ml-0.5"
-      title={`See reference [${num}]`}
-    >
-      [{num}]
-    </a>
-  </sup>
-);
-
 const SupportedBlockchainNetworks = () => {
   const faqs = [
     {
@@ -50,21 +37,6 @@ const SupportedBlockchainNetworks = () => {
     }
   ];
 
-  const references = [
-    {
-      num: 1,
-      title: "Bitcoin",
-      siteName: "Wikipedia",
-      url: "https://en.wikipedia.org/wiki/Bitcoin"
-    },
-    {
-      num: 2,
-      title: "Ethereum",
-      siteName: "Wikipedia",
-      url: "https://en.wikipedia.org/wiki/Ethereum"
-    }
-  ];
-
   return (
     <GuideArticleLayout
       title="Supported Blockchain Networks in Crypto Casinos"
@@ -74,7 +46,6 @@ const SupportedBlockchainNetworks = () => {
       heroImageAlt="Network diagram showing supported blockchain protocols in crypto casinos including Bitcoin, Ethereum, and Layer 2 solutions"
       publishDate="2025-01-02"
       faqs={faqs}
-      references={references}
     >
       {/* Definition */}
       <section className="mb-12">
@@ -90,10 +61,10 @@ const SupportedBlockchainNetworks = () => {
           Not all blockchain networks are equal, and understanding their differences is important for crypto casino players. Each network has unique characteristics that affect the gambling experience, from how long deposits take to confirm to how much fees cost.
         </p>
         <p className="mb-4">
-          Major crypto casinos typically support multiple networks to give players flexibility. Some networks are better for <strong>large, infrequent transactions</strong> (Bitcoin<Cite num={1} />), while others excel at <strong>fast, cheap transactions</strong> (Solana, TRON, Layer 2s).
+          Major crypto casinos typically support multiple networks to give players flexibility. Some networks are better for <strong>large, infrequent transactions</strong>—<a href="https://en.wikipedia.org/wiki/Bitcoin" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Bitcoin</a>, for example, prioritizes security and decentralization over speed, making it ideal for significant deposits where confirmation certainty matters more than immediacy.
         </p>
         <p>
-          The rise of Layer 2 solutions and alternative blockchains has dramatically reduced costs and increased speeds compared to early crypto casino days when Bitcoin and Ethereum mainnet were the only options<Cite num={2} />.
+          The rise of Layer 2 solutions and alternative blockchains has dramatically reduced costs and increased speeds compared to early crypto casino days. <a href="https://en.wikipedia.org/wiki/Ethereum" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Ethereum's ecosystem</a> now includes multiple Layer 2 networks like Arbitrum and Polygon that offer near-instant transactions at a fraction of mainnet costs—when Bitcoin and Ethereum mainnet were the only options, small bets were often impractical due to transaction fees.
         </p>
       </section>
 

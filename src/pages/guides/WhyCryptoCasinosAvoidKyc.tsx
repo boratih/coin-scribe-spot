@@ -1,19 +1,6 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
 import noKycCasinosThumb from "@/assets/thumbnails/no-kyc-casinos-thumb.jpg";
 
-// Citation component for inline references
-const Cite = ({ num }: { num: number }) => (
-  <sup>
-    <a 
-      href={`#ref-${num}`} 
-      className="text-primary hover:underline text-xs ml-0.5"
-      title={`See reference [${num}]`}
-    >
-      [{num}]
-    </a>
-  </sup>
-);
-
 const WhyCryptoCasinosAvoidKyc = () => {
   const faqs = [
     {
@@ -34,21 +21,6 @@ const WhyCryptoCasinosAvoidKyc = () => {
     }
   ];
 
-  const references = [
-    {
-      num: 1,
-      title: "Know Your Customer (KYC)",
-      siteName: "Investopedia",
-      url: "https://www.investopedia.com/terms/k/knowyourclient.asp"
-    },
-    {
-      num: 2,
-      title: "Cryptocurrency and Digital Assets",
-      siteName: "UK Gambling Commission",
-      url: "https://www.gamblingcommission.gov.uk/about-us/guide/cryptocurrency-and-digital-assets"
-    }
-  ];
-
   return (
     <GuideArticleLayout
       title="Why Some Crypto Casinos Avoid KYC"
@@ -65,12 +37,14 @@ const WhyCryptoCasinosAvoidKyc = () => {
       }
       faqs={faqs}
       summary="Crypto casinos avoid KYC to provide player privacy, reduce operational costs, enable global access, and align with cryptocurrency's pseudonymous values. No-KYC operation typically means operating without traditional gambling licenses, trading regulatory compliance for user privacy and accessibility."
-      references={references}
     >
       <section>
         <h2 className="text-2xl font-bold mb-4">Understanding No-KYC Operations</h2>
         <p className="text-muted-foreground mb-4">
-          KYC (Know Your Customer) requirements force users to verify their identity with documents like passports or driver's licenses<Cite num={1} />. Many crypto casinos deliberately skip this process, attracting players who prioritize privacy. This approach contrasts with traditional gambling platforms that must comply with anti-money laundering regulations<Cite num={2} />.
+          KYC (Know Your Customer) requirements force users to verify their identity with documents like passports or driver's licenses. As <a href="https://www.investopedia.com/terms/k/knowyourclient.asp" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Investopedia explains</a>, these regulations originated in banking to prevent money laundering and fraud—yet many crypto casinos deliberately bypass this process, attracting players who prioritize privacy over regulatory protections.
+        </p>
+        <p className="text-muted-foreground">
+          This approach contrasts sharply with traditional gambling platforms. Licensed casinos must comply with anti-money laundering regulations, requiring identity verification before allowing significant deposits or withdrawals. No-KYC crypto casinos operate outside this framework entirely.
         </p>
       </section>
 
@@ -103,7 +77,7 @@ const WhyCryptoCasinosAvoidKyc = () => {
       <section>
         <h2 className="text-2xl font-bold mb-4">Trade-offs to Consider</h2>
         <p className="text-muted-foreground mb-4">
-          Operating without KYC means operating outside the traditional regulatory framework<Cite num={2} />. While this provides privacy benefits, players should understand the trade-offs involved.
+          Operating without KYC means operating outside the traditional regulatory framework. As the <a href="https://www.gamblingcommission.gov.uk/about-us/guide/cryptocurrency-and-digital-assets" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">UK Gambling Commission notes</a>, operators accepting cryptocurrency are still expected to comply with existing gambling regulations where applicable—meaning no-KYC casinos typically cannot hold traditional gambling licenses, trading regulatory legitimacy for operational flexibility.
         </p>
         <ul className="space-y-2 text-muted-foreground">
           <li className="flex items-start gap-2">
