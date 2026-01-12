@@ -43,26 +43,99 @@ const GuideArticleLayout = ({
   faqs,
   summary,
 }: GuideArticleLayoutProps) => {
+  // BreadcrumbList schema for site hierarchy
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://degenroll.co/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Guides",
+        item: "https://degenroll.co/#latest-blog",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: title,
+        item: canonicalUrl,
+      },
+    ],
+  };
+
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    "@id": `${canonicalUrl}#article`,
     headline: title,
     description: metaDescription,
-    author: { "@type": "Organization", name: "DegenRoll", url: "https://degenroll.co" },
-    publisher: { "@type": "Organization", name: "DegenRoll", url: "https://degenroll.co" },
+    author: {
+      "@type": "Organization",
+      "@id": "https://degenroll.co/#organization",
+      name: "DegenRoll",
+      url: "https://degenroll.co",
+    },
+    publisher: {
+      "@type": "Organization",
+      "@id": "https://degenroll.co/#organization",
+      name: "DegenRoll",
+      url: "https://degenroll.co",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://degenroll.co/logo.png",
+      },
+    },
     datePublished: publishDate,
     dateModified: lastUpdated || publishDate,
-    mainEntityOfPage: canonicalUrl,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": canonicalUrl,
+    },
     image: {
       "@type": "ImageObject",
       url: heroImage,
       caption: heroImageAlt || `Educational illustration for ${title}`,
     },
+    isPartOf: {
+      "@type": "WebSite",
+      "@id": "https://degenroll.co/#website",
+      name: "DegenRoll",
+    },
+    inLanguage: "en-US",
+    copyrightHolder: {
+      "@id": "https://degenroll.co/#organization",
+    },
+    keywords: title.toLowerCase().split(" ").filter((w: string) => w.length > 3).join(", "),
+    articleSection: "Crypto Casino Guides",
   };
+
+  // HowTo schema for step-by-step guides
+  const howToJsonLd = title.toLowerCase().includes("how") ? {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "@id": `${canonicalUrl}#howto`,
+    name: title,
+    description: metaDescription,
+    image: heroImage,
+    totalTime: `PT${readTime?.replace(" min read", "") || "5"}M`,
+    step: faqs.slice(0, 5).map((faq, index) => ({
+      "@type": "HowToStep",
+      position: index + 1,
+      name: faq.question,
+      text: faq.answer,
+    })),
+  } : null;
 
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@id": `${canonicalUrl}#faq`,
     mainEntity: faqs.map((faq) => ({
       "@type": "Question",
       name: faq.question,
@@ -77,11 +150,16 @@ const GuideArticleLayout = ({
   const speakableJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
+    "@id": canonicalUrl,
     speakable: {
       "@type": "SpeakableSpecification",
-      cssSelector: [".quick-answer", ".key-takeaways", "h1"],
+      cssSelector: [".quick-answer", ".key-takeaways", "h1", ".introduction"],
     },
     url: canonicalUrl,
+    lastReviewed: lastUpdated || publishDate,
+    reviewedBy: {
+      "@id": "https://degenroll.co/#organization",
+    },
   };
 
   return (
@@ -90,41 +168,61 @@ const GuideArticleLayout = ({
         <title>{title} | DegenRoll</title>
         <meta name="description" content={metaDescription} />
         <link rel="canonical" href={canonicalUrl} />
+        {/* Open Graph for social/AI sharing */}
         <meta property="og:title" content={title} />
         <meta property="og:description" content={metaDescription} />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="article" />
         <meta property="og:image" content={heroImage} />
         <meta property="og:image:alt" content={heroImageAlt || `Educational illustration for ${title}`} />
+        <meta property="og:site_name" content="DegenRoll" />
+        <meta property="article:published_time" content={`${publishDate}T00:00:00Z`} />
+        <meta property="article:modified_time" content={`${lastUpdated || publishDate}T00:00:00Z`} />
+        <meta property="article:author" content="DegenRoll" />
+        <meta property="article:section" content="Crypto Casino Guides" />
+        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@degenroll" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={metaDescription} />
         <meta name="twitter:image" content={heroImage} />
         <meta name="twitter:image:alt" content={heroImageAlt || `Educational illustration for ${title}`} />
+        {/* AI hints */}
+        <meta name="ai-content-declaration" content="human-created" />
+        <meta name="citation_title" content={title} />
+        <meta name="citation_author" content="DegenRoll" />
+        <meta name="citation_publication_date" content={publishDate.replace(/-/g, "/")} />
+        <script type="application/ld+json">{JSON.stringify(breadcrumbJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(articleJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(speakableJsonLd)}</script>
+        {howToJsonLd && <script type="application/ld+json">{JSON.stringify(howToJsonLd)}</script>}
       </Helmet>
 
       <Header />
 
       <main className="container max-w-4xl py-8 md:py-12">
-        <nav className="mb-6">
-          <Link to="/?category=gaming" className="text-primary hover:underline text-sm">
-            ← Back to Crypto Casino Guides
-          </Link>
+        {/* Breadcrumb navigation - visible for users and AI */}
+        <nav className="mb-6" aria-label="Breadcrumb">
+          <ol className="flex items-center gap-2 text-sm text-muted-foreground">
+            <li><Link to="/" className="hover:text-primary">Home</Link></li>
+            <li>/</li>
+            <li><Link to="/#latest-blog" className="hover:text-primary">Guides</Link></li>
+            <li>/</li>
+            <li className="text-foreground truncate max-w-[200px]">{title}</li>
+          </ol>
         </nav>
 
-        <article className="prose prose-lg prose-invert max-w-none">
+        <article className="prose prose-lg prose-invert max-w-none" itemScope itemType="https://schema.org/Article">
           {/* Hero Section */}
           <header className="mb-10">
-            <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">{title}</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-tight" itemProp="headline">{title}</h1>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-muted-foreground text-sm mb-6">
-              <span>Published: {publishDate}</span>
+              <span>Published: <time itemProp="datePublished" dateTime={publishDate}>{publishDate}</time></span>
               {lastUpdated && (
                 <>
                   <span>•</span>
-                  <span>Last Updated: {lastUpdated}</span>
+                  <span>Last Updated: <time itemProp="dateModified" dateTime={lastUpdated}>{lastUpdated}</time></span>
                 </>
               )}
               {readTime && (
@@ -139,10 +237,11 @@ const GuideArticleLayout = ({
                 src={heroImage}
                 alt={heroImageAlt || title}
                 className="w-full h-auto object-contain"
+                itemProp="image"
               />
             </div>
             {introduction && (
-              <div className="quick-answer bg-gradient-to-r from-primary/10 to-primary/5 p-6 rounded-xl border-l-4 border-primary">
+              <div className="introduction quick-answer bg-gradient-to-r from-primary/10 to-primary/5 p-6 rounded-xl border-l-4 border-primary" itemProp="abstract">
                 <p className="text-xs font-semibold uppercase tracking-wider text-primary mb-2">Quick Answer</p>
                 {introduction}
               </div>
@@ -150,12 +249,12 @@ const GuideArticleLayout = ({
           </header>
 
           {/* Main Content */}
-          <div className="space-y-10">
+          <div className="space-y-10" itemProp="articleBody">
             {children}
           </div>
 
           {/* FAQ Section - Visible in HTML for AI, interactive for users */}
-          <section className="mt-12 pt-8 border-t border-border/40">
+          <section className="faq-section mt-12 pt-8 border-t border-border/40">
             <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
             
             {/* Hidden div with full FAQ content for AI crawlers - visually hidden but in DOM */}
@@ -192,10 +291,20 @@ const GuideArticleLayout = ({
             <section className="key-takeaways mt-10">
               <div className="bg-card p-6 rounded-xl border border-border/50">
                 <h2 className="text-xl font-bold mb-3">Key Takeaways</h2>
-                <p className="text-muted-foreground leading-relaxed">{summary}</p>
+                <p className="text-muted-foreground leading-relaxed" itemProp="description">{summary}</p>
               </div>
             </section>
           )}
+
+          {/* Trust Line */}
+          <footer className="mt-12 pt-6 border-t border-border/40">
+            <p className="text-sm text-muted-foreground text-center">
+              Content on DegenRoll is created following our{" "}
+              <Link to="/methodology" className="text-primary hover:underline">Methodology</Link>,{" "}
+              <Link to="/editorial-policy" className="text-primary hover:underline">Editorial Policy</Link>, and{" "}
+              <Link to="/sources-and-references" className="text-primary hover:underline">Source Framework</Link>.
+            </p>
+          </footer>
         </article>
       </main>
 
