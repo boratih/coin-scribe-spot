@@ -37,15 +37,15 @@ const WhyCryptoCasinosAvoidKyc = () => {
   const references = [
     {
       num: 1,
-      title: "Know Your Customer (KYC) - Investopedia",
-      url: "https://www.investopedia.com/terms/k/knowyourclient.asp",
-      description: "Definition and overview of KYC requirements in financial services."
+      title: "Know Your Customer (KYC)",
+      siteName: "Investopedia",
+      url: "https://www.investopedia.com/terms/k/knowyourclient.asp"
     },
     {
       num: 2,
-      title: "Cryptocurrency and Digital Assets - UK Gambling Commission",
-      url: "https://www.gamblingcommission.gov.uk/about-us/guide/cryptocurrency-and-digital-assets",
-      description: "Regulatory guidance on cryptocurrency gambling and compliance requirements."
+      title: "Cryptocurrency and Digital Assets",
+      siteName: "UK Gambling Commission",
+      url: "https://www.gamblingcommission.gov.uk/about-us/guide/cryptocurrency-and-digital-assets"
     }
   ];
 

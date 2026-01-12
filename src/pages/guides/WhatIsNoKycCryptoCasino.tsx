@@ -53,15 +53,15 @@ const WhatIsNoKycCryptoCasino = () => {
   const references = [
     {
       num: 1,
-      title: "Know Your Customer (KYC) - Investopedia",
-      url: "https://www.investopedia.com/terms/k/knowyourclient.asp",
-      description: "Definition and explanation of KYC requirements in financial services."
+      title: "Know Your Customer (KYC)",
+      siteName: "Investopedia",
+      url: "https://www.investopedia.com/terms/k/knowyourclient.asp"
     },
     {
       num: 2,
-      title: "Cryptocurrency - Wikipedia",
-      url: "https://en.wikipedia.org/wiki/Cryptocurrency",
-      description: "Overview of cryptocurrency pseudonymity and blockchain transaction characteristics."
+      title: "Cryptocurrency",
+      siteName: "Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Cryptocurrency"
     }
   ];
 

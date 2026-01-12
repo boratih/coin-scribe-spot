@@ -53,15 +53,15 @@ const WhatIsDecentralizedCryptoCasino = () => {
   const references = [
     {
       num: 1,
-      title: "Smart Contract - Wikipedia",
-      url: "https://en.wikipedia.org/wiki/Smart_contract",
-      description: "Overview of smart contracts and their applications in automated agreement execution."
+      title: "Smart Contract",
+      siteName: "Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Smart_contract"
     },
     {
       num: 2,
-      title: "Introduction to Ethereum - Ethereum.org",
-      url: "https://ethereum.org/en/developers/docs/intro-to-ethereum/",
-      description: "Official documentation on Ethereum smart contracts and decentralized applications."
+      title: "Introduction to Ethereum",
+      siteName: "Ethereum.org",
+      url: "https://ethereum.org/en/developers/docs/intro-to-ethereum/"
     }
   ];
 
