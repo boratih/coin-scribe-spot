@@ -1,19 +1,6 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
 import provablyFairThumb from "@/assets/thumbnails/provably-fair-thumb.jpg";
 
-// Citation component for inline references
-const Cite = ({ num }: { num: number }) => (
-  <sup>
-    <a 
-      href={`#ref-${num}`} 
-      className="text-primary hover:underline text-xs ml-0.5"
-      title={`See reference [${num}]`}
-    >
-      [{num}]
-    </a>
-  </sup>
-);
-
 const WhatIsProvablyFairSystem = () => {
   const faqs = [
     {
@@ -50,21 +37,6 @@ const WhatIsProvablyFairSystem = () => {
     }
   ];
 
-  const references = [
-    {
-      num: 1,
-      title: "SHA-2",
-      siteName: "Wikipedia",
-      url: "https://en.wikipedia.org/wiki/SHA-2"
-    },
-    {
-      num: 2,
-      title: "Cryptographic Hash Function",
-      siteName: "Wikipedia",
-      url: "https://en.wikipedia.org/wiki/Cryptographic_hash_function"
-    }
-  ];
-
   return (
     <GuideArticleLayout
       title="What Is a Provably Fair System in Crypto Gambling?"
@@ -74,7 +46,6 @@ const WhatIsProvablyFairSystem = () => {
       heroImageAlt="Cryptographic verification diagram showing provably fair system components including server seeds, client seeds, and hash algorithms"
       publishDate="2025-01-02"
       faqs={faqs}
-      references={references}
     >
       {/* Definition */}
       <section className="mb-12">
@@ -93,7 +64,7 @@ const WhatIsProvablyFairSystem = () => {
           Provably fair algorithms solve this trust problem through <strong>cryptography</strong>. The system allows players to verify that the casino committed to a specific outcome before the bet was placed and that this commitment was honored. Neither the casino nor the player can predict or manipulate the final result after both parties have contributed their inputs.
         </p>
         <p>
-          The cryptographic foundation relies on <strong>hash functions</strong>—mathematical algorithms that convert input data into a fixed-length output that cannot be reversed<Cite num={2} />. By hashing the game's random seed before showing it to the player, the casino commits to an outcome without revealing it.
+          The cryptographic foundation relies on <strong>hash functions</strong>—mathematical algorithms that convert input data into a fixed-length output that cannot be reversed. As explained in the <a href="https://en.wikipedia.org/wiki/Cryptographic_hash_function" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cryptographic hash function documentation</a>, these functions have properties like pre-image resistance and collision resistance that make them ideal for commitment schemes—by hashing the game's random seed before showing it to the player, the casino commits to an outcome without revealing it.
         </p>
       </section>
 
@@ -101,7 +72,7 @@ const WhatIsProvablyFairSystem = () => {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">How Provably Fair Works</h2>
         <p className="mb-4">
-          Most provably fair systems use SHA-256, the same cryptographic hash function used in Bitcoin<Cite num={1} />. The process involves several steps to ensure neither party can manipulate results:
+          Most provably fair systems use <a href="https://en.wikipedia.org/wiki/SHA-2" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">SHA-256</a>, the same cryptographic hash function that secures Bitcoin transactions. This choice provides industry-standard security while making the verification process accessible to anyone familiar with cryptocurrency technology.
         </p>
         <div className="space-y-4">
           <div className="flex items-start gap-4 bg-card p-4 rounded-lg border border-border">
