@@ -53,15 +53,15 @@ const SupportedBlockchainNetworks = () => {
   const references = [
     {
       num: 1,
-      title: "Bitcoin - Wikipedia",
-      url: "https://en.wikipedia.org/wiki/Bitcoin",
-      description: "Overview of Bitcoin network, transaction processing, and confirmation times."
+      title: "Bitcoin",
+      siteName: "Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Bitcoin"
     },
     {
       num: 2,
-      title: "Ethereum - Wikipedia",
-      url: "https://en.wikipedia.org/wiki/Ethereum",
-      description: "Overview of Ethereum network including Layer 2 scaling solutions."
+      title: "Ethereum",
+      siteName: "Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Ethereum"
     }
   ];
 

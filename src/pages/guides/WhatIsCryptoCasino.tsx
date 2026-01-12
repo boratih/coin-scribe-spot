@@ -53,21 +53,21 @@ const WhatIsCryptoCasino = () => {
   const references = [
     {
       num: 1,
-      title: "Cryptocurrency - Wikipedia",
-      url: "https://en.wikipedia.org/wiki/Cryptocurrency",
-      description: "Definition and technical foundation of digital currencies and blockchain technology."
+      title: "Cryptocurrency",
+      siteName: "Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Cryptocurrency"
     },
     {
       num: 2,
-      title: "Crypto Assets - FINRA",
-      url: "https://www.finra.org/investors/insights/crypto-assets",
-      description: "Financial Industry Regulatory Authority's guidance on cryptocurrency risks."
+      title: "Crypto Assets",
+      siteName: "FINRA",
+      url: "https://www.finra.org/investors/insights/crypto-assets"
     },
     {
       num: 3,
-      title: "Cryptocurrency and Digital Assets - UK Gambling Commission",
-      url: "https://www.gamblingcommission.gov.uk/about-us/guide/cryptocurrency-and-digital-assets",
-      description: "Regulatory perspective on cryptocurrency gambling from a leading gambling regulator."
+      title: "Cryptocurrency and Digital Assets",
+      siteName: "UK Gambling Commission",
+      url: "https://www.gamblingcommission.gov.uk/about-us/guide/cryptocurrency-and-digital-assets"
     }
   ];
 

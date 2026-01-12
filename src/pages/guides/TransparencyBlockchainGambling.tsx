@@ -45,15 +45,15 @@ const TransparencyBlockchainGambling = () => {
   const references = [
     {
       num: 1,
-      title: "Blockchain - Wikipedia",
-      url: "https://en.wikipedia.org/wiki/Blockchain",
-      description: "Overview of blockchain technology and its properties including immutability and transparency."
+      title: "Blockchain",
+      siteName: "Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Blockchain"
     },
     {
       num: 2,
-      title: "Smart Contract - Wikipedia",
-      url: "https://en.wikipedia.org/wiki/Smart_contract",
-      description: "Explanation of smart contracts and their role in automated, transparent execution."
+      title: "Smart Contract",
+      siteName: "Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Smart_contract"
     }
   ];
 

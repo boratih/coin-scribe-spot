@@ -16,9 +16,11 @@ interface FAQ {
 
 interface Reference {
   num: number;
+  author?: string;
+  year?: string;
   title: string;
+  siteName: string;
   url: string;
-  description: string;
 }
 
 interface GuideArticleLayoutProps {
@@ -312,21 +314,22 @@ const GuideArticleLayout = ({
               <p className="text-muted-foreground mb-6 text-sm">
                 This article was researched using authoritative sources from regulatory bodies, academic institutions, and industry publications.
               </p>
-              <ol className="space-y-4 text-sm">
+              <ol className="space-y-4 text-sm list-none pl-0">
                 {references.map((ref) => (
-                  <li key={ref.num} id={`ref-${ref.num}`} className="flex gap-3">
-                    <span className="text-primary font-semibold shrink-0">[{ref.num}]</span>
-                    <div>
-                      <a 
-                        href={ref.url} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="text-primary hover:underline font-medium"
-                      >
-                        {ref.title}
-                      </a>
-                      <p className="text-muted-foreground mt-1">{ref.description}</p>
-                    </div>
+                  <li key={ref.num} id={`ref-${ref.num}`} className="pl-8 -indent-8">
+                    <span className="text-muted-foreground">[{ref.num}] </span>
+                    {ref.author && <span>{ref.author}. </span>}
+                    {ref.year && <span>({ref.year}). </span>}
+                    <span className="italic">{ref.title}</span>
+                    <span>. {ref.siteName}. </span>
+                    <a 
+                      href={ref.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline break-all"
+                    >
+                      {ref.url}
+                    </a>
                   </li>
                 ))}
               </ol>

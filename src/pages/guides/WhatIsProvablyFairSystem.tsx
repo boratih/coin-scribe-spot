@@ -53,15 +53,15 @@ const WhatIsProvablyFairSystem = () => {
   const references = [
     {
       num: 1,
-      title: "SHA-2 - Wikipedia",
-      url: "https://en.wikipedia.org/wiki/SHA-2",
-      description: "Technical overview of SHA-256 and related cryptographic hash functions used in provably fair systems."
+      title: "SHA-2",
+      siteName: "Wikipedia",
+      url: "https://en.wikipedia.org/wiki/SHA-2"
     },
     {
       num: 2,
-      title: "Cryptographic Hash Function - Wikipedia",
-      url: "https://en.wikipedia.org/wiki/Cryptographic_hash_function",
-      description: "Explanation of hash function properties including pre-image resistance and collision resistance."
+      title: "Cryptographic Hash Function",
+      siteName: "Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Cryptographic_hash_function"
     }
   ];
 
