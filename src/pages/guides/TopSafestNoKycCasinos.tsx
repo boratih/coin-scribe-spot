@@ -45,7 +45,7 @@ const TopSafestNoKycCasinos = () => {
       <section>
         <h2 className="text-2xl font-bold mb-4">What Is No KYC in Crypto Casinos?</h2>
         <p className="text-muted-foreground mb-4">
-          No KYC (Know Your Customer) means you can use the casino without uploading ID, selfies, or personal documents. These casinos rely on crypto wallets or simple email verification instead, providing immediate access to games.
+          No KYC (Know Your Customer) means you can use the casino without uploading ID, selfies, or personal documents. Traditional KYC requirements exist because financial regulations like the <a href="https://www.fincen.gov/resources/statutes-and-regulations/bank-secrecy-act" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Bank Secrecy Act</a> require financial institutions to verify customer identities—requirements that many crypto casinos avoid by operating outside traditional banking systems.
         </p>
         <p className="text-muted-foreground mb-4">
           This approach aligns with the core cryptocurrency philosophy of privacy and self-sovereignty, allowing players to maintain control over their personal information.

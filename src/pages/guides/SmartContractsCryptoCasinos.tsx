@@ -58,7 +58,7 @@ const SmartContractsCryptoCasinos = () => {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Understanding Smart Contracts</h2>
         <p className="mb-4">
-          Smart contracts represent the technological foundation of decentralized crypto casinos. First conceptualized by Nick Szabo in 1994 and implemented on Ethereum in 2015, smart contracts are programs that execute automatically when predetermined conditions are met.
+          Smart contracts represent the technological foundation of decentralized crypto casinos. First conceptualized by Nick Szabo in 1994 and implemented on <a href="https://ethereum.org/en/developers/docs/smart-contracts/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Ethereum</a> in 2015, smart contracts are programs stored on blockchains that execute automatically when predetermined conditions are met—enabling trustless transactions without intermediaries.
         </p>
         <p className="mb-4">
           In the context of crypto casinos, smart contracts replace the traditional casino operator for core gambling functions. Instead of trusting a company to fairly determine outcomes and pay winnings, players interact directly with <strong>transparent code</strong> that executes according to its programmed logic.

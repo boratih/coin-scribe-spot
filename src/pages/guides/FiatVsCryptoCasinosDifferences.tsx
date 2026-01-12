@@ -41,7 +41,7 @@ const FiatVsCryptoCasinosDifferences = () => {
       <section>
         <h2 className="text-2xl font-bold mb-4">Understanding the Differences</h2>
         <p className="text-muted-foreground mb-4">
-          The rise of crypto casinos has created an alternative to traditional gambling that emphasizes speed, privacy, and transparency. Each type has distinct advantages depending on player priorities.
+          The rise of crypto casinos has created an alternative to traditional gambling that emphasizes speed, privacy, and transparency. While fiat casinos process payments through regulated banking networks that <a href="https://www.federalreserve.gov/paymentsystems.htm" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">the Federal Reserve oversees</a>, crypto casinos leverage decentralized blockchain infrastructure that operates independently of traditional financial institutions—creating fundamentally different user experiences and tradeoffs.
         </p>
       </section>
 
@@ -66,7 +66,7 @@ const FiatVsCryptoCasinosDifferences = () => {
           </div>
           <div className="bg-card/50 p-4 rounded-lg border border-border/50">
             <h3 className="font-semibold text-primary mb-2">Regulation</h3>
-            <p className="text-muted-foreground">Fiat casinos are typically more heavily regulated with stronger consumer protections.</p>
+            <p className="text-muted-foreground">Fiat casinos are typically more heavily regulated with stronger consumer protections. Bodies like the <a href="https://www.gamblingcommission.gov.uk/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">UK Gambling Commission</a> enforce strict licensing requirements that crypto casinos often don't face.</p>
           </div>
         </div>
       </section>

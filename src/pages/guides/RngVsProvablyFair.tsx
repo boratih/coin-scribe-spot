@@ -41,7 +41,7 @@ const RngVsProvablyFair = () => {
       <section>
         <h2 className="text-2xl font-bold mb-4">Understanding Both Systems</h2>
         <p className="text-muted-foreground mb-4">
-          Both RNG and provably fair aim to ensure fair gaming outcomes, but they approach verification differently. Understanding these differences helps players choose platforms aligned with their trust preferences.
+          Both RNG and provably fair aim to ensure fair gaming outcomes, but they approach verification differently. Traditional RNG systems use algorithms that generate statistically random sequences—as <a href="https://csrc.nist.gov/projects/random-bit-generation" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">NIST's random number generation standards</a> describe, true randomness is essential for cryptographic security. Provably fair systems add a layer of player-verifiable cryptographic commitments on top of randomness generation.
         </p>
       </section>
 
@@ -50,7 +50,7 @@ const RngVsProvablyFair = () => {
         <div className="space-y-4">
           <div className="bg-card/50 p-4 rounded-lg border border-border/50">
             <h3 className="font-semibold text-primary mb-2">Verification Method</h3>
-            <p className="text-muted-foreground">RNG relies on third-party audits; provably fair allows player verification of each outcome.</p>
+            <p className="text-muted-foreground">RNG relies on third-party audits from firms like <a href="https://www.ecogra.org/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">eCOGRA</a> or iTech Labs; provably fair allows player verification of each individual outcome using cryptographic proofs.</p>
           </div>
           <div className="bg-card/50 p-4 rounded-lg border border-border/50">
             <h3 className="font-semibold text-primary mb-2">Transparency Level</h3>

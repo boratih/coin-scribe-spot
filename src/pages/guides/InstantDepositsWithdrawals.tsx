@@ -58,7 +58,7 @@ const InstantDepositsWithdrawals = () => {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Why Crypto Transactions Are Faster</h2>
         <p className="mb-4">
-          One of the most compelling advantages of crypto casinos is the speed of financial transactions. Traditional online casinos often require <strong>3-7 business days</strong> for withdrawals due to banking processing, anti-fraud reviews, and payment processor delays. Crypto casinos can process the same transactions in minutes.
+          One of the most compelling advantages of crypto casinos is the speed of financial transactions. Traditional online casinos often require <strong>3-7 business days</strong> for withdrawals due to banking processing, anti-fraud reviews, and payment processor delays—what the <a href="https://www.federalreserve.gov/paymentsystems/fedach_about.htm" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Federal Reserve's ACH system</a> describes as batch processing with settlement delays. Crypto casinos can process the same transactions in minutes.
         </p>
         <p className="mb-4">
           Cryptocurrency transactions occur on blockchain networks, which operate <strong>continuously 24/7</strong> and process transactions based on network capacity rather than business hours. When a player deposits or withdraws cryptocurrency, the transaction is broadcast to the blockchain network, validated by nodes, and confirmed in blocks.

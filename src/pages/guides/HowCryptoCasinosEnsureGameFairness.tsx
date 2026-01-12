@@ -50,10 +50,10 @@ const HowCryptoCasinosEnsureGameFairness = () => {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Understanding Game Fairness</h2>
         <p className="mb-4">
-          Game fairness is fundamental to gambling integrity. Crypto casinos employ multiple methods to demonstrate fair play, ranging from cryptographic verification to transparent smart contracts.
+          Game fairness is fundamental to gambling integrity. Crypto casinos employ multiple methods to demonstrate fair play, ranging from cryptographic verification to transparent smart contracts. The concept of provably fair gambling relies on <a href="https://en.wikipedia.org/wiki/Commitment_scheme" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cryptographic commitment schemes</a>—a mathematical technique where one party commits to a value before it's revealed, preventing manipulation while enabling later verification.
         </p>
         <p>
-          Provably fair systems use cryptographic commitments so players can verify each game outcome. Smart contracts make game logic publicly auditable. Third-party audits provide independent verification of random number generators.
+          Smart contracts make game logic publicly auditable. Third-party audits provide independent verification of random number generators.
         </p>
       </section>
 
@@ -79,7 +79,7 @@ const HowCryptoCasinosEnsureGameFairness = () => {
           </div>
           <div className="bg-card p-5 rounded-lg border border-border">
             <h3 className="text-lg font-semibold text-primary mb-2">Chainlink VRF</h3>
-            <p className="text-muted-foreground">Decentralized oracle providing verifiable random numbers for on-chain games. Cryptographic proof of randomness.</p>
+            <p className="text-muted-foreground">Decentralized oracle providing verifiable random numbers for on-chain games. As <a href="https://chain.link/vrf" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Chainlink's documentation</a> explains, VRF generates cryptographic proofs that verify randomness was not manipulated by any party—including the oracle itself.</p>
           </div>
         </div>
       </section>

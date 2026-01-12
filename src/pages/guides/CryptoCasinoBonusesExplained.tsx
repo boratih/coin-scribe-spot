@@ -41,7 +41,7 @@ const CryptoCasinoBonusesExplained = () => {
       <section>
         <h2 className="text-2xl font-bold mb-4">Understanding Bonuses</h2>
         <p className="text-muted-foreground mb-4">
-          Crypto casino bonuses work similarly to traditional casino promotions but often feature unique elements like native token rewards and lower wagering requirements due to reduced operational costs.
+          Crypto casino bonuses work similarly to traditional casino promotions but often feature unique elements like native token rewards and lower wagering requirements. According to <a href="https://www.investopedia.com/terms/w/wagerr.asp" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Investopedia</a>, wagering requirements determine how many times bonus funds must be bet before withdrawal—a critical factor that affects whether any bonus actually provides value. Crypto casinos frequently offer more competitive terms due to reduced operational costs from bypassing traditional payment processors.
         </p>
       </section>
 

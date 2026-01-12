@@ -45,7 +45,7 @@ const BlockchainGamingNftCasinos = () => {
       <section>
         <h2 className="text-2xl font-bold mb-4">The Convergence of Gaming and Gambling</h2>
         <p className="text-muted-foreground mb-4">
-          Blockchain technology enables new models where gaming and gambling intersect. Players can own in-game assets, earn tokens through activity, and participate in ecosystems where their engagement has tangible value.
+          Blockchain technology enables new models where gaming and gambling intersect. Players can own in-game assets, earn tokens through activity, and participate in ecosystems where their engagement has tangible value. NFTs—which <a href="https://ethereum.org/en/nft/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Ethereum's documentation</a> defines as unique tokens representing ownership of digital items—enable true asset ownership that persists independently of any single platform.
         </p>
         <p className="text-muted-foreground mb-4">
           This convergence attracts both traditional gamers interested in earning potential and crypto natives seeking gamified experiences beyond simple betting.
@@ -169,7 +169,7 @@ const BlockchainGamingNftCasinos = () => {
         <div className="grid md:grid-cols-2 gap-4">
           <div className="bg-destructive/10 p-4 rounded-lg border border-destructive/20">
             <h3 className="font-semibold mb-2">⚠️ Token Volatility</h3>
-            <p className="text-muted-foreground text-sm">Platform tokens and NFTs can lose significant value. Rewards earned may depreciate before you realize them.</p>
+            <p className="text-muted-foreground text-sm">Platform tokens and NFTs can lose significant value. As <a href="https://www.sec.gov/investor/alerts/ia_virtualcurrencies.pdf" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">SEC investor alerts</a> warn, digital assets are highly speculative—rewards earned may depreciate significantly before you realize them.</p>
           </div>
           <div className="bg-destructive/10 p-4 rounded-lg border border-destructive/20">
             <h3 className="font-semibold mb-2">⚠️ House Edge Remains</h3>

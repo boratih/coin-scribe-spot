@@ -45,7 +45,7 @@ const TopCryptoCasinoBonuses = () => {
       <section>
         <h2 className="text-2xl font-bold mb-4">The Truth About Casino Bonuses</h2>
         <p className="text-muted-foreground mb-4">
-          Most crypto casino bonuses are designed to look better than they really are. You'll often see big promises like "100% up to $1000," but when you check the terms, you find the infamous wagering requirement lurking in the fine print.
+          Most crypto casino bonuses are designed to look better than they really are. You'll often see big promises like "100% up to $1000," but when you check the terms, you find the infamous wagering requirement lurking in the fine print. Consumer protection agencies like the <a href="https://www.ftc.gov/news-events/topics/advertising-marketing" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">FTC</a> have increasingly scrutinized promotional practices that obscure true costs—though crypto casinos often operate beyond traditional regulatory oversight.
         </p>
         <p className="text-muted-foreground mb-4">
           A 40x wagering requirement on a $100 bonus means you need to wager $4,000 before seeing any bonus winnings. Given the house edge, most players will lose the bonus long before reaching that threshold.

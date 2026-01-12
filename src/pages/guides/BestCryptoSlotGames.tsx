@@ -45,7 +45,7 @@ const BestCryptoSlotGames = () => {
       <section>
         <h2 className="text-2xl font-bold mb-4">Understanding Slot RTP</h2>
         <p className="text-muted-foreground mb-4">
-          Return to Player (RTP) percentages indicate long-term payout rates. A slot with 96% RTP theoretically returns $96 for every $100 wagered over millions of spins. While this doesn't guarantee individual session results, higher RTP means better odds over time.
+          Return to Player (RTP) percentages indicate long-term payout rates. A slot with 96% RTP theoretically returns $96 for every $100 wagered over millions of spins. As the <a href="https://www.gamblingcommission.gov.uk/guidance/guidance-to-licensing-authorities/licensed-premises/gaming-machine-technical-requirements" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">UK Gambling Commission</a> mandates, licensed slots must display RTP information—a transparency requirement that helps players make informed choices. While this doesn't guarantee individual session results, higher RTP means better odds over time.
         </p>
         <div className="bg-card/50 p-4 rounded-lg border border-border/50 mb-4">
           <h3 className="font-semibold text-primary mb-2">RTP Guidelines</h3>
@@ -130,7 +130,7 @@ const BestCryptoSlotGames = () => {
       <section>
         <h2 className="text-2xl font-bold mb-4">Provably Fair Slot Games</h2>
         <p className="text-muted-foreground mb-4">
-          Some crypto casinos offer provably fair slots where you can verify each spin's fairness using blockchain technology. These games use cryptographic seeds that players can check independently.
+          Some crypto casinos offer provably fair slots where you can verify each spin's fairness using blockchain technology. These systems use <a href="https://en.wikipedia.org/wiki/Cryptographic_hash_function" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cryptographic hash functions</a> that allow players to mathematically verify outcomes weren't predetermined or manipulated—a level of transparency impossible with traditional RNG-based slots.
         </p>
         <div className="bg-card/50 p-4 rounded-lg border border-border/50 mb-4">
           <h3 className="font-semibold text-primary mb-2">How Provably Fair Slots Work</h3>
