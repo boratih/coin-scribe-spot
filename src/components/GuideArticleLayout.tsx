@@ -14,6 +14,13 @@ interface FAQ {
   answer: string;
 }
 
+interface Reference {
+  num: number;
+  title: string;
+  url: string;
+  description: string;
+}
+
 interface GuideArticleLayoutProps {
   title: string;
   metaDescription: string;
@@ -27,6 +34,7 @@ interface GuideArticleLayoutProps {
   children: React.ReactNode;
   faqs: FAQ[];
   summary?: string;
+  references?: Reference[];
 }
 
 const GuideArticleLayout = ({
@@ -42,6 +50,7 @@ const GuideArticleLayout = ({
   children,
   faqs,
   summary,
+  references,
 }: GuideArticleLayoutProps) => {
   // BreadcrumbList schema for site hierarchy
   const breadcrumbJsonLd = {
@@ -248,7 +257,7 @@ const GuideArticleLayout = ({
             )}
           </header>
 
-          {/* Main Content */}
+          {/* Main Content (excluding sources/references) */}
           <div className="space-y-10" itemProp="articleBody">
             {children}
           </div>
@@ -292,6 +301,40 @@ const GuideArticleLayout = ({
               <div className="bg-card p-6 rounded-xl border border-border/50">
                 <h2 className="text-xl font-bold mb-3">Key Takeaways</h2>
                 <p className="text-muted-foreground leading-relaxed" itemProp="description">{summary}</p>
+              </div>
+            </section>
+          )}
+
+          {/* Sources & References Section */}
+          {references && references.length > 0 && (
+            <section id="references" className="sources-references mt-12 pt-8 border-t border-border/40">
+              <h2 className="text-2xl font-bold mb-4">Sources & References</h2>
+              <p className="text-muted-foreground mb-6 text-sm">
+                This article was researched using authoritative sources from regulatory bodies, academic institutions, and industry publications.
+              </p>
+              <ol className="space-y-4 text-sm">
+                {references.map((ref) => (
+                  <li key={ref.num} id={`ref-${ref.num}`} className="flex gap-3">
+                    <span className="text-primary font-semibold shrink-0">[{ref.num}]</span>
+                    <div>
+                      <a 
+                        href={ref.url} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-primary hover:underline font-medium"
+                      >
+                        {ref.title}
+                      </a>
+                      <p className="text-muted-foreground mt-1">{ref.description}</p>
+                    </div>
+                  </li>
+                ))}
+              </ol>
+              <div className="mt-6 p-4 bg-card/30 rounded-lg border border-border/30">
+                <p className="text-xs text-muted-foreground">
+                  <strong>Last Verified:</strong> January 2026. Links may change over time. DegenRoll is not responsible for external content. See our{" "}
+                  <Link to="/sources-and-references" className="text-primary hover:underline">Source Framework</Link> for citation methodology.
+                </p>
               </div>
             </section>
           )}
