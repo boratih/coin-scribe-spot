@@ -36,9 +36,10 @@
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "DegenRoll",
-      "alternateName": "Degen Roll",
+      "alternateName": ["Degen Roll", "DegenRoll Crypto Casino"],
       "url": "https://degenroll.co/",
       "description": "Crypto casino reviews, perpetual DEX trading strategies, and DeFi yield optimization guides",
+      "inLanguage": "en-US",
       "publisher": {
         "@type": "Organization",
         "name": "DegenRoll",
@@ -46,10 +47,12 @@
       },
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://degenroll.co/?search={search_term_string}",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://degenroll.co/?search={search_term_string}"
+        },
         "query-input": "required name=search_term_string"
-      },
-      "sameAs": []
+      }
     }
     </script>
     
@@ -57,20 +60,75 @@
     {
       "@context": "https://schema.org",
       "@type": "Organization",
+      "@id": "https://degenroll.co/#organization",
       "name": "DegenRoll",
+      "alternateName": "Degen Roll",
       "url": "https://degenroll.co/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://degenroll.co/logo.png",
+        "width": 512,
+        "height": 512
+      },
       "description": "Trusted source for crypto casino reviews, DeFi strategies, and perpetual trading education",
       "foundingDate": "2024",
+      "sameAs": [
+        "https://twitter.com/degenroll",
+        "https://github.com/degenroll"
+      ],
       "knowsAbout": [
-        "Cryptocurrency",
-        "Crypto Casinos",
-        "DeFi",
+        "Cryptocurrency Gambling",
+        "No-KYC Casinos",
+        "Provably Fair Gaming",
+        "Blockchain Technology",
+        "DeFi Protocols",
         "Perpetual Trading",
         "Yield Farming",
         "Bitcoin",
         "Ethereum",
-        "Layer 2 Solutions"
-      ]
+        "Layer 2 Solutions",
+        "Smart Contracts"
+      ],
+      "areaServed": "Worldwide",
+      "slogan": "Trustless Gaming, Instant Payouts"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://degenroll.co/#webpage",
+      "url": "https://degenroll.co/",
+      "name": "DegenRoll - Crypto Casino Reviews & DeFi Trading Hub",
+      "description": "Your trusted source for no-KYC crypto casino reviews, perpetual DEX trading strategies, and DeFi yield optimization guides.",
+      "isPartOf": {
+        "@id": "https://degenroll.co/#website"
+      },
+      "about": {
+        "@id": "https://degenroll.co/#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://degenroll.co/og-image.png"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://degenroll.co/"
+        }]
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["h1", ".hero-description", ".key-features"]
+      },
+      "lastReviewed": "2026-01-12",
+      "reviewedBy": {
+        "@id": "https://degenroll.co/#organization"
+      }
     }
     </script>
     
