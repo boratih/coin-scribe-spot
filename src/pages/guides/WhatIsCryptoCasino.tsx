@@ -58,7 +58,7 @@ const WhatIsCryptoCasino = () => {
       <section>
         <h2 className="text-2xl font-bold mb-4">Understanding Crypto Casinos</h2>
         <p className="mb-4">
-          Crypto casinos represent a significant evolution in online gambling, combining traditional casino games with cryptocurrency payment systems and blockchain technology. Unlike conventional online casinos that process payments through banks and credit card networks, crypto casinos leverage decentralized financial infrastructure to handle player funds—a distinction that fundamentally changes how transactions, privacy, and trust operate in the gambling ecosystem.
+          Crypto casinos represent a significant evolution in online gambling, combining traditional casino games with cryptocurrency payment systems and blockchain technology. Unlike conventional online casinos that process payments through banks and credit card networks, crypto casinos leverage decentralized financial infrastructure to handle player funds. This approach builds on <a href="https://ethereum.org/en/developers/docs/intro-to-ethereum/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Ethereum's smart contract capabilities</a> and similar blockchain platforms, enabling automated, transparent transactions without intermediaries—a fundamental shift that changes how trust and verification work in gambling.
         </p>
         <p className="mb-4">
           The fundamental concept involves players depositing cryptocurrency into a casino wallet, placing bets using crypto-denominated credits, and withdrawing winnings back to their personal cryptocurrency wallets. This eliminates traditional banking intermediaries and enables features not possible in fiat-based gambling platforms.
@@ -154,7 +154,7 @@ const WhatIsCryptoCasino = () => {
         <div className="space-y-4">
           <div className="border-l-4 border-yellow-500/50 pl-4 py-2">
             <p className="font-semibold">"Crypto casinos are completely anonymous"</p>
-            <p className="text-muted-foreground text-sm">While offering more privacy than traditional casinos, blockchain transactions are pseudonymous and potentially traceable. Complete anonymity is not guaranteed.</p>
+            <p className="text-muted-foreground text-sm">While offering more privacy than traditional casinos, blockchain transactions are pseudonymous rather than anonymous. As <a href="https://www.finra.org/investors/insights/crypto-assets" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">FINRA explains</a>, cryptocurrency transactions are recorded on public ledgers and can potentially be traced through blockchain analysis—meaning complete anonymity is not guaranteed.</p>
           </div>
           <div className="border-l-4 border-yellow-500/50 pl-4 py-2">
             <p className="font-semibold">"All crypto casinos are unregulated"</p>
