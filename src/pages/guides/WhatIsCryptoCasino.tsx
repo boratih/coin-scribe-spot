@@ -193,6 +193,133 @@ const WhatIsCryptoCasino = () => {
           </p>
         </div>
       </section>
+
+      {/* Sources & References */}
+      <section className="sources-references mt-12 pt-8 border-t border-border/40">
+        <h2 className="text-2xl font-bold mb-4">Sources & References</h2>
+        <p className="text-muted-foreground mb-6 text-sm">
+          This article was researched using authoritative sources from regulatory bodies, academic institutions, and industry publications.
+        </p>
+        <ol className="space-y-4 text-sm">
+          <li className="flex gap-3">
+            <span className="text-primary font-semibold">[1]</span>
+            <div>
+              <a 
+                href="https://en.wikipedia.org/wiki/Online_gambling" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline font-medium"
+              >
+                Online Gambling - Wikipedia
+              </a>
+              <p className="text-muted-foreground mt-1">
+                Comprehensive overview of online gambling history, regulation, and technology including cryptocurrency adoption in the gambling industry.
+              </p>
+            </div>
+          </li>
+          <li className="flex gap-3">
+            <span className="text-primary font-semibold">[2]</span>
+            <div>
+              <a 
+                href="https://en.wikipedia.org/wiki/Cryptocurrency" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline font-medium"
+              >
+                Cryptocurrency - Wikipedia
+              </a>
+              <p className="text-muted-foreground mt-1">
+                Technical foundation of digital currencies, blockchain technology, and cryptographic security principles underlying crypto casino payments.
+              </p>
+            </div>
+          </li>
+          <li className="flex gap-3">
+            <span className="text-primary font-semibold">[3]</span>
+            <div>
+              <a 
+                href="https://www.finra.org/investors/insights/crypto-assets" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline font-medium"
+              >
+                Crypto Assets - FINRA
+              </a>
+              <p className="text-muted-foreground mt-1">
+                Financial Industry Regulatory Authority's guidance on cryptocurrency risks and investor protections relevant to crypto gambling.
+              </p>
+            </div>
+          </li>
+          <li className="flex gap-3">
+            <span className="text-primary font-semibold">[4]</span>
+            <div>
+              <a 
+                href="https://www.gamblingcommission.gov.uk/about-us/guide/cryptocurrency-and-digital-assets" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline font-medium"
+              >
+                Cryptocurrency and Digital Assets - UK Gambling Commission
+              </a>
+              <p className="text-muted-foreground mt-1">
+                Regulatory perspective on cryptocurrency gambling from one of the world's leading gambling regulators.
+              </p>
+            </div>
+          </li>
+          <li className="flex gap-3">
+            <span className="text-primary font-semibold">[5]</span>
+            <div>
+              <a 
+                href="https://bitcoin.org/en/how-it-works" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline font-medium"
+              >
+                How Bitcoin Works - Bitcoin.org
+              </a>
+              <p className="text-muted-foreground mt-1">
+                Official Bitcoin documentation explaining transaction processing, wallet security, and confirmation times for cryptocurrency payments.
+              </p>
+            </div>
+          </li>
+          <li className="flex gap-3">
+            <span className="text-primary font-semibold">[6]</span>
+            <div>
+              <a 
+                href="https://ethereum.org/en/developers/docs/intro-to-ethereum/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline font-medium"
+              >
+                Introduction to Ethereum - Ethereum.org
+              </a>
+              <p className="text-muted-foreground mt-1">
+                Official Ethereum documentation on smart contracts and decentralized applications, the foundation of many crypto casino platforms.
+              </p>
+            </div>
+          </li>
+          <li className="flex gap-3">
+            <span className="text-primary font-semibold">[7]</span>
+            <div>
+              <a 
+                href="https://www.investopedia.com/terms/p/provably-fair.asp" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline font-medium"
+              >
+                Provably Fair Definition - Investopedia
+              </a>
+              <p className="text-muted-foreground mt-1">
+                Explanation of provably fair algorithms and cryptographic verification in online gambling.
+              </p>
+            </div>
+          </li>
+        </ol>
+        <div className="mt-6 p-4 bg-card/30 rounded-lg border border-border/30">
+          <p className="text-xs text-muted-foreground">
+            <strong>Last Verified:</strong> January 2026. Links may change over time. DegenRoll is not responsible for external content. See our <a href="/sources-and-references" className="text-primary hover:underline">Source Framework</a> for citation methodology.
+          </p>
+        </div>
+      </section>
     </GuideArticleLayout>
   );
 };
