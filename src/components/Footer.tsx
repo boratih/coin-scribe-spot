@@ -15,13 +15,13 @@ const Footer = () => {
               Your ultimate guide to crypto casinos. Built by degens, for degens.
             </p>
             <div className="flex gap-3">
-              <a href="#" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary/20 transition-colors">
+              <a href="https://twitter.com/degenroll" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary/20 transition-colors" aria-label="Follow DegenRoll on Twitter">
                 <Twitter className="w-4 h-4" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary/20 transition-colors">
+              <a href="https://discord.gg/degenroll" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary/20 transition-colors" aria-label="Join DegenRoll Discord">
                 <MessageCircle className="w-4 h-4" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary/20 transition-colors">
+              <a href="https://t.me/degenroll" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary/20 transition-colors" aria-label="Join DegenRoll Telegram">
                 <Send className="w-4 h-4" />
               </a>
             </div>
