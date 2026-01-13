@@ -29,7 +29,7 @@ const Methodology = () => {
           <section className="mb-10">
             <h2 className="text-2xl font-bold mb-4">Purpose of This Website</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              DegenRoll is an educational resource focused on explaining crypto casinos, blockchain-based gambling systems, and related concepts. The purpose of this website is to provide clear, neutral, and structured information that helps readers understand how crypto casinos work, their advantages, limitations, and associated risks.
+              DegenRoll is a no-KYC crypto casino with instant deposits, instant withdrawals, and 9+ blockchain networks for seamless, high-velocity gameplay. This website provides clear, neutral, and structured information that helps readers understand how crypto casinos work, their advantages, limitations, and associated risks.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               All content is created for informational purposes only and does not constitute gambling, financial, or legal advice.
