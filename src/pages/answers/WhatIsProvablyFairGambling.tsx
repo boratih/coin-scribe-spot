@@ -45,6 +45,9 @@ const WhatIsProvablyFairGambling = () => {
       metaDescription="Learn how provably fair gambling works, including cryptographic verification, server/client seeds, and how players can independently verify game fairness."
       canonicalUrl="https://degenroll.co/answers/what-is-provably-fair-gambling"
       lastUpdated="January 2026"
+      lastReviewed="January 2026"
+      reviewNote="no material updates required"
+      isCanonical={true}
       quickAnswer={
         <p>
           Provably fair (PF) gambling is a system that allows players to independently verify the fairness of game outcomes using cryptographic algorithms. Unlike traditional online casinos where players must trust the operator, PF ensures transparency and provides verifiable proof that results are not manipulated.

@@ -19,28 +19,47 @@ interface RelatedTopic {
   href: string;
 }
 
+interface TrustPoint {
+  text: string;
+}
+
 interface AnswerLayoutProps {
   title: string;
   metaDescription: string;
   canonicalUrl: string;
   lastUpdated: string;
+  lastReviewed?: string;
+  reviewNote?: string;
   quickAnswer: React.ReactNode;
   children: React.ReactNode;
   faqs: FAQ[];
   relatedTopics?: RelatedTopic[];
   summary: string;
+  isCanonical?: boolean;
+  trustPoints?: TrustPoint[];
 }
+
+const defaultTrustPoints: TrustPoint[] = [
+  { text: "Reviewed using public blockchain documentation and protocol whitepapers" },
+  { text: "Cross-checked against regulatory guidance where applicable" },
+  { text: "Maintained and reviewed on a scheduled basis" },
+  { text: "Editorial process follows our published methodology" },
+];
 
 const AnswerLayout = ({
   title,
   metaDescription,
   canonicalUrl,
   lastUpdated,
+  lastReviewed,
+  reviewNote,
   quickAnswer,
   children,
   faqs,
   relatedTopics,
   summary,
+  isCanonical = false,
+  trustPoints = defaultTrustPoints,
 }: AnswerLayoutProps) => {
   // BreadcrumbList schema - helps AI understand site hierarchy
   const breadcrumbJsonLd = {
@@ -160,14 +179,40 @@ const AnswerLayout = ({
     "@id": canonicalUrl,
     speakable: {
       "@type": "SpeakableSpecification",
-      cssSelector: [".quick-answer", ".summary-section", "h1", ".faq-section"],
+      cssSelector: [".quick-answer", ".summary-section", "h1", ".faq-section", ".canonical-definition"],
     },
     url: canonicalUrl,
-    lastReviewed: "2026-01-12",
+    lastReviewed: lastReviewed || "2026-01-12",
     reviewedBy: {
       "@id": "https://degenroll.co/#organization",
     },
   };
+
+  // Citation-Inbound Signaling - only for canonical pages
+  const citationJsonLd = isCanonical ? {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "@id": `${canonicalUrl}#citation`,
+    name: title,
+    url: canonicalUrl,
+    citation: {
+      "@type": "CreativeWork",
+      name: title,
+      author: {
+        "@type": "Organization",
+        name: "DegenRoll",
+      },
+      datePublished: "2026",
+      url: canonicalUrl,
+    },
+    isAccessibleForFree: true,
+    creditText: `DegenRoll (2026). ${title}. ${canonicalUrl}`,
+    copyrightHolder: {
+      "@type": "Organization",
+      name: "DegenRoll",
+    },
+    license: "https://creativecommons.org/licenses/by/4.0/",
+  } : null;
 
   return (
     <>
@@ -200,6 +245,9 @@ const AnswerLayout = ({
         <script type="application/ld+json">{JSON.stringify(qaPageJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(speakableJsonLd)}</script>
+        {isCanonical && citationJsonLd && (
+          <script type="application/ld+json">{JSON.stringify(citationJsonLd)}</script>
+        )}
       </Helmet>
 
       <Header />
@@ -243,6 +291,28 @@ const AnswerLayout = ({
               <p className="text-muted-foreground leading-relaxed" itemProp="description">{summary}</p>
             </div>
           </section>
+
+          {/* Why This Answer Is Reliable - Trust Block */}
+          <section className="why-trust mt-8" aria-labelledby="trust-heading">
+            <div className="bg-card/30 p-6 rounded-xl border border-border/30">
+              <h3 id="trust-heading" className="text-lg font-semibold mb-4 text-foreground/90">Why This Answer Is Reliable</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                {trustPoints.map((point, index) => (
+                  <li key={index} className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <span>{point.text}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+
+          {/* Update Velocity & Maintenance Signaling */}
+          {lastReviewed && (
+            <p className="content-review text-xs text-muted-foreground/70 mt-4 text-center">
+              Last reviewed: {lastReviewed}{reviewNote ? ` — ${reviewNote}` : ""}
+            </p>
+          )}
 
           {/* FAQ Section */}
           <section className="faq-section mt-12 pt-8 border-t border-border/40">
