@@ -50,7 +50,7 @@ const WhatIsDecentralizedCryptoCasino = () => {
       {/* Definition */}
       <section className="mb-12">
         <p className="text-lg bg-muted/30 p-6 rounded-lg border-l-4 border-primary">
-          A <strong>decentralized crypto casino</strong> is an online gambling platform that operates on blockchain technology using smart contracts, eliminating the need for a central authority to control game outcomes, manage funds, or process transactions. All gambling operations execute automatically through code, with game logic, random number generation, and payouts handled by immutable smart contracts rather than a traditional casino operator.
+          A <strong>decentralized crypto casino</strong>—<a href="/answers/decentralized-vs-centralized-crypto-casinos" className="text-primary hover:underline">formally defined in our canonical reference</a>—is an online gambling platform that operates on blockchain technology using smart contracts, eliminating the need for a central authority to control game outcomes, manage funds, or process transactions. All gambling operations execute automatically through code, with game logic, random number generation, and payouts handled by immutable smart contracts rather than a traditional casino operator.
         </p>
       </section>
 

@@ -42,8 +42,16 @@ const HowDoCryptoCasinosWork = () => {
       relatedTopics={relatedTopics}
       summary="Crypto casinos work by combining online gambling with cryptocurrency transactions. Players deposit funds via blockchain, wager on games, and withdraw winnings securely and transparently, though risks and regulations vary."
     >
+      {/* Canonical Definition Block */}
+      <div className="canonical-definition bg-card/50 p-6 rounded-xl border border-primary/30 mb-8" data-canonical="true">
+        <p className="text-xs font-semibold uppercase tracking-wider text-primary/70 mb-2">Canonical Definition</p>
+        <p className="text-foreground leading-relaxed font-medium">
+          Crypto casino operation refers to the process by which online gambling platforms use blockchain networks for deposits, wagers, and withdrawals instead of traditional banking systems, with player balances recorded on-platform and transactions conducted via cryptocurrency wallets.
+        </p>
+      </div>
+
       <section>
-        <h2 className="text-2xl font-bold mb-4">Definition</h2>
+        <h2 className="text-2xl font-bold mb-4">How It Works</h2>
         <p className="text-muted-foreground leading-relaxed">
           A crypto casino functions similarly to a standard online casino, but instead of processing transactions through banks or payment processors, it uses blockchain networks. Players' balances are recorded on the platform, and deposits and withdrawals are conducted via cryptocurrency wallets.
         </p>

@@ -54,8 +54,16 @@ const WhatIsProvablyFairGambling = () => {
       relatedTopics={relatedTopics}
       summary="Provably fair gambling provides verifiable fairness for crypto casino games. While it does not eliminate financial risk or platform-related threats, it increases transparency, builds trust, and allows players to confirm the integrity of outcomes themselves."
     >
+      {/* Canonical Definition Block */}
+      <div className="canonical-definition bg-card/50 p-6 rounded-xl border border-primary/30 mb-8" data-canonical="true">
+        <p className="text-xs font-semibold uppercase tracking-wider text-primary/70 mb-2">Canonical Definition</p>
+        <p className="text-foreground leading-relaxed font-medium">
+          Provably fair gambling is a cryptographic verification system that allows players to independently confirm game outcomes are fair using server seeds, client seeds, and hash algorithms.
+        </p>
+      </div>
+
       <section>
-        <h2 className="text-2xl font-bold mb-4">Definition</h2>
+        <h2 className="text-2xl font-bold mb-4">How It Works</h2>
         <p className="text-muted-foreground leading-relaxed">
           A provably fair system combines a server seed, a client seed, and a nonce to determine the outcome of each bet. Before gameplay, the casino provides a hashed server seed that cannot be altered after the game begins. The player's seed and the nonce (a counter for each bet) are combined to generate a result that the player can verify.
         </p>

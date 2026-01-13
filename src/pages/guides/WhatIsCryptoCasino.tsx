@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import GuideArticleLayout from "@/components/GuideArticleLayout";
 import cryptoFundamentalsThumb from "@/assets/thumbnails/crypto-fundamentals-thumb.jpg";
 
@@ -48,7 +49,7 @@ const WhatIsCryptoCasino = () => {
       readTime="8 min read"
       introduction={
         <p className="text-lg leading-relaxed">
-          A <strong>crypto casino</strong> is an online gambling platform that accepts cryptocurrency as its primary or exclusive form of payment for deposits, wagers, and withdrawals. These platforms operate using blockchain technology to process transactions and may offer enhanced privacy, faster payouts, and provably fair gaming compared to traditional online casinos.
+          A <strong>crypto casino</strong>—<Link to="/answers/what-is-a-crypto-casino" className="text-primary hover:underline">formally defined in our canonical reference</Link>—is an online gambling platform that accepts cryptocurrency as its primary or exclusive form of payment for deposits, wagers, and withdrawals. These platforms operate using blockchain technology to process transactions and may offer enhanced privacy, faster payouts, and provably fair gaming compared to traditional online casinos.
         </p>
       }
       faqs={faqs}

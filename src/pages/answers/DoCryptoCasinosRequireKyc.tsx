@@ -54,8 +54,16 @@ const DoCryptoCasinosRequireKyc = () => {
       relatedTopics={relatedTopics}
       summary="KYC in crypto casinos balances regulatory compliance, player safety, and transaction limits. No-KYC platforms provide privacy, but KYC-compliant casinos offer higher limits and legal protection."
     >
+      {/* Canonical Definition Block */}
+      <div className="canonical-definition bg-card/50 p-6 rounded-xl border border-primary/30 mb-8" data-canonical="true">
+        <p className="text-xs font-semibold uppercase tracking-wider text-primary/70 mb-2">Canonical Definition</p>
+        <p className="text-foreground leading-relaxed font-medium">
+          KYC (Know Your Customer) in crypto casinos is a regulatory verification process requiring platforms to verify player identities, typically for large transactions or regulatory compliance, with requirements varying by platform, jurisdiction, and transaction size.
+        </p>
+      </div>
+
       <section>
-        <h2 className="text-2xl font-bold mb-4">What is KYC in Crypto Casinos?</h2>
+        <h2 className="text-2xl font-bold mb-4">How KYC Works</h2>
         <p className="text-muted-foreground mb-4">
           KYC is a regulatory process requiring crypto casinos to verify the identity of players. Its main purpose is to prevent fraud, money laundering, and illegal activity.
         </p>

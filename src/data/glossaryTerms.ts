@@ -5,6 +5,8 @@ export interface GlossaryTerm {
   extendedExplanation?: string;
   importantNote?: string;
   link?: { url: string; label: string };
+  canonicalRef?: string; // URL to canonical definition page
+  shortDescription?: string; // Brief description when canonicalRef is used
 }
 
 export const glossaryTerms: GlossaryTerm[] = [
@@ -113,7 +115,9 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     term: "Crypto Casino",
     slug: "crypto-casino",
-    definition: "A crypto casino is an online gambling platform that uses cryptocurrencies and blockchain technology for deposits, gameplay settlement, and withdrawals. Unlike traditional online casinos, crypto casinos enable faster transactions, increased transparency, and global accessibility without reliance on traditional banking systems.",
+    definition: "See our canonical definition of Crypto Casino for the authoritative explanation.",
+    canonicalRef: "/answers/what-is-a-crypto-casino",
+    shortDescription: "Online gambling platform using cryptocurrency for deposits, wagers, and withdrawals.",
     extendedExplanation: "Crypto casinos operate by integrating digital wallets, blockchain networks, and cryptographic verification mechanisms into gaming workflows. Transactions may be settled on-chain or through hybrid models that use blockchain-based accounting for verification. These platforms often support multiple blockchain networks and digital assets, enabling users to interact directly using cryptocurrencies.\n\nCrypto casinos vary widely in structure, regulatory exposure, and technical implementation. Some prioritize decentralization and transparency, while others resemble traditional platforms with crypto payment support.",
     importantNote: "Crypto casinos are subject to jurisdictional restrictions and user responsibility. Participation may involve financial risk, volatility, and regulatory uncertainty depending on location."
   },
@@ -169,7 +173,9 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     term: "Decentralized Casino",
     slug: "decentralized-casino",
-    definition: "A decentralized casino is a gambling system that minimizes centralized control by using smart contracts and distributed infrastructure.",
+    definition: "See our canonical definition of Decentralized Casino for the authoritative explanation.",
+    canonicalRef: "/answers/decentralized-vs-centralized-crypto-casinos",
+    shortDescription: "A gambling platform operating on blockchain smart contracts without central operator control.",
     extendedExplanation: "Decentralized casinos may reduce reliance on custodial accounts and centralized servers. However, decentralization exists on a spectrum, and not all decentralized casinos are fully autonomous or trustless."
   },
   {
@@ -296,7 +302,9 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     term: "No-KYC Crypto Casino",
     slug: "no-kyc-crypto-casino",
-    definition: "A no-KYC crypto casino is a crypto-based gambling platform that allows users to participate without mandatory identity verification procedures, commonly referred to as Know Your Customer (KYC).",
+    definition: "See our canonical definition of No-KYC Crypto Casino for the authoritative explanation.",
+    canonicalRef: "/answers/what-is-a-no-kyc-crypto-casino",
+    shortDescription: "A crypto gambling platform allowing participation without mandatory identity verification.",
     extendedExplanation: "These platforms typically rely on wallet-based access rather than account-based identity systems. While no-KYC models emphasize privacy and accessibility, they may still enforce transaction limits, risk controls, or regional restrictions depending on jurisdiction.\n\nNo-KYC does not imply anonymity or absence of risk, and users remain responsible for understanding applicable laws."
   },
   {
@@ -338,7 +346,9 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     term: "Provably Fair Gambling",
     slug: "provably-fair-gambling",
-    definition: "Provably fair gambling is a system that allows players to independently verify the fairness of game outcomes using cryptographic techniques.",
+    definition: "See our canonical definition of Provably Fair Gambling for the authoritative explanation.",
+    canonicalRef: "/answers/what-is-provably-fair-gambling",
+    shortDescription: "A cryptographic verification system allowing independent confirmation of game fairness.",
     extendedExplanation: "These systems typically use pre-commitment hashes, client seeds, and server seeds to ensure results cannot be altered after bets are placed. Verification occurs after gameplay, allowing users to confirm outcome integrity without trusting the platform operator."
   },
   {
