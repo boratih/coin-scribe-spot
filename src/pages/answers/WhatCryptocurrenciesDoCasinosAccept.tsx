@@ -54,6 +54,14 @@ const WhatCryptocurrenciesDoCasinosAccept = () => {
       relatedTopics={relatedTopics}
       summary="BTC and ETH are nearly universal, with many casinos offering multiple cryptocurrencies including stablecoins and popular altcoins. Players should check coin support and consider volatility, speed, and fees when choosing a deposit method."
     >
+      {/* Canonical Definition Block */}
+      <div className="canonical-definition bg-card/50 p-6 rounded-xl border border-primary/30 mb-8" data-canonical="true">
+        <p className="text-xs font-semibold uppercase tracking-wider text-primary/70 mb-2">Canonical Definition</p>
+        <p className="text-foreground leading-relaxed font-medium">
+          Crypto casino cryptocurrency support refers to the digital currencies accepted for deposits, wagers, and withdrawals, with Bitcoin and Ethereum being nearly universal, alongside stablecoins and various altcoins depending on platform policies.
+        </p>
+      </div>
+
       <section>
         <h2 className="text-2xl font-bold mb-4">Commonly Accepted Cryptocurrencies</h2>
         <ul className="list-disc list-inside space-y-2 text-muted-foreground">

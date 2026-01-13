@@ -62,8 +62,16 @@ const ProvablyFairVsRng = () => {
       relatedTopics={relatedTopics}
       summary="PF is ideal for players prioritizing transparency; RNG is standard in traditional casinos but relies on operator trust."
     >
+      {/* Canonical Definition Block */}
+      <div className="canonical-definition bg-card/50 p-6 rounded-xl border border-primary/30 mb-8" data-canonical="true">
+        <p className="text-xs font-semibold uppercase tracking-wider text-primary/70 mb-2">Canonical Definition</p>
+        <p className="text-foreground leading-relaxed font-medium">
+          Provably fair (PF) systems use cryptographic verification allowing independent outcome validation, while RNG (Random Number Generator) systems produce random outcomes through software without external verification capability.
+        </p>
+      </div>
+
       <section>
-        <h2 className="text-2xl font-bold mb-4">Definition</h2>
+        <h2 className="text-2xl font-bold mb-4">Key Differences</h2>
         <ul className="list-disc list-inside space-y-2 text-muted-foreground">
           <li><strong>Provably Fair:</strong> Cryptographically verifiable outcomes, using server/client seeds.</li>
           <li><strong>RNG:</strong> Computer-generated random numbers without external verification.</li>

@@ -50,7 +50,7 @@ const WhatIsProvablyFairSystem = () => {
       {/* Definition */}
       <section className="mb-12">
         <p className="text-lg bg-muted/30 p-6 rounded-lg border-l-4 border-primary">
-          A <strong>provably fair system</strong> is a cryptographic method that allows players to independently verify the fairness of each game outcome in online gambling. Using cryptographic hash functions and seed values, provably fair algorithms mathematically prove that game results were determined fairly and were not manipulated by the casino after the bet was placed.
+          A <strong>provably fair system</strong>—<a href="/answers/what-is-provably-fair-gambling" className="text-primary hover:underline">formally defined in our canonical reference</a>—is a cryptographic method that allows players to independently verify the fairness of each game outcome in online gambling. Using cryptographic hash functions and seed values, provably fair algorithms mathematically prove that game results were determined fairly and were not manipulated by the casino after the bet was placed.
         </p>
       </section>
 

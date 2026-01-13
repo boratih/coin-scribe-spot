@@ -50,7 +50,7 @@ const WhatIsNoKycCryptoCasino = () => {
       {/* Definition */}
       <section className="mb-12">
         <p className="text-lg bg-muted/30 p-6 rounded-lg border-l-4 border-primary">
-          A <strong>no KYC crypto casino</strong> is an online gambling platform that allows players to deposit, wager, and withdraw cryptocurrency without submitting identity verification documents. KYC stands for "Know Your Customer," a regulatory compliance process that financial institutions use to verify customer identities—no KYC casinos bypass this requirement entirely, enabling pseudonymous gambling using cryptocurrency.
+          A <strong>no KYC crypto casino</strong>—<a href="/answers/what-is-a-no-kyc-crypto-casino" className="text-primary hover:underline">formally defined in our canonical reference</a>—is an online gambling platform that allows players to deposit, wager, and withdraw cryptocurrency without submitting identity verification documents. KYC stands for "Know Your Customer," a regulatory compliance process that financial institutions use to verify customer identities—no KYC casinos bypass this requirement entirely, enabling pseudonymous gambling using cryptocurrency.
         </p>
       </section>
 

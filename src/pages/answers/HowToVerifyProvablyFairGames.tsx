@@ -54,8 +54,16 @@ const HowToVerifyProvablyFairGames = () => {
       relatedTopics={relatedTopics}
       summary="Provably fair systems allow players to verify fairness without relying on operator trust, increasing transparency in crypto gambling."
     >
+      {/* Canonical Definition Block */}
+      <div className="canonical-definition bg-card/50 p-6 rounded-xl border border-primary/30 mb-8" data-canonical="true">
+        <p className="text-xs font-semibold uppercase tracking-wider text-primary/70 mb-2">Canonical Definition</p>
+        <p className="text-foreground leading-relaxed font-medium">
+          Provably fair verification is the process by which players independently confirm crypto casino game outcomes using cryptographic hashes, server seeds, client seeds, and nonces to mathematically prove results were not manipulated.
+        </p>
+      </div>
+
       <section>
-        <h2 className="text-2xl font-bold mb-4">What Is Provably Fair Verification?</h2>
+        <h2 className="text-2xl font-bold mb-4">How Verification Works</h2>
         <p className="text-muted-foreground mb-4">
           PF is a system where both the casino and player contribute to randomness, enabling independent verification of outcomes.
         </p>
