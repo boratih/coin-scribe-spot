@@ -45,6 +45,9 @@ const WhatAreTheRisksOfCryptoCasinos = () => {
       metaDescription="Understand the major risks of crypto casinos, including volatility, scams, legal issues, and how to protect yourself when gambling with cryptocurrency."
       canonicalUrl="https://degenroll.co/answers/what-are-the-risks-of-crypto-casinos"
       lastUpdated="January 2026"
+      lastReviewed="January 2026"
+      reviewNote="no material updates required"
+      isCanonical={true}
       quickAnswer={
         <p>
           Crypto casinos carry several risks, including price volatility, legal uncertainty, irreversible transactions, limited consumer protection, and unlicensed operators. Awareness and risk management are critical for safe participation.

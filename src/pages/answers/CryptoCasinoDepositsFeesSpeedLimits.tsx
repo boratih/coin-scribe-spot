@@ -33,6 +33,8 @@ const CryptoCasinoDepositsFeesSpeedLimits = () => {
       metaDescription="Understand how crypto casino deposits work, including fees, transaction speed, and deposit limits for Bitcoin, Ethereum, and stablecoins."
       canonicalUrl="https://degenroll.co/answers/crypto-casino-deposits-fees-speed-limits"
       lastUpdated="January 2026"
+      lastReviewed="January 2026"
+      reviewNote="no material updates required"
       quickAnswer={
         <p>
           Deposits in crypto casinos vary by cryptocurrency, platform, and network congestion. Fees are usually network transaction costs, deposits are often instant, and platforms may impose limits depending on verification status.

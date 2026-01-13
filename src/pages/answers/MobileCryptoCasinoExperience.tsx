@@ -29,6 +29,8 @@ const MobileCryptoCasinoExperience = () => {
       metaDescription="Learn about playing at crypto casinos on mobile devices, including features, advantages, limitations, and security considerations."
       canonicalUrl="https://degenroll.co/answers/mobile-crypto-casino-experience"
       lastUpdated="January 2026"
+      lastReviewed="January 2026"
+      reviewNote="no material updates required"
       quickAnswer={
         <p>
           Mobile crypto casinos allow players to deposit, play, and withdraw on smartphones. Experiences vary by app quality, security, and supported features.

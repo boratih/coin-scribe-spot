@@ -53,6 +53,9 @@ const ProvablyFairVsRng = () => {
       metaDescription="Compare provably fair and RNG systems in crypto casinos. Learn the key differences in verification, transparency, and trust."
       canonicalUrl="https://degenroll.co/answers/provably-fair-vs-rng"
       lastUpdated="January 2026"
+      lastReviewed="January 2026"
+      reviewNote="no material updates required"
+      isCanonical={true}
       quickAnswer={
         <p>
           Provably fair (PF) and RNG (Random Number Generator) systems differ in verifiability and trust. PF allows players to independently verify game outcomes using cryptography, while RNG outcomes rely on software and operator honesty.

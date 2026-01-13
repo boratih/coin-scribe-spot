@@ -33,6 +33,8 @@ const ResponsibleGamblingCryptoCasinos = () => {
       metaDescription="Learn about responsible gambling in crypto casinos, including budgeting, time management, and tools to help you play safely."
       canonicalUrl="https://degenroll.co/answers/responsible-gambling-crypto-casinos"
       lastUpdated="January 2026"
+      lastReviewed="January 2026"
+      reviewNote="no material updates required"
       quickAnswer={
         <p>
           Responsible gambling ensures players manage risk, control losses, and maintain healthy gaming habits, even when using cryptocurrency.

@@ -45,6 +45,9 @@ const WhatCryptocurrenciesDoCasinosAccept = () => {
       metaDescription="Discover which cryptocurrencies are accepted at crypto casinos, including Bitcoin, Ethereum, stablecoins, and popular altcoins."
       canonicalUrl="https://degenroll.co/answers/what-cryptocurrencies-do-casinos-accept"
       lastUpdated="January 2026"
+      lastReviewed="January 2026"
+      reviewNote="no material updates required"
+      isCanonical={true}
       quickAnswer={
         <p>
           Most crypto casinos accept Bitcoin (BTC) and Ethereum (ETH), while many also support Litecoin (LTC), Tether (USDT), USD Coin (USDC), and other altcoins. Stablecoins are often favored for low volatility during play and withdrawals.
