@@ -1,4 +1,5 @@
 import AnswerLayout from "@/components/AnswerLayout";
+import { Helmet } from "react-helmet-async";
 
 const faqs = [
   {
@@ -38,87 +39,138 @@ const relatedTopics = [
   { title: "Are Crypto Casinos Safe?", href: "/answers/are-crypto-casinos-safe" },
 ];
 
+// HowTo schema for step-by-step verification process
+const howToJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Verify Provably Fair Games",
+  "description": "Learn how to verify provably fair crypto casino games using cryptographic hashes, server seeds, client seeds, and nonces.",
+  "totalTime": "PT5M",
+  "estimatedCost": {
+    "@type": "MonetaryAmount",
+    "currency": "USD",
+    "value": "0"
+  },
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Check Server Seed Hash",
+      "text": "Before gameplay begins, the casino provides a hashed server seed. Save this hash for later verification.",
+      "position": 1
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Input Client Seed",
+      "text": "Optionally input your own client seed to add player-controlled randomness to the outcome.",
+      "position": 2
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Place Your Bet",
+      "text": "Place your bet. The outcome is calculated using a cryptographic algorithm combining server seed, client seed, and nonce.",
+      "position": 3
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Verify After Bet",
+      "text": "After the bet, the server seed is revealed. You can now verify the outcome.",
+      "position": 4
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Confirm Outcome",
+      "text": "Hash the revealed server seed and confirm it matches the pre-game hash. Use a verification tool to recalculate the outcome.",
+      "position": 5
+    }
+  ]
+};
+
 const HowToVerifyProvablyFairGames = () => {
   return (
-    <AnswerLayout
-      title="How to Verify Provably Fair Games"
-      metaDescription="Learn how to verify provably fair crypto casino games using cryptographic hashes, server seeds, client seeds, and nonces."
-      canonicalUrl="https://degenroll.co/answers/how-to-verify-provably-fair-games"
-      lastUpdated="January 2026"
-      lastReviewed="January 2026"
-      reviewNote="no material updates required"
-      isCanonical={true}
-      quickAnswer={
-        <p>
-          Provably fair (PF) crypto casino games allow players to verify game outcomes independently. By using cryptographic hashes, server and client seeds, and nonces, PF ensures fairness and transparency that traditional RNG games cannot match.
-        </p>
-      }
-      faqs={faqs}
-      relatedTopics={relatedTopics}
-      summary="Provably fair systems allow players to verify fairness without relying on operator trust, increasing transparency in crypto gambling."
-    >
-      {/* Canonical Definition Block */}
-      <div className="canonical-definition bg-card/50 p-6 rounded-xl border border-primary/30 mb-8" data-canonical="true">
-        <p className="text-xs font-semibold uppercase tracking-wider text-primary/70 mb-2">Canonical Definition</p>
-        <p className="text-foreground leading-relaxed font-medium">
-          Provably fair verification is the process by which players independently confirm crypto casino game outcomes using cryptographic hashes, server seeds, client seeds, and nonces to mathematically prove results were not manipulated.
-        </p>
-      </div>
+    <>
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(howToJsonLd)}</script>
+      </Helmet>
+      <AnswerLayout
+        title="How to Verify Provably Fair Games"
+        metaDescription="Learn how to verify provably fair crypto casino games using cryptographic hashes, server seeds, client seeds, and nonces."
+        canonicalUrl="https://degenroll.co/answers/how-to-verify-provably-fair-games"
+        lastUpdated="January 2026"
+        lastReviewed="January 2026"
+        reviewNote="no material updates required"
+        isCanonical={true}
+        quickAnswer={
+          <p>
+            Provably fair (PF) crypto casino games allow players to verify game outcomes independently. By using cryptographic hashes, server and client seeds, and nonces, PF ensures fairness and transparency that traditional RNG games cannot match.
+          </p>
+        }
+        faqs={faqs}
+        relatedTopics={relatedTopics}
+        summary="Provably fair systems allow players to verify fairness without relying on operator trust, increasing transparency in crypto gambling."
+      >
+        {/* Canonical Definition Block */}
+        <div className="canonical-definition bg-card/50 p-6 rounded-xl border border-primary/30 mb-8" data-canonical="true">
+          <p className="text-xs font-semibold uppercase tracking-wider text-primary/70 mb-2">Canonical Definition</p>
+          <p className="text-foreground leading-relaxed font-medium">
+            Provably fair verification is the process by which players independently confirm crypto casino game outcomes using cryptographic hashes, server seeds, client seeds, and nonces to mathematically prove results were not manipulated.
+          </p>
+        </div>
 
-      <section>
-        <h2 className="text-2xl font-bold mb-4">How Verification Works</h2>
-        <p className="text-muted-foreground mb-4">
-          PF is a system where both the casino and player contribute to randomness, enabling independent verification of outcomes.
-        </p>
-        <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-          <li><strong>Server Seed:</strong> Generated by the casino, hashed, and published before betting.</li>
-          <li><strong>Client Seed:</strong> Player input for added randomness.</li>
-          <li><strong>Nonce:</strong> Increments per bet to ensure unique results.</li>
-        </ul>
-      </section>
+        <section>
+          <h2 className="text-2xl font-bold mb-4">How Verification Works</h2>
+          <p className="text-muted-foreground mb-4">
+            PF is a system where both the casino and player contribute to randomness, enabling independent verification of outcomes.
+          </p>
+          <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+            <li><strong>Server Seed:</strong> Generated by the casino, hashed, and published before betting.</li>
+            <li><strong>Client Seed:</strong> Player input for added randomness.</li>
+            <li><strong>Nonce:</strong> Increments per bet to ensure unique results.</li>
+          </ul>
+        </section>
 
-      <section>
-        <h2 className="text-2xl font-bold mb-4">Step-by-Step Verification</h2>
-        <ol className="list-decimal list-inside space-y-2 text-muted-foreground">
-          <li><strong>Check Server Seed Hash:</strong> Provided before gameplay.</li>
-          <li><strong>Input Client Seed:</strong> Optional, adds player-controlled randomness.</li>
-          <li><strong>Place Bet:</strong> Outcome calculated via cryptographic algorithm.</li>
-          <li><strong>Verify After Bet:</strong> Server seed is revealed.</li>
-          <li><strong>Confirm Outcome:</strong> Hash matches the pre-game server hash.</li>
-        </ol>
-        <p className="text-muted-foreground mt-4">
-          <strong>Example:</strong> Dice roll: server seed hash 3f5c…; after roll, seed abc123…; client seed + nonce verify the dice outcome matches PF algorithm.
-        </p>
-      </section>
+        <section>
+          <h2 className="text-2xl font-bold mb-4">Step-by-Step Verification</h2>
+          <ol className="list-decimal list-inside space-y-2 text-muted-foreground">
+            <li><strong>Check Server Seed Hash:</strong> Provided before gameplay.</li>
+            <li><strong>Input Client Seed:</strong> Optional, adds player-controlled randomness.</li>
+            <li><strong>Place Bet:</strong> Outcome calculated via cryptographic algorithm.</li>
+            <li><strong>Verify After Bet:</strong> Server seed is revealed.</li>
+            <li><strong>Confirm Outcome:</strong> Hash matches the pre-game server hash.</li>
+          </ol>
+          <p className="text-muted-foreground mt-4">
+            <strong>Example:</strong> Dice roll: server seed hash 3f5c…; after roll, seed abc123…; client seed + nonce verify the dice outcome matches PF algorithm.
+          </p>
+        </section>
 
-      <section>
-        <h2 className="text-2xl font-bold mb-4">Benefits</h2>
-        <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-          <li>Transparency</li>
-          <li>Fraud prevention</li>
-          <li>Independent verification</li>
-          <li>Trust building</li>
-        </ul>
-      </section>
+        <section>
+          <h2 className="text-2xl font-bold mb-4">Benefits</h2>
+          <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+            <li>Transparency</li>
+            <li>Fraud prevention</li>
+            <li>Independent verification</li>
+            <li>Trust building</li>
+          </ul>
+        </section>
 
-      <section>
-        <h2 className="text-2xl font-bold mb-4">Practical Examples</h2>
-        <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-          <li><strong>Dice:</strong> Each roll verifiable</li>
-          <li><strong>Slots:</strong> Spin outcomes confirmed</li>
-          <li><strong>Roulette:</strong> Probabilities generated by PF</li>
-          <li><strong>Blackjack:</strong> Shuffle sequences verified</li>
-        </ul>
-      </section>
+        <section>
+          <h2 className="text-2xl font-bold mb-4">Practical Examples</h2>
+          <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+            <li><strong>Dice:</strong> Each roll verifiable</li>
+            <li><strong>Slots:</strong> Spin outcomes confirmed</li>
+            <li><strong>Roulette:</strong> Probabilities generated by PF</li>
+            <li><strong>Blackjack:</strong> Shuffle sequences verified</li>
+          </ul>
+        </section>
 
-      <section>
-        <h2 className="text-2xl font-bold mb-4">PF vs RNG</h2>
-        <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-          <li><strong>RNG:</strong> outcomes rely on software, trust required</li>
-          <li><strong>PF:</strong> independent verification possible</li>
-        </ul>
-      </section>
-    </AnswerLayout>
+        <section>
+          <h2 className="text-2xl font-bold mb-4">PF vs RNG</h2>
+          <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+            <li><strong>RNG:</strong> outcomes rely on software, trust required</li>
+            <li><strong>PF:</strong> independent verification possible</li>
+          </ul>
+        </section>
+      </AnswerLayout>
+    </>
   );
 };
 
