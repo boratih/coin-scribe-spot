@@ -28,13 +28,13 @@ const FloatingCTA = () => {
         asChild
       >
         <a 
-          href="https://www.degenroll.xyz" 
+          href="https://degenroll.com" 
           target="_blank" 
           rel="noopener noreferrer"
           className="flex items-center gap-2"
         >
           <Rocket className="w-5 h-5 group-hover:rotate-12 transition-transform" />
-          Play Now
+          Visit DegenRoll
         </a>
       </Button>
     </div>

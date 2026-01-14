@@ -84,8 +84,8 @@ const HeroSection = ({ onSearch }: HeroSectionProps) => {
               asChild
               className="h-14 px-8 text-lg font-semibold bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90 transition-opacity shadow-glow-accent rounded-full"
             >
-              <a href="https://www.degenroll.xyz" target="_blank" rel="noopener noreferrer">
-                🎰 Play at DegenRoll
+              <a href="https://degenroll.com" target="_blank" rel="noopener noreferrer">
+                Visit DegenRoll.com
               </a>
             </Button>
             <Button 

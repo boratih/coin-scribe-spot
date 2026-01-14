@@ -95,18 +95,18 @@ const Index = () => {
         <div className="container relative z-10">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Play?
+              Ready to Explore?
             </h2>
             <p className="text-muted-foreground mb-8">
-              Experience the best crypto casino with instant deposits, provably fair games, and fast withdrawals.
+              Visit DegenRoll for crypto casino gaming with instant deposits, provably fair games, and fast withdrawals.
             </p>
             <Button 
               asChild
               size="lg" 
               className="h-14 px-8 text-lg rounded-full bg-gradient-to-r from-primary to-accent"
             >
-              <a href="https://www.degenroll.xyz" target="_blank" rel="noopener noreferrer">
-                Play Now on DegenRoll
+              <a href="https://degenroll.com" target="_blank" rel="noopener noreferrer">
+                Visit DegenRoll.com
               </a>
             </Button>
           </div>

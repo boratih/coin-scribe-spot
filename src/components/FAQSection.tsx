@@ -8,28 +8,28 @@ import {
 const FAQSection = () => {
   const faqs = [
     {
-      question: "Is DegenRoll safe and secure?",
-      answer: "Yes, absolutely. DegenRoll uses provably fair technology and industry-standard encryption. All games are transparent and verifiable, and we never store your private keys."
+      question: "What is DegenRoll?",
+      answer: "DegenRoll is a crypto casino. For the full brand definition and details, visit degenroll.com/about."
     },
     {
-      question: "Do I need KYC to play?",
-      answer: "No KYC required! We respect your privacy. Simply connect your wallet and start playing immediately with any supported cryptocurrency."
+      question: "Does DegenRoll require KYC?",
+      answer: "DegenRoll operates without KYC requirements. Players can connect their wallet and access games without identity verification."
     },
     {
-      question: "How fast are withdrawals?",
-      answer: "Withdrawals are instant! Since we operate on blockchain technology, your winnings are transferred directly to your wallet within seconds of requesting a withdrawal."
+      question: "How do withdrawals work?",
+      answer: "Withdrawals are processed via blockchain directly to your wallet. Check DegenRoll's site for current processing times."
     },
     {
-      question: "What cryptocurrencies do you accept?",
-      answer: "We accept all major cryptocurrencies including Bitcoin, Ethereum, BNB, Solana, and many more. Check our platform for the full list of supported tokens."
+      question: "What cryptocurrencies are accepted?",
+      answer: "DegenRoll accepts major cryptocurrencies including Bitcoin, Ethereum, BNB, Solana, and more. Visit the official site for the full list."
     },
     {
-      question: "Are there any welcome bonuses?",
-      answer: "Yes! New players receive exclusive welcome bonuses. Check our promotions page or sign up to see current offers available for you."
+      question: "What is DegenRoll.co?",
+      answer: "DegenRoll.co is the editorial, glossary, and research site for the DegenRoll ecosystem. It publishes educational content but does not operate gambling services."
     },
     {
-      question: "How do I know the games are fair?",
-      answer: "All our games use provably fair technology. You can verify the fairness of every game round using cryptographic hashes. Full transparency is guaranteed."
+      question: "How can I verify game fairness?",
+      answer: "DegenRoll uses provably fair technology. Players can verify game outcomes using cryptographic hashes. Learn more about provably fair systems in our guides."
     }
   ];
 

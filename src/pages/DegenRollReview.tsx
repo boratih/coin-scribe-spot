@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
-import StatsSection from "@/components/StatsSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
 import ComparisonTable from "@/components/ComparisonTable";
 import FloatingCTA from "@/components/FloatingCTA";
 import { Button } from "@/components/ui/button";
@@ -107,8 +105,8 @@ const DegenRollReview = () => {
                 size="lg"
                 className="bg-accent hover:bg-accent/90 text-accent-foreground"
               >
-                <a href="https://www.degenroll.xyz" target="_blank" rel="noopener noreferrer">
-                  Play Now
+                <a href="https://degenroll.com" target="_blank" rel="noopener noreferrer">
+                  Visit DegenRoll
                 </a>
               </Button>
             </div>
@@ -204,32 +202,32 @@ const DegenRollReview = () => {
               className="w-32 h-32 mx-auto mb-4 object-contain"
             />
             <h3 className="text-3xl md:text-4xl font-bold text-accent-foreground mb-4">
-              Play Now at DegenRoll
+              Visit DegenRoll
             </h3>
             <div className="flex flex-wrap justify-center gap-3 mb-6">
               <Badge variant="secondary" className="text-sm px-4 py-2 bg-white/20 text-accent-foreground border-white/30">
                 🕵️‍♂️ No KYC Required
               </Badge>
               <Badge variant="secondary" className="text-sm px-4 py-2 bg-white/20 text-accent-foreground border-white/30">
-                ⚡ Instant Deposits
+                ⚡ Crypto Deposits
               </Badge>
               <Badge variant="secondary" className="text-sm px-4 py-2 bg-white/20 text-accent-foreground border-white/30">
-                🪙 All Major Crypto
+                🪙 Multiple Cryptocurrencies
               </Badge>
             </div>
             <p className="text-accent-foreground/90 text-lg mb-8 max-w-2xl mx-auto">
-              Start playing with complete privacy. Volume-based rewards, instant payouts, and over 4,000 games waiting for you.
+              Explore DegenRoll for crypto casino gaming with privacy features, volume-based rewards, and a large game selection.
             </p>
             <Button 
               asChild
               size="lg"
               className="bg-white text-accent hover:bg-white/90 font-bold text-lg px-8 py-6"
             >
-              <a href="https://www.degenroll.xyz" target="_blank" rel="noopener noreferrer">
-                CLAIM BONUS
+              <a href="https://degenroll.com" target="_blank" rel="noopener noreferrer">
+                Visit DegenRoll.com
               </a>
             </Button>
-            <p className="text-accent-foreground/70 text-xs mt-4">18+ | Play Responsibly</p>
+            <p className="text-accent-foreground/70 text-xs mt-4">18+ | Gamble Responsibly</p>
           </CardContent>
         </Card>
       </section>
@@ -447,7 +445,7 @@ const DegenRollReview = () => {
               <div className="prose prose-invert max-w-none">
                 <p className="text-muted-foreground leading-relaxed">
                   With over 4,000 games in their library, DegenRoll offers everything from classic slots to live dealer games 
-                  and sports betting. The platform features top providers and ensures smooth gameplay across all devices. 
+                  and sports betting. Games come from top providers and run smoothly across all devices. 
                   Whether you're into high-stakes poker or casual slots, there's something for every type of player.
                 </p>
               </div>
@@ -462,10 +460,10 @@ const DegenRollReview = () => {
               </div>
               <div className="prose prose-invert max-w-none">
                 <p className="text-muted-foreground leading-relaxed">
-                  DegenRoll operates with complete anonymity - no KYC verification required. Simply connect your crypto wallet 
-                  and start playing. The platform uses industry-standard encryption and holds a Curacao gaming license. 
-                  While they're still new and don't have an independent audit report yet, their commitment to privacy and 
-                  transparent operations has built strong early trust in the community.
+                  DegenRoll operates without KYC verification. Users connect their crypto wallet 
+                  to access games. DegenRoll uses encryption and is registered under Curacao jurisdiction. 
+                  As a newer casino, independent audit reports are not yet available. For current security details, 
+                  visit <a href="https://degenroll.com/about" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">degenroll.com/about</a>.
                 </p>
               </div>
             </CardContent>
@@ -479,9 +477,9 @@ const DegenRollReview = () => {
               </div>
               <div className="prose prose-invert max-w-none">
                 <p className="text-muted-foreground leading-relaxed">
-                  Unlike traditional casinos with complex wagering requirements, DegenRoll's reward system is based on your 
-                  actual play volume and swap activity. The more you use the platform, the more benefits you unlock. 
-                  They're also planning to introduce a native token system that will provide additional rewards and governance 
+                  Unlike traditional casinos with complex wagering requirements, DegenRoll's reward system is based on 
+                  play volume and swap activity. The more you play, the more benefits you may unlock. 
+                  A native token system is reportedly planned that would provide additional rewards and governance 
                   features for active players.
                 </p>
               </div>
@@ -496,10 +494,10 @@ const DegenRollReview = () => {
               </div>
               <div className="prose prose-invert max-w-none">
                 <p className="text-muted-foreground leading-relaxed">
-                  The platform features a clean, modern interface that's easy to navigate. Games load quickly, and the 
-                  integrated wallet system makes deposits and withdrawals seamless. The built-in swap feature is particularly 
-                  convenient, eliminating the need to use external exchanges. While there's no dedicated mobile app yet, 
-                  the responsive web design works well on all devices.
+                  DegenRoll features a clean, modern interface that's easy to navigate. Games load quickly, and the 
+                  integrated wallet system facilitates deposits and withdrawals. The built-in swap feature is 
+                  convenient for exchanging tokens. While there's no dedicated mobile app yet, 
+                  the responsive web design works well on various devices.
                 </p>
               </div>
             </CardContent>
@@ -544,17 +542,14 @@ const DegenRollReview = () => {
               size="lg"
               className="text-lg px-8 py-6 bg-gradient-primary border-0 hover:opacity-90 transition-opacity"
             >
-              <a href="https://www.degenroll.xyz" target="_blank" rel="noopener noreferrer">
+              <a href="https://degenroll.com" target="_blank" rel="noopener noreferrer">
                 <Gamepad2 className="w-5 h-5 mr-2" />
-                Play on DegenRoll
+                Visit DegenRoll
               </a>
             </Button>
           </CardContent>
         </Card>
       </section>
-
-      {/* Testimonials Section */}
-      <TestimonialsSection />
 
       {/* Comparison Table */}
       <ComparisonTable />
