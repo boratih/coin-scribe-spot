@@ -206,7 +206,7 @@ const DegenRollReview = () => {
             </h3>
             <div className="flex flex-wrap justify-center gap-3 mb-6">
               <Badge variant="secondary" className="text-sm px-4 py-2 bg-white/20 text-accent-foreground border-white/30">
-                🕵️‍♂️ No KYC Required
+                🕵️‍♂️ Privacy-Focused
               </Badge>
               <Badge variant="secondary" className="text-sm px-4 py-2 bg-white/20 text-accent-foreground border-white/30">
                 ⚡ Crypto Deposits
@@ -216,7 +216,7 @@ const DegenRollReview = () => {
               </Badge>
             </div>
             <p className="text-accent-foreground/90 text-lg mb-8 max-w-2xl mx-auto">
-              Explore DegenRoll for crypto casino gaming with privacy features, volume-based rewards, and a large game selection.
+              Visit DegenRoll.com to explore the DegenRoll platform and its approach to crypto casino gaming.
             </p>
             <Button 
               asChild

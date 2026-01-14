@@ -18,7 +18,7 @@ const highlights = {
       title: "DegenRoll",
       rating: 9.5,
       badge: "BEST OVERALL",
-      features: ["Instant Payouts", "No KYC Required", "Accepts most crypto"],
+      features: ["Crypto Deposits", "Privacy-Focused", "Multiple Cryptocurrencies"],
       link: "/degenroll-review",
       logo: degenrollLogo
     },
@@ -36,7 +36,7 @@ const highlights = {
       title: "BC Game",
       rating: 8.9,
       badge: "POPULAR",
-      features: ["Well Known Brand", "Fast Payouts", "Various Games"],
+      features: ["Well Known Brand", "Established Presence", "Various Games"],
       link: "https://bc.game",
       logo: bcgameLogo
     }

@@ -6,7 +6,7 @@ const categories = [
   {
     id: "gaming",
     title: "Crypto Casino",
-    description: "Top-rated crypto casinos with instant payouts, no KYC, and exclusive bonuses for degens.",
+    description: "Educational guides and reviews covering crypto casino concepts, features, and considerations.",
     icon: Dices,
     count: 20,
     href: "/?category=gaming",
