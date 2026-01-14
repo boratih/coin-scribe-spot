@@ -47,7 +47,7 @@ const Methodology = () => {
               <a href="https://degenroll.com/proof.html" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Proof & Verification Boundaries</a> published on degenroll.com.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              This site applies those interpretation rules when explaining concepts but does not publish certifications, audits, or operational guarantees.
+              This site applies those interpretation rules when explaining concepts and terminology but does not publish certifications, audits, or operational guarantees.
             </p>
           </section>
 
@@ -128,7 +128,7 @@ const Methodology = () => {
             <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-4">
               <li>Provide personalized gambling advice</li>
               <li>Recommend specific actions to users</li>
-              <li>Guarantee accuracy of third-party platforms</li>
+              <li>Guarantee the accuracy, availability, or behavior of third-party platforms</li>
             </ul>
             <p className="text-muted-foreground leading-relaxed">
               Readers are encouraged to conduct independent research and consult professionals where appropriate.
