@@ -34,7 +34,7 @@ const FloatingCTA = () => {
           className="flex items-center gap-2"
         >
           <Rocket className="w-5 h-5 group-hover:rotate-12 transition-transform" />
-          Visit DegenRoll
+          Visit DegenRoll.com
         </a>
       </Button>
     </div>
