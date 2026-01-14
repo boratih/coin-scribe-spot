@@ -53,7 +53,8 @@ const HeroSection = ({ onSearch }: HeroSectionProps) => {
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-            An editorial guide to how crypto casinos work, built on research-driven explanations and clear, structured education.
+            Your editorial guide to understanding crypto casinos and how they work. 
+            We provide research, reviews, and educational content for crypto casino.
           </p>
 
           {/* Search bar */}
