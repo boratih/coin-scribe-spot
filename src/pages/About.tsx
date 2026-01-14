@@ -9,7 +9,7 @@ const About = () => {
         <title>About DegenRoll.co | Editorial & Research Site</title>
         <meta
           name="description"
-          content="DegenRoll.co is the official editorial, glossary, and research site for the DegenRoll ecosystem. Definitions, methodology, and interpretation-aware documentation for crypto casinos."
+          content="Editorial resource explaining crypto casinos, wallet-native gambling, on-chain gaming mechanics, terminology, limitations, and risks."
         />
         <meta name="keywords" content="DegenRoll.co, crypto casino glossary, blockchain gaming research, Web3 casino documentation, crypto gambling definitions" />
         <link rel="canonical" href="https://degenroll.co/about" />
