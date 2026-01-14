@@ -27,7 +27,7 @@ const projects = [
     badge: "TRUSTED",
     badgeColor: "bg-gradient-to-r from-blue-500 to-cyan-500",
     bonus: "200% First Deposit",
-    features: ["Licensed Platform", "Various Games", "24/7 Support"],
+    features: ["Established Brand", "Various Games", "24/7 Support"],
     cryptos: ["BTC", "ETH", "LTC", "DOGE"],
     link: "https://stake.com",
     logo: stakeLogo,
@@ -145,7 +145,7 @@ const FeaturedProjects = () => {
                         target={project.link.startsWith('http') ? '_blank' : undefined} 
                         rel={project.link.startsWith('http') ? 'noopener noreferrer' : undefined}
                       >
-                        Play Now
+                        Visit Site
                         <ExternalLink className="w-4 h-4 ml-2" />
                       </a>
                     </Button>

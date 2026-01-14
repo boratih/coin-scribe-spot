@@ -27,7 +27,7 @@ const highlights = {
       title: "Stake",
       rating: 9.2,
       badge: "TRUSTED",
-      features: ["Trusted and Well Known", "Various Games", "Secure and Licensed Platform"],
+      features: ["Trusted and Well Known", "Various Games", "24/7 Support"],
       link: "https://stake.com",
       logo: stakeLogo
     },

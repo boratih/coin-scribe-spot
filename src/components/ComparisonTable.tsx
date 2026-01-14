@@ -86,8 +86,8 @@ const ComparisonTable = () => {
             className="bg-gradient-to-r from-accent to-primary text-background font-bold text-lg px-8 py-6 hover:scale-105 transition-transform shadow-glow-accent"
             asChild
           >
-            <a href="https://www.degenroll.xyz" target="_blank" rel="noopener noreferrer">
-              Start Playing Now 🎮
+            <a href="https://degenroll.com" target="_blank" rel="noopener noreferrer">
+              Visit DegenRoll.com
             </a>
           </Button>
         </div>

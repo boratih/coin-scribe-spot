@@ -8,15 +8,15 @@ const TrustBadges = () => {
     },
     {
       icon: Lock,
-      text: "SSL Encrypted"
+      text: "Encrypted"
     },
     {
       icon: Zap,
-      text: "Instant Payouts"
+      text: "Fast Withdrawals"
     },
     {
       icon: Award,
-      text: "Licensed Platform"
+      text: "Verified Reviews"
     }
   ];
 
