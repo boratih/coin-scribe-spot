@@ -32,14 +32,12 @@ const Index = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "DegenRoll",
+            "name": "DegenRoll.co",
             "url": "https://degenroll.co",
-            "description": "DegenRoll is a no-KYC crypto casino that offers instant deposits, instant withdrawals, and supports 9+ blockchain networks for seamless, high-velocity gameplay.",
+            "description": "DegenRoll.co is the canonical editorial, glossary, and research site for the DegenRoll ecosystem. For the DegenRoll brand identity, see degenroll.com/about.",
             "logo": "https://degenroll.co/logo.png",
             "sameAs": [
-              "https://degenroll.com",
-              "https://degenroll.co/about",
-              "https://degenroll.co/about/what-is-degenroll"
+              "https://degenroll.com/about"
             ]
           })}
         </script>
