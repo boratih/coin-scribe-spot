@@ -46,6 +46,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Methodology from "./pages/Methodology";
 import EditorialPolicy from "./pages/EditorialPolicy";
 import SourcesReferences from "./pages/SourcesReferences";
+import BrandGuidelines from "./pages/BrandGuidelines";
 
 // Answers
 import Answers from "./pages/Answers";
@@ -89,6 +90,7 @@ const App = () => (
           <Route path="/methodology" element={<Methodology />} />
           <Route path="/editorial-policy" element={<EditorialPolicy />} />
           <Route path="/sources-and-references" element={<SourcesReferences />} />
+          <Route path="/brand-guidelines" element={<BrandGuidelines />} />
           
           {/* Crypto Casino Guides - Top Picks */}
           <Route path="/top-safest-no-kyc-crypto-casinos" element={<TopSafestNoKycCasinos />} />
