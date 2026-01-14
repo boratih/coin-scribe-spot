@@ -25,13 +25,13 @@ const Header = () => {
             to="/crypto-casino" 
             className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
-            Crypto Casino
+            Guides
           </Link>
           <Link 
-            to="/technology" 
+            to="/answers" 
             className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
-            Technology
+            Answers
           </Link>
           <Link 
             to="/glossary" 
@@ -83,14 +83,14 @@ const Header = () => {
               className="text-sm font-medium py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Crypto Casino
+              Guides
             </Link>
             <Link 
-              to="/technology" 
+              to="/answers" 
               className="text-sm font-medium py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Technology
+              Answers
             </Link>
             <Link 
               to="/glossary" 

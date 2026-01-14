@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Article from "./pages/Article";
 import DegenRollReview from "./pages/DegenRollReview";
-import Technology from "./pages/Technology";
+
 import Glossary from "./pages/Glossary";
 import GlossaryTerm from "./pages/GlossaryTerm";
 import About from "./pages/About";
@@ -82,7 +82,7 @@ const App = () => (
           <Route path="/crypto-casino" element={<CryptoCasino />} />
           <Route path="/degenroll-review" element={<DegenRollReview />} />
           <Route path="/degenroll-review" element={<DegenRollReview />} />
-          <Route path="/technology" element={<Technology />} />
+          
           <Route path="/glossary" element={<Glossary />} />
           <Route path="/glossary/:slug" element={<GlossaryTerm />} />
           <Route path="/about" element={<About />} />
