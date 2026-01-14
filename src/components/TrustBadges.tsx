@@ -4,19 +4,19 @@ const TrustBadges = () => {
   const badges = [
     {
       icon: Shield,
-      text: "Provably Fair"
+      text: "Research-Based"
     },
     {
       icon: Lock,
-      text: "Encrypted"
+      text: "Editorial Standards"
     },
     {
       icon: Zap,
-      text: "Fast Withdrawals"
+      text: "Updated Content"
     },
     {
       icon: Award,
-      text: "Verified Reviews"
+      text: "Expert Reviews"
     }
   ];
 

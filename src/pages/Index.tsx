@@ -98,7 +98,7 @@ const Index = () => {
               Ready to Explore?
             </h2>
             <p className="text-muted-foreground mb-8">
-              Visit DegenRoll for crypto casino gaming with instant deposits, provably fair games, and fast withdrawals.
+              Visit DegenRoll.com to explore the DegenRoll platform and its approach to crypto casino gaming.
             </p>
             <Button 
               asChild
