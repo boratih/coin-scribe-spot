@@ -62,6 +62,10 @@ const About = () => {
                   degenroll.com
                 </a>.
               </p>
+
+              <p>
+                All content on this site is informational only and should not be interpreted as gambling, financial, or legal advice.
+              </p>
             </div>
 
             <section className="mt-12 pt-8 border-t border-border">
