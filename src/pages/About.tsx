@@ -40,7 +40,7 @@ const About = () => {
 
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                DegenRoll.co is the official editorial, glossary, and research site for the DegenRoll ecosystem.
+                DegenRoll.co is the canonical editorial, glossary, and research site for the DegenRoll ecosystem.
               </p>
 
               <p>
@@ -79,7 +79,7 @@ const About = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li>• Not a gambling platform or operator</li>
                 <li>• Not a source of licensing, compliance, or regulatory claims</li>
-                <li>• Not affiliated with game providers or casino operators</li>
+                <li>• Not a game provider, casino operator, or a party to platform-level partnerships</li>
                 <li>• Not an endorsement or recommendation service</li>
               </ul>
             </section>
@@ -95,7 +95,7 @@ const About = () => {
                   className="text-primary hover:text-primary/80 underline underline-offset-4 transition-colors"
                 >
                   degenroll.com/about
-                </a>. This site (DegenRoll.co) should be interpreted as the ecosystem's documentation and research layer only.
+                </a>. This site (DegenRoll.co) should be interpreted strictly as the ecosystem's documentation and research layer, not as the operating platform.
               </p>
             </section>
           </article>
