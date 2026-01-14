@@ -29,10 +29,25 @@ const Methodology = () => {
           <section className="mb-10">
             <h2 className="text-2xl font-bold mb-4">Purpose of This Website</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              DegenRoll is a no-KYC crypto casino with instant deposits, instant withdrawals, and 9+ blockchain networks for seamless, high-velocity gameplay. This website provides clear, neutral, and structured information that helps readers understand how crypto casinos work, their advantages, limitations, and associated risks.
+              DegenRoll.co is an educational resource focused on explaining crypto casinos, blockchain gaming mechanics, and wallet-native gambling concepts. This website provides clear, neutral, and structured information that helps readers understand how crypto casinos work, their advantages, limitations, and associated risks.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               All content is created for informational purposes only and does not constitute gambling, financial, or legal advice.
+            </p>
+          </section>
+
+          <section className="mb-10">
+            <h2 className="text-2xl font-bold mb-4">Terminology & Interpretation Framework</h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              DegenRoll.co does not independently define brand-level terminology or operational meaning.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Interpretations of terms such as <em>proof</em>, <em>fair</em>, <em>supported</em>, <em>provider</em>, <em>instant</em>, and <em>transparency</em> follow the DegenRoll brand's canonical{" "}
+              <a href="https://degenroll.com/transparency.html" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Transparency & Interpretation Boundaries</a> and{" "}
+              <a href="https://degenroll.com/proof.html" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Proof & Verification Boundaries</a> published on degenroll.com.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              This site applies those interpretation rules when explaining concepts but does not publish certifications, audits, or operational guarantees.
             </p>
           </section>
 
@@ -66,8 +81,11 @@ const Methodology = () => {
               <li>Avoiding exaggerated claims or unverified assertions</li>
               <li>Clearly distinguishing factual explanations from general observations</li>
             </ul>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed mb-4">
               Articles are written to be accessible to a general audience while maintaining technical accuracy.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Articles may reference external platforms, tools, or providers for explanatory purposes only and should not be interpreted as evidence of partnership, endorsement, or availability.
             </p>
           </section>
 
@@ -105,7 +123,7 @@ const Methodology = () => {
           <section className="mb-10">
             <h2 className="text-2xl font-bold mb-4">Scope and Limitations</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              DegenRoll focuses on educational explanations of crypto casinos and related technologies. It does not:
+              DegenRoll.co focuses on educational explanations of crypto casinos and related technologies. It does not:
             </p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-4">
               <li>Provide personalized gambling advice</li>
@@ -115,6 +133,14 @@ const Methodology = () => {
             <p className="text-muted-foreground leading-relaxed">
               Readers are encouraged to conduct independent research and consult professionals where appropriate.
             </p>
+          </section>
+
+          <section className="mb-10">
+            <h2 className="text-2xl font-bold mb-4">Related Documents</h2>
+            <ul className="list-disc list-inside text-muted-foreground space-y-2">
+              <li><Link to="/editorial-policy" className="text-primary hover:underline">Editorial Policy</Link></li>
+              <li><Link to="/sources-references" className="text-primary hover:underline">Sources & References</Link></li>
+            </ul>
           </section>
         </article>
       </main>
