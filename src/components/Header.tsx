@@ -53,7 +53,7 @@ const Header = () => {
             className="bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold hover:opacity-90 transition-opacity rounded-full"
           >
             <a href="https://degenroll.com" target="_blank" rel="noopener noreferrer">
-              Visit DegenRoll
+              Visit DegenRoll.com
             </a>
           </Button>
         </div>
@@ -112,7 +112,7 @@ const Header = () => {
                 className="flex-1 bg-gradient-to-r from-primary to-accent text-primary-foreground rounded-full"
               >
                 <a href="https://degenroll.com" target="_blank" rel="noopener noreferrer">
-                  Visit DegenRoll
+                  Visit DegenRoll.com
                 </a>
               </Button>
             </div>

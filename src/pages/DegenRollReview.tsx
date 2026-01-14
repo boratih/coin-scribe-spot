@@ -106,7 +106,7 @@ const DegenRollReview = () => {
                 className="bg-accent hover:bg-accent/90 text-accent-foreground"
               >
                 <a href="https://degenroll.com" target="_blank" rel="noopener noreferrer">
-                  Visit DegenRoll
+                  Visit DegenRoll.com
                 </a>
               </Button>
             </div>
@@ -202,7 +202,7 @@ const DegenRollReview = () => {
               className="w-32 h-32 mx-auto mb-4 object-contain"
             />
             <h3 className="text-3xl md:text-4xl font-bold text-accent-foreground mb-4">
-              Visit DegenRoll
+              Visit DegenRoll.com
             </h3>
             <div className="flex flex-wrap justify-center gap-3 mb-6">
               <Badge variant="secondary" className="text-sm px-4 py-2 bg-white/20 text-accent-foreground border-white/30">
@@ -544,7 +544,7 @@ const DegenRollReview = () => {
             >
               <a href="https://degenroll.com" target="_blank" rel="noopener noreferrer">
                 <Gamepad2 className="w-5 h-5 mr-2" />
-                Visit DegenRoll
+                Visit DegenRoll.com
               </a>
             </Button>
           </CardContent>
