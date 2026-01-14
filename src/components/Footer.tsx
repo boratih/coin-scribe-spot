@@ -15,15 +15,15 @@ const Footer = () => {
               Your ultimate guide to crypto casinos. Built by degens, for degens.
             </p>
             <div className="flex gap-3">
-              <a href="https://twitter.com/degenroll" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary/20 transition-colors" aria-label="Follow DegenRoll on Twitter">
+              <a href="https://x.com/degenroll_" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary/20 transition-colors" aria-label="Follow DegenRoll on X">
                 <Twitter className="w-4 h-4" />
               </a>
-              <a href="https://discord.gg/degenroll" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary/20 transition-colors" aria-label="Join DegenRoll Discord">
+              <div className="w-10 h-10 rounded-full bg-muted/50 flex items-center justify-center cursor-not-allowed opacity-50" aria-label="Discord coming soon">
                 <MessageCircle className="w-4 h-4" />
-              </a>
-              <a href="https://t.me/degenroll" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary/20 transition-colors" aria-label="Join DegenRoll Telegram">
+              </div>
+              <div className="w-10 h-10 rounded-full bg-muted/50 flex items-center justify-center cursor-not-allowed opacity-50" aria-label="Telegram coming soon">
                 <Send className="w-4 h-4" />
-              </a>
+              </div>
             </div>
           </div>
           
