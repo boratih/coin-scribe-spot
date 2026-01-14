@@ -121,15 +121,7 @@ const WhatIsDegenRoll = () => {
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
-                  Defers all brand definitions to{" "}
-                  <a
-                    href="https://degenroll.com/about"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary hover:text-primary/80 underline underline-offset-4 transition-colors"
-                  >
-                    degenroll.com/about
-                  </a>
+                  <span>Defers all brand definitions to <a href="https://degenroll.com/about" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline underline-offset-4 transition-colors">degenroll.com/about</a></span>
                 </li>
               </ul>
             </section>
