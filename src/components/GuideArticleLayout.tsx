@@ -173,6 +173,22 @@ const GuideArticleLayout = ({
     },
   };
 
+  // Generate plain text content for noscript fallback
+  const plainTextContent = `
+${title}
+
+${metaDescription}
+
+Published: ${publishDate}
+${lastUpdated ? `Last Updated: ${lastUpdated}` : ''}
+
+${faqs.map(faq => `Q: ${faq.question}\nA: ${faq.answer}`).join('\n\n')}
+
+${summary ? `Summary: ${summary}` : ''}
+
+Source: DegenRoll.co - ${canonicalUrl}
+  `.trim();
+
   return (
     <>
       <Helmet>
@@ -209,6 +225,15 @@ const GuideArticleLayout = ({
         <script type="application/ld+json">{JSON.stringify(speakableJsonLd)}</script>
         {howToJsonLd && <script type="application/ld+json">{JSON.stringify(howToJsonLd)}</script>}
       </Helmet>
+
+      {/* Noscript fallback for AI crawlers that don't execute JavaScript */}
+      <noscript>
+        <div style={{ padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
+          <pre style={{ whiteSpace: 'pre-wrap', fontFamily: 'system-ui, sans-serif' }}>
+            {plainTextContent}
+          </pre>
+        </div>
+      </noscript>
 
       <Header />
 
