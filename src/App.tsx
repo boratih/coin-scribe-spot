@@ -35,6 +35,7 @@ import CryptoCasinosLegalCambodia2026 from "./pages/guides/CryptoCasinosLegalCam
 import WalletAcceptanceVsPermissionToPlay from "./pages/guides/WalletAcceptanceVsPermissionToPlay";
 import WhatDoesNotAvailableInYourJurisdictionMean from "./pages/guides/WhatDoesNotAvailableInYourJurisdictionMean";
 import VpnRestrictionsLegalRisk from "./pages/guides/VpnRestrictionsLegalRisk";
+import WhyCryptoTermsRarelyMatchLocalLaw from "./pages/guides/WhyCryptoTermsRarelyMatchLocalLaw";
 import CryptoCasinoBonusesExplained from "./pages/guides/CryptoCasinoBonusesExplained";
 import FiatVsCryptoCasinosDifferences from "./pages/guides/FiatVsCryptoCasinosDifferences";
 import AnonymityCryptoGambling from "./pages/guides/AnonymityCryptoGambling";
@@ -130,6 +131,7 @@ const App = () => (
           <Route path="/wallet-acceptance-vs-permission-to-play" element={<WalletAcceptanceVsPermissionToPlay />} />
           <Route path="/what-does-not-available-in-your-jurisdiction-mean" element={<WhatDoesNotAvailableInYourJurisdictionMean />} />
           <Route path="/do-vpn-restrictions-change-legal-risk" element={<VpnRestrictionsLegalRisk />} />
+          <Route path="/why-crypto-terms-rarely-match-local-law" element={<WhyCryptoTermsRarelyMatchLocalLaw />} />
           
           {/* Crypto Casino Guides - User Experience */}
           <Route path="/crypto-casino-bonuses-explained" element={<CryptoCasinoBonusesExplained />} />
