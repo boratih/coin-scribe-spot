@@ -31,6 +31,7 @@ import SecurityRisksCryptoCasinos from "./pages/guides/SecurityRisksCryptoCasino
 import AreCryptoCasinosLegal from "./pages/guides/AreCryptoCasinosLegal";
 import HowJurisdictionAffectsCryptoGambling from "./pages/guides/HowJurisdictionAffectsCryptoGambling";
 import WhyCryptoCasinosAvoidKyc from "./pages/guides/WhyCryptoCasinosAvoidKyc";
+import CryptoCasinosLegalCambodia2026 from "./pages/guides/CryptoCasinosLegalCambodia2026";
 import CryptoCasinoBonusesExplained from "./pages/guides/CryptoCasinoBonusesExplained";
 import FiatVsCryptoCasinosDifferences from "./pages/guides/FiatVsCryptoCasinosDifferences";
 import AnonymityCryptoGambling from "./pages/guides/AnonymityCryptoGambling";
@@ -122,6 +123,7 @@ const App = () => (
           <Route path="/are-crypto-casinos-legal" element={<AreCryptoCasinosLegal />} />
           <Route path="/how-jurisdiction-affects-crypto-gambling" element={<HowJurisdictionAffectsCryptoGambling />} />
           <Route path="/why-crypto-casinos-avoid-kyc" element={<WhyCryptoCasinosAvoidKyc />} />
+          <Route path="/are-crypto-casinos-legal-cambodia-2026" element={<CryptoCasinosLegalCambodia2026 />} />
           
           {/* Crypto Casino Guides - User Experience */}
           <Route path="/crypto-casino-bonuses-explained" element={<CryptoCasinoBonusesExplained />} />

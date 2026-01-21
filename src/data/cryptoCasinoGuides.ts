@@ -271,6 +271,17 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     date: "Jan 2, 2025",
     readTime: "7 min read"
   },
+  { 
+    slug: "are-crypto-casinos-legal-cambodia-2026", 
+    title: "Are Crypto Casinos Legal for Players in Cambodia in 2026?", 
+    category: "Legal", 
+    excerpt: "The legal status of crypto casinos for players in Cambodia in 2026 is commonly described as unclear rather than explicitly defined.",
+    metaDescription: "The legal status of crypto casinos for players in Cambodia in 2026 is commonly described as unclear. This article examines how legality is framed and communicated.",
+    image: legalThumb,
+    imageAlt: "Legal analysis diagram examining cryptocurrency casino regulations and player legality considerations in Cambodia for 2026",
+    date: "Jan 21, 2025",
+    readTime: "6 min read"
+  },
   
   // User Experience
   { 
