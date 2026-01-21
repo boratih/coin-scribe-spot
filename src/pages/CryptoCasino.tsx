@@ -20,7 +20,7 @@ const CryptoCasino = () => {
       <Helmet>
         <title>Crypto Casino Guides | DegenRoll</title>
         <meta name="description" content="Expert guides and insights on crypto casinos, no KYC gambling, provably fair systems, and blockchain gaming. Everything you need to know about cryptocurrency gambling." />
-        <link rel="canonical" href="https://degenroll.co/crypto-casino" />
+        <link rel="canonical" href="https://degenroll.co/guides" />
       </Helmet>
       
       <div className="min-h-screen bg-background">
