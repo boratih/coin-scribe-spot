@@ -37,9 +37,12 @@ const CryptoCasinosLegalCambodia2026 = () => {
     >
       {/* Quick Answer */}
       <section className="mb-12">
-        <p className="text-lg bg-muted/30 p-6 rounded-lg border-l-4 border-primary">
-          <strong>Quick Answer:</strong> The legal status of crypto casinos for players in Cambodia in 2026 is commonly described as unclear rather than explicitly defined. Public discussion often centers on gaps between traditional gambling law, online activity, and crypto-based platforms, without a single, player-focused rule that resolves all scenarios.
-        </p>
+        <div className="bg-primary/10 p-6 rounded-lg border-l-4 border-primary">
+          <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-2">Quick Answer</p>
+          <p className="text-lg">
+            The legal status of crypto casinos for players in Cambodia in 2026 is commonly described as unclear rather than explicitly defined. Public discussion often centers on gaps between traditional gambling law, online activity, and crypto-based platforms, without a single, player-focused rule that resolves all scenarios.
+          </p>
+        </div>
       </section>
 
       {/* Scope & Boundaries */}
