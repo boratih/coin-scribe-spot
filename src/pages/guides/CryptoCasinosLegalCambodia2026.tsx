@@ -32,7 +32,7 @@ const CryptoCasinosLegalCambodia2026 = () => {
       canonicalUrl="https://degenroll.co/are-crypto-casinos-legal-cambodia-2026"
       heroImage={legalThumb}
       heroImageAlt="Legal analysis diagram examining cryptocurrency casino regulations and player legality considerations in Cambodia for 2026"
-      publishDate="2025-01-21"
+      publishDate="2026-01-21"
       faqs={faqs}
     >
       {/* Quick Answer */}
