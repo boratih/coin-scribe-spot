@@ -282,6 +282,17 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     date: "Jan 21, 2026",
     readTime: "6 min read"
   },
+  { 
+    slug: "wallet-acceptance-vs-permission-to-play", 
+    title: "If a Crypto Casino Accepts Your Wallet, Are You Actually Allowed to Play?", 
+    category: "Legal", 
+    excerpt: "Wallet acceptance is a technical condition, not a legal one. This article examines the gap between technical access and permission.",
+    metaDescription: "Wallet acceptance is a technical condition, not a legal one. This article examines how wallet compatibility is framed versus actual permission to play.",
+    image: cryptoWalletThumb,
+    imageAlt: "Diagram examining the distinction between crypto wallet technical acceptance and legal permission to participate in online gambling",
+    date: "Jan 21, 2026",
+    readTime: "5 min read"
+  },
   
   // User Experience
   { 
