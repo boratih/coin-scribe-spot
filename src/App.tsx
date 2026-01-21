@@ -80,7 +80,7 @@ const App = () => (
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/crypto-casino" element={<CryptoCasino />} />
+          <Route path="/guides" element={<CryptoCasino />} />
           <Route path="/degenroll-review" element={<DegenRollReview />} />
           <Route path="/degenroll-review" element={<DegenRollReview />} />
           
