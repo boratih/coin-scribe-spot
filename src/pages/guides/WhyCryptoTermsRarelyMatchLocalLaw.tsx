@@ -24,8 +24,8 @@ const WhyCryptoTermsRarelyMatchLocalLaw = () => {
       canonicalUrl="https://degenroll.co/why-crypto-terms-rarely-match-local-law"
       heroImage={legalThumb}
       heroImageAlt="Diagram examining the mismatch between crypto casino terms of service and local gambling regulations"
-      publishDate="2026-01-22"
-      lastUpdated="2026-01-22"
+      publishDate="2026-01-21"
+      lastUpdated="2026-01-21"
       readTime="5 min read"
       introduction={
         <p className="text-lg leading-relaxed">

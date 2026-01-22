@@ -290,7 +290,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     metaDescription: "Wallet acceptance is a technical condition, not a legal one. This article examines how wallet compatibility is framed versus actual permission to play.",
     image: cryptoWalletThumb,
     imageAlt: "Diagram examining the distinction between crypto wallet technical acceptance and legal permission to participate in online gambling",
-    date: "Jan 22, 2026",
+    date: "Jan 21, 2026",
     readTime: "5 min read"
   },
   { 
@@ -301,7 +301,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     metaDescription: "Analyzing how 'not available in your jurisdiction' is used in crypto casino communication—examining language patterns, ambiguity, and why the phrase appears without additional explanation.",
     image: legalThumb,
     imageAlt: "Analysis diagram of jurisdiction messaging in crypto casinos showing geographic access controls and regulatory communication patterns",
-    date: "Jan 22, 2026",
+    date: "Jan 21, 2026",
     readTime: "6 min read"
   },
   { 
@@ -312,7 +312,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     metaDescription: "Exploring why platform terms and local gambling law often appear misaligned in crypto casino contexts—examining communication structure and jurisdictional mismatch.",
     image: legalThumb,
     imageAlt: "Diagram examining the mismatch between crypto casino terms of service and local gambling regulations",
-    date: "Jan 22, 2026",
+    date: "Jan 21, 2026",
     readTime: "5 min read"
   },
   { 
@@ -323,7 +323,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     metaDescription: "Examining how VPN restrictions are framed in crypto casino communication—analyzing messaging, perception, and the difference between access management and legal meaning.",
     image: securityThumb,
     imageAlt: "Illustration examining VPN restrictions and access controls in crypto casino contexts",
-    date: "Jan 22, 2026",
+    date: "Jan 21, 2026",
     readTime: "6 min read"
   },
   { 
