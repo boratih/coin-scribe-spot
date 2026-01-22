@@ -4,14 +4,6 @@ import legalThumb from "@/assets/thumbnails/legal-thumb.jpg";
 const AccessVsPermissionCryptoCasino = () => {
   const faqs = [
     {
-      question: "If a site is accessible, why wouldn't it be permitted?",
-      answer: "Accessibility reflects technical reach. Permission depends on rules that may exist outside the platform interface."
-    },
-    {
-      question: "Why don't platforms block access everywhere it might be restricted?",
-      answer: "Access controls are often policy-driven and imperfect. They may prioritize broad usability over jurisdiction-by-jurisdiction enforcement."
-    },
-    {
       question: "Is access ever a legal signal?",
       answer: "Access is frequently treated as a signal in conversation, but it is not consistently designed to communicate legal meaning."
     }

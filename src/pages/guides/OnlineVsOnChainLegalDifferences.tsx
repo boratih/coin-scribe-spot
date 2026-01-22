@@ -4,10 +4,6 @@ import legalThumb from "@/assets/thumbnails/legal-thumb.jpg";
 const OnlineVsOnChainLegalDifferences = () => {
   const faqs = [
     {
-      question: "Why are online and on-chain activities discussed separately?",
-      answer: "They involve different technical layers, and existing laws often reference services rather than settlement mechanisms."
-    },
-    {
       question: "Does using a blockchain change how gambling laws apply?",
       answer: "This is frequently debated, but marketing and legal language do not always provide a clear answer."
     },

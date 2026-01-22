@@ -69,9 +69,6 @@ This article does not claim that laws apply differently—or the same—to onlin
 
 FREQUENTLY ASKED QUESTIONS
 
-Q: Why are online and on-chain activities discussed separately?
-A: They involve different technical layers, and existing laws often reference services rather than settlement mechanisms.
-
 Q: Does using a blockchain change how gambling laws apply?
 A: This is frequently debated, but marketing and legal language do not always provide a clear answer.
 

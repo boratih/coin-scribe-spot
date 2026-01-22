@@ -60,12 +60,6 @@ This article does not claim that access means permission or prohibition. It does
 
 FAQs
 
-Q: If a site is accessible, why wouldn't it be permitted?
-A: Accessibility reflects technical reach. Permission depends on rules that may exist outside the platform interface.
-
-Q: Why don't platforms block access everywhere it might be restricted?
-A: Access controls are often policy-driven and imperfect. They may prioritize broad usability over jurisdiction-by-jurisdiction enforcement.
-
 Q: Is access ever a legal signal?
 A: Access is frequently treated as a signal in conversation, but it is not consistently designed to communicate legal meaning.
 

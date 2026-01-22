@@ -6,14 +6,6 @@ const GovernmentEnforcementCryptoPlayers = () => {
     {
       question: "Are players usually the primary target of enforcement?",
       answer: "Public discussion tends to focus on operators and intermediaries. Player-side enforcement is often described indirectly or not at all."
-    },
-    {
-      question: "Why is enforcement language often vague?",
-      answer: "Vagueness allows authorities to communicate caution without committing to specific mechanisms or thresholds."
-    },
-    {
-      question: "Does crypto change how enforcement is discussed?",
-      answer: "Crypto introduces new layers—such as wallets and blockchains—that shift enforcement narratives toward infrastructure rather than individual activity."
     }
   ];
 

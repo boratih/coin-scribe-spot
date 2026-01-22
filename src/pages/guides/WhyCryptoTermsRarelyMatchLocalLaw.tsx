@@ -8,10 +8,6 @@ const WhyCryptoTermsRarelyMatchLocalLaw = () => {
       answer: "Terms of service are typically internal policy documents. They are often discussed separately from how local laws apply."
     },
     {
-      question: "Why don't platforms customize terms for each country?",
-      answer: "Country-specific customization increases complexity and maintenance, and many platforms opt for generalized language instead."
-    },
-    {
       question: "Does agreeing to terms mean a player is compliant with local law?",
       answer: "Agreement to platform terms addresses platform rules, not how local law may be interpreted."
     }
