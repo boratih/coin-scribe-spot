@@ -1,5 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
-import jurisdictionThumb from "@/assets/thumbnails/legal-thumb.jpg";
+import legalThumb from "@/assets/thumbnails/legal-thumb.jpg";
 
 const WhatDoesNotAvailableInYourJurisdictionMean = () => {
   const faqs = [
@@ -21,11 +21,11 @@ const WhatDoesNotAvailableInYourJurisdictionMean = () => {
     <GuideArticleLayout
       title="What Does 'Not Available in Your Jurisdiction' Actually Mean in Crypto Casinos?"
       metaDescription="Analyzing how 'not available in your jurisdiction' is used in crypto casino communication—examining language patterns, ambiguity, and why the phrase appears without additional explanation."
-      canonicalUrl="https://degenroll.co/guides/what-does-not-available-in-your-jurisdiction-mean"
-      heroImage={jurisdictionThumb}
+      canonicalUrl="https://degenroll.co/what-does-not-available-in-your-jurisdiction-mean"
+      heroImage={legalThumb}
       heroImageAlt="Illustration representing jurisdiction and geographic restrictions in crypto casinos"
-      publishDate="2026-01-21"
-      lastUpdated="2026-01-21"
+      publishDate="2026-01-22"
+      lastUpdated="2026-01-22"
       readTime="6 min read"
       introduction={
         <p className="text-lg leading-relaxed">
@@ -127,11 +127,11 @@ const WhatDoesNotAvailableInYourJurisdictionMean = () => {
       </section>
 
       {/* Disclaimer */}
-      <section className="bg-card/30 p-6 rounded-xl border border-border/30 mt-8">
+      <div className="mt-8 p-4 bg-muted/50 rounded-lg border border-border">
         <p className="text-sm text-muted-foreground italic text-center">
           "This article describes common marketing and communication patterns. It does not provide recommendations, guarantees, or endorsements."
         </p>
-      </section>
+      </div>
     </GuideArticleLayout>
   );
 };

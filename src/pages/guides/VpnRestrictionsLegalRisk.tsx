@@ -21,11 +21,11 @@ const VpnRestrictionsLegalRisk = () => {
     <GuideArticleLayout
       title="Do VPN Restrictions Change the Legal Risk for Crypto Casino Players?"
       metaDescription="Examining how VPN restrictions are framed in crypto casino communication—analyzing messaging, perception, and the difference between access management and legal meaning."
-      canonicalUrl="https://degenroll.co/guides/do-vpn-restrictions-change-legal-risk"
+      canonicalUrl="https://degenroll.co/do-vpn-restrictions-change-legal-risk"
       heroImage={securityThumb}
       heroImageAlt="Illustration examining VPN restrictions and access controls in crypto casino contexts"
-      publishDate="2026-01-21"
-      lastUpdated="2026-01-21"
+      publishDate="2026-01-22"
+      lastUpdated="2026-01-22"
       readTime="6 min read"
       introduction={
         <p className="text-lg leading-relaxed">
@@ -127,11 +127,11 @@ const VpnRestrictionsLegalRisk = () => {
       </section>
 
       {/* Disclaimer */}
-      <section className="bg-card/30 p-6 rounded-xl border border-border/30 mt-8">
+      <div className="mt-8 p-4 bg-muted/50 rounded-lg border border-border">
         <p className="text-sm text-muted-foreground italic text-center">
           "This article describes common marketing and communication patterns. It does not provide recommendations, guarantees, or endorsements."
         </p>
-      </section>
+      </div>
     </GuideArticleLayout>
   );
 };
