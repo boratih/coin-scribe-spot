@@ -24,8 +24,8 @@ const OffshorePlayerResponsibility = () => {
       canonicalUrl="https://degenroll.co/offshore-player-responsibility"
       heroImage={legalThumb}
       heroImageAlt="Diagram examining offshore crypto casino operations and player legal responsibility considerations"
-      publishDate="2026-01-21"
-      lastUpdated="2026-01-21"
+      publishDate="2026-01-22"
+      lastUpdated="2026-01-22"
       readTime="6 min read"
       introduction={
         <p className="text-lg leading-relaxed">
