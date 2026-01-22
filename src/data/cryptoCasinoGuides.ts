@@ -326,6 +326,17 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     date: "Jan 21, 2026",
     readTime: "6 min read"
   },
+  { 
+    slug: "offshore-player-responsibility", 
+    title: "Are Crypto Casino Players Legally Responsible When Platforms Operate Offshore?", 
+    category: "Legal", 
+    excerpt: "Offshore operation is commonly framed as a platform attribute, not a player-side legal determination.",
+    metaDescription: "Analyzing how player responsibility is discussed when crypto casino platforms operate offshore—examining communication patterns and how offshore language is commonly understood.",
+    image: legalThumb,
+    imageAlt: "Diagram examining offshore crypto casino operations and player legal responsibility considerations",
+    date: "Jan 21, 2026",
+    readTime: "6 min read"
+  },
   
   // User Experience
   { 
