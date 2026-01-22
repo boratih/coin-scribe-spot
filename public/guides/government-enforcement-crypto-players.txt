@@ -72,12 +72,6 @@ FREQUENTLY ASKED QUESTIONS
 Q: Are players usually the primary target of enforcement?
 A: Public discussion tends to focus on operators and intermediaries. Player-side enforcement is often described indirectly or not at all.
 
-Q: Why is enforcement language often vague?
-A: Vagueness allows authorities to communicate caution without committing to specific mechanisms or thresholds.
-
-Q: Does crypto change how enforcement is discussed?
-A: Crypto introduces new layers—such as wallets and blockchains—that shift enforcement narratives toward infrastructure rather than individual activity.
-
 ---
 
 KEY TAKEAWAYS

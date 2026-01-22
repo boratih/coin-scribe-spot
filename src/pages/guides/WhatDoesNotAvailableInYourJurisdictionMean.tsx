@@ -8,10 +8,6 @@ const WhatDoesNotAvailableInYourJurisdictionMean = () => {
       answer: "The phrase is often used without specifying legality. It can reflect access controls or policy boundaries rather than a legal conclusion."
     },
     {
-      question: "Why don't platforms explain the reason in more detail?",
-      answer: "Detailed explanations can vary by region and change over time. Broad phrasing is commonly used to avoid misstatements or constant updates."
-    },
-    {
       question: "Can availability change without notice?",
       answer: "Availability messaging is frequently tied to internal policies or external constraints, which may be updated independently of user-facing explanations."
     }

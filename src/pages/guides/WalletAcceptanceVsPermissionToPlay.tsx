@@ -8,10 +8,6 @@ const WalletAcceptanceVsPermissionToPlay = () => {
       answer: "Wallet acceptance is typically framed as technical compatibility. It is often discussed separately from eligibility rules that may be defined elsewhere."
     },
     {
-      question: "Why do platforms focus on wallet compatibility instead of legality?",
-      answer: "Compatibility is easier to demonstrate and explain. Legal status varies by location and is often addressed indirectly or not at all in marketing language."
-    },
-    {
       question: "Is access the same as permission in crypto-based platforms?",
       answer: "In common discourse, the two are often blended. In practice, they are distinct concepts that are not always resolved in the same place."
     }
