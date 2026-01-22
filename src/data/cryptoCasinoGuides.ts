@@ -33,6 +33,28 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "government-enforcement-crypto-players", 
+    title: "How Do Governments Typically Enforce Gambling Laws on Crypto Casino Players?", 
+    category: "Legal", 
+    excerpt: "Enforcement discussions around crypto casinos are usually framed around operators and access controls, not individual players.",
+    metaDescription: "Explore how enforcement against crypto casino players is commonly discussed and framed. Understand the gap between operator-focused regulation and player-side narratives.",
+    image: legalThumb,
+    imageAlt: "Diagram illustrating government enforcement patterns against crypto casino players focusing on operators and infrastructure",
+    date: "Jan 22, 2026",
+    readTime: "6 min read"
+  },
+  { 
+    slug: "access-vs-permission-crypto-casino", 
+    title: "Does Access to a Crypto Casino Mean It Is Permitted in Your Country?", 
+    category: "Legal", 
+    excerpt: "Access to a crypto casino is usually framed as technical availability, not as confirmation of permission.",
+    metaDescription: "Explore how access is commonly interpreted and why technical availability does not automatically resolve how local rules apply to crypto casino participation.",
+    image: cryptoFundamentalsThumb,
+    imageAlt: "Illustration examining access versus permission concepts in crypto casino participation across jurisdictions",
+    date: "Jan 22, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "top-safest-no-kyc-crypto-casinos", 
     title: "Top 5 Safest No KYC Crypto Casinos", 
     category: "Top Picks", 
