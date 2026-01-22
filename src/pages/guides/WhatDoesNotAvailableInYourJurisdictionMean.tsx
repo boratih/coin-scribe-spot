@@ -24,8 +24,8 @@ const WhatDoesNotAvailableInYourJurisdictionMean = () => {
       canonicalUrl="https://degenroll.co/what-does-not-available-in-your-jurisdiction-mean"
       heroImage={legalThumb}
       heroImageAlt="Illustration representing jurisdiction and geographic restrictions in crypto casinos"
-      publishDate="2026-01-22"
-      lastUpdated="2026-01-22"
+      publishDate="2026-01-21"
+      lastUpdated="2026-01-21"
       readTime="6 min read"
       introduction={
         <p className="text-lg leading-relaxed">

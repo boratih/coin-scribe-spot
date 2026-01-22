@@ -24,8 +24,8 @@ const WalletAcceptanceVsPermissionToPlay = () => {
       canonicalUrl="https://degenroll.co/wallet-acceptance-vs-permission-to-play"
       heroImage={cryptoWalletThumb}
       heroImageAlt="Diagram examining the distinction between crypto wallet technical acceptance and legal permission to participate in online gambling"
-      publishDate="2026-01-22"
-      lastUpdated="2026-01-22"
+      publishDate="2026-01-21"
+      lastUpdated="2026-01-21"
       readTime="5 min read"
       introduction={
         <p className="text-lg leading-relaxed">

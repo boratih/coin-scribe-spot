@@ -24,8 +24,8 @@ const VpnRestrictionsLegalRisk = () => {
       canonicalUrl="https://degenroll.co/do-vpn-restrictions-change-legal-risk"
       heroImage={securityThumb}
       heroImageAlt="Illustration examining VPN restrictions and access controls in crypto casino contexts"
-      publishDate="2026-01-22"
-      lastUpdated="2026-01-22"
+      publishDate="2026-01-21"
+      lastUpdated="2026-01-21"
       readTime="6 min read"
       introduction={
         <p className="text-lg leading-relaxed">
