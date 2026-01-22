@@ -40,6 +40,7 @@ import OffshorePlayerResponsibility from "./pages/guides/OffshorePlayerResponsib
 import AccessVsPermissionCryptoCasino from "./pages/guides/AccessVsPermissionCryptoCasino";
 import GovernmentEnforcementCryptoPlayers from "./pages/guides/GovernmentEnforcementCryptoPlayers";
 import OnlineVsOnChainLegalDifferences from "./pages/guides/OnlineVsOnChainLegalDifferences";
+import PlayerDefinitionsLegalityDiscussion from "./pages/guides/PlayerDefinitionsLegalityDiscussion";
 import CryptoCasinoBonusesExplained from "./pages/guides/CryptoCasinoBonusesExplained";
 import FiatVsCryptoCasinosDifferences from "./pages/guides/FiatVsCryptoCasinosDifferences";
 import AnonymityCryptoGambling from "./pages/guides/AnonymityCryptoGambling";
@@ -140,6 +141,7 @@ const App = () => (
           <Route path="/access-vs-permission-crypto-casino" element={<AccessVsPermissionCryptoCasino />} />
           <Route path="/government-enforcement-crypto-players" element={<GovernmentEnforcementCryptoPlayers />} />
           <Route path="/online-vs-on-chain-legal-differences" element={<OnlineVsOnChainLegalDifferences />} />
+          <Route path="/player-definitions-legality-discussion" element={<PlayerDefinitionsLegalityDiscussion />} />
           
           {/* Crypto Casino Guides - User Experience */}
           <Route path="/crypto-casino-bonuses-explained" element={<CryptoCasinoBonusesExplained />} />

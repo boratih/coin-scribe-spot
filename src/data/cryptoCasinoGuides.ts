@@ -33,6 +33,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "player-definitions-legality-discussion", 
+    title: "Why Crypto Casino Legality Is Often Discussed Without Clear Player Definitions?", 
+    category: "Legal", 
+    excerpt: "Crypto casino legality is frequently discussed at the platform or operator level, while the role of the player is left implicit.",
+    metaDescription: "Examine why player definitions are often missing in crypto casino legality discussions and how this ambiguity shapes public discourse.",
+    image: legalThumb,
+    imageAlt: "Diagram illustrating missing player definitions in crypto casino legality discussions",
+    date: "Jan 22, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "online-vs-on-chain-legal-differences", 
     title: "Are Crypto Casino Laws Applied Differently to Online and On-Chain Activity?", 
     category: "Legal", 
