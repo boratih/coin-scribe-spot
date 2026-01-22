@@ -33,6 +33,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "online-vs-on-chain-legal-differences", 
+    title: "Are Crypto Casino Laws Applied Differently to Online and On-Chain Activity?", 
+    category: "Legal", 
+    excerpt: "Online access and on-chain activity are often discussed as separate layers in crypto casino contexts.",
+    metaDescription: "Explore how online and on-chain activity are commonly distinguished in legal and marketing discussions around crypto casinos.",
+    image: legalThumb,
+    imageAlt: "Diagram illustrating differences between online and on-chain crypto casino activity",
+    date: "Jan 22, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "government-enforcement-crypto-players", 
     title: "How Do Governments Typically Enforce Gambling Laws on Crypto Casino Players?", 
     category: "Legal", 
