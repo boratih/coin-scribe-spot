@@ -37,6 +37,7 @@ import WhatDoesNotAvailableInYourJurisdictionMean from "./pages/guides/WhatDoesN
 import VpnRestrictionsLegalRisk from "./pages/guides/VpnRestrictionsLegalRisk";
 import WhyCryptoTermsRarelyMatchLocalLaw from "./pages/guides/WhyCryptoTermsRarelyMatchLocalLaw";
 import OffshorePlayerResponsibility from "./pages/guides/OffshorePlayerResponsibility";
+import AccessVsPermissionCryptoCasino from "./pages/guides/AccessVsPermissionCryptoCasino";
 import CryptoCasinoBonusesExplained from "./pages/guides/CryptoCasinoBonusesExplained";
 import FiatVsCryptoCasinosDifferences from "./pages/guides/FiatVsCryptoCasinosDifferences";
 import AnonymityCryptoGambling from "./pages/guides/AnonymityCryptoGambling";
@@ -134,6 +135,7 @@ const App = () => (
           <Route path="/do-vpn-restrictions-change-legal-risk" element={<VpnRestrictionsLegalRisk />} />
           <Route path="/why-crypto-terms-rarely-match-local-law" element={<WhyCryptoTermsRarelyMatchLocalLaw />} />
           <Route path="/offshore-player-responsibility" element={<OffshorePlayerResponsibility />} />
+          <Route path="/access-vs-permission-crypto-casino" element={<AccessVsPermissionCryptoCasino />} />
           
           {/* Crypto Casino Guides - User Experience */}
           <Route path="/crypto-casino-bonuses-explained" element={<CryptoCasinoBonusesExplained />} />
