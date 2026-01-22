@@ -4,16 +4,8 @@ import legalThumb from "@/assets/thumbnails/legal-thumb.jpg";
 const PlayerDefinitionsLegalityDiscussion = () => {
   const faqs = [
     {
-      question: "Why do discussions focus more on operators than players?",
-      answer: "Regulatory texts and public statements often prioritize entities that offer services, leaving player roles implicit or secondary."
-    },
-    {
       question: "Is \"player\" the same as \"user\" in crypto casino contexts?",
       answer: "These terms are frequently used interchangeably in conversation, even though they may imply different roles."
-    },
-    {
-      question: "Does unclear player definition mean no rules apply to players?",
-      answer: "Ambiguity in discussion does not equate to the absence of rules; it reflects how communication is framed rather than how laws operate."
     }
   ];
 
