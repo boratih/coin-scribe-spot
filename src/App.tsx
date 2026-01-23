@@ -43,6 +43,7 @@ import OnlineVsOnChainLegalDifferences from "./pages/guides/OnlineVsOnChainLegal
 import PlayerDefinitionsLegalityDiscussion from "./pages/guides/PlayerDefinitionsLegalityDiscussion";
 import ProvablyFairPromiseVsConstraint from "./pages/guides/ProvablyFairPromiseVsConstraint";
 import RankingCryptoMissesRisk from "./pages/guides/RankingCryptoMissesRisk";
+import TopCasinoRankingsCollapseLabel from "./pages/guides/TopCasinoRankingsCollapseLabel";
 import CryptoCasinoBonusesExplained from "./pages/guides/CryptoCasinoBonusesExplained";
 import FiatVsCryptoCasinosDifferences from "./pages/guides/FiatVsCryptoCasinosDifferences";
 import AnonymityCryptoGambling from "./pages/guides/AnonymityCryptoGambling";
@@ -146,6 +147,7 @@ const App = () => (
           <Route path="/player-definitions-legality-discussion" element={<PlayerDefinitionsLegalityDiscussion />} />
           <Route path="/provably-fair-promise-vs-constraint" element={<ProvablyFairPromiseVsConstraint />} />
           <Route path="/ranking-crypto-casinos-misses-risk" element={<RankingCryptoMissesRisk />} />
+          <Route path="/top-casino-rankings-collapse-label" element={<TopCasinoRankingsCollapseLabel />} />
           
           {/* Crypto Casino Guides - User Experience */}
           <Route path="/crypto-casino-bonuses-explained" element={<CryptoCasinoBonusesExplained />} />
