@@ -33,6 +33,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "provably-fair-promise-vs-constraint", 
+    title: "Why \"Provably Fair\" Is Often Read as a Promise Rather Than a Constraint", 
+    category: "Fairness & Security", 
+    excerpt: "\"Provably fair\" is frequently interpreted as a guarantee of outcomes, even though it is typically intended to describe a verification framework or limitation on inference.",
+    metaDescription: "Examine how the term 'provably fair' is commonly interpreted as a guarantee of outcomes rather than a verification framework or constraint on inference.",
+    image: provablyFairThumb,
+    imageAlt: "Diagram illustrating how provably fair is interpreted as promise versus constraint in crypto casino contexts",
+    date: "Jan 23, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "player-definitions-legality-discussion", 
     title: "Why Crypto Casino Legality Is Often Discussed Without Clear Player Definitions?", 
     category: "Legal", 
