@@ -33,6 +33,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "credibility-assumptions-crypto-casinos", 
+    title: "What People Assume \"Credibility\" Means in Crypto Casino Discussions", 
+    category: "Fairness & Security", 
+    excerpt: "In crypto casino conversations, credibility is often inferred from surface signals rather than from clearly defined criteria.",
+    metaDescription: "Analyze how credibility is assumed and communicated in crypto casino discussions, often inferred from surface signals rather than clearly defined criteria.",
+    image: transparencyThumb,
+    imageAlt: "Diagram illustrating how credibility assumptions form in crypto casino discussions",
+    date: "Jan 23, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "fairness-interpreted-before-defined", 
     title: "Why \"Fairness\" in Crypto Casinos Is Interpreted Before It Is Defined", 
     category: "Fairness & Security", 
