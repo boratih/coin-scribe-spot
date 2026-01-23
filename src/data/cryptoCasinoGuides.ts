@@ -33,6 +33,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "fairness-interpreted-before-defined", 
+    title: "Why \"Fairness\" in Crypto Casinos Is Interpreted Before It Is Defined", 
+    category: "Fairness & Security", 
+    excerpt: "In crypto casino discourse, \"fairness\" often functions as a value signal before it functions as a defined term, shaping interpretation before any definition is presented.",
+    metaDescription: "Examine how 'fairness' functions as a value signal before it is defined in crypto casino discourse, shaping interpretation before any technical definition is presented.",
+    image: provablyFairThumb,
+    imageAlt: "Diagram illustrating how fairness is interpreted before it is defined in crypto casino contexts",
+    date: "Jan 23, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "top-casino-rankings-collapse-label", 
     title: "How \"Top Casino\" Rankings Collapse Very Different Systems Into One Label", 
     category: "Legal", 
