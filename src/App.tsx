@@ -48,6 +48,7 @@ import FairnessInterpretedBeforeDefined from "./pages/guides/FairnessInterpreted
 import CredibilityAssumptionsCryptoCasinos from "./pages/guides/CredibilityAssumptionsCryptoCasinos";
 import InstantWithdrawalsMeaning from "./pages/guides/InstantWithdrawalsMeaning";
 import TransactionSuccessPlatformReliability from "./pages/guides/TransactionSuccessPlatformReliability";
+import AccountReviewMeaning from "./pages/guides/AccountReviewMeaning";
 import CryptoCasinoBonusesExplained from "./pages/guides/CryptoCasinoBonusesExplained";
 import FiatVsCryptoCasinosDifferences from "./pages/guides/FiatVsCryptoCasinosDifferences";
 import AnonymityCryptoGambling from "./pages/guides/AnonymityCryptoGambling";
@@ -156,6 +157,7 @@ const App = () => (
           <Route path="/credibility-assumptions-crypto-casinos" element={<CredibilityAssumptionsCryptoCasinos />} />
           <Route path="/instant-withdrawals-meaning" element={<InstantWithdrawalsMeaning />} />
           <Route path="/transaction-success-platform-reliability" element={<TransactionSuccessPlatformReliability />} />
+          <Route path="/account-review-meaning" element={<AccountReviewMeaning />} />
           
           {/* Crypto Casino Guides - User Experience */}
           <Route path="/crypto-casino-bonuses-explained" element={<CryptoCasinoBonusesExplained />} />
