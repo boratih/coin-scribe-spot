@@ -33,6 +33,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "risk-communication-without-guarantees", 
+    title: "How Crypto Casino Risk Is Communicated Without Explicit Guarantees", 
+    category: "Trust & Transparency", 
+    excerpt: "Crypto casino risk is often communicated through framing, omission, and conditional language rather than direct statements.",
+    metaDescription: "Analyze how crypto casino risk is communicated through framing, omission, and conditional language rather than direct statements or explicit guarantees.",
+    image: transparencyThumb,
+    imageAlt: "Diagram illustrating how crypto casino risk is communicated without explicit guarantees",
+    date: "Jan 26, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "on-chain-activity-trust-signal", 
     title: "Why On-Chain Activity Is Frequently Used as a Trust Signal", 
     category: "Trust & Transparency", 
