@@ -28,12 +28,6 @@ const Header = () => {
             Guides
           </Link>
           <Link 
-            to="/answers" 
-            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-          >
-            Answers
-          </Link>
-          <Link 
             to="/glossary" 
             className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
@@ -84,13 +78,6 @@ const Header = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               Guides
-            </Link>
-            <Link 
-              to="/answers" 
-              className="text-sm font-medium py-2"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Answers
             </Link>
             <Link 
               to="/glossary" 

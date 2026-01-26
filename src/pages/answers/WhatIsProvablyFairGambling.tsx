@@ -47,7 +47,6 @@ const WhatIsProvablyFairGambling = () => {
       lastUpdated="January 2026"
       lastReviewed="January 2026"
       reviewNote="no material updates required"
-      isCanonical={true}
       quickAnswer={
         <p>
           Provably fair (PF) gambling is a system that allows players to independently verify the fairness of game outcomes using cryptographic algorithms. Unlike traditional online casinos where players must trust the operator, PF ensures transparency and provides verifiable proof that results are not manipulated.

@@ -11,38 +11,30 @@ const Glossary = () => {
   return (
     <>
       <Helmet>
-        <title>Crypto Glossary | Definitions & Terms - DegenRoll</title>
+        <title>Crypto Glossary | Common Terms & Interpretations - DegenRoll.co</title>
         <meta 
           name="description" 
-          content="Comprehensive crypto glossary with definitions for DeFi, trading, blockchain infrastructure, and crypto casino terminology." 
+          content="Explore how crypto casino terms are commonly used, interpreted, and misunderstood. Not a reference guide—an interpretive resource." 
         />
-        <meta name="keywords" content="crypto glossary, DeFi terms, blockchain definitions, crypto vocabulary, trading terminology" />
+        <meta name="keywords" content="crypto glossary, crypto casino terms, gambling terminology, blockchain discourse" />
         <link rel="canonical" href="https://degenroll.co/glossary" />
         
-        <meta property="og:title" content="Crypto Glossary | Definitions & Terms - DegenRoll" />
-        <meta property="og:description" content="Comprehensive crypto glossary covering DeFi, trading, and blockchain terminology." />
+        <meta property="og:title" content="Crypto Glossary | Common Terms & Interpretations - DegenRoll.co" />
+        <meta property="og:description" content="Explore how crypto casino terms are commonly used, interpreted, and misunderstood." />
         <meta property="og:url" content="https://degenroll.co/glossary" />
         <meta property="og:type" content="website" />
         
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Crypto Glossary - DegenRoll" />
-        <meta name="twitter:description" content="Definitions for DeFi, trading, and blockchain terms." />
+        <meta name="twitter:title" content="Crypto Glossary - DegenRoll.co" />
+        <meta name="twitter:description" content="How crypto casino terms are commonly used and interpreted." />
 
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "DefinedTermSet",
-            "name": "DegenRoll Glossary",
-            "description": "Official definitions for terms used across DegenRoll and related protocols.",
-            "url": "https://degenroll.co/glossary",
-            "hasDefinedTerm": glossaryTerms.map(t => ({
-              "@type": "DefinedTerm",
-              "termCode": t.slug,
-              "name": t.term,
-              "description": t.definition,
-              "url": `https://degenroll.co/glossary/${t.slug}`,
-              "inDefinedTermSet": "https://degenroll.co/glossary"
-            }))
+            "@type": "WebPage",
+            "name": "DegenRoll.co Glossary",
+            "description": "Interpretive resource exploring how crypto casino terms are commonly used and understood.",
+            "url": "https://degenroll.co/glossary"
           })}
         </script>
       </Helmet>
@@ -57,7 +49,7 @@ const Glossary = () => {
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
                 <BookOpen className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium text-primary">Reference</span>
+                <span className="text-sm font-medium text-primary">Interpretive Resource</span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
                 Crypto{" "}
@@ -66,7 +58,7 @@ const Glossary = () => {
                 </span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-                Essential definitions for DeFi, trading, blockchain infrastructure, and crypto terminology.
+                Exploring how crypto casino terms are commonly used, interpreted, and sometimes misunderstood.
               </p>
             </div>
           </div>

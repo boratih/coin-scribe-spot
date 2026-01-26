@@ -43,7 +43,6 @@ const AreCryptoCasinosSafe = () => {
       lastUpdated="January 2026"
       lastReviewed="January 2026"
       reviewNote="no material updates required"
-      isCanonical={true}
       quickAnswer={
         <p>
           Crypto casinos can be safe, but safety varies by platform. Reputable casinos implement security measures such as cold wallets, SSL encryption, two-factor authentication (2FA), and provably fair systems.

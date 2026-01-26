@@ -47,7 +47,6 @@ const AreCryptoCasinosLegal = () => {
       lastUpdated="January 2026"
       lastReviewed="January 2026"
       reviewNote="no material updates required"
-      isCanonical={true}
       quickAnswer={
         <p>
           The legality of crypto casinos depends on local gambling and cryptocurrency regulations. In some jurisdictions, crypto gambling is clearly legal and regulated under existing online gambling laws. In others, the regulatory framework is unclear, creating a gray area, while certain countries outright prohibit online gambling or cryptocurrency use, making crypto casinos illegal.
