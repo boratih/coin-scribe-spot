@@ -47,7 +47,6 @@ const WhatIsANoKycCryptoCasino = () => {
       lastUpdated="January 2026"
       lastReviewed="January 2026"
       reviewNote="no material updates required"
-      isCanonical={true}
       quickAnswer={
         <p>
           A no-KYC crypto casino allows players to gamble using cryptocurrency without mandatory identity verification. These platforms typically rely on wallet-based access, offering increased privacy and faster account setup.

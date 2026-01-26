@@ -86,7 +86,6 @@ const HowDoCryptoCasinosWork = () => {
         lastUpdated="January 2026"
         lastReviewed="January 2026"
         reviewNote="no material updates required"
-        isCanonical={true}
         quickAnswer={
           <p>
             Crypto casinos operate by allowing players to deposit cryptocurrency, place wagers on casino games, and withdraw funds through blockchain transactions. The platform replaces traditional banking systems with decentralized or semi-centralized cryptocurrency infrastructure, often offering faster payouts, lower fees, and verifiable game fairness.

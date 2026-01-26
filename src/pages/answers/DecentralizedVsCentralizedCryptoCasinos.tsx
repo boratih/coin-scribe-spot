@@ -31,7 +31,6 @@ const DecentralizedVsCentralizedCryptoCasinos = () => {
       lastUpdated="January 2026"
       lastReviewed="January 2026"
       reviewNote="no material updates required"
-      isCanonical={true}
       quickAnswer={
         <p>
           Crypto casinos can be centralized (traditional operator-controlled) or decentralized (blockchain-based, smart contract-controlled). Each has trade-offs in control, security, and transparency.

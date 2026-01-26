@@ -47,7 +47,6 @@ const DoCryptoCasinosRequireKyc = () => {
       lastUpdated="January 2026"
       lastReviewed="January 2026"
       reviewNote="no material updates required"
-      isCanonical={true}
       quickAnswer={
         <p>
           KYC (Know Your Customer) requirements in crypto casinos vary depending on the platform, jurisdiction, and transaction size. Some casinos allow players to deposit, wager, and withdraw small amounts without verifying their identity, while others require full verification to comply with anti-money laundering (AML) and gambling regulations. Understanding KYC is essential for players who want to balance privacy, speed, and legal compliance when using a crypto casino.

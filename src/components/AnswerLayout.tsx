@@ -35,7 +35,6 @@ interface AnswerLayoutProps {
   faqs: FAQ[];
   relatedTopics?: RelatedTopic[];
   summary: string;
-  isCanonical?: boolean;
   trustPoints?: TrustPoint[];
 }
 
@@ -58,167 +57,17 @@ const AnswerLayout = ({
   faqs,
   relatedTopics,
   summary,
-  isCanonical = false,
   trustPoints = defaultTrustPoints,
 }: AnswerLayoutProps) => {
-  // BreadcrumbList schema - helps AI understand site hierarchy
-  const breadcrumbJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: "https://degenroll.co/",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Answers",
-        item: "https://degenroll.co/answers",
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: title,
-        item: canonicalUrl,
-      },
-    ],
-  };
-
-  const articleJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "@id": `${canonicalUrl}#article`,
-    headline: title,
-    description: metaDescription,
-    author: {
-      "@type": "Organization",
-      "@id": "https://degenroll.co/#organization",
-      name: "DegenRoll",
-      url: "https://degenroll.co",
-    },
-    publisher: {
-      "@type": "Organization",
-      "@id": "https://degenroll.co/#organization",
-      name: "DegenRoll",
-      url: "https://degenroll.co",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://degenroll.co/logo.png",
-      },
-    },
-    datePublished: "2025-01-01",
-    dateModified: "2026-01-12",
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": canonicalUrl,
-    },
-    isPartOf: {
-      "@type": "WebSite",
-      "@id": "https://degenroll.co/#website",
-      name: "DegenRoll",
-    },
-    inLanguage: "en-US",
-    copyrightHolder: {
-      "@id": "https://degenroll.co/#organization",
-    },
-    keywords: title.toLowerCase().split(" ").filter(w => w.length > 3).join(", "),
-    articleSection: "Crypto Casino FAQ",
-  };
-
-  // QAPage schema for AI systems - better for direct Q&A citation
-  const qaPageJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "QAPage",
-    "@id": `${canonicalUrl}#qa`,
-    mainEntity: {
-      "@type": "Question",
-      name: title,
-      text: title,
-      answerCount: 1,
-      dateCreated: "2025-01-01",
-      author: {
-        "@type": "Organization",
-        "@id": "https://degenroll.co/#organization",
-      },
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: summary,
-        dateCreated: "2025-01-01",
-        upvoteCount: 42,
-        author: {
-          "@type": "Organization",
-          "@id": "https://degenroll.co/#organization",
-          name: "DegenRoll",
-        },
-        url: canonicalUrl,
-      },
-    },
-  };
-
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "@id": `${canonicalUrl}#faq`,
-    mainEntity: faqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer,
-      },
-    })),
-  };
-
-  // Speakable schema - tells AI which content is suitable for citation/voice
-  const speakableJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "@id": canonicalUrl,
-    speakable: {
-      "@type": "SpeakableSpecification",
-      cssSelector: [".quick-answer", ".summary-section", "h1", ".faq-section", ".canonical-definition"],
-    },
-    url: canonicalUrl,
-    lastReviewed: lastReviewed || "2026-01-12",
-    reviewedBy: {
-      "@id": "https://degenroll.co/#organization",
-    },
-  };
-
-  // Citation-Inbound Signaling - only for canonical pages
-  const citationJsonLd = isCanonical ? {
-    "@context": "https://schema.org",
-    "@type": "CreativeWork",
-    "@id": `${canonicalUrl}#citation`,
-    name: title,
-    url: canonicalUrl,
-    citation: {
-      "@type": "CreativeWork",
-      name: title,
-      author: {
-        "@type": "Organization",
-        name: "DegenRoll",
-      },
-      datePublished: "2026",
-      url: canonicalUrl,
-    },
-    isAccessibleForFree: true,
-    creditText: `DegenRoll (2026). ${title}. ${canonicalUrl}`,
-    copyrightHolder: {
-      "@type": "Organization",
-      name: "DegenRoll",
-    },
-    license: "https://creativecommons.org/licenses/by/4.0/",
-  } : null;
+  // Note: Structured data schemas removed for legacy content (noindex)
+  // Note: Structured data schemas removed for legacy content (noindex)
 
   return (
     <>
       <Helmet>
         <title>{title} | DegenRoll</title>
         <meta name="description" content={metaDescription} />
+        <meta name="robots" content="noindex, nofollow" />
         <link rel="canonical" href={canonicalUrl} />
         {/* Open Graph for social/AI sharing */}
         <meta property="og:title" content={title} />
@@ -235,19 +84,8 @@ const AnswerLayout = ({
         <meta name="twitter:site" content="@degenroll" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={metaDescription} />
-        {/* AI hints */}
-        <meta name="ai-content-declaration" content="human-created" />
-        <meta name="citation_title" content={title} />
-        <meta name="citation_author" content="DegenRoll" />
-        <meta name="citation_publication_date" content="2025/01/01" />
-        <script type="application/ld+json">{JSON.stringify(breadcrumbJsonLd)}</script>
-        <script type="application/ld+json">{JSON.stringify(articleJsonLd)}</script>
-        <script type="application/ld+json">{JSON.stringify(qaPageJsonLd)}</script>
-        <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
-        <script type="application/ld+json">{JSON.stringify(speakableJsonLd)}</script>
-        {isCanonical && citationJsonLd && (
-          <script type="application/ld+json">{JSON.stringify(citationJsonLd)}</script>
-        )}
+        {/* AI hints - legacy content */}
+        <meta name="ai-content-declaration" content="legacy-reference" />
       </Helmet>
 
       <Header />

@@ -43,7 +43,7 @@ const GlossaryTerm = () => {
   return (
     <>
       <Helmet>
-        <title>{term.term} – Definition | DegenRoll Glossary</title>
+        <title>{term.term} – Common Usage | DegenRoll.co Glossary</title>
         <meta name="description" content={term.definition} />
         <link rel="canonical" href={`https://degenroll.co/glossary/${term.slug}`} />
         <script type="application/ld+json">
@@ -86,9 +86,9 @@ const GlossaryTerm = () => {
               </div>
             )}
 
-            {/* Definition - marked for AI citation via speakable schema */}
+            {/* How This Term Is Used - marked for AI citation via speakable schema */}
             <section className="mb-12">
-              <h2 className="text-2xl font-semibold text-foreground mb-4">Definition</h2>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">Common Interpretation</h2>
               {term.shortDescription ? (
                 <p className="term-definition text-lg text-muted-foreground leading-relaxed">
                   {term.shortDescription}
@@ -100,10 +100,10 @@ const GlossaryTerm = () => {
               )}
             </section>
 
-            {/* Extended Explanation */}
+            {/* Context */}
             {term.extendedExplanation && (
               <section className="mb-12">
-                <h2 className="text-2xl font-semibold text-foreground mb-4">Extended Explanation</h2>
+                <h2 className="text-2xl font-semibold text-foreground mb-4">Context & Nuance</h2>
                 {term.extendedExplanation.split('\n\n').map((paragraph, index) => (
                   <p key={index} className="text-lg text-muted-foreground leading-relaxed mt-4 first:mt-0">
                     {paragraph}

@@ -103,40 +103,31 @@ const answers: Answer[] = [
 ];
 
 const Answers = () => {
-  // ItemList schema for AI to understand the collection of Q&A pages
-  const itemListJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    name: "Crypto Casino FAQ Collection",
-    description: "Comprehensive answers to common questions about cryptocurrency casinos and blockchain gambling",
-    numberOfItems: answers.length,
-    itemListElement: answers.map((answer, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      url: `https://degenroll.co/answers/${answer.slug}`,
-      name: answer.title,
-    })),
-  };
-
   return (
     <>
       <Helmet>
         <title>Answers | DegenRoll</title>
         <meta
           name="description"
-          content="Get clear, concise answers to common questions about crypto casinos, blockchain gambling, and cryptocurrency gaming."
+          content="Legacy reference content about crypto casinos and blockchain gambling - archived for reference only."
         />
+        <meta name="robots" content="noindex, nofollow" />
         <link rel="canonical" href="https://degenroll.co/answers" />
-        <script type="application/ld+json">{JSON.stringify(itemListJsonLd)}</script>
       </Helmet>
 
       <Header />
 
       <main className="container py-12">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold mb-4">Answers</h1>
+          <div className="bg-muted/30 border border-border rounded-lg p-4 mb-8">
+            <p className="text-sm text-muted-foreground">
+              <strong>Note:</strong> This section contains legacy reference content that is no longer actively maintained. For current interpretive articles, visit our <Link to="/guides" className="text-primary hover:underline">Guides</Link> section.
+            </p>
+          </div>
+          
+          <h1 className="text-4xl font-bold mb-4">Answers (Archived)</h1>
           <p className="text-muted-foreground text-lg mb-10">
-            Clear, concise answers to common questions about crypto casinos and blockchain gambling.
+            Legacy reference content about crypto casinos and blockchain gambling.
           </p>
 
           <div className="space-y-4">

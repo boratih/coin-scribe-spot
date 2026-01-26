@@ -98,7 +98,6 @@ const HowToVerifyProvablyFairGames = () => {
         lastUpdated="January 2026"
         lastReviewed="January 2026"
         reviewNote="no material updates required"
-        isCanonical={true}
         quickAnswer={
           <p>
             Provably fair (PF) crypto casino games allow players to verify game outcomes independently. By using cryptographic hashes, server and client seeds, and nonces, PF ensures fairness and transparency that traditional RNG games cannot match.

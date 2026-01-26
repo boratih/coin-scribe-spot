@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
-import ComparisonTable from "@/components/ComparisonTable";
-import FloatingCTA from "@/components/FloatingCTA";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
@@ -16,7 +15,6 @@ import {
   Gift, 
   Zap,
   Clock,
-  FileCheck,
   Globe,
   CheckCircle,
   X
@@ -76,6 +74,9 @@ const DegenRollReview = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}
@@ -551,11 +552,7 @@ const DegenRollReview = () => {
         </Card>
       </section>
 
-      {/* Comparison Table */}
-      <ComparisonTable />
-
-      {/* Floating CTA */}
-      <FloatingCTA />
+      {/* Comparison content removed - legacy evaluative content */}
 
       {/* Back to Home */}
       <section className="container pb-16 text-center">
