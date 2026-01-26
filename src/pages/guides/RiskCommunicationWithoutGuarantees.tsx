@@ -4,10 +4,6 @@ import transparencyThumb from "@/assets/thumbnails/transparency-thumb.jpg";
 const RiskCommunicationWithoutGuarantees = () => {
   const faqs = [
     {
-      question: "Why don't platforms list risks explicitly on main pages?",
-      answer: "Explicit lists can be difficult to maintain across jurisdictions and may interrupt user flow, so risk is often addressed indirectly."
-    },
-    {
       question: "Does the absence of guarantees reduce risk?",
       answer: "The absence of guarantees reflects communication choices, not the presence or absence of underlying uncertainty."
     },

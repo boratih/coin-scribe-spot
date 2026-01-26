@@ -10,10 +10,6 @@ const AccountReviewMeaning = () => {
     {
       question: "Is there a standard definition across platforms?",
       answer: "The wording is common, but its meaning and scope can vary widely depending on internal policy."
-    },
-    {
-      question: "Why isn't more detail usually provided?",
-      answer: "Detail can limit flexibility. Broad phrasing allows platforms to manage diverse situations without revising language."
     }
   ];
 
