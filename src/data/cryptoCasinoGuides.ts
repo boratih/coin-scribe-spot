@@ -33,6 +33,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "transaction-success-platform-reliability", 
+    title: "Why Transaction Success Is Often Mistaken for Platform Reliability", 
+    category: "Fairness & Security", 
+    excerpt: "A successful transaction is commonly read as proof that a platform is reliable, even though it usually confirms only that a single process completed.",
+    metaDescription: "Analyze how transaction success is often mistaken for platform reliability in crypto casino contexts, when it usually confirms only that a single process completed.",
+    image: securityThumb,
+    imageAlt: "Diagram illustrating how transaction success is mistaken for platform reliability",
+    date: "Jan 26, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "instant-withdrawals-meaning", 
     title: "What Does \"Instant Withdrawal\" Usually Mean in Crypto Casino Messaging?", 
     category: "Fundamentals", 
