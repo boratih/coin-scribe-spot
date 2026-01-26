@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import FeaturedProjects from "@/components/FeaturedProjects";
 import GuideCard from "@/components/GuideCard";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -47,9 +46,6 @@ const Index = () => {
       
       {/* Hero Section */}
       <HeroSection onSearch={handleSearch} />
-
-      {/* Featured Projects Section */}
-      <FeaturedProjects />
 
       {/* Guides Section */}
       <section id="latest-blog" className="py-16 md:py-20 bg-card/30">
