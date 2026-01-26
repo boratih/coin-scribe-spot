@@ -33,6 +33,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "account-review-meaning", 
+    title: "What Crypto Casinos Typically Mean by \"Account Review\"", 
+    category: "Fairness & Security", 
+    excerpt: "\"Account review\" is usually used to describe an internal assessment process rather than a defined outcome.",
+    metaDescription: "Analyze how 'account review' is framed in crypto casino messaging, often describing an internal assessment process without specifying scope, duration, or resolution criteria.",
+    image: securityThumb,
+    imageAlt: "Diagram illustrating how account review language is framed in crypto casino messaging",
+    date: "Jan 26, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "transaction-success-platform-reliability", 
     title: "Why Transaction Success Is Often Mistaken for Platform Reliability", 
     category: "Fairness & Security", 
