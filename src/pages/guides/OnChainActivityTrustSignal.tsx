@@ -8,10 +8,6 @@ const OnChainActivityTrustSignal = () => {
       answer: "It shows that transactions occur, but it rarely explains internal rules, decision-making, or user-level conditions."
     },
     {
-      question: "Why do platforms highlight on-chain data so prominently?",
-      answer: "Public data is easy to reference and feels concrete, even when its relevance is limited."
-    },
-    {
       question: "Can on-chain activity be misleading without context?",
       answer: "Yes. Without explanation, visible transactions can be overinterpreted as comprehensive signals rather than partial snapshots."
     }
