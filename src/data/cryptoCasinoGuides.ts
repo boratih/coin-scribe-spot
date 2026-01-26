@@ -33,6 +33,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "on-chain-activity-trust-signal", 
+    title: "Why On-Chain Activity Is Frequently Used as a Trust Signal", 
+    category: "Trust & Transparency", 
+    excerpt: "On-chain activity is often read as a credibility indicator because it is visible and verifiable at a technical level, even when it does not explain intent or outcomes.",
+    metaDescription: "Analyze how on-chain activity is framed as a trust signal in crypto casino contexts, even when visibility does not explain intent, governance, or outcomes.",
+    image: blockchainTechThumb,
+    imageAlt: "Diagram illustrating how on-chain activity is used as a trust signal",
+    date: "Jan 26, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "account-review-meaning", 
     title: "What Crypto Casinos Typically Mean by \"Account Review\"", 
     category: "Fairness & Security", 
