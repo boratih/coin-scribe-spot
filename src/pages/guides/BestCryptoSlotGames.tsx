@@ -1,6 +1,9 @@
+import { Helmet } from "react-helmet-async";
 import GuideArticleLayout from "@/components/GuideArticleLayout";
 import cryptoSlotsThumb from "@/assets/thumbnails/crypto-slots-thumb.jpg";
 
+// LEGACY SEO CONTENT - Isolated from public discovery
+// This article is noindexed and removed from sitemaps/listings
 const BestCryptoSlotGames = () => {
   const faqs = [
     {
@@ -26,8 +29,12 @@ const BestCryptoSlotGames = () => {
   ];
 
   return (
-    <GuideArticleLayout
-      title="Best Crypto Slot Games That Actually Pay Out"
+    <>
+      <Helmet>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
+      <GuideArticleLayout
+        title="Best Crypto Slot Games That Actually Pay Out"
       metaDescription="Discover the best crypto slot games with high RTP rates and genuine payout potential. Learn about volatility, bonus features, and provably fair verification."
       canonicalUrl="https://degenroll.co/best-crypto-slot-games"
       heroImage={cryptoSlotsThumb}
@@ -190,6 +197,7 @@ const BestCryptoSlotGames = () => {
         </div>
       </section>
     </GuideArticleLayout>
+    </>
   );
 };
 

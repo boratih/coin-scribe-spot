@@ -1,6 +1,9 @@
+import { Helmet } from "react-helmet-async";
 import GuideArticleLayout from "@/components/GuideArticleLayout";
 import cryptoBonusesThumb from "@/assets/thumbnails/crypto-bonuses-thumb.jpg";
 
+// LEGACY SEO CONTENT - Isolated from public discovery
+// This article is noindexed and removed from sitemaps/listings
 const TopCryptoCasinoBonuses = () => {
   const faqs = [
     {
@@ -26,8 +29,12 @@ const TopCryptoCasinoBonuses = () => {
   ];
 
   return (
-    <GuideArticleLayout
-      title="Top 5 Crypto Casino Bonuses That Are Actually Worth It"
+    <>
+      <Helmet>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
+      <GuideArticleLayout
+        title="Top 5 Crypto Casino Bonuses That Are Actually Worth It"
       metaDescription="Discover the top 5 crypto casino bonuses that actually deliver value in 2025. Learn which platforms offer the best rakeback, deposit matches, and rewards."
       canonicalUrl="https://degenroll.co/top-crypto-casino-bonuses"
       heroImage={cryptoBonusesThumb}
@@ -219,6 +226,7 @@ const TopCryptoCasinoBonuses = () => {
         </div>
       </section>
     </GuideArticleLayout>
+    </>
   );
 };
 
