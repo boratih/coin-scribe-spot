@@ -1,6 +1,9 @@
+import { Helmet } from "react-helmet-async";
 import GuideArticleLayout from "@/components/GuideArticleLayout";
 import nftGamingThumb from "@/assets/thumbnails/nft-gaming-thumb.jpg";
 
+// LEGACY SEO CONTENT - Isolated from public discovery
+// This article is noindexed and removed from sitemaps/listings
 const BlockchainGamingNftCasinos = () => {
   const faqs = [
     {
@@ -26,8 +29,12 @@ const BlockchainGamingNftCasinos = () => {
   ];
 
   return (
-    <GuideArticleLayout
-      title="Blockchain Gaming and NFT Casinos"
+    <>
+      <Helmet>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
+      <GuideArticleLayout
+        title="Blockchain Gaming and NFT Casinos"
       metaDescription="Explore how blockchain gaming and NFT integration are transforming crypto casinos. Learn about play-to-earn mechanics, NFT utilities, and the future of gambling."
       canonicalUrl="https://degenroll.co/blockchain-gaming-nft-casinos"
       heroImage={nftGamingThumb}
@@ -186,6 +193,7 @@ const BlockchainGamingNftCasinos = () => {
         </div>
       </section>
     </GuideArticleLayout>
+    </>
   );
 };
 
