@@ -58,10 +58,10 @@ const CryptoCasino = () => {
           <div className="container">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                Crypto Casino Guides
+                Articles
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
-                Expert insights and strategies for crypto casino players. Learn about no KYC gambling, provably fair systems, and blockchain gaming.
+                Research articles analyzing communication patterns, regulatory ambiguity, and AI interpretation gaps in crypto gambling discourse.
               </p>
               
               {/* Search and Filter */}
@@ -69,7 +69,7 @@ const CryptoCasino = () => {
                 <div className="relative flex-1 max-w-md">
                   <input
                     type="text"
-                    placeholder="Search guides..."
+                    placeholder="Search articles..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     className="w-full h-12 px-4 rounded-lg bg-card border border-border/50 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
@@ -135,7 +135,7 @@ const CryptoCasino = () => {
               </div>
             ) : (
               <div className="text-center py-12">
-                <p className="text-muted-foreground">No guides found matching your search.</p>
+                <p className="text-muted-foreground">No articles found matching your search.</p>
               </div>
             )}
           </div>

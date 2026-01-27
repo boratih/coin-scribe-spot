@@ -6,7 +6,7 @@ const categories = [
   {
     id: "gaming",
     title: "Crypto Casino",
-    description: "Educational guides and reviews covering crypto casino concepts, features, and considerations.",
+    description: "Research articles analyzing communication patterns in crypto casino discourse.",
     icon: Dices,
     count: 20,
     href: "/?category=gaming",
@@ -44,7 +44,7 @@ const CategoryCards = () => {
                       {category.description}
                     </p>
                     <span className="text-sm text-primary font-medium">
-                      {category.count}+ guides & articles
+                      {category.count}+ articles
                     </span>
                   </div>
                 </CardContent>

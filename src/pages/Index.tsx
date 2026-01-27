@@ -80,7 +80,7 @@ const Index = () => {
             </div>
           ) : (
             <div className="text-center py-12">
-              <p className="text-muted-foreground">No guides found matching your search.</p>
+              <p className="text-muted-foreground">No articles found matching your search.</p>
             </div>
           )}
         </div>

@@ -62,7 +62,7 @@ const HeroSection = ({ onSearch }: HeroSectionProps) => {
             <div className="relative">
               <Input
                 type="text"
-                placeholder="Search casinos, guides, glossary..."
+                placeholder="Search articles, glossary..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full h-14 pl-6 pr-14 text-lg bg-card/80 border-border/50 rounded-full backdrop-blur-sm focus-visible:ring-primary"
