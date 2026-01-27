@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "availability-confused-permission", 
+    title: "Why Availability Is Frequently Confused With Permission in Crypto Gambling", 
+    category: "Legal", 
+    excerpt: "Availability is often interpreted as permission because access signals are visible and immediate, while permission is abstract and external.",
+    metaDescription: "Analyze how availability cues are interpreted as permission in crypto gambling, where the ability to connect or transact stands in for rules not presented at access.",
+    image: cryptoFundamentalsThumb,
+    imageAlt: "Diagram illustrating why availability is frequently confused with permission in crypto gambling",
+    date: "Jan 27, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "disclosures-communicate-ambiguous", 
     title: "What Crypto Casino Disclosures Communicate — And What They Leave Ambiguous", 
     category: "Trust & Transparency", 
