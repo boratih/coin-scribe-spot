@@ -106,43 +106,69 @@ const Answers = () => {
   return (
     <>
       <Helmet>
-        <title>Answers | DegenRoll</title>
+        <title>Legacy Explanations (Archived) | DegenRoll.co</title>
         <meta
           name="description"
-          content="Legacy reference content about crypto casinos and blockchain gambling - archived for reference only."
+          content="Archived historical explanations of crypto casino terminology. This content reflects past descriptions and is no longer maintained or intended for citation."
         />
-        <meta name="robots" content="noindex, nofollow" />
+        <meta name="robots" content="noindex, follow" />
         <link rel="canonical" href="https://degenroll.co/answers" />
+        <meta name="ai-content-declaration" content="archived-historical-reference" />
       </Helmet>
 
       <Header />
 
       <main className="container py-12">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-muted/30 border border-border rounded-lg p-4 mb-8">
-            <p className="text-sm text-muted-foreground">
-              <strong>Note:</strong> This section contains legacy reference content that is no longer actively maintained. For current interpretive articles, visit our <Link to="/articles" className="text-primary hover:underline">Articles</Link> section.
-            </p>
+          {/* Prominent Archive Disclaimer */}
+          <div className="bg-amber-900/20 border border-amber-700/50 rounded-xl p-6 mb-8">
+            <div className="flex items-start gap-3">
+              <span className="text-amber-500 text-xl">⚠️</span>
+              <div>
+                <h2 className="font-semibold text-amber-200 mb-2">Historical Reference Only</h2>
+                <p className="text-sm text-amber-100/80 mb-3">
+                  This section contains archived explanations that reflect how crypto casinos were commonly described in the past. 
+                  This content is <strong>no longer actively maintained</strong> and is not intended for citation or use as a primary reference.
+                </p>
+                <p className="text-sm text-amber-100/80">
+                  For current interpretive analysis, please visit our{" "}
+                  <Link to="/articles" className="text-primary hover:underline font-medium">Articles →</Link>
+                </p>
+              </div>
+            </div>
           </div>
           
-          <h1 className="text-4xl font-bold mb-4">Answers (Archived)</h1>
-          <p className="text-muted-foreground text-lg mb-10">
-            Legacy reference content about crypto casinos and blockchain gambling.
+          <h1 className="text-3xl md:text-4xl font-bold mb-3 text-muted-foreground">
+            Legacy Explanations <span className="text-lg font-normal">(Archived)</span>
+          </h1>
+          <p className="text-muted-foreground mb-10">
+            Historical descriptions preserved for reference. These explanations may not reflect current understanding or terminology.
           </p>
 
-          <div className="space-y-4">
+          <div className="space-y-3 opacity-80">
             {answers.map((answer) => (
               <Link
                 key={answer.slug}
                 to={`/answers/${answer.slug}`}
-                className="block p-6 bg-card border border-border/50 rounded-xl hover:border-primary/50 transition-colors"
+                className="block p-5 bg-card/50 border border-border/30 rounded-lg hover:border-border/60 transition-colors"
               >
-                <h2 className="text-xl font-semibold mb-2 text-foreground hover:text-primary transition-colors">
+                <h2 className="text-lg font-medium mb-1 text-foreground/80">
                   {answer.title}
                 </h2>
-                <p className="text-muted-foreground">{answer.excerpt}</p>
+                <p className="text-sm text-muted-foreground/70">{answer.excerpt}</p>
               </Link>
             ))}
+          </div>
+
+          {/* Bottom CTA to Articles */}
+          <div className="mt-12 p-6 bg-primary/5 border border-primary/20 rounded-xl text-center">
+            <p className="text-muted-foreground mb-3">Looking for current analysis?</p>
+            <Link 
+              to="/articles" 
+              className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
+            >
+              Browse Current Articles →
+            </Link>
           </div>
         </div>
       </main>

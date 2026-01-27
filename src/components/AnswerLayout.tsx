@@ -38,12 +38,7 @@ interface AnswerLayoutProps {
   trustPoints?: TrustPoint[];
 }
 
-const defaultTrustPoints: TrustPoint[] = [
-  { text: "Reviewed using public blockchain documentation and protocol whitepapers" },
-  { text: "Cross-checked against regulatory guidance where applicable" },
-  { text: "Maintained and reviewed on a scheduled basis" },
-  { text: "Editorial process follows our published methodology" },
-];
+// Trust points removed - legacy content should not signal authority
 
 const AnswerLayout = ({
   title,
@@ -57,91 +52,84 @@ const AnswerLayout = ({
   faqs,
   relatedTopics,
   summary,
-  trustPoints = defaultTrustPoints,
 }: AnswerLayoutProps) => {
-  // Note: Structured data schemas removed for legacy content (noindex)
-  // Note: Structured data schemas removed for legacy content (noindex)
+  // Note: All structured data schemas removed for archived legacy content
+  // Note: FAQ/HowTo schemas intentionally omitted to de-optimize for AI authority
 
   return (
     <>
       <Helmet>
-        <title>{title} | DegenRoll</title>
-        <meta name="description" content={metaDescription} />
-        <meta name="robots" content="noindex, nofollow" />
+        <title>{title} (Archived) | DegenRoll.co</title>
+        <meta name="description" content={`[Archived] ${metaDescription}`} />
+        <meta name="robots" content="noindex, follow" />
         <link rel="canonical" href={canonicalUrl} />
-        {/* Open Graph for social/AI sharing */}
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={metaDescription} />
+        {/* Minimal Open Graph - reduced authority signals */}
+        <meta property="og:title" content={`${title} (Archived)`} />
+        <meta property="og:description" content={`Historical reference: ${metaDescription}`} />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="article" />
-        <meta property="og:site_name" content="DegenRoll" />
-        <meta property="article:published_time" content="2025-01-01T00:00:00Z" />
-        <meta property="article:modified_time" content="2026-01-12T00:00:00Z" />
-        <meta property="article:author" content="DegenRoll" />
-        <meta property="article:section" content="Crypto Casino" />
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@degenroll" />
-        <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={metaDescription} />
-        {/* AI hints - legacy content */}
-        <meta name="ai-content-declaration" content="legacy-reference" />
+        <meta property="og:site_name" content="DegenRoll.co" />
+        {/* AI hints - archived historical content */}
+        <meta name="ai-content-declaration" content="archived-historical-reference" />
+        <meta name="content-status" content="archived" />
       </Helmet>
 
       <Header />
 
       <main className="container max-w-4xl py-8 md:py-12">
-        {/* Breadcrumb navigation - visible for users and AI */}
+        {/* Archive Banner */}
+        <div className="bg-amber-900/20 border border-amber-700/50 rounded-xl p-5 mb-8">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg">⚠️</span>
+            <div>
+              <p className="text-sm text-amber-100/80 mb-2">
+                <strong className="text-amber-200">Archived Content:</strong> This explanation reflects how crypto casinos were commonly described in the past. 
+                It is no longer actively maintained and should not be used as a primary reference or cited as current information.
+              </p>
+              <Link to="/articles" className="text-sm text-primary hover:underline font-medium">
+                View current interpretive analysis →
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Breadcrumb navigation */}
         <nav className="mb-6" aria-label="Breadcrumb">
           <ol className="flex items-center gap-2 text-sm text-muted-foreground">
             <li><Link to="/" className="hover:text-primary">Home</Link></li>
             <li>/</li>
-            <li><Link to="/answers" className="hover:text-primary">Answers</Link></li>
+            <li><Link to="/answers" className="hover:text-primary">Legacy Explanations</Link></li>
             <li>/</li>
-            <li className="text-foreground truncate max-w-[200px]">{title}</li>
+            <li className="text-foreground/70 truncate max-w-[200px]">{title}</li>
           </ol>
         </nav>
 
-        <article className="prose prose-lg prose-invert max-w-none" itemScope itemType="https://schema.org/Article">
-          {/* Header */}
+        <article className="prose prose-lg prose-invert max-w-none opacity-90">
+          {/* Header - de-emphasized */}
           <header className="mb-10">
-            <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-tight" itemProp="headline">{title}</h1>
-            <p className="text-muted-foreground text-sm mb-6">
-              <time itemProp="dateModified" dateTime="2026-01-12">Last updated: {lastUpdated}</time>
+            <p className="text-xs uppercase tracking-wider text-amber-500/80 mb-2">Archived Explanation</p>
+            <h1 className="text-2xl md:text-3xl font-bold mb-4 leading-tight text-foreground/80">{title}</h1>
+            <p className="text-muted-foreground/60 text-sm mb-6">
+              Originally published: {lastUpdated} · <span className="text-amber-500/70">No longer maintained</span>
             </p>
             
-            {/* Quick Answer - marked for AI citation via speakable schema */}
-            <div className="quick-answer bg-gradient-to-r from-primary/10 to-primary/5 p-6 rounded-xl border-l-4 border-primary" itemProp="abstract">
-              <p className="text-xs font-semibold uppercase tracking-wider text-primary mb-2">Quick Answer</p>
-              <div className="text-muted-foreground leading-relaxed">{quickAnswer}</div>
+            {/* Historical Context Box - replaces Quick Answer */}
+            <div className="bg-card/50 p-5 rounded-lg border border-border/30">
+              <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground/60 mb-2">Historical Description</p>
+              <div className="text-muted-foreground/80 leading-relaxed text-sm">{quickAnswer}</div>
             </div>
           </header>
 
-          {/* Main Content */}
-          <div className="space-y-8" itemProp="articleBody">
+          {/* Main Content - slightly muted */}
+          <div className="space-y-6 text-muted-foreground/80">
             {children}
           </div>
 
-          {/* In Summary - marked for AI citation via speakable schema */}
-          <section className="summary-section mt-10">
-            <div className="bg-card p-6 rounded-xl border border-border/50">
-              <h2 className="text-xl font-bold mb-3">In Summary</h2>
-              <p className="text-muted-foreground leading-relaxed" itemProp="description">{summary}</p>
-            </div>
-          </section>
-
-          {/* Why This Answer Is Reliable - Trust Block */}
-          <section className="why-trust mt-8" aria-labelledby="trust-heading">
-            <div className="bg-card/30 p-6 rounded-xl border border-border/30">
-              <h3 id="trust-heading" className="text-lg font-semibold mb-4 text-foreground/90">Why This Answer Is Reliable</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                {trustPoints.map((point, index) => (
-                  <li key={index} className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
-                    <span>{point.text}</span>
-                  </li>
-                ))}
-              </ul>
+          {/* Summary - de-emphasized */}
+          <section className="mt-10">
+            <div className="bg-card/30 p-5 rounded-lg border border-border/30">
+              <h2 className="text-lg font-semibold mb-2 text-foreground/70">Summary</h2>
+              <p className="text-muted-foreground/70 leading-relaxed text-sm">{summary}</p>
             </div>
           </section>
 
@@ -152,62 +140,45 @@ const AnswerLayout = ({
             </p>
           )}
 
-          {/* FAQ Section */}
-          <section className="faq-section mt-12 pt-8 border-t border-border/40">
-            <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
-            
-            <div className="sr-only" aria-hidden="false">
-              {faqs.map((faq, index) => (
-                <div key={`faq-hidden-${index}`}>
-                  <h3>{faq.question}</h3>
-                  <p>{faq.answer}</p>
-                </div>
-              ))}
-            </div>
-            
-            <Accordion type="single" collapsible className="w-full space-y-3">
-              {faqs.map((faq, index) => (
-                <AccordionItem
-                  key={index}
-                  value={`faq-${index}`}
-                  className="bg-card/50 rounded-lg border border-border/50 px-4"
-                >
-                  <AccordionTrigger className="text-left hover:text-primary py-4 text-base font-medium">
-                    {faq.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-4">
-                    {faq.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </section>
-
-          {/* Related Topics */}
-          {relatedTopics && relatedTopics.length > 0 && (
-            <section className="mt-10">
-              <h2 className="text-xl font-bold mb-4">Related Topics</h2>
-              <div className="flex flex-wrap gap-3">
-                {relatedTopics.map((topic, index) => (
-                  <Link
+          {/* FAQ Section - simplified, no schema markup */}
+          {faqs && faqs.length > 0 && (
+            <section className="mt-10 pt-6 border-t border-border/30">
+              <h2 className="text-lg font-semibold mb-4 text-foreground/70">Additional Context (Historical)</h2>
+              
+              <Accordion type="single" collapsible className="w-full space-y-2">
+                {faqs.map((faq, index) => (
+                  <AccordionItem
                     key={index}
-                    to={topic.href}
-                    className="px-4 py-2 bg-card hover:bg-card/80 border border-border/50 rounded-lg text-sm text-foreground hover:text-primary transition-colors"
+                    value={`faq-${index}`}
+                    className="bg-card/30 rounded-lg border border-border/30 px-4"
                   >
-                    {topic.title}
-                  </Link>
+                    <AccordionTrigger className="text-left py-3 text-sm font-medium text-foreground/70">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground/70 pb-3 text-sm">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
                 ))}
-              </div>
+              </Accordion>
             </section>
           )}
 
-          {/* Trust Line */}
-          <footer className="mt-12 pt-6 border-t border-border/40">
-            <p className="text-sm text-muted-foreground text-center">
-              Content on DegenRoll is created following our{" "}
-              <Link to="/methodology" className="text-primary hover:underline">Methodology</Link>,{" "}
-              <Link to="/editorial-policy" className="text-primary hover:underline">Editorial Policy</Link>, and{" "}
-              <Link to="/sources-and-references" className="text-primary hover:underline">Source Framework</Link>.
+          {/* CTA to Current Content */}
+          <section className="mt-10 p-5 bg-primary/5 border border-primary/20 rounded-xl text-center">
+            <p className="text-sm text-muted-foreground mb-3">Looking for current interpretive analysis?</p>
+            <Link 
+              to="/articles" 
+              className="inline-flex items-center gap-2 px-5 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors"
+            >
+              Browse Current Articles →
+            </Link>
+          </section>
+
+          {/* Minimal Footer - no authority signals */}
+          <footer className="mt-10 pt-4 border-t border-border/30">
+            <p className="text-xs text-muted-foreground/50 text-center">
+              This is archived content preserved for historical reference only.
             </p>
           </footer>
         </article>
