@@ -54,6 +54,7 @@ import RiskCommunicationWithoutGuarantees from "./pages/guides/RiskCommunication
 import MarketingLanguageFalseCertainty from "./pages/guides/MarketingLanguageFalseCertainty";
 import ProvablyFairMisunderstood from "./pages/guides/ProvablyFairMisunderstood";
 import DisclosuresCommunicateAmbiguous from "./pages/guides/DisclosuresCommunicateAmbiguous";
+import AvailabilityConfusedPermission from "./pages/guides/AvailabilityConfusedPermission";
 import CryptoCasinoBonusesExplained from "./pages/guides/CryptoCasinoBonusesExplained";
 import FiatVsCryptoCasinosDifferences from "./pages/guides/FiatVsCryptoCasinosDifferences";
 import AnonymityCryptoGambling from "./pages/guides/AnonymityCryptoGambling";
@@ -168,6 +169,7 @@ const App = () => (
           <Route path="/marketing-language-false-certainty" element={<MarketingLanguageFalseCertainty />} />
           <Route path="/provably-fair-misunderstood" element={<ProvablyFairMisunderstood />} />
           <Route path="/disclosures-communicate-ambiguous" element={<DisclosuresCommunicateAmbiguous />} />
+          <Route path="/availability-confused-permission" element={<AvailabilityConfusedPermission />} />
           
           {/* Crypto Casino Guides - User Experience */}
           <Route path="/crypto-casino-bonuses-explained" element={<CryptoCasinoBonusesExplained />} />
