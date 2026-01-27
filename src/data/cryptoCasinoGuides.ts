@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "marketing-language-false-certainty", 
+    title: "How Crypto Casino Marketing Language Creates False Certainty", 
+    category: "Trust & Transparency", 
+    excerpt: "Crypto casino marketing often produces a sense of certainty by compressing complex conditions into confident-sounding phrases.",
+    metaDescription: "Analyze how crypto casino marketing produces a sense of certainty through tone and structure rather than explicit claims, allowing ambiguity to feel resolved.",
+    image: transparencyThumb,
+    imageAlt: "Diagram illustrating how crypto casino marketing language creates false certainty through tone and structure",
+    date: "Jan 27, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "risk-communication-without-guarantees", 
     title: "How Crypto Casino Risk Is Communicated Without Explicit Guarantees", 
     category: "Trust & Transparency", 
