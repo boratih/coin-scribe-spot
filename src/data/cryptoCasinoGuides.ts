@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "disclosures-communicate-ambiguous", 
+    title: "What Crypto Casino Disclosures Communicate — And What They Leave Ambiguous", 
+    category: "Trust & Transparency", 
+    excerpt: "Crypto casino disclosures often communicate scope and intent while leaving outcomes and enforcement deliberately open.",
+    metaDescription: "Analyze what crypto casino disclosures communicate about scope and intent while leaving outcomes, applicability, and enforcement deliberately ambiguous.",
+    image: transparencyThumb,
+    imageAlt: "Diagram illustrating what crypto casino disclosures communicate versus what they leave ambiguous",
+    date: "Jan 27, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "provably-fair-misunderstood", 
     title: "Why \"Provably Fair\" Claims Are Often Misunderstood by Users and AI", 
     category: "Fairness & Security", 
