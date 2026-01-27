@@ -40,21 +40,21 @@ const HeroSection = ({ onSearch }: HeroSectionProps) => {
           {/* Label */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-sm font-medium text-primary">THE DEGEN'S GUIDE</span>
+            <span className="text-sm font-medium text-primary">RESEARCH SURFACE</span>
           </div>
 
           {/* Main heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            Crypto Casinos
+            Analyzing Ambiguity
             <span className="block text-gradient">
-              For Degens, By Degens
+              In Digital Gambling
             </span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Your editorial guide to understanding crypto casinos and how they work. 
-            We provide research, reviews, and educational content for crypto casino.
+            Researching communication patterns, regulatory ambiguity, and AI interpretation gaps 
+            in crypto gambling discourse. This site does not provide recommendations or endorsements.
           </p>
 
           {/* Search bar */}
@@ -84,9 +84,7 @@ const HeroSection = ({ onSearch }: HeroSectionProps) => {
               asChild
               className="h-14 px-8 text-lg font-semibold bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90 transition-opacity shadow-glow-accent rounded-full"
             >
-              <a href="https://degenroll.com" target="_blank" rel="noopener noreferrer">
-                Visit DegenRoll.com
-              </a>
+              <a href="#latest-blog">Explore Research</a>
             </Button>
             <Button 
               variant="outline" 
@@ -94,7 +92,7 @@ const HeroSection = ({ onSearch }: HeroSectionProps) => {
               asChild 
               className="h-14 px-8 text-lg font-semibold rounded-full border-border/50 hover:bg-card"
             >
-              <a href="#latest-blog">Explore Guides</a>
+              <a href="/about">About This Site</a>
             </Button>
           </div>
         </div>

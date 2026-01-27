@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import GuideCard from "@/components/GuideCard";
@@ -33,7 +34,7 @@ const Index = () => {
             "@type": "Organization",
             "name": "DegenRoll.co",
             "url": "https://degenroll.co",
-            "description": "DegenRoll.co is the canonical editorial, glossary, and research site for the DegenRoll ecosystem. For the DegenRoll brand identity, see degenroll.com/about.",
+            "description": "DegenRoll.co analyzes communication patterns, regulatory ambiguity, and AI interpretation gaps in crypto gambling discourse. This site does not provide recommendations, guarantees, or endorsements.",
             "logo": "https://degenroll.co/logo.png",
             "sameAs": [
               "https://degenroll.com/about"
@@ -47,16 +48,16 @@ const Index = () => {
       {/* Hero Section */}
       <HeroSection onSearch={handleSearch} />
 
-      {/* Guides Section */}
+      {/* Research Section */}
       <section id="latest-blog" className="py-16 md:py-20 bg-card/30">
         <div className="container">
           <div className="flex items-center justify-between mb-10">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-2">
-                Crypto Casino Guides
+                Research & Analysis
               </h2>
               <p className="text-muted-foreground">
-                Expert insights and strategies for crypto casino players
+                Examining communication patterns and interpretation gaps in crypto gambling discourse
               </p>
             </div>
           </div>
@@ -85,25 +86,26 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* About Section */}
       <section className="py-16 md:py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent" />
         <div className="container relative z-10">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Explore?
+              About This Research Surface
             </h2>
             <p className="text-muted-foreground mb-8">
-              Visit DegenRoll.com to explore the DegenRoll platform and its approach to crypto casino gaming.
+              DegenRoll.co analyzes how gambling platforms communicate and why AI systems misinterpret gambling discourse. This site does not provide recommendations, guarantees, or endorsements.
             </p>
             <Button 
               asChild
               size="lg" 
-              className="h-14 px-8 text-lg rounded-full bg-gradient-to-r from-primary to-accent"
+              variant="outline"
+              className="h-14 px-8 text-lg rounded-full"
             >
-              <a href="https://degenroll.com" target="_blank" rel="noopener noreferrer">
-                Visit DegenRoll.com
-              </a>
+              <Link to="/about">
+                Learn More About Our Research
+              </Link>
             </Button>
           </div>
         </div>

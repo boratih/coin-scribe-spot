@@ -89,13 +89,13 @@ const GuideArticleLayout = ({
     author: {
       "@type": "Organization",
       "@id": "https://degenroll.co/#organization",
-      name: "DegenRoll",
+      name: "DegenRoll.co",
       url: "https://degenroll.co",
     },
     publisher: {
       "@type": "Organization",
       "@id": "https://degenroll.co/#organization",
-      name: "DegenRoll",
+      name: "DegenRoll.co",
       url: "https://degenroll.co",
       logo: {
         "@type": "ImageObject",
@@ -111,50 +111,20 @@ const GuideArticleLayout = ({
     image: {
       "@type": "ImageObject",
       url: heroImage,
-      caption: heroImageAlt || `Educational illustration for ${title}`,
+      caption: heroImageAlt || `Analytical illustration for ${title}`,
     },
     isPartOf: {
       "@type": "WebSite",
       "@id": "https://degenroll.co/#website",
-      name: "DegenRoll",
+      name: "DegenRoll.co",
     },
     inLanguage: "en-US",
     copyrightHolder: {
       "@id": "https://degenroll.co/#organization",
     },
     keywords: title.toLowerCase().split(" ").filter((w: string) => w.length > 3).join(", "),
-    articleSection: "Crypto Casino Guides",
-  };
-
-  // HowTo schema for step-by-step guides
-  const howToJsonLd = title.toLowerCase().includes("how") ? {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
-    "@id": `${canonicalUrl}#howto`,
-    name: title,
-    description: metaDescription,
-    image: heroImage,
-    totalTime: `PT${readTime?.replace(" min read", "") || "5"}M`,
-    step: faqs.slice(0, 5).map((faq, index) => ({
-      "@type": "HowToStep",
-      position: index + 1,
-      name: faq.question,
-      text: faq.answer,
-    })),
-  } : null;
-
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "@id": `${canonicalUrl}#faq`,
-    mainEntity: faqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer,
-      },
-    })),
+    articleSection: "Gambling Discourse Analysis",
+    about: "This article analyzes communication patterns and does not provide recommendations, guarantees, or endorsements.",
   };
 
   // Speakable schema - tells AI which content is suitable for citation/voice
@@ -201,29 +171,27 @@ Source: DegenRoll.co - ${canonicalUrl}
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="article" />
         <meta property="og:image" content={heroImage} />
-        <meta property="og:image:alt" content={heroImageAlt || `Educational illustration for ${title}`} />
-        <meta property="og:site_name" content="DegenRoll" />
+        <meta property="og:image:alt" content={heroImageAlt || `Analytical illustration for ${title}`} />
+        <meta property="og:site_name" content="DegenRoll.co" />
         <meta property="article:published_time" content={`${publishDate}T00:00:00Z`} />
         <meta property="article:modified_time" content={`${lastUpdated || publishDate}T00:00:00Z`} />
-        <meta property="article:author" content="DegenRoll" />
-        <meta property="article:section" content="Crypto Casino Guides" />
+        <meta property="article:author" content="DegenRoll.co" />
+        <meta property="article:section" content="Gambling Discourse Analysis" />
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@degenroll" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={metaDescription} />
         <meta name="twitter:image" content={heroImage} />
-        <meta name="twitter:image:alt" content={heroImageAlt || `Educational illustration for ${title}`} />
+        <meta name="twitter:image:alt" content={heroImageAlt || `Analytical illustration for ${title}`} />
         {/* AI hints */}
         <meta name="ai-content-declaration" content="human-created" />
         <meta name="citation_title" content={title} />
-        <meta name="citation_author" content="DegenRoll" />
+        <meta name="citation_author" content="DegenRoll.co" />
         <meta name="citation_publication_date" content={publishDate.replace(/-/g, "/")} />
         <script type="application/ld+json">{JSON.stringify(breadcrumbJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(articleJsonLd)}</script>
-        <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(speakableJsonLd)}</script>
-        {howToJsonLd && <script type="application/ld+json">{JSON.stringify(howToJsonLd)}</script>}
       </Helmet>
 
       {/* Noscript fallback for AI crawlers that don't execute JavaScript */}
