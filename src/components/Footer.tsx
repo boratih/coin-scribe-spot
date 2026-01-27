@@ -30,9 +30,9 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Top Articles</h3>
             <ul className="space-y-3 text-sm text-muted-foreground">
-              <li><Link to="/ai-misinterpret-risk-language" className="hover:text-primary transition-colors">AI Misinterprets Risk Language</Link></li>
-              <li><Link to="/provably-fair-misunderstood" className="hover:text-primary transition-colors">Why Provably Fair Is Misunderstood</Link></li>
-              <li><Link to="/availability-confused-permission" className="hover:text-primary transition-colors">Availability vs Permission</Link></li>
+              <li><Link to="/what-is-crypto-casino" className="hover:text-primary transition-colors">What Is a Crypto Casino?</Link></li>
+              <li><Link to="/what-is-no-kyc-crypto-casino" className="hover:text-primary transition-colors">What Is a No KYC Casino?</Link></li>
+              <li><Link to="/what-is-provably-fair-system" className="hover:text-primary transition-colors">What Is Provably Fair?</Link></li>
             </ul>
           </div>
           
