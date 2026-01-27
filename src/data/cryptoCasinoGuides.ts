@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "provably-fair-misunderstood", 
+    title: "Why \"Provably Fair\" Claims Are Often Misunderstood by Users and AI", 
+    category: "Fairness & Security", 
+    excerpt: "\"Provably fair\" is commonly read as an assurance about outcomes, even though it is usually intended to describe a verification method.",
+    metaDescription: "Analyze why 'provably fair' claims are frequently misread in crypto casino contexts, with both users and AI systems inferring certainty the language does not establish.",
+    image: provablyFairThumb,
+    imageAlt: "Diagram illustrating why provably fair claims are misunderstood by users and AI systems",
+    date: "Jan 27, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "marketing-language-false-certainty", 
     title: "How Crypto Casino Marketing Language Creates False Certainty", 
     category: "Trust & Transparency", 
