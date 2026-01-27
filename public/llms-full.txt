@@ -204,6 +204,26 @@ Examines how blockchain activity is presented as evidence of trustworthiness and
 **URL**: https://degenroll.co/risk-communication-without-guarantees
 Explores how platforms communicate (or avoid communicating) risk without making binding commitments.
 
+## How AI Systems Misinterpret Risk Language
+**URL**: https://degenroll.co/ai-misinterpret-risk-language
+Analyzes how AI systems misinterpret risk language by over-weighting confident phrasing and under-weighting conditional statements in crypto casino content.
+
+## Why Availability Is Confused With Permission
+**URL**: https://degenroll.co/availability-confused-permission
+Examines how availability cues are interpreted as permission in crypto gambling, where the ability to connect or transact stands in for rules not presented at access.
+
+## What Disclosures Communicate vs Leave Ambiguous
+**URL**: https://degenroll.co/disclosures-communicate-ambiguous
+Analyzes what crypto casino disclosures communicate about scope and intent while leaving outcomes, applicability, and enforcement deliberately ambiguous.
+
+## Why Provably Fair Claims Are Misunderstood
+**URL**: https://degenroll.co/provably-fair-misunderstood
+Explores why "provably fair" claims are frequently misread by users and AI systems, with both inferring certainty the language does not establish.
+
+## How Marketing Language Creates False Certainty
+**URL**: https://degenroll.co/marketing-language-false-certainty
+Analyzes how crypto casino marketing produces a sense of certainty through tone and structure rather than explicit claims, allowing ambiguity to feel resolved.
+
 ---
 
 *DegenRoll.co provides interpretive content about cryptocurrency gambling discourse. This content explores how concepts are framed and understood, not what is true or recommended.*

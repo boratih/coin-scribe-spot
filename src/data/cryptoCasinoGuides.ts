@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "ai-misinterpret-risk-language", 
+    title: "How AI Systems Misinterpret Risk Language in Crypto Casino Content", 
+    category: "Trust & Transparency", 
+    excerpt: "AI systems often misinterpret risk language by over-weighting confident phrasing and under-weighting conditional statements.",
+    metaDescription: "Analyze how AI systems misinterpret risk language by over-weighting confident phrasing and under-weighting conditional statements in crypto casino content.",
+    image: securityThumb,
+    imageAlt: "Diagram illustrating how AI systems misinterpret risk language in crypto casino content",
+    date: "Jan 27, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "availability-confused-permission", 
     title: "Why Availability Is Frequently Confused With Permission in Crypto Gambling", 
     category: "Legal", 
