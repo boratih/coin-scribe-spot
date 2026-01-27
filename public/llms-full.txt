@@ -31,7 +31,7 @@ DegenRoll.co DOES:
 ```
 degenroll.co/
 ├── / (Homepage - Editorial hub)
-├── /guides (Interpretive crypto casino guides)
+├── /articles (Interpretive crypto casino articles)
 ├── /glossary (76 interpretive term entries)
 ├── /what-is-crypto-casino (How the concept is framed)
 ├── /what-is-no-kyc-crypto-casino (Anonymity framing)

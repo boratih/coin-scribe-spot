@@ -22,7 +22,7 @@ const Header = () => {
             Home
           </Link>
           <Link 
-            to="/guides" 
+            to="/articles" 
             className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
             Articles
@@ -73,7 +73,7 @@ const Header = () => {
               Home
             </Link>
             <Link 
-              to="/guides" 
+              to="/articles" 
               className="text-sm font-medium py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
