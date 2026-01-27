@@ -3,25 +3,25 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import GuideCard from "@/components/GuideCard";
+import ArticleCard from "@/components/ArticleCard";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { cryptoCasinoGuides } from "@/data/cryptoCasinoGuides";
+import { cryptoCasinoGuides as articles } from "@/data/cryptoCasinoGuides";
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
-  // Filter guides based on search
-  const searchedGuides = searchQuery 
-    ? cryptoCasinoGuides.filter(guide => 
-        guide.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        guide.excerpt.toLowerCase().includes(searchQuery.toLowerCase())
+  // Filter articles based on search
+  const searchedArticles = searchQuery 
+    ? articles.filter(article => 
+        article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        article.excerpt.toLowerCase().includes(searchQuery.toLowerCase())
       )
-    : cryptoCasinoGuides;
+    : articles;
 
   const handleSearch = (query: string) => {
     setSearchQuery(query);
-    // Scroll to guides section
+    // Scroll to articles section
     document.getElementById('latest-blog')?.scrollIntoView({ behavior: 'smooth' });
   };
 
@@ -62,19 +62,19 @@ const Index = () => {
             </div>
           </div>
 
-          {searchedGuides.length > 0 ? (
+          {searchedArticles.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {searchedGuides.map((guide) => (
-                <GuideCard
-                  key={guide.slug}
-                  slug={guide.slug}
-                  title={guide.title}
-                  excerpt={guide.excerpt}
-                  category={guide.category}
-                  date={guide.date}
-                  image={guide.image}
-                  imageAlt={guide.imageAlt}
-                  readTime={guide.readTime}
+              {searchedArticles.map((article) => (
+                <ArticleCard
+                  key={article.slug}
+                  slug={article.slug}
+                  title={article.title}
+                  excerpt={article.excerpt}
+                  category={article.category}
+                  date={article.date}
+                  image={article.image}
+                  imageAlt={article.imageAlt}
+                  readTime={article.readTime}
                 />
               ))}
             </div>

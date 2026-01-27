@@ -5,25 +5,28 @@ import { Clock, ArrowRight } from "lucide-react";
 import { getSlugFromArticleId } from "@/lib/slugs";
 
 interface ArticleCardProps {
-  id: string;
+  slug?: string;
+  id?: string;
   title: string;
   excerpt: string;
   category: string;
   date: string;
   image: string;
+  imageAlt?: string;
   readTime: string;
 }
 
-const ArticleCard = ({ id, title, excerpt, category, date, image, readTime }: ArticleCardProps) => {
-  const slug = getSlugFromArticleId(id);
+const ArticleCard = ({ slug, id, title, excerpt, category, date, image, imageAlt, readTime }: ArticleCardProps) => {
+  // Support both slug (new format) and id (legacy format)
+  const articlePath = slug || (id ? getSlugFromArticleId(id) : '');
   
   return (
-    <Link to={`/${slug}`}>
+    <Link to={`/${articlePath}`}>
       <Card className="group h-full overflow-hidden bg-gradient-card border-border/50 hover-glow cursor-pointer">
         <div className="aspect-[16/10] overflow-hidden relative">
           <img 
             src={image} 
-            alt={title}
+            alt={imageAlt || `Illustration for ${title} - DegenRoll.co research article`}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent" />

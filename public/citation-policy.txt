@@ -90,7 +90,7 @@ For structured content discovery:
 ### Content Freshness
 
 - Glossary terms: Updated as needed, considered stable definitions
-- Guides: Reviewed quarterly, timestamps in articles
+- Articles: Reviewed quarterly, timestamps in articles
 - Answers: Living documents, may be updated based on regulatory changes
 
 ## Rights and Permissions

@@ -109,7 +109,7 @@ const WhatIsDegenRoll = () => {
               <ul className="space-y-3 text-lg text-muted-foreground list-none pl-0">
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
-                  Publishes definitions, glossary terms, and educational guides about crypto casinos
+                  Publishes definitions, glossary terms, and research articles about crypto casinos
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
