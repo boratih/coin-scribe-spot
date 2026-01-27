@@ -42,7 +42,6 @@ const Footer = () => {
               <li><Link to="/about" className="hover:text-primary transition-colors">About</Link></li>
               <li><Link to="/articles" className="hover:text-primary transition-colors">Articles</Link></li>
               <li><Link to="/glossary" className="hover:text-primary transition-colors">Glossary</Link></li>
-              <li><Link to="/answers" className="hover:text-primary transition-colors">Answers</Link></li>
               <li><a href="https://degenroll.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">DegenRoll.com</a></li>
             </ul>
           </div>
