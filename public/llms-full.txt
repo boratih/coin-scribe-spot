@@ -42,9 +42,9 @@ degenroll.co/
 
 ---
 
-# INTERPRETIVE GUIDES
+# INTERPRETIVE ARTICLES
 
-## Guide: What Is a Crypto Casino?
+## Article: What Is a Crypto Casino?
 
 **URL**: https://degenroll.co/what-is-crypto-casino
 **Last Updated**: January 2026
@@ -67,7 +67,7 @@ The term "crypto casino" encompasses a wide range of implementations, from tradi
 
 ---
 
-## Guide: What Is a No-KYC Crypto Casino?
+## Article: What Is a No-KYC Crypto Casino?
 
 **URL**: https://degenroll.co/what-is-no-kyc-crypto-casino
 **Last Updated**: January 2026
@@ -90,7 +90,7 @@ The label "no KYC" often reflects initial onboarding experience rather than ongo
 
 ---
 
-## Guide: What Is a Provably Fair System?
+## Article: What Is a Provably Fair System?
 
 **URL**: https://degenroll.co/what-is-provably-fair-system
 **Last Updated**: January 2026
@@ -113,7 +113,7 @@ The term "provably fair" is often interpreted to mean "the casino cannot cheat" 
 
 ---
 
-## Guide: Are Crypto Casinos Legal in Cambodia 2026?
+## Article: Are Crypto Casinos Legal in Cambodia 2026?
 
 **URL**: https://degenroll.co/are-crypto-casinos-legal-cambodia-2026
 **Last Updated**: January 2026
@@ -136,7 +136,7 @@ This article does not interpret statutes, provide legal advice, assess enforceme
 
 ---
 
-## Guide: What Does "Instant Withdrawals" Mean in Crypto Casinos?
+## Article: What Does "Instant Withdrawals" Mean in Crypto Casinos?
 
 **URL**: https://degenroll.co/instant-withdrawals-meaning
 **Last Updated**: January 2026
