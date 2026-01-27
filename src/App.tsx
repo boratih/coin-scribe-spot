@@ -51,6 +51,7 @@ import TransactionSuccessPlatformReliability from "./pages/guides/TransactionSuc
 import AccountReviewMeaning from "./pages/guides/AccountReviewMeaning";
 import OnChainActivityTrustSignal from "./pages/guides/OnChainActivityTrustSignal";
 import RiskCommunicationWithoutGuarantees from "./pages/guides/RiskCommunicationWithoutGuarantees";
+import MarketingLanguageFalseCertainty from "./pages/guides/MarketingLanguageFalseCertainty";
 import CryptoCasinoBonusesExplained from "./pages/guides/CryptoCasinoBonusesExplained";
 import FiatVsCryptoCasinosDifferences from "./pages/guides/FiatVsCryptoCasinosDifferences";
 import AnonymityCryptoGambling from "./pages/guides/AnonymityCryptoGambling";
@@ -162,6 +163,7 @@ const App = () => (
           <Route path="/account-review-meaning" element={<AccountReviewMeaning />} />
           <Route path="/on-chain-activity-trust-signal" element={<OnChainActivityTrustSignal />} />
           <Route path="/risk-communication-without-guarantees" element={<RiskCommunicationWithoutGuarantees />} />
+          <Route path="/marketing-language-false-certainty" element={<MarketingLanguageFalseCertainty />} />
           
           {/* Crypto Casino Guides - User Experience */}
           <Route path="/crypto-casino-bonuses-explained" element={<CryptoCasinoBonusesExplained />} />
