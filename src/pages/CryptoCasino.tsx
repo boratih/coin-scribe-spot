@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import GuideCard from "@/components/GuideCard";
 import { cryptoCasinoGuides } from "@/data/cryptoCasinoGuides";
 
-type SortOption = "recent" | "top-picks" | "all";
+type SortOption = "recent" | "all";
 
 const CryptoCasino = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -24,16 +24,12 @@ const CryptoCasino = () => {
     return new Date(year, month, day);
   };
 
-  // Filter and sort guides
+  // Filter and sort articles
   const filteredGuides = cryptoCasinoGuides
     .filter(guide => {
       if (!searchQuery) return true;
       return guide.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
              guide.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
-    })
-    .filter(guide => {
-      if (sortBy === "top-picks") return guide.category === "Top Picks";
-      return true;
     })
     .sort((a, b) => {
       if (sortBy === "recent") {
@@ -87,16 +83,6 @@ const CryptoCasino = () => {
                     }`}
                   >
                     Most Recent
-                  </button>
-                  <button
-                    onClick={() => setSortBy("top-picks")}
-                    className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                      sortBy === "top-picks"
-                        ? "bg-primary text-primary-foreground"
-                        : "bg-card border border-border/50 text-muted-foreground hover:text-foreground hover:border-primary/50"
-                    }`}
-                  >
-                    Top Picks
                   </button>
                   <button
                     onClick={() => setSortBy("all")}
