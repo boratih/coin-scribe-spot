@@ -45,9 +45,9 @@ const CryptoCasino = () => {
   return (
     <>
       <Helmet>
-        <title>Crypto Casino Guides | DegenRoll</title>
-        <meta name="description" content="Expert guides and insights on crypto casinos, no KYC gambling, provably fair systems, and blockchain gaming. Everything you need to know about cryptocurrency gambling." />
-        <link rel="canonical" href="https://degenroll.co/guides" />
+        <title>Articles | DegenRoll.co</title>
+        <meta name="description" content="Research articles analyzing communication patterns, regulatory ambiguity, and AI interpretation gaps in crypto gambling discourse." />
+        <link rel="canonical" href="https://degenroll.co/articles" />
       </Helmet>
       
       <div className="min-h-screen bg-background">

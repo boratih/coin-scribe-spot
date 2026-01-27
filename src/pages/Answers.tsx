@@ -121,7 +121,7 @@ const Answers = () => {
         <div className="max-w-4xl mx-auto">
           <div className="bg-muted/30 border border-border rounded-lg p-4 mb-8">
             <p className="text-sm text-muted-foreground">
-              <strong>Note:</strong> This section contains legacy reference content that is no longer actively maintained. For current interpretive articles, visit our <Link to="/guides" className="text-primary hover:underline">Guides</Link> section.
+              <strong>Note:</strong> This section contains legacy reference content that is no longer actively maintained. For current interpretive articles, visit our <Link to="/articles" className="text-primary hover:underline">Articles</Link> section.
             </p>
           </div>
           
