@@ -68,8 +68,8 @@ const GuideArticleLayout = ({
       {
         "@type": "ListItem",
         position: 2,
-        name: "Guides",
-        item: "https://degenroll.co/#latest-blog",
+        name: "Articles",
+        item: "https://degenroll.co/articles",
       },
       {
         "@type": "ListItem",
@@ -211,7 +211,7 @@ Source: DegenRoll.co - ${canonicalUrl}
           <ol className="flex items-center gap-2 text-sm text-muted-foreground">
             <li><Link to="/" className="hover:text-primary">Home</Link></li>
             <li>/</li>
-            <li><Link to="/#latest-blog" className="hover:text-primary">Guides</Link></li>
+            <li><Link to="/articles" className="hover:text-primary">Articles</Link></li>
             <li>/</li>
             <li className="text-foreground truncate max-w-[200px]">{title}</li>
           </ol>

@@ -29,7 +29,7 @@ const FAQSection = () => {
     },
     {
       question: "How can I verify game fairness?",
-      answer: "DegenRoll uses provably fair technology. Players can verify game outcomes using cryptographic hashes. Learn more about provably fair systems in our guides."
+      answer: "DegenRoll uses provably fair technology. Players can verify game outcomes using cryptographic hashes. Learn more about provably fair systems in our articles."
     }
   ];
 
