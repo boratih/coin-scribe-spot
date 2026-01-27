@@ -61,7 +61,7 @@ import TopCryptoCasinoBonuses from "./pages/guides/TopCryptoCasinoBonuses";
 import BestCryptoSlotGames from "./pages/guides/BestCryptoSlotGames";
 import BlockchainGamingNftCasinos from "./pages/guides/BlockchainGamingNftCasinos";
 
-import CryptoCasino from "./pages/CryptoCasino";
+import Articles from "./pages/Articles";
 import ScrollToTop from "./components/ScrollToTop";
 import Methodology from "./pages/Methodology";
 import EditorialPolicy from "./pages/EditorialPolicy";
@@ -99,7 +99,7 @@ const App = () => (
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/articles" element={<CryptoCasino />} />
+          <Route path="/articles" element={<Articles />} />
           <Route path="/degenroll-review" element={<DegenRollReview />} />
           <Route path="/degenroll-review" element={<DegenRollReview />} />
           
