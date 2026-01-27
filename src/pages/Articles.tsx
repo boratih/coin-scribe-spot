@@ -2,12 +2,12 @@ import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import GuideCard from "@/components/GuideCard";
-import { cryptoCasinoGuides } from "@/data/cryptoCasinoGuides";
+import ArticleCard from "@/components/GuideCard";
+import { cryptoCasinoGuides as articles } from "@/data/cryptoCasinoGuides";
 
 type SortOption = "recent" | "all";
 
-const CryptoCasino = () => {
+const Articles = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [sortBy, setSortBy] = useState<SortOption>("recent");
 
@@ -25,11 +25,11 @@ const CryptoCasino = () => {
   };
 
   // Filter and sort articles
-  const filteredGuides = cryptoCasinoGuides
-    .filter(guide => {
+  const filteredArticles = articles
+    .filter(article => {
       if (!searchQuery) return true;
-      return guide.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-             guide.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
+      return article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+             article.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
     })
     .sort((a, b) => {
       if (sortBy === "recent") {
@@ -100,22 +100,22 @@ const CryptoCasino = () => {
           </div>
         </section>
 
-        {/* Guides Grid */}
+        {/* Articles Grid */}
         <section className="py-16 md:py-20">
           <div className="container">
-            {filteredGuides.length > 0 ? (
+            {filteredArticles.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {filteredGuides.map((guide) => (
-                  <GuideCard
-                    key={guide.slug}
-                    slug={guide.slug}
-                    title={guide.title}
-                    excerpt={guide.excerpt}
-                    category={guide.category}
-                    date={guide.date}
-                    image={guide.image}
-                    imageAlt={guide.imageAlt}
-                    readTime={guide.readTime}
+                {filteredArticles.map((article) => (
+                  <ArticleCard
+                    key={article.slug}
+                    slug={article.slug}
+                    title={article.title}
+                    excerpt={article.excerpt}
+                    category={article.category}
+                    date={article.date}
+                    image={article.image}
+                    imageAlt={article.imageAlt}
+                    readTime={article.readTime}
                   />
                 ))}
               </div>
@@ -133,4 +133,4 @@ const CryptoCasino = () => {
   );
 };
 
-export default CryptoCasino;
+export default Articles;
