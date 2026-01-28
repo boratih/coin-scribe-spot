@@ -44,7 +44,7 @@ const HeroSection = ({ onSearch }: HeroSectionProps) => {
           </div>
 
           {/* Main heading */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
             Degen Culture, Risk Narratives,
             <span className="block text-gradient">and Wallet-First Gambling</span>
           </h1>
