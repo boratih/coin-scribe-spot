@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "loss-streaks-become-story", 
+    title: "How Loss Streaks Become Part of the Story, Not a Warning", 
+    category: "Culture", 
+    excerpt: "In degen culture, a loss streak isn't a siren—it's a chapter. Pain becomes narrative currency, storied instead of silenced.",
+    metaDescription: "Explore how loss streaks are transformed into narrative in degen culture—retold, joked about, and folded into identity rather than erased as mistakes.",
+    image: cryptoFundamentalsThumb,
+    imageAlt: "Abstract illustration representing how loss streaks become narrative in degen culture",
+    date: "Jan 28, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "emotional-whiplash-high-variance", 
     title: "The Emotional Whiplash of High-Variance Crypto Casino Play", 
     category: "Culture", 
