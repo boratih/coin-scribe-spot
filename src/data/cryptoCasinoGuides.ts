@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "emotional-whiplash-high-variance", 
+    title: "The Emotional Whiplash of High-Variance Crypto Casino Play", 
+    category: "Culture", 
+    excerpt: "High-variance play doesn't ease you in—it grabs you by the nervous system. Wins feel explosive. Losses feel abrupt. Nothing settles long enough to get comfortable.",
+    metaDescription: "Explore the emotional intensity of high-variance crypto casino play—where wins feel explosive, losses feel abrupt, and chaos becomes the shared language.",
+    image: securityThumb,
+    imageAlt: "Abstract illustration representing the emotional whiplash of high-variance crypto casino play",
+    date: "Jan 28, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "why-volatility-feels-honest", 
     title: "Why Extreme Volatility Feels More Honest Than Stable Outcomes", 
     category: "Culture", 
