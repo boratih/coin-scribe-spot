@@ -1,5 +1,4 @@
 import AnswerLayout from "@/components/AnswerLayout";
-import { Helmet } from "react-helmet-async";
 
 const faqs = [
   {
@@ -27,58 +26,8 @@ const relatedTopics = [
   { title: "What Cryptocurrencies Do Casinos Accept?", href: "/answers/what-cryptocurrencies-do-casinos-accept" },
 ];
 
-// HowTo schema for crypto casino process
-const howToJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "How to Use a Crypto Casino",
-  "description": "Learn how crypto casinos operate, from blockchain deposits and withdrawals to provably fair gaming systems and cryptocurrency transactions.",
-  "totalTime": "PT15M",
-  "estimatedCost": {
-    "@type": "MonetaryAmount",
-    "currency": "USD",
-    "value": "0"
-  },
-  "step": [
-    {
-      "@type": "HowToStep",
-      "name": "Create Account or Connect Wallet",
-      "text": "Create a platform account with email or connect your personal crypto wallet directly.",
-      "position": 1
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Deposit Funds",
-      "text": "The casino provides a unique blockchain address. Send crypto from your wallet, which is confirmed on the blockchain.",
-      "position": 2
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Wait for Balance Credit",
-      "text": "Once the blockchain transaction confirms, your balance becomes available for betting.",
-      "position": 3
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Play Casino Games",
-      "text": "Wager your crypto on slots, table games, or live dealer games.",
-      "position": 4
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Request Withdrawal",
-      "text": "When ready, request a withdrawal. The casino transfers funds to your personal wallet.",
-      "position": 5
-    }
-  ]
-};
-
 const HowDoCryptoCasinosWork = () => {
   return (
-    <>
-      <Helmet>
-        <script type="application/ld+json">{JSON.stringify(howToJsonLd)}</script>
-      </Helmet>
       <AnswerLayout
         title="How Do Crypto Casinos Work?"
         metaDescription="Learn how crypto casinos operate, from blockchain deposits and withdrawals to provably fair gaming systems and cryptocurrency transactions."
@@ -95,14 +44,6 @@ const HowDoCryptoCasinosWork = () => {
         relatedTopics={relatedTopics}
         summary="Crypto casinos work by combining online gambling with cryptocurrency transactions. Players deposit funds via blockchain, wager on games, and withdraw winnings securely and transparently, though risks and regulations vary."
       >
-        {/* Canonical Definition Block */}
-        <div className="canonical-definition bg-card/50 p-6 rounded-xl border border-primary/30 mb-8" data-canonical="true">
-          <p className="text-xs font-semibold uppercase tracking-wider text-primary/70 mb-2">Canonical Definition</p>
-          <p className="text-foreground leading-relaxed font-medium">
-            Crypto casino operation refers to the process by which online gambling platforms use blockchain networks for deposits, wagers, and withdrawals instead of traditional banking systems, with player balances recorded on-platform and transactions conducted via cryptocurrency wallets.
-          </p>
-        </div>
-
         <section>
           <h2 className="text-2xl font-bold mb-4">How It Works</h2>
           <p className="text-muted-foreground leading-relaxed">
@@ -175,7 +116,6 @@ const HowDoCryptoCasinosWork = () => {
           </p>
         </section>
       </AnswerLayout>
-    </>
   );
 };
 

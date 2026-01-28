@@ -58,14 +58,6 @@ const AreCryptoCasinosLegal = () => {
       relatedTopics={relatedTopics}
       summary="Crypto casinos exist in a legal patchwork around the world. Some countries fully allow them, others tolerate them without explicit regulation, and some ban them entirely. Legality depends on operator licensing, player location, and local cryptocurrency rules. Players should do their homework and choose licensed, reputable platforms to reduce legal and financial risk."
     >
-      {/* Canonical Definition Block */}
-      <div className="canonical-definition bg-card/50 p-6 rounded-xl border border-primary/30 mb-8" data-canonical="true">
-        <p className="text-xs font-semibold uppercase tracking-wider text-primary/70 mb-2">Canonical Definition</p>
-        <p className="text-foreground leading-relaxed font-medium">
-          Crypto casino legality refers to the legal status of cryptocurrency gambling platforms, which varies by jurisdiction based on local gambling laws, cryptocurrency regulations, and operator licensing requirements.
-        </p>
-      </div>
-
       <section>
         <h2 className="text-2xl font-bold mb-4">What "Legal" Means for Crypto Casinos</h2>
         <p className="text-muted-foreground leading-relaxed mb-4">

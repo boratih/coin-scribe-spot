@@ -9,7 +9,7 @@ const SecurityRisksCryptoCasinos = () => {
     },
     {
       question: "How can I protect myself when using crypto casinos?",
-      answer: "Use reputable platforms with audited contracts, practice proper wallet security, never share seed phrases, use hardware wallets, and only deposit what you can afford to lose."
+      answer: "Use platforms with disclosed contracts, practice proper wallet security, never share seed phrases, use hardware wallets, and only deposit what you can afford to lose."
     },
     {
       question: "What is an exit scam in crypto gambling?",
@@ -36,7 +36,7 @@ const SecurityRisksCryptoCasinos = () => {
         </p>
       }
       faqs={faqs}
-      summary="Crypto casino security risks include smart contract vulnerabilities, exit scams, phishing attacks, wallet compromises, and oracle manipulation. Players should use reputable platforms with audited contracts, practice proper wallet security, never share seed phrases, and only deposit what they can afford to lose."
+      summary="Crypto casino security risks include smart contract vulnerabilities, exit scams, phishing attacks, wallet compromises, and oracle manipulation. Players should use platforms with disclosed contracts, practice proper wallet security, never share seed phrases, and only deposit what they can afford to lose."
     >
       <section>
         <h2 className="text-2xl font-bold mb-4">Understanding the Risks</h2>
@@ -76,7 +76,7 @@ const SecurityRisksCryptoCasinos = () => {
         <ul className="space-y-2 text-muted-foreground">
           <li className="flex items-start gap-2">
             <span className="text-green-400">✓</span>
-            <span>Use platforms with verified smart contract audits</span>
+            <span>Use platforms with disclosed smart contracts</span>
           </li>
           <li className="flex items-start gap-2">
             <span className="text-green-400">✓</span>

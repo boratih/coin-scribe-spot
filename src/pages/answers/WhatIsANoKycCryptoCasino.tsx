@@ -58,14 +58,6 @@ const WhatIsANoKycCryptoCasino = () => {
       relatedTopics={relatedTopics}
       summary="No-KYC crypto casinos provide privacy and fast access, but players must assess legal and platform risks. Ideal for smaller transactions and anonymity, but caution is advised for high-value gambling."
     >
-      {/* Canonical Definition Block */}
-      <div className="canonical-definition bg-card/50 p-6 rounded-xl border border-primary/30 mb-8" data-canonical="true">
-        <p className="text-xs font-semibold uppercase tracking-wider text-primary/70 mb-2">Canonical Definition</p>
-        <p className="text-foreground leading-relaxed font-medium">
-          A no-KYC crypto casino is a cryptocurrency gambling platform that permits participation without mandatory identity verification procedures, commonly referred to as Know Your Customer (KYC).
-        </p>
-      </div>
-
       <section>
         <h2 className="text-2xl font-bold mb-4">How They Operate</h2>
         <p className="text-muted-foreground leading-relaxed">

@@ -5,8 +5,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Article from "./pages/Article";
-import DegenRollReview from "./pages/DegenRollReview";
-
 import Glossary from "./pages/Glossary";
 import GlossaryTerm from "./pages/GlossaryTerm";
 import About from "./pages/About";
@@ -105,8 +103,6 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/articles" element={<Articles />} />
-          <Route path="/degenroll-review" element={<DegenRollReview />} />
-          <Route path="/degenroll-review" element={<DegenRollReview />} />
           
           <Route path="/glossary" element={<Glossary />} />
           <Route path="/glossary/:slug" element={<GlossaryTerm />} />

@@ -5,8 +5,6 @@ export interface GlossaryTerm {
   extendedExplanation?: string;
   importantNote?: string;
   link?: { url: string; label: string };
-  canonicalRef?: string; // URL to canonical definition page
-  shortDescription?: string; // Brief description when canonicalRef is used
 }
 
 export const glossaryTerms: GlossaryTerm[] = [
@@ -116,8 +114,6 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Crypto Casino",
     slug: "crypto-casino",
     definition: "Players commonly understand this as gambling platforms accepting cryptocurrency, though the term encompasses a wide range of implementations with varying degrees of blockchain integration.",
-    canonicalRef: "/answers/what-is-a-crypto-casino",
-    shortDescription: "Platforms allowing cryptocurrency deposits and withdrawals for gambling purposes.",
     extendedExplanation: "The term 'crypto casino' does not imply any particular security standard, regulatory status, or fairness guarantee. Players should understand that crypto acceptance alone does not distinguish platforms on other dimensions.",
     importantNote: "Crypto casinos are subject to jurisdictional restrictions. Participation involves financial risk, volatility, and regulatory uncertainty."
   },
@@ -174,8 +170,6 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Decentralized Casino",
     slug: "decentralized-casino",
     definition: "Players commonly interpret this as meaning no central operator, though decentralization exists on a spectrum and claims may not reflect operational reality.",
-    canonicalRef: "/answers/decentralized-vs-centralized-crypto-casinos",
-    shortDescription: "Gambling platforms claiming to operate without central operator control.",
     extendedExplanation: "Many platforms marketed as 'decentralized' retain centralized elements. The term does not guarantee any particular security or fairness standard."
   },
   {
@@ -303,8 +297,6 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "No-KYC Crypto Casino",
     slug: "no-kyc-crypto-casino",
     definition: "Players commonly understand this as anonymous access, though 'no-KYC' may still involve data collection and access restrictions.",
-    canonicalRef: "/answers/what-is-a-no-kyc-crypto-casino",
-    shortDescription: "Platforms allowing participation without mandatory identity verification for some activities.",
     extendedExplanation: "No-KYC does not mean anonymous or untracked. Platforms may still collect data and enforce restrictions based on other factors."
   },
   {
@@ -347,8 +339,6 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Provably Fair Gambling",
     slug: "provably-fair-gambling",
     definition: "Players often interpret this as meaning games are fair, though 'provably fair' refers specifically to verifiability, not fairness of odds.",
-    canonicalRef: "/answers/what-is-provably-fair-gambling",
-    shortDescription: "Systems allowing cryptographic verification of game outcomes.",
     extendedExplanation: "Provably fair systems enable verification but do not guarantee favorable odds or platform trustworthiness in other respects."
   },
   {

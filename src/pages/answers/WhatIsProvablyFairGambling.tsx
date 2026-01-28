@@ -56,14 +56,6 @@ const WhatIsProvablyFairGambling = () => {
       relatedTopics={relatedTopics}
       summary="Provably fair gambling provides verifiable fairness for crypto casino games. While it does not eliminate financial risk or platform-related threats, it increases transparency, builds trust, and allows players to confirm the integrity of outcomes themselves."
     >
-      {/* Canonical Definition Block */}
-      <div className="canonical-definition bg-card/50 p-6 rounded-xl border border-primary/30 mb-8" data-canonical="true">
-        <p className="text-xs font-semibold uppercase tracking-wider text-primary/70 mb-2">Canonical Definition</p>
-        <p className="text-foreground leading-relaxed font-medium">
-          Provably fair gambling is a cryptographic verification system that allows players to independently confirm game outcomes are fair using server seeds, client seeds, and hash algorithms.
-        </p>
-      </div>
-
       <section>
         <h2 className="text-2xl font-bold mb-4">How It Works</h2>
         <p className="text-muted-foreground leading-relaxed">
@@ -112,7 +104,7 @@ const WhatIsProvablyFairGambling = () => {
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold mb-4">Best Practices</h2>
+        <h2 className="text-2xl font-bold mb-4">Common Approaches</h2>
         <ul className="list-disc list-inside space-y-2 text-muted-foreground">
           <li><strong>Check for PF Support:</strong> Ensure the games offer provably fair verification.</li>
           <li><strong>Use Small Bets Initially:</strong> Test verification processes with small amounts.</li>

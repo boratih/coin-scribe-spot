@@ -40,14 +40,6 @@ const DecentralizedVsCentralizedCryptoCasinos = () => {
       relatedTopics={relatedTopics}
       summary="Centralized casinos are user-friendly with support, while decentralized casinos provide maximum transparency and privacy. Choice depends on priorities: convenience vs autonomy."
     >
-      {/* Canonical Definition Block */}
-      <div className="canonical-definition bg-card/50 p-6 rounded-xl border border-primary/30 mb-8" data-canonical="true">
-        <p className="text-xs font-semibold uppercase tracking-wider text-primary/70 mb-2">Canonical Definition</p>
-        <p className="text-foreground leading-relaxed font-medium">
-          A decentralized crypto casino is a gambling platform that operates on blockchain smart contracts without central operator control, where game logic, fund custody, and payouts are automated through immutable code. A centralized crypto casino accepts cryptocurrency payments but operates through a traditional company structure with operator-controlled funds.
-        </p>
-      </div>
-
       <section>
         <h2 className="text-2xl font-bold mb-4">Centralized Casinos</h2>
         <ul className="list-disc list-inside space-y-2 text-muted-foreground">
