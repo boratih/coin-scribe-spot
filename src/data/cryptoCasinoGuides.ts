@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "wallet-first-play-personal", 
+    title: "Why Wallet-First Play Feels More Personal Than Account-Based Casinos", 
+    category: "Culture", 
+    excerpt: "Account-based casinos feel like places you visit. Wallet-first play feels like something you carry. That difference isn't technical—it's emotional.",
+    metaDescription: "Explore how wallet-first play creates emotional proximity and identity continuity in degen culture, contrasting with the abstracted experience of account-based systems.",
+    image: cryptoWalletThumb,
+    imageAlt: "Abstract illustration representing wallet-first crypto gambling experience",
+    date: "Jan 28, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "risk-is-the-point", 
     title: "The Reality of Playing When the Risk Is the Point", 
     category: "Culture", 
