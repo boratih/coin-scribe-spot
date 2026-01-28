@@ -68,6 +68,7 @@ import WalletFirstPlayPersonal from "./pages/guides/WalletFirstPlayPersonal";
 import SelfCustodyChangesLossPerception from "./pages/guides/SelfCustodyChangesLossPerception";
 import FrictionWalletNativeGaming from "./pages/guides/FrictionWalletNativeGaming";
 import SigningTransactionFeelsDifferent from "./pages/guides/SigningTransactionFeelsDifferent";
+import WalletBasedGamblingTrustControl from "./pages/guides/WalletBasedGamblingTrustControl";
 import CryptoCasinoBonusesExplained from "./pages/guides/CryptoCasinoBonusesExplained";
 import FiatVsCryptoCasinosDifferences from "./pages/guides/FiatVsCryptoCasinosDifferences";
 import AnonymityCryptoGambling from "./pages/guides/AnonymityCryptoGambling";
@@ -196,6 +197,7 @@ const App = () => (
           <Route path="/self-custody-changes-loss-perception" element={<SelfCustodyChangesLossPerception />} />
           <Route path="/friction-wallet-native-gaming" element={<FrictionWalletNativeGaming />} />
           <Route path="/signing-transaction-feels-different" element={<SigningTransactionFeelsDifferent />} />
+          <Route path="/wallet-based-gambling-trust-control" element={<WalletBasedGamblingTrustControl />} />
           
           {/* Crypto Casino Guides - User Experience */}
           <Route path="/crypto-casino-bonuses-explained" element={<CryptoCasinoBonusesExplained />} />
