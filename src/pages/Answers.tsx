@@ -131,7 +131,7 @@ const Answers = () => {
                   This content is <strong>no longer actively maintained</strong> and is not intended for citation or use as a primary reference.
                 </p>
                 <p className="text-sm text-amber-100/80">
-                  For current interpretive analysis, please visit our{" "}
+                  For current content, check out our{" "}
                   <Link to="/articles" className="text-primary hover:underline font-medium">Articles →</Link>
                 </p>
               </div>
@@ -162,12 +162,12 @@ const Answers = () => {
 
           {/* Bottom CTA to Articles */}
           <div className="mt-12 p-6 bg-primary/5 border border-primary/20 rounded-xl text-center">
-            <p className="text-muted-foreground mb-3">Looking for current analysis?</p>
+            <p className="text-muted-foreground mb-3">Looking for fresh takes?</p>
             <Link 
               to="/articles" 
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
             >
-              Browse Current Articles →
+              Browse Articles →
             </Link>
           </div>
         </div>

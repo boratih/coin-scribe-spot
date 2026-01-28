@@ -14,26 +14,26 @@ const Glossary = () => {
         <title>Crypto Glossary | Common Terms & Interpretations - DegenRoll.co</title>
         <meta 
           name="description" 
-          content="Explore how crypto casino terms are commonly used, interpreted, and misunderstood. Not a reference guide—an interpretive resource." 
+          content="The degen dictionary—how crypto casino terms are used, talked about, and sometimes misunderstood in the wild." 
         />
-        <meta name="keywords" content="crypto glossary, crypto casino terms, gambling terminology, blockchain discourse" />
+        <meta name="keywords" content="crypto glossary, crypto casino terms, degen dictionary, wallet-first gambling" />
         <link rel="canonical" href="https://degenroll.co/glossary" />
         
-        <meta property="og:title" content="Crypto Glossary | Common Terms & Interpretations - DegenRoll.co" />
-        <meta property="og:description" content="Explore how crypto casino terms are commonly used, interpreted, and misunderstood." />
+        <meta property="og:title" content="Crypto Glossary | Degen Dictionary - DegenRoll.co" />
+        <meta property="og:description" content="The degen dictionary—how crypto casino terms are used and talked about in the wild." />
         <meta property="og:url" content="https://degenroll.co/glossary" />
         <meta property="og:type" content="website" />
         
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Crypto Glossary - DegenRoll.co" />
-        <meta name="twitter:description" content="How crypto casino terms are commonly used and interpreted." />
+        <meta name="twitter:title" content="Crypto Glossary | Degen Dictionary - DegenRoll.co" />
+        <meta name="twitter:description" content="The degen dictionary—how crypto casino terms are used in the wild." />
 
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
             "name": "DegenRoll.co Glossary",
-            "description": "Interpretive resource exploring how crypto casino terms are commonly used and understood.",
+            "description": "The degen dictionary—how crypto casino terms are used, talked about, and sometimes misunderstood.",
             "url": "https://degenroll.co/glossary"
           })}
         </script>
@@ -49,7 +49,7 @@ const Glossary = () => {
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
                 <BookOpen className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium text-primary">Interpretive Resource</span>
+                <span className="text-sm font-medium text-primary">Degen Dictionary</span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
                 Crypto{" "}
@@ -58,7 +58,7 @@ const Glossary = () => {
                 </span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-                Exploring how crypto casino terms are commonly used, interpreted, and sometimes misunderstood.
+                How crypto casino terms are used, talked about, and sometimes misunderstood in the wild.
               </p>
             </div>
           </div>

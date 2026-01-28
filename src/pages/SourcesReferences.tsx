@@ -7,8 +7,8 @@ const SourcesReferences = () => {
   return (
     <>
       <Helmet>
-        <title>Sources & Reference Framework | DegenRoll</title>
-        <meta name="description" content="Learn about DegenRoll's approach to sources, reference materials, and how we ensure the accuracy of our crypto casino educational content." />
+        <title>Where We Look | DegenRoll.co</title>
+        <meta name="description" content="How DegenRoll.co informs its content—the places, communities, and conversations that shape our takes on crypto casino culture." />
         <link rel="canonical" href="https://degenroll.co/sources-and-references" />
       </Helmet>
 
@@ -23,69 +23,57 @@ const SourcesReferences = () => {
 
         <article className="prose prose-lg prose-invert max-w-none">
           <header className="mb-10">
-            <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">Sources & Reference Framework</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">Where We Look</h1>
           </header>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold mb-4">Approach to Sources</h2>
+            <h2 className="text-2xl font-bold mb-4">The Culture Feeds the Content</h2>
             <p className="text-muted-foreground leading-relaxed">
-              DegenRoll uses a broad range of reputable source categories to inform its content. Sources are used to validate explanations, definitions, and technical descriptions rather than to promote opinions.
+              DegenRoll.co content comes from paying attention to what's happening in the crypto casino world—the conversations, the trends, the vibes.
             </p>
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold mb-4">Types of Sources Referenced</h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">Content may be informed by:</p>
+            <h2 className="text-2xl font-bold mb-4">Where the Takes Come From</h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">Our content is shaped by:</p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-4">
-              <li>Blockchain documentation and technical specifications</li>
-              <li>Public information from gambling regulators and licensing authorities</li>
-              <li>Academic or technical publications related to cryptography and blockchain</li>
-              <li>Industry standards related to RNG systems and provably fair gaming</li>
-              <li>Well-established cryptocurrency and blockchain education resources</li>
+              <li>What people are saying on crypto Twitter and Discord</li>
+              <li>How platforms present themselves</li>
+              <li>The stories degens share about their experiences</li>
+              <li>General knowledge about how blockchain and crypto work</li>
             </ul>
             <p className="text-muted-foreground leading-relaxed">
-              No single source is relied upon exclusively.
+              We're not citing papers—we're tuning into the culture.
             </p>
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold mb-4">How Sources Are Applied</h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">Sources are used to:</p>
+            <h2 className="text-2xl font-bold mb-4">How We Use It</h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">The culture informs:</p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-4">
-              <li>Confirm accuracy of technical explanations</li>
-              <li>Ensure definitions align with common industry usage</li>
-              <li>Understand regulatory and operational frameworks</li>
+              <li>What topics we cover</li>
+              <li>How we frame things</li>
+              <li>What language feels right</li>
             </ul>
             <p className="text-muted-foreground leading-relaxed">
-              To maintain readability, not all sources are linked directly within articles. Instead, sources inform the content creation process as a whole.
+              We're not trying to be an encyclopedia. We're capturing the vibe.
             </p>
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold mb-4">Source Evaluation Criteria</h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">Sources are evaluated based on:</p>
-            <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-4">
-              <li>Credibility and reputation</li>
-              <li>Relevance to the topic</li>
-              <li>Currency and ongoing applicability</li>
-              <li>Clarity and consistency with other reputable materials</li>
-            </ul>
+            <h2 className="text-2xl font-bold mb-4">What We Don't Claim</h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              We don't claim to have verified anything. We don't cite sources like an academic paper.
+            </p>
             <p className="text-muted-foreground leading-relaxed">
-              Outdated or unreliable sources are avoided.
+              This is culture content, not a research publication.
             </p>
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold mb-4">Updates and Maintenance</h2>
+            <h2 className="text-2xl font-bold mb-4">Staying Current</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Referenced materials are reviewed periodically. When a source becomes outdated or irrelevant due to industry changes, content is revised accordingly.
-            </p>
-          </section>
-
-          <section className="mb-10">
-            <h2 className="text-2xl font-bold mb-4">Transparency</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              DegenRoll prioritizes transparency in how information is gathered and presented. The absence of inline citations does not imply a lack of research, but rather a focus on clarity and accessibility for readers.
+              The space moves fast. We update content when the culture shifts or when something no longer hits the same way.
             </p>
           </section>
         </article>

@@ -7,8 +7,8 @@ const EditorialPolicy = () => {
   return (
     <>
       <Helmet>
-        <title>Editorial Policy & Content Standards | DegenRoll</title>
-        <meta name="description" content="DegenRoll's editorial policy outlining our commitment to independence, neutrality, accuracy, and transparency in crypto casino educational content." />
+        <title>How We Write | DegenRoll.co</title>
+        <meta name="description" content="DegenRoll.co's approach to content—culture-first, no rankings, no endorsements, no official claims." />
         <link rel="canonical" href="https://degenroll.co/editorial-policy" />
       </Helmet>
 
@@ -23,77 +23,61 @@ const EditorialPolicy = () => {
 
         <article className="prose prose-lg prose-invert max-w-none">
           <header className="mb-10">
-            <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">Editorial Policy & Content Standards</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">How We Write</h1>
           </header>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold mb-4">Editorial Independence</h2>
+            <h2 className="text-2xl font-bold mb-4">It's About the Culture</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              DegenRoll maintains editorial independence in all educational content.
+              DegenRoll.co covers degen culture, crypto casino vibes, and the real talk around wallet-first gambling.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Informational articles, definitions, and glossary entries are written independently and are not influenced by casino operators, advertisers, or third parties. Editorial decisions are based on informational value, clarity, and relevance.
+              We write stories and takes based on what's happening in the space—not to tell you what to do, but to reflect how people think, play, and talk about it.
             </p>
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold mb-4">Commitment to Neutrality</h2>
+            <h2 className="text-2xl font-bold mb-4">No Rankings, No Endorsements</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              All content follows a neutrality-first approach.
+              We don't rank platforms. We don't pick winners. We don't tell you where to play.
             </p>
-            <p className="text-muted-foreground leading-relaxed mb-4">This includes:</p>
-            <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-4">
-              <li>Describing how systems work rather than persuading users to participate</li>
-              <li>Presenting both benefits and risks of crypto casinos</li>
-              <li>Avoiding emotionally charged or promotional language</li>
-              <li>Clearly acknowledging uncertainty where applicable, such as regulatory status</li>
-            </ul>
             <p className="text-muted-foreground leading-relaxed">
-              Neutrality is a core principle across all definitions, articles, and FAQs.
+              This isn't a "top 10" site. It's culture and narrative—takes on how the crypto casino world operates and what degens care about.
             </p>
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold mb-4">Accuracy and Quality Standards</h2>
+            <h2 className="text-2xl font-bold mb-4">Keeping It Real</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              DegenRoll aims to publish accurate and clearly explained information.
+              We write from a place of understanding the space, not pretending to be above it.
             </p>
-            <p className="text-muted-foreground leading-relaxed mb-4">To support this:</p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-4">
-              <li>Content is written using verifiable industry knowledge</li>
-              <li>Technical concepts are explained using commonly accepted interpretations</li>
-              <li>Ambiguous or evolving topics are framed cautiously</li>
-              <li>Oversimplification is avoided when it may lead to misunderstanding</li>
+              <li>We talk about risk because it's part of the game</li>
+              <li>We cover both the hype and the reality</li>
+              <li>We don't sugarcoat or oversell</li>
             </ul>
+          </section>
+
+          <section className="mb-10">
+            <h2 className="text-2xl font-bold mb-4">The DegenRoll Platform</h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              DegenRoll.co is the content layer. The actual platform is at degenroll.com.
+            </p>
             <p className="text-muted-foreground leading-relaxed">
-              Where exact certainty is not possible, this is explicitly stated.
+              Content here stands on its own—we're not trying to push you anywhere. If you want the platform, you'll find it.
             </p>
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold mb-4">Conflict of Interest Disclosure</h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              DegenRoll may maintain commercial relationships on separate domains or sections. However:
-            </p>
+            <h2 className="text-2xl font-bold mb-4">Who This Is For</h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">This content is for:</p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-4">
-              <li>Educational content on this site is created independently</li>
-              <li>Commercial considerations do not affect definitions, explanations, or conclusions</li>
-              <li>Any material relationships are disclosed where applicable</li>
+              <li>Degens who want to understand the culture</li>
+              <li>People curious about crypto casinos</li>
+              <li>Anyone who wants real talk, not sales pitches</li>
             </ul>
             <p className="text-muted-foreground leading-relaxed">
-              The primary goal of this site remains educational clarity.
-            </p>
-          </section>
-
-          <section className="mb-10">
-            <h2 className="text-2xl font-bold mb-4">Audience and Intended Use</h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">Content on DegenRoll is intended for:</p>
-            <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-4">
-              <li>Readers seeking to understand crypto casinos and blockchain gambling</li>
-              <li>General educational use</li>
-            </ul>
-            <p className="text-muted-foreground leading-relaxed">
-              It is not intended to replace professional advice related to gambling, finance, or law.
+              Not financial advice. Not gambling tips. Just the culture.
             </p>
           </section>
         </article>

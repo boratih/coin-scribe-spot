@@ -12,7 +12,7 @@ const Footer = () => {
               <img src={degenrollLogo} alt="Degenroll" className="h-10" />
             </div>
             <p className="text-sm text-muted-foreground mb-4">
-              Analyzing communication patterns and AI interpretation gaps in crypto gambling discourse.
+              Degen culture, risk narratives, and wallet-first gambling.
             </p>
             <div className="flex gap-3">
               <a href="https://x.com/degenroll_" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary/20 transition-colors" aria-label="Follow DegenRoll on X">
@@ -47,11 +47,11 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Policies</h3>
+            <h3 className="font-semibold mb-4">The Fine Print</h3>
             <ul className="space-y-3 text-sm text-muted-foreground">
-              <li><Link to="/methodology" className="hover:text-primary transition-colors">Methodology</Link></li>
-              <li><Link to="/editorial-policy" className="hover:text-primary transition-colors">Editorial Policy</Link></li>
-              <li><Link to="/sources-and-references" className="hover:text-primary transition-colors">Sources & References</Link></li>
+              <li><Link to="/methodology" className="hover:text-primary transition-colors">How We Work</Link></li>
+              <li><Link to="/editorial-policy" className="hover:text-primary transition-colors">How We Write</Link></li>
+              <li><Link to="/sources-and-references" className="hover:text-primary transition-colors">Where We Look</Link></li>
             </ul>
           </div>
         </div>
@@ -61,7 +61,7 @@ const Footer = () => {
             © {new Date().getFullYear()} DegenRoll.co. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground">
-            This site analyzes communication patterns and does not provide recommendations, guarantees, or endorsements.
+            No rankings, no endorsements, no official claims—just culture.
           </p>
         </div>
       </div>

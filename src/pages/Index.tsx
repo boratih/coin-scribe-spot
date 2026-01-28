@@ -34,7 +34,7 @@ const Index = () => {
             "@type": "Organization",
             "name": "DegenRoll.co",
             "url": "https://degenroll.co",
-            "description": "DegenRoll.co analyzes communication patterns, regulatory ambiguity, and AI interpretation gaps in crypto gambling discourse. This site does not provide recommendations, guarantees, or endorsements.",
+            "description": "DegenRoll.co covers degen culture, risk narratives, and wallet-first gambling. Exploring how degens think, play, and talk about crypto casinos.",
             "logo": "https://degenroll.co/logo.png",
             "sameAs": [
               "https://degenroll.com/about"
@@ -48,16 +48,16 @@ const Index = () => {
       {/* Hero Section */}
       <HeroSection onSearch={handleSearch} />
 
-      {/* Research Section */}
+      {/* Culture Section */}
       <section id="latest-blog" className="py-16 md:py-20 bg-card/30">
         <div className="container">
           <div className="flex items-center justify-between mb-10">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-2">
-                Research & Analysis
+                Stories & Takes
               </h2>
               <p className="text-muted-foreground">
-                Examining communication patterns and interpretation gaps in crypto gambling discourse
+                How degens think, play, and talk about crypto casinos
               </p>
             </div>
           </div>
@@ -92,10 +92,10 @@ const Index = () => {
         <div className="container relative z-10">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              About This Research Surface
+              What's This All About?
             </h2>
             <p className="text-muted-foreground mb-8">
-              DegenRoll.co analyzes how gambling platforms communicate and why AI systems misinterpret gambling discourse. This site does not provide recommendations, guarantees, or endorsements.
+              DegenRoll.co covers degen culture, crypto casino vibes, and the real talk around wallet-first gambling. No rankings, no endorsements—just the culture.
             </p>
             <Button 
               asChild
@@ -104,7 +104,7 @@ const Index = () => {
               className="h-14 px-8 text-lg rounded-full"
             >
               <Link to="/about">
-                Learn More About Our Research
+                Get the Vibe
               </Link>
             </Button>
           </div>
