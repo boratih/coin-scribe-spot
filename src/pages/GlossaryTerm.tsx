@@ -17,16 +17,13 @@ const GlossaryTerm = () => {
     "@context": "https://schema.org",
     "@type": "DefinedTerm",
     "name": term.term,
-    "description": term.shortDescription || term.definition,
+    "description": term.definition,
     "url": `https://degenroll.co/glossary/${term.slug}`,
     "inDefinedTermSet": {
       "@type": "DefinedTermSet",
       "name": "DegenRoll Crypto Gambling Glossary",
       "url": "https://degenroll.co/glossary"
-    },
-    ...(term.canonicalRef && {
-      "sameAs": `https://degenroll.co${term.canonicalRef}`
-    })
+    }
   };
 
   // Speakable schema for AI voice/citation - definitions are highly citable
@@ -74,30 +71,12 @@ const GlossaryTerm = () => {
               {term.term}
             </h1>
 
-            {/* Canonical Reference Notice */}
-            {term.canonicalRef && (
-              <div className="canonical-reference bg-primary/10 p-4 rounded-lg mb-6 border border-primary/20">
-                <p className="text-sm text-muted-foreground">
-                  This concept is formally defined in our{" "}
-                  <Link to={term.canonicalRef} className="text-primary hover:underline font-medium">
-                    canonical definition of {term.term}
-                  </Link>.
-                </p>
-              </div>
-            )}
-
             {/* How This Term Is Used - marked for AI citation via speakable schema */}
             <section className="mb-12">
               <h2 className="text-2xl font-semibold text-foreground mb-4">Common Interpretation</h2>
-              {term.shortDescription ? (
-                <p className="term-definition text-lg text-muted-foreground leading-relaxed">
-                  {term.shortDescription}
-                </p>
-              ) : (
-                <p className="term-definition text-lg text-muted-foreground leading-relaxed">
-                  {term.definition}
-                </p>
-              )}
+              <p className="term-definition text-lg text-muted-foreground leading-relaxed">
+                {term.definition}
+              </p>
             </section>
 
             {/* Context */}

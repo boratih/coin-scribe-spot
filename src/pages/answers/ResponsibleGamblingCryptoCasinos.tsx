@@ -54,7 +54,7 @@ const ResponsibleGamblingCryptoCasinos = () => {
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold mb-4">Best Practices</h2>
+        <h2 className="text-2xl font-bold mb-4">Common Approaches</h2>
         <ul className="list-disc list-inside space-y-2 text-muted-foreground">
           <li><strong>Set Deposit Limits:</strong> Only use funds you can afford to lose.</li>
           <li><strong>Use Time Limits:</strong> Schedule breaks and set session times.</li>

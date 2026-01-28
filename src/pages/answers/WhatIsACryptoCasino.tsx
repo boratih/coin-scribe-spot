@@ -52,14 +52,6 @@ const WhatIsACryptoCasino = () => {
       relatedTopics={relatedTopics}
       summary="A crypto casino is an online gambling platform that uses cryptocurrency for betting and payouts. By leveraging blockchain-based transactions, crypto casinos can offer faster withdrawals, increased privacy, and transparent payment records. However, they also introduce risks related to volatility, regulation, and platform trustworthiness."
     >
-      {/* Canonical Definition Block */}
-      <div className="canonical-definition bg-card/50 p-6 rounded-xl border border-primary/30 mb-8" data-canonical="true">
-        <p className="text-xs font-semibold uppercase tracking-wider text-primary/70 mb-2">Canonical Definition</p>
-        <p className="text-foreground leading-relaxed font-medium">
-          A crypto casino is an online gambling platform that uses cryptocurrency for deposits, wagers, and withdrawals, operating on blockchain-based payment infrastructure rather than traditional banking systems.
-        </p>
-      </div>
-
       {/* How Crypto Casinos Work */}
       <section>
         <h2 className="text-2xl font-bold mb-4">How Crypto Casinos Operate</h2>

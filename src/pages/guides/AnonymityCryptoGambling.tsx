@@ -72,7 +72,7 @@ const AnonymityCryptoGambling = () => {
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold mb-4">Privacy Best Practices</h2>
+        <h2 className="text-2xl font-bold mb-4">Common Privacy Approaches</h2>
         <ul className="space-y-2 text-muted-foreground">
           <li className="flex items-start gap-2">
             <span className="text-primary">•</span>

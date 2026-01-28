@@ -56,14 +56,6 @@ const WhatAreTheRisksOfCryptoCasinos = () => {
       relatedTopics={relatedTopics}
       summary="Crypto casinos offer convenience, speed, and privacy but require careful risk management. Financial, legal, and technical risks are real; players must practice diligence and use licensed platforms to minimize loss."
     >
-      {/* Canonical Definition Block */}
-      <div className="canonical-definition bg-card/50 p-6 rounded-xl border border-primary/30 mb-8" data-canonical="true">
-        <p className="text-xs font-semibold uppercase tracking-wider text-primary/70 mb-2">Canonical Definition</p>
-        <p className="text-foreground leading-relaxed font-medium">
-          Crypto casino risks encompass the financial, legal, technical, and platform-related threats inherent to cryptocurrency gambling, including price volatility, irreversible transactions, regulatory uncertainty, and potential for fraud or platform failure.
-        </p>
-      </div>
-
       <section>
         <h2 className="text-2xl font-bold mb-4">Major Risk Categories</h2>
         <ul className="list-disc list-inside space-y-2 text-muted-foreground">

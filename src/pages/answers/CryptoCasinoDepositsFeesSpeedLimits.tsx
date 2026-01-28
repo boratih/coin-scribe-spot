@@ -1,5 +1,4 @@
 import AnswerLayout from "@/components/AnswerLayout";
-import { Helmet } from "react-helmet-async";
 
 const faqs = [
   {
@@ -27,58 +26,8 @@ const relatedTopics = [
   { title: "What Is a Crypto Casino?", href: "/answers/what-is-a-crypto-casino" },
 ];
 
-// HowTo schema for deposit process
-const howToJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "How to Deposit at a Crypto Casino",
-  "description": "Understand how crypto casino deposits work, including fees, transaction speed, and deposit limits for Bitcoin, Ethereum, and stablecoins.",
-  "totalTime": "PT10M",
-  "estimatedCost": {
-    "@type": "MonetaryAmount",
-    "currency": "USD",
-    "value": "1-20"
-  },
-  "step": [
-    {
-      "@type": "HowToStep",
-      "name": "Choose Cryptocurrency",
-      "text": "Select your preferred cryptocurrency: BTC, ETH, LTC, USDT, or other supported coins.",
-      "position": 1
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Generate Deposit Address",
-      "text": "The casino provides a unique wallet address for your deposit.",
-      "position": 2
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Send Crypto",
-      "text": "Transfer funds from your personal wallet to the casino's deposit address.",
-      "position": 3
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Wait for Confirmation",
-      "text": "The blockchain network confirms the transaction (time varies by network and congestion).",
-      "position": 4
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Start Playing",
-      "text": "Once confirmed, funds appear in your casino account and you can start wagering.",
-      "position": 5
-    }
-  ]
-};
-
 const CryptoCasinoDepositsFeesSpeedLimits = () => {
   return (
-    <>
-      <Helmet>
-        <script type="application/ld+json">{JSON.stringify(howToJsonLd)}</script>
-      </Helmet>
       <AnswerLayout
         title="Crypto Casino Deposits: Fees, Speed, and Limits"
         metaDescription="Understand how crypto casino deposits work, including fees, transaction speed, and deposit limits for Bitcoin, Ethereum, and stablecoins."
@@ -131,7 +80,6 @@ const CryptoCasinoDepositsFeesSpeedLimits = () => {
           </ul>
         </section>
       </AnswerLayout>
-    </>
   );
 };
 

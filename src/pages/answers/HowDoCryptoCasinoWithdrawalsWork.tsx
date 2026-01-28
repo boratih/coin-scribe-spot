@@ -1,5 +1,4 @@
 import AnswerLayout from "@/components/AnswerLayout";
-import { Helmet } from "react-helmet-async";
 
 const faqs = [
   {
@@ -39,64 +38,8 @@ const relatedTopics = [
   { title: "Do Crypto Casinos Require KYC?", href: "/answers/do-crypto-casinos-require-kyc" },
 ];
 
-// HowTo schema for withdrawal process
-const howToJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "How to Withdraw from a Crypto Casino",
-  "description": "Learn how crypto casino withdrawals work, including blockchain transactions, processing times, fees, and best practices for secure withdrawals.",
-  "totalTime": "PT30M",
-  "estimatedCost": {
-    "@type": "MonetaryAmount",
-    "currency": "USD",
-    "value": "0-10"
-  },
-  "step": [
-    {
-      "@type": "HowToStep",
-      "name": "Request Withdrawal",
-      "text": "Navigate to the withdrawal section and specify the cryptocurrency and your wallet address.",
-      "position": 1
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Balance Verification",
-      "text": "The casino confirms you have sufficient funds in your account for the withdrawal.",
-      "position": 2
-    },
-    {
-      "@type": "HowToStep",
-      "name": "KYC Verification (if required)",
-      "text": "Large withdrawals may trigger identity verification. Complete any required KYC steps.",
-      "position": 3
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Transaction Broadcast",
-      "text": "The casino broadcasts the transaction from their wallet to your personal wallet address.",
-      "position": 4
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Network Confirmation",
-      "text": "Wait for the blockchain network to confirm the transaction (varies by network).",
-      "position": 5
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Receive Funds",
-      "text": "Once confirmed, cryptocurrency appears in your wallet. You'll receive a transaction ID for tracking.",
-      "position": 6
-    }
-  ]
-};
-
 const HowDoCryptoCasinoWithdrawalsWork = () => {
   return (
-    <>
-      <Helmet>
-        <script type="application/ld+json">{JSON.stringify(howToJsonLd)}</script>
-      </Helmet>
       <AnswerLayout
         title="How Do Crypto Casino Withdrawals Work?"
         metaDescription="Learn how crypto casino withdrawals work, including blockchain transactions, processing times, fees, and best practices for secure withdrawals."
@@ -113,14 +56,6 @@ const HowDoCryptoCasinoWithdrawalsWork = () => {
         relatedTopics={relatedTopics}
         summary="Crypto withdrawals offer speed, transparency, and global access, but are subject to blockchain and platform limitations. Using licensed casinos and following proper wallet security practices ensures smooth transactions."
       >
-        {/* Canonical Definition Block */}
-        <div className="canonical-definition bg-card/50 p-6 rounded-xl border border-primary/30 mb-8" data-canonical="true">
-          <p className="text-xs font-semibold uppercase tracking-wider text-primary/70 mb-2">Canonical Definition</p>
-          <p className="text-foreground leading-relaxed font-medium">
-            Crypto casino withdrawals are blockchain-based fund transfers from a casino's wallet to a player's personal cryptocurrency wallet, providing transparent and irreversible transactions with speed dependent on network conditions and platform policies.
-          </p>
-        </div>
-
         <section>
           <h2 className="text-2xl font-bold mb-4">Step-by-Step Process</h2>
           <ol className="list-decimal list-inside space-y-2 text-muted-foreground">
@@ -164,7 +99,7 @@ const HowDoCryptoCasinoWithdrawalsWork = () => {
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold mb-4">Best Practices for Players</h2>
+          <h2 className="text-2xl font-bold mb-4">Common Approaches for Players</h2>
           <ul className="list-disc list-inside space-y-2 text-muted-foreground">
             <li><strong>Double-Check Wallet Address</strong> before submitting a withdrawal.</li>
             <li><strong>Use Trusted Platforms</strong> with good withdrawal histories.</li>
@@ -174,7 +109,6 @@ const HowDoCryptoCasinoWithdrawalsWork = () => {
           </ul>
         </section>
       </AnswerLayout>
-    </>
   );
 };
 
