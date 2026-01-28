@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "wallet-based-gambling-trust-control", 
+    title: "What Wallet-Based Gambling Reveals About Trust and Control", 
+    category: "Culture", 
+    excerpt: "Wallet-based gambling doesn't remove trust—it relocates it. Control stops being something you hand over quietly and becomes something you carry.",
+    metaDescription: "Wallet-based gambling relocates trust from platforms to players themselves. Explore how self-custody reveals how people actually relate to risk, responsibility, and agency.",
+    image: cryptoWalletThumb,
+    imageAlt: "Conceptual illustration of trust and control dynamics in wallet-based gambling",
+    date: "Jan 28, 2026",
+    readTime: "7 min read"
+  },
+  { 
     slug: "signing-transaction-feels-different", 
     title: "Why Signing a Transaction Feels Different From Clicking \"Deposit\"", 
     category: "Culture", 
