@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "being-a-degen-identity-control", 
+    title: "What \"Being a Degen\" Actually Signals About Identity and Control", 
+    category: "Culture", 
+    excerpt: "Calling yourself a degen isn't self-insult—it's self-definition. A signal about how someone relates to risk, control, agency, and expectation.",
+    metaDescription: "Explore what the 'degen' identity signals about risk, control, and agency—how self-definition replaces pretense and chaos becomes a chosen environment.",
+    image: anonymityThumb,
+    imageAlt: "Abstract illustration representing degen identity as self-definition and emotional ownership",
+    date: "Jan 28, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "distrust-safety-more-than-volatility", 
     title: "Why Many Crypto Gamblers Distrust Safety More Than Volatility", 
     category: "Culture", 
