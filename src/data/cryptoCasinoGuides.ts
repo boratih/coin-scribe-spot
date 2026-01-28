@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "psychology-just-one-more-spin", 
+    title: "The Psychology of \"Just One More Spin\" in Web3 Gambling", 
+    category: "Culture", 
+    excerpt: "\"Just one more spin\" isn't a decision—it's a feeling. It lives in the discomfort of an unresolved moment, where stopping feels harder than continuing.",
+    metaDescription: "Explore how 'just one more spin' emerges from near-misses, flow states, and the emotional gravity of almost—and why stopping can feel harder than continuing.",
+    image: cryptoFundamentalsThumb,
+    imageAlt: "Abstract illustration representing the emotional pull of near-misses in gambling culture",
+    date: "Jan 28, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "why-degens-treat-losses-as-experience", 
     title: "Why Degens Treat Losses as Part of the Experience", 
     category: "Culture", 
