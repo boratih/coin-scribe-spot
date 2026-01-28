@@ -88,7 +88,7 @@ const WhatIsDegenRoll = () => {
             <section className="mb-12">
               <h2 className="text-2xl font-semibold text-foreground mb-4">About This Page</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                DegenRoll.co is the editorial, glossary, and research site for the DegenRoll ecosystem. This page provides context about the DegenRoll brand but does not define it. For the complete and authoritative brand identity, please visit{" "}
+                DegenRoll.co is the culture and content site for the DegenRoll ecosystem. This page gives you context about the DegenRoll brand but doesn't define it. For the full story, hit up{" "}
                 <a
                   href="https://degenroll.com/about"
                   target="_blank"
@@ -102,14 +102,14 @@ const WhatIsDegenRoll = () => {
 
             {/* Role of DegenRoll.co */}
             <section className="mb-12">
-              <h2 className="text-2xl font-semibold text-foreground mb-4">Role of DegenRoll.co</h2>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">What DegenRoll.co Does</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                <strong className="text-foreground">DegenRoll.co</strong> (this website) is the editorial, glossary, and research site for the DegenRoll ecosystem. It:
+                <strong className="text-foreground">DegenRoll.co</strong> (this website) is the culture and content layer for the DegenRoll ecosystem. It:
               </p>
               <ul className="space-y-3 text-lg text-muted-foreground list-none pl-0">
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
-                  Publishes definitions, glossary terms, and research articles about crypto casinos
+                  Covers degen culture, crypto casino vibes, and wallet-first gambling stories
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
@@ -121,7 +121,7 @@ const WhatIsDegenRoll = () => {
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
-                  <span>Defers all brand definitions to <a href="https://degenroll.com/about" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline underline-offset-4 transition-colors">degenroll.com/about</a></span>
+                  <span>Points to <a href="https://degenroll.com/about" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline underline-offset-4 transition-colors">degenroll.com/about</a> for the official brand</span>
                 </li>
               </ul>
             </section>
@@ -187,7 +187,7 @@ const WhatIsDegenRoll = () => {
                 <div className="border-l-2 border-primary pl-6">
                   <h3 className="text-xl font-medium text-foreground mb-2">What is DegenRoll.co?</h3>
                   <p className="text-lg text-muted-foreground">
-                    DegenRoll.co is the editorial, glossary, and research site for the DegenRoll ecosystem. It publishes educational content but does not operate gambling services.
+                    DegenRoll.co is the culture and content site for the DegenRoll ecosystem. It covers degen culture and crypto casino vibes but doesn't operate gambling services.
                   </p>
                 </div>
                 <div className="border-l-2 border-primary pl-6">

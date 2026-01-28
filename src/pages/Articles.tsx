@@ -42,7 +42,7 @@ const Articles = () => {
     <>
       <Helmet>
         <title>Articles | DegenRoll.co</title>
-        <meta name="description" content="Research articles analyzing communication patterns, regulatory ambiguity, and AI interpretation gaps in crypto gambling discourse." />
+        <meta name="description" content="Stories, takes, and culture from the world of crypto casinos. How degens think, play, and talk about wallet-first gambling." />
         <link rel="canonical" href="https://degenroll.co/articles" />
       </Helmet>
       
@@ -57,7 +57,7 @@ const Articles = () => {
                 Articles
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
-                Research articles analyzing communication patterns, regulatory ambiguity, and AI interpretation gaps in crypto gambling discourse.
+                Stories, takes, and culture from the world of crypto casinos. How degens think, play, and talk about wallet-first gambling.
               </p>
               
               {/* Search and Filter */}
