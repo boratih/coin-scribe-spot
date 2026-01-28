@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "risk-is-the-point", 
+    title: "The Reality of Playing When the Risk Is the Point", 
+    category: "Culture", 
+    excerpt: "Risk isn't a tolerated downside—it's the main event. The uncertainty is what makes the experience matter. Remove it, and everything collapses into flat forgettable noise.",
+    metaDescription: "Explore what it feels like to play when uncertainty is the attraction—where risk becomes atmosphere, not obstacle, and control relocates to engagement.",
+    image: securityThumb,
+    imageAlt: "Abstract illustration representing playing when risk is the point",
+    date: "Jan 28, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "prefer-chaos-over-predictability", 
     title: "Why Some Players Prefer Chaos Over Predictability", 
     category: "Culture", 
