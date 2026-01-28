@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "prefer-chaos-over-predictability", 
+    title: "Why Some Players Prefer Chaos Over Predictability", 
+    category: "Culture", 
+    excerpt: "Predictability is calm. Chaos is alive. For players wired for intensity, unpredictability feels emotionally congruent—not reckless, but real.",
+    metaDescription: "Explore why some players find predictability muted and chaos alive—where unpredictability matches internal tempo and intensity replaces waiting.",
+    image: transparencyThumb,
+    imageAlt: "Abstract illustration representing why some players prefer chaos over predictability",
+    date: "Jan 28, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "loss-streaks-become-story", 
     title: "How Loss Streaks Become Part of the Story, Not a Warning", 
     category: "Culture", 

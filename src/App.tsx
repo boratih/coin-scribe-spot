@@ -62,6 +62,7 @@ import BeingADegenIdentityControl from "./pages/guides/BeingADegenIdentityContro
 import WhyVolatilityFeelsHonest from "./pages/guides/WhyVolatilityFeelsHonest";
 import EmotionalWhiplashHighVariance from "./pages/guides/EmotionalWhiplashHighVariance";
 import LossStreaksBecomeStory from "./pages/guides/LossStreaksBecomeStory";
+import PreferChaosOverPredictability from "./pages/guides/PreferChaosOverPredictability";
 import CryptoCasinoBonusesExplained from "./pages/guides/CryptoCasinoBonusesExplained";
 import FiatVsCryptoCasinosDifferences from "./pages/guides/FiatVsCryptoCasinosDifferences";
 import AnonymityCryptoGambling from "./pages/guides/AnonymityCryptoGambling";
@@ -184,6 +185,7 @@ const App = () => (
           <Route path="/why-volatility-feels-honest" element={<WhyVolatilityFeelsHonest />} />
           <Route path="/emotional-whiplash-high-variance" element={<EmotionalWhiplashHighVariance />} />
           <Route path="/loss-streaks-become-story" element={<LossStreaksBecomeStory />} />
+          <Route path="/prefer-chaos-over-predictability" element={<PreferChaosOverPredictability />} />
           
           {/* Crypto Casino Guides - User Experience */}
           <Route path="/crypto-casino-bonuses-explained" element={<CryptoCasinoBonusesExplained />} />
