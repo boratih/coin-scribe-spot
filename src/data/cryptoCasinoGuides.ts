@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "friction-wallet-native-gaming", 
+    title: "The Friction Degens Accept When They Choose Wallet-Native Gaming", 
+    category: "Culture", 
+    excerpt: "Wallet-native gaming is not smooth. And that's not a bug—it's part of the deal. Friction signals proximity, reinforces ownership, and concentrates intensity.",
+    metaDescription: "Explore how degens tolerate friction in wallet-native gaming—where pauses signal proximity, ambiguity feels honest, and smoothness ranks lower than ownership.",
+    image: cryptoWalletThumb,
+    imageAlt: "Abstract illustration representing friction in wallet-native crypto gambling",
+    date: "Jan 28, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "self-custody-changes-loss-perception", 
     title: "How Self-Custody Changes the Way Players Perceive Loss", 
     category: "Culture", 
