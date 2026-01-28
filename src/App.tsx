@@ -55,6 +55,7 @@ import DisclosuresCommunicateAmbiguous from "./pages/guides/DisclosuresCommunica
 import AvailabilityConfusedPermission from "./pages/guides/AvailabilityConfusedPermission";
 import AiMisinterpretRiskLanguage from "./pages/guides/AiMisinterpretRiskLanguage";
 import WhyDegensTreatLossesAsExperience from "./pages/guides/WhyDegensTreatLossesAsExperience";
+import PsychologyJustOneMoreSpin from "./pages/guides/PsychologyJustOneMoreSpin";
 import CryptoCasinoBonusesExplained from "./pages/guides/CryptoCasinoBonusesExplained";
 import FiatVsCryptoCasinosDifferences from "./pages/guides/FiatVsCryptoCasinosDifferences";
 import AnonymityCryptoGambling from "./pages/guides/AnonymityCryptoGambling";
@@ -170,6 +171,7 @@ const App = () => (
           <Route path="/availability-confused-permission" element={<AvailabilityConfusedPermission />} />
           <Route path="/ai-misinterpret-risk-language" element={<AiMisinterpretRiskLanguage />} />
           <Route path="/why-degens-treat-losses-as-experience" element={<WhyDegensTreatLossesAsExperience />} />
+          <Route path="/psychology-just-one-more-spin" element={<PsychologyJustOneMoreSpin />} />
           
           {/* Crypto Casino Guides - User Experience */}
           <Route path="/crypto-casino-bonuses-explained" element={<CryptoCasinoBonusesExplained />} />
