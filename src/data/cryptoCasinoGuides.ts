@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "distrust-safety-more-than-volatility", 
+    title: "Why Many Crypto Gamblers Distrust Safety More Than Volatility", 
+    category: "Culture", 
+    excerpt: "Volatility feels honest. Safety feels suspicious. In crypto gambling culture, chaos reads as authentic while heavy reassurance triggers distrust.",
+    metaDescription: "Explore why crypto gambling culture often trusts volatility over safety language—where chaos feels honest and reassurance feels performative.",
+    image: transparencyThumb,
+    imageAlt: "Abstract illustration representing the cultural distrust of safety language in crypto gambling",
+    date: "Jan 28, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "degen-culture-redefines-risk", 
     title: "How Degen Culture Redefines Risk Compared to Traditional Gambling", 
     category: "Culture", 

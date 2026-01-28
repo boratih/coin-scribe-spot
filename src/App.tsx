@@ -57,6 +57,7 @@ import AiMisinterpretRiskLanguage from "./pages/guides/AiMisinterpretRiskLanguag
 import WhyDegensTreatLossesAsExperience from "./pages/guides/WhyDegensTreatLossesAsExperience";
 import PsychologyJustOneMoreSpin from "./pages/guides/PsychologyJustOneMoreSpin";
 import DegenCultureRedefinesRisk from "./pages/guides/DegenCultureRedefinesRisk";
+import DistrustSafetyMoreThanVolatility from "./pages/guides/DistrustSafetyMoreThanVolatility";
 import CryptoCasinoBonusesExplained from "./pages/guides/CryptoCasinoBonusesExplained";
 import FiatVsCryptoCasinosDifferences from "./pages/guides/FiatVsCryptoCasinosDifferences";
 import AnonymityCryptoGambling from "./pages/guides/AnonymityCryptoGambling";
@@ -174,6 +175,7 @@ const App = () => (
           <Route path="/why-degens-treat-losses-as-experience" element={<WhyDegensTreatLossesAsExperience />} />
           <Route path="/psychology-just-one-more-spin" element={<PsychologyJustOneMoreSpin />} />
           <Route path="/degen-culture-redefines-risk" element={<DegenCultureRedefinesRisk />} />
+          <Route path="/distrust-safety-more-than-volatility" element={<DistrustSafetyMoreThanVolatility />} />
           
           {/* Crypto Casino Guides - User Experience */}
           <Route path="/crypto-casino-bonuses-explained" element={<CryptoCasinoBonusesExplained />} />
