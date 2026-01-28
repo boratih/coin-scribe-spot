@@ -21,11 +21,11 @@ const TransparencyBlockchainGambling = () => {
     },
     {
       question: "Can smart contract casinos hide game logic?",
-      answer: "Verified smart contracts have public source code that anyone can audit. Unverified contracts may hide their code, which should be a red flag."
+      answer: "Verified smart contracts have public source code. Unverified contracts may hide their code, which is often discussed as a red flag in community discourse."
     },
     {
       question: "How do I verify a crypto casino's transparency?",
-      answer: "Check if their smart contracts are verified and audited, look up transactions on blockchain explorers, and verify provably fair seeds using their provided tools."
+      answer: "Common approaches include checking if smart contracts are verified and audited, looking up transactions on blockchain explorers, and verifying provably fair seeds."
     }
   ];
 
@@ -80,36 +80,36 @@ const TransparencyBlockchainGambling = () => {
         </div>
       </section>
 
-      {/* How to Verify */}
+      {/* How People Verify */}
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">How to Verify Transparency</h2>
+        <h2 className="text-2xl font-semibold mb-4">Common Verification Approaches</h2>
         <div className="space-y-4">
           <div className="flex items-start gap-4 bg-card p-4 rounded-lg border border-border">
             <span className="bg-primary text-primary-foreground w-8 h-8 rounded-full flex items-center justify-center font-bold shrink-0">1</span>
             <div>
-              <h3 className="font-semibold">Check Smart Contract Verification</h3>
-              <p className="text-muted-foreground">Look up the casino's contract address on a blockchain explorer. Verified contracts show readable source code.</p>
+              <h3 className="font-semibold">Checking Smart Contract Verification</h3>
+              <p className="text-muted-foreground">Looking up contract addresses on blockchain explorers. Verified contracts show readable source code.</p>
             </div>
           </div>
           <div className="flex items-start gap-4 bg-card p-4 rounded-lg border border-border">
             <span className="bg-primary text-primary-foreground w-8 h-8 rounded-full flex items-center justify-center font-bold shrink-0">2</span>
             <div>
-              <h3 className="font-semibold">Review Security Audits</h3>
-              <p className="text-muted-foreground">Reputable casinos publish third-party security audits. Check that audits are recent and from known firms.</p>
+              <h3 className="font-semibold">Reviewing Security Audits</h3>
+              <p className="text-muted-foreground">Some platforms publish third-party security audits. Community discussions often focus on audit recency and firm reputation.</p>
             </div>
           </div>
           <div className="flex items-start gap-4 bg-card p-4 rounded-lg border border-border">
             <span className="bg-primary text-primary-foreground w-8 h-8 rounded-full flex items-center justify-center font-bold shrink-0">3</span>
             <div>
-              <h3 className="font-semibold">Track Your Transactions</h3>
-              <p className="text-muted-foreground">Use blockchain explorers to verify your deposits and withdrawals were processed correctly.</p>
+              <h3 className="font-semibold">Tracking Transactions</h3>
+              <p className="text-muted-foreground">Blockchain explorers allow anyone to view deposit and withdrawal records for on-chain platforms.</p>
             </div>
           </div>
           <div className="flex items-start gap-4 bg-card p-4 rounded-lg border border-border">
             <span className="bg-primary text-primary-foreground w-8 h-8 rounded-full flex items-center justify-center font-bold shrink-0">4</span>
             <div>
-              <h3 className="font-semibold">Verify Provably Fair Games</h3>
-              <p className="text-muted-foreground">Use the casino's verification tools to confirm game outcomes match the revealed seeds.</p>
+              <h3 className="font-semibold">Provably Fair Verification</h3>
+              <p className="text-muted-foreground">Many platforms provide tools to confirm game outcomes match the revealed seeds.</p>
             </div>
           </div>
         </div>

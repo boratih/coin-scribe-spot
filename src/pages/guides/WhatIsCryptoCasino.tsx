@@ -14,7 +14,7 @@ const WhatIsCryptoCasino = () => {
     },
     {
       question: "Are crypto casinos safe?",
-      answer: "Crypto casino safety varies by platform. Reputable crypto casinos implement security measures including cold storage for funds, two-factor authentication, provably fair games, and smart contract audits. Players should research platform reputation and security practices before depositing."
+      answer: "Safety varies widely. Some platforms implement cold storage, 2FA, and provably fair games. Others lack basic security measures. There's no universal standard."
     },
     {
       question: "What cryptocurrencies do crypto casinos accept?",
@@ -53,7 +53,7 @@ const WhatIsCryptoCasino = () => {
         </p>
       }
       faqs={faqs}
-      summary="Crypto casinos are online gambling platforms accepting cryptocurrency payments. They offer advantages like faster withdrawals, enhanced privacy, and provably fair games, while presenting considerations around volatility, technical complexity, and varying regulatory status. Players should evaluate platform reputation, security measures, and their local regulations before participating."
+      summary="Crypto casinos are online gambling platforms accepting cryptocurrency payments. They're often discussed in terms of faster withdrawals, privacy features, and provably fair games—alongside volatility, technical complexity, and unclear regulatory status."
     >
       {/* Overview Section */}
       <section>
@@ -163,7 +163,7 @@ const WhatIsCryptoCasino = () => {
           </div>
           <div className="border-l-4 border-yellow-500/50 pl-4 py-2">
             <p className="font-semibold">"Crypto casino games are rigged"</p>
-            <p className="text-muted-foreground text-sm">Reputable platforms use audited RNG or provably fair systems. However, players should verify platform credibility before playing.</p>
+            <p className="text-muted-foreground text-sm">Some platforms use audited RNG or provably fair systems. Others don't. The claim tends to come from experiences with unvetted operators.</p>
           </div>
           <div className="border-l-4 border-yellow-500/50 pl-4 py-2">
             <p className="font-semibold">"Withdrawals are always instant"</p>
@@ -186,11 +186,11 @@ const WhatIsCryptoCasino = () => {
           This creates a complex compliance environment where some jurisdictions treat crypto casinos identically to traditional online casinos, requiring gambling licenses. Others have not specifically addressed cryptocurrency gambling, creating regulatory ambiguity. A few have explicitly banned crypto gambling operations entirely.
         </p>
         <p className="mb-4">
-          Players face varying levels of legal risk depending on their location. While operators may face prosecution for unlicensed gambling, individual players are rarely prosecuted in most jurisdictions. However, players should understand their local laws before participating.
+          Players in different locations face different levels of exposure. Operators may face prosecution for unlicensed gambling, while individual players are rarely prosecuted in most jurisdictions—though this varies.
         </p>
         <div className="bg-muted/20 p-4 rounded-lg">
           <p className="text-sm text-muted-foreground">
-            <strong>Note:</strong> This information is educational and does not constitute legal advice. Consult local regulations and legal professionals regarding gambling laws in your jurisdiction.
+            <strong>Note:</strong> This information describes how the regulatory landscape is commonly discussed. It does not constitute legal advice.
           </p>
         </div>
       </section>

@@ -56,7 +56,7 @@ const DecentralizedVsCentralizedCryptoCasinos = () => {
           <li>Smart contracts control bets and payouts.</li>
           <li>Fully transparent and verifiable via blockchain.</li>
           <li>No central authority; less customer support.</li>
-          <li>Ideal for provably fair games and privacy.</li>
+          <li>Often discussed in terms of provably fair games and privacy.</li>
         </ul>
       </section>
 

@@ -55,11 +55,11 @@ const BestCryptoSlotGames = () => {
           Return to Player (RTP) percentages indicate long-term payout rates. A slot with 96% RTP theoretically returns $96 for every $100 wagered over millions of spins. As the <a href="https://www.gamblingcommission.gov.uk/guidance/guidance-to-licensing-authorities/licensed-premises/gaming-machine-technical-requirements" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">UK Gambling Commission</a> mandates, licensed slots must display RTP information—a transparency requirement that helps players make informed choices. While this doesn't guarantee individual session results, higher RTP means better odds over time.
         </p>
         <div className="bg-card/50 p-4 rounded-lg border border-border/50 mb-4">
-          <h3 className="font-semibold text-primary mb-2">RTP Guidelines</h3>
+          <h3 className="font-semibold text-primary mb-2">RTP Ranges (Commonly Cited)</h3>
           <ul className="text-muted-foreground text-sm space-y-1">
-            <li>• <strong>96%+</strong> — Good RTP, recommended</li>
-            <li>• <strong>94-96%</strong> — Average, acceptable</li>
-            <li>• <strong>Below 94%</strong> — Below average, consider alternatives</li>
+            <li>• <strong>96%+</strong> — Often described as good RTP</li>
+            <li>• <strong>94-96%</strong> — Commonly considered average</li>
+            <li>• <strong>Below 94%</strong> — Often described as below average</li>
           </ul>
         </div>
       </section>

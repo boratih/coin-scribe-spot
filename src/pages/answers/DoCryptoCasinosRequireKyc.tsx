@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     question: "Is KYC safe?",
-    answer: "Yes, if the platform is licensed and uses encryption.",
+    answer: "Platform licensing and encryption are commonly cited factors in KYC safety discussions.",
   },
   {
     question: "Does KYC prevent scams?",
@@ -131,12 +131,12 @@ const DoCryptoCasinosRequireKyc = () => {
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold mb-4">Tips for Navigating KYC</h2>
+        <h2 className="text-2xl font-bold mb-4">How KYC Is Commonly Approached</h2>
         <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-          <li>Check platform policies</li>
-          <li>Use secure upload methods</li>
-          <li>Prepare documents in advance</li>
-          <li>Use licensed platforms</li>
+          <li>Checking platform policies before signup</li>
+          <li>Secure document upload methods</li>
+          <li>Document preparation before withdrawal requests</li>
+          <li>Licensing status as a trust factor</li>
         </ul>
       </section>
     </AnswerLayout>
