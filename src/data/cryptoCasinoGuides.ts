@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "self-custody-changes-loss-perception", 
+    title: "How Self-Custody Changes the Way Players Perceive Loss", 
+    category: "Culture", 
+    excerpt: "Loss feels different when it comes from you. Not delegated. Not buffered. In self-custody culture, loss shows up where everything else you own already lives.",
+    metaDescription: "Explore how self-custody rewires loss perception in degen culture—where outcomes arrive directly, memory accumulates in wallets, and loss becomes identity data.",
+    image: cryptoWalletThumb,
+    imageAlt: "Abstract illustration representing self-custody and loss perception in crypto gambling",
+    date: "Jan 28, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "wallet-first-play-personal", 
     title: "Why Wallet-First Play Feels More Personal Than Account-Based Casinos", 
     category: "Culture", 
