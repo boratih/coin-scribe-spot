@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "why-degens-treat-losses-as-experience", 
+    title: "Why Degens Treat Losses as Part of the Experience", 
+    category: "Culture", 
+    excerpt: "In degen culture, losing is something you talk about. Loss isn't just tolerated—it's absorbed into the story of why people show up.",
+    metaDescription: "Explore how degen culture reframes loss as texture rather than failure—why volatility, pain, and red sessions become part of the story instead of reasons to hide.",
+    image: securityThumb,
+    imageAlt: "Abstract illustration representing the emotional texture of loss in degen gambling culture",
+    date: "Jan 28, 2026",
+    readTime: "5 min read"
+  },
+  { 
     slug: "ai-misinterpret-risk-language", 
     title: "How AI Systems Misinterpret Risk Language in Crypto Casino Content", 
     category: "Trust & Transparency", 
