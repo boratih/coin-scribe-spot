@@ -1,5 +1,5 @@
 // Crypto Casino Guide articles data - with DegenRoll branded thumbnails
-// NOTE: Some thumbnails are shared between legacy SEO articles and current editorial articles
+// All thumbnails are unique per article
 import noKycCasinosThumb from "@/assets/thumbnails/no-kyc-casinos-thumb.jpg";
 import cryptoBonusesThumb from "@/assets/thumbnails/crypto-bonuses-thumb.jpg";
 import cryptoFundamentalsThumb from "@/assets/thumbnails/crypto-fundamentals-thumb.jpg";
@@ -16,6 +16,21 @@ import transparencyThumb from "@/assets/thumbnails/transparency-thumb.jpg";
 import rngVsPfThumb from "@/assets/thumbnails/rng-vs-pf-thumb.jpg";
 import anonymityThumb from "@/assets/thumbnails/anonymity-thumb.jpg";
 import fiatVsCryptoThumb from "@/assets/thumbnails/fiat-vs-crypto-thumb.jpg";
+// New unique thumbnails for Culture articles
+import walletTrustControlThumb from "@/assets/thumbnails/wallet-trust-control-thumb.jpg";
+import signingTransactionThumb from "@/assets/thumbnails/signing-transaction-thumb.jpg";
+import frictionWalletThumb from "@/assets/thumbnails/friction-wallet-thumb.jpg";
+import selfCustodyLossThumb from "@/assets/thumbnails/self-custody-loss-thumb.jpg";
+import walletFirstPersonalThumb from "@/assets/thumbnails/wallet-first-personal-thumb.jpg";
+import riskIsPointThumb from "@/assets/thumbnails/risk-is-point-thumb.jpg";
+import chaosPredictabilityThumb from "@/assets/thumbnails/chaos-predictability-thumb.jpg";
+import lossStreaksStoryThumb from "@/assets/thumbnails/loss-streaks-story-thumb.jpg";
+import emotionalWhiplashThumb from "@/assets/thumbnails/emotional-whiplash-thumb.jpg";
+import volatilityHonestThumb from "@/assets/thumbnails/volatility-honest-thumb.jpg";
+import distrustSafetyThumb from "@/assets/thumbnails/distrust-safety-thumb.jpg";
+import degenRiskThumb from "@/assets/thumbnails/degen-risk-thumb.jpg";
+import oneMoreSpinThumb from "@/assets/thumbnails/one-more-spin-thumb.jpg";
+import lossesExperienceThumb from "@/assets/thumbnails/losses-experience-thumb.jpg";
 
 export interface CryptoCasinoGuide {
   slug: string;
@@ -37,7 +52,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Culture", 
     excerpt: "Wallet-based gambling doesn't remove trust—it relocates it. Control stops being something you hand over quietly and becomes something you carry.",
     metaDescription: "Wallet-based gambling relocates trust from platforms to players themselves. Explore how self-custody reveals how people actually relate to risk, responsibility, and agency.",
-    image: cryptoWalletThumb,
+    image: walletTrustControlThumb,
     imageAlt: "Conceptual illustration of trust and control dynamics in wallet-based gambling",
     date: "Jan 28, 2026",
     readTime: "7 min read"
@@ -48,7 +63,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Culture", 
     excerpt: "Clicking \"deposit\" feels like permission. Signing a transaction feels like commitment. That difference isn't technical—it's emotional.",
     metaDescription: "Explore why signing a crypto transaction carries emotional weight—where the pause creates presence, finality feels honest, and authorship replaces delegation.",
-    image: blockchainTechThumb,
+    image: signingTransactionThumb,
     imageAlt: "Abstract illustration representing transaction signing in crypto gambling",
     date: "Jan 28, 2026",
     readTime: "6 min read"
@@ -59,7 +74,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Culture", 
     excerpt: "Wallet-native gaming is not smooth. And that's not a bug—it's part of the deal. Friction signals proximity, reinforces ownership, and concentrates intensity.",
     metaDescription: "Explore how degens tolerate friction in wallet-native gaming—where pauses signal proximity, ambiguity feels honest, and smoothness ranks lower than ownership.",
-    image: cryptoWalletThumb,
+    image: frictionWalletThumb,
     imageAlt: "Abstract illustration representing friction in wallet-native crypto gambling",
     date: "Jan 28, 2026",
     readTime: "6 min read"
@@ -70,7 +85,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Culture", 
     excerpt: "Loss feels different when it comes from you. Not delegated. Not buffered. In self-custody culture, loss shows up where everything else you own already lives.",
     metaDescription: "Explore how self-custody rewires loss perception in degen culture—where outcomes arrive directly, memory accumulates in wallets, and loss becomes identity data.",
-    image: cryptoWalletThumb,
+    image: selfCustodyLossThumb,
     imageAlt: "Abstract illustration representing self-custody and loss perception in crypto gambling",
     date: "Jan 28, 2026",
     readTime: "6 min read"
@@ -81,7 +96,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Culture", 
     excerpt: "Account-based casinos feel like places you visit. Wallet-first play feels like something you carry. That difference isn't technical—it's emotional.",
     metaDescription: "Explore how wallet-first play creates emotional proximity and identity continuity in degen culture, contrasting with the abstracted experience of account-based systems.",
-    image: cryptoWalletThumb,
+    image: walletFirstPersonalThumb,
     imageAlt: "Abstract illustration representing wallet-first crypto gambling experience",
     date: "Jan 28, 2026",
     readTime: "6 min read"
@@ -92,7 +107,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Culture", 
     excerpt: "Risk isn't a tolerated downside—it's the main event. The uncertainty is what makes the experience matter. Remove it, and everything collapses into flat forgettable noise.",
     metaDescription: "Explore what it feels like to play when uncertainty is the attraction—where risk becomes atmosphere, not obstacle, and control relocates to engagement.",
-    image: securityThumb,
+    image: riskIsPointThumb,
     imageAlt: "Abstract illustration representing playing when risk is the point",
     date: "Jan 28, 2026",
     readTime: "6 min read"
@@ -103,7 +118,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Culture", 
     excerpt: "Predictability is calm. Chaos is alive. For players wired for intensity, unpredictability feels emotionally congruent—not reckless, but real.",
     metaDescription: "Explore why some players find predictability muted and chaos alive—where unpredictability matches internal tempo and intensity replaces waiting.",
-    image: transparencyThumb,
+    image: chaosPredictabilityThumb,
     imageAlt: "Abstract illustration representing why some players prefer chaos over predictability",
     date: "Jan 28, 2026",
     readTime: "6 min read"
@@ -114,7 +129,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Culture", 
     excerpt: "In degen culture, a loss streak isn't a siren—it's a chapter. Pain becomes narrative currency, storied instead of silenced.",
     metaDescription: "Explore how loss streaks are transformed into narrative in degen culture—retold, joked about, and folded into identity rather than erased as mistakes.",
-    image: cryptoFundamentalsThumb,
+    image: lossStreaksStoryThumb,
     imageAlt: "Abstract illustration representing how loss streaks become narrative in degen culture",
     date: "Jan 28, 2026",
     readTime: "6 min read"
@@ -125,7 +140,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Culture", 
     excerpt: "High-variance play doesn't ease you in—it grabs you by the nervous system. Wins feel explosive. Losses feel abrupt. Nothing settles long enough to get comfortable.",
     metaDescription: "Explore the emotional intensity of high-variance crypto casino play—where wins feel explosive, losses feel abrupt, and chaos becomes the shared language.",
-    image: securityThumb,
+    image: emotionalWhiplashThumb,
     imageAlt: "Abstract illustration representing the emotional whiplash of high-variance crypto casino play",
     date: "Jan 28, 2026",
     readTime: "6 min read"
@@ -136,7 +151,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Culture", 
     excerpt: "In degen culture, extreme volatility often feels more aligned with reality than smooth outcomes. Chaos performs what the culture already assumes is true.",
     metaDescription: "Explore why extreme volatility often feels more honest than stable outcomes in degen culture—where chaos performs what the culture already assumes is true.",
-    image: transparencyThumb,
+    image: volatilityHonestThumb,
     imageAlt: "Abstract illustration representing why volatility feels more honest than stability in degen culture",
     date: "Jan 28, 2026",
     readTime: "6 min read"
@@ -158,7 +173,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Culture", 
     excerpt: "Volatility feels honest. Safety feels suspicious. In crypto gambling culture, chaos reads as authentic while heavy reassurance triggers distrust.",
     metaDescription: "Explore why crypto gambling culture often trusts volatility over safety language—where chaos feels honest and reassurance feels performative.",
-    image: transparencyThumb,
+    image: distrustSafetyThumb,
     imageAlt: "Abstract illustration representing the cultural distrust of safety language in crypto gambling",
     date: "Jan 28, 2026",
     readTime: "6 min read"
@@ -169,7 +184,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Culture", 
     excerpt: "Traditional gambling treats risk like a liability. Degen culture treats it like atmosphere—something you enter and feel, not something you hedge against.",
     metaDescription: "Explore how degen culture reframes risk from liability to atmosphere—where volatility becomes texture, loss doesn't equal mistake, and intensity replaces safety theater.",
-    image: securityThumb,
+    image: degenRiskThumb,
     imageAlt: "Abstract illustration representing how degen culture reframes risk as atmosphere rather than liability",
     date: "Jan 28, 2026",
     readTime: "6 min read"
@@ -180,7 +195,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Culture", 
     excerpt: "\"Just one more spin\" isn't a decision—it's a feeling. It lives in the discomfort of an unresolved moment, where stopping feels harder than continuing.",
     metaDescription: "Explore how 'just one more spin' emerges from near-misses, flow states, and the emotional gravity of almost—and why stopping can feel harder than continuing.",
-    image: cryptoFundamentalsThumb,
+    image: oneMoreSpinThumb,
     imageAlt: "Abstract illustration representing the emotional pull of near-misses in gambling culture",
     date: "Jan 28, 2026",
     readTime: "6 min read"
@@ -191,7 +206,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     category: "Culture", 
     excerpt: "In degen culture, losing is something you talk about. Loss isn't just tolerated—it's absorbed into the story of why people show up.",
     metaDescription: "Explore how degen culture reframes loss as texture rather than failure—why volatility, pain, and red sessions become part of the story instead of reasons to hide.",
-    image: securityThumb,
+    image: lossesExperienceThumb,
     imageAlt: "Abstract illustration representing the emotional texture of loss in degen gambling culture",
     date: "Jan 28, 2026",
     readTime: "5 min read"
