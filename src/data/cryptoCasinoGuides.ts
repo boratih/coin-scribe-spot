@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "signing-transaction-feels-different", 
+    title: "Why Signing a Transaction Feels Different From Clicking \"Deposit\"", 
+    category: "Culture", 
+    excerpt: "Clicking \"deposit\" feels like permission. Signing a transaction feels like commitment. That difference isn't technical—it's emotional.",
+    metaDescription: "Explore why signing a crypto transaction carries emotional weight—where the pause creates presence, finality feels honest, and authorship replaces delegation.",
+    image: blockchainTechThumb,
+    imageAlt: "Abstract illustration representing transaction signing in crypto gambling",
+    date: "Jan 28, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "friction-wallet-native-gaming", 
     title: "The Friction Degens Accept When They Choose Wallet-Native Gaming", 
     category: "Culture", 
