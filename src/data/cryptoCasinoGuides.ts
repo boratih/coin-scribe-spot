@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "degen-culture-redefines-risk", 
+    title: "How Degen Culture Redefines Risk Compared to Traditional Gambling", 
+    category: "Culture", 
+    excerpt: "Traditional gambling treats risk like a liability. Degen culture treats it like atmosphere—something you enter and feel, not something you hedge against.",
+    metaDescription: "Explore how degen culture reframes risk from liability to atmosphere—where volatility becomes texture, loss doesn't equal mistake, and intensity replaces safety theater.",
+    image: securityThumb,
+    imageAlt: "Abstract illustration representing how degen culture reframes risk as atmosphere rather than liability",
+    date: "Jan 28, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "psychology-just-one-more-spin", 
     title: "The Psychology of \"Just One More Spin\" in Web3 Gambling", 
     category: "Culture", 
