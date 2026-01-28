@@ -45,9 +45,8 @@ const HeroSection = ({ onSearch }: HeroSectionProps) => {
 
           {/* Main heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            <span className="text-gradient">
-              Degen Culture, Risk Narratives, and Wallet-First Gambling
-            </span>
+            Degen Culture, Risk Narratives,
+            <span className="block">and Wallet-First Gambling</span>
           </h1>
 
           {/* Subtitle */}
