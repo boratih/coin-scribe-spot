@@ -71,10 +71,10 @@ const About = () => {
             <section className="mt-12 pt-8 border-t border-border">
               <h2 className="text-2xl font-bold text-foreground mb-4">What We Cover</h2>
               <ul className="space-y-2 text-muted-foreground">
-                <li>• Degen culture and the psychology of high-risk play</li>
+                <li>• Degen culture and the vibes around high-risk play</li>
                 <li>• How crypto casinos talk to players</li>
-                <li>• The wallet-first experience and why it matters</li>
-                <li>• Real stories from the crypto gambling world</li>
+                <li>• The wallet-first experience</li>
+                <li>• Stories from the crypto gambling world</li>
               </ul>
             </section>
 

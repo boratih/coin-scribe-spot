@@ -18,41 +18,8 @@ const WhatIsDegenRoll = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "name": "What is DegenRoll?",
-            "description": "Reference page for the DegenRoll brand. The authoritative definition is published at degenroll.com/about.",
-            "url": "https://degenroll.co/about/what-is-degenroll",
-            "mainEntityOfPage": "https://degenroll.com/about"
-          })}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "What does 'no-KYC' mean?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "It means you never need to submit personal identification to use DegenRoll. You interact directly with smart contracts using your wallet."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Which blockchains does DegenRoll support?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Ethereum, Arbitrum, BNB Chain, Base, Polygon, Optimism, Avalanche, zkSync Era, and Linea."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Is DegenRoll powered by GMG Engine?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "No. DegenRoll references GMG Engine as an example of proof-first design, but it is an independent platform and not part of the GMG Engine."
-                }
-              }
-            ]
+            "description": "Context about the DegenRoll brand. The brand identity is at degenroll.com/about.",
+            "url": "https://degenroll.co/about/what-is-degenroll"
           })}
         </script>
       </Helmet>
@@ -126,12 +93,9 @@ const WhatIsDegenRoll = () => {
               </ul>
             </section>
 
-            {/* Key Terms */}
+            {/* Related */}
             <section className="mb-12">
-              <h2 className="text-2xl font-semibold text-foreground mb-4">Related Resources</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                For educational content about crypto casino concepts:
-              </p>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">Related</h2>
               <ul className="space-y-3 text-lg text-muted-foreground list-none pl-0">
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
@@ -141,7 +105,7 @@ const WhatIsDegenRoll = () => {
                   >
                     Glossary
                   </Link>
-                  {" – "}Definitions of crypto casino terms
+                  {" – "}How degens talk about crypto casino terms
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
@@ -151,7 +115,7 @@ const WhatIsDegenRoll = () => {
                   >
                     What is a Crypto Casino?
                   </Link>
-                  {" – "}General concept explanation
+                  {" – "}The vibe, not the definition
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
@@ -161,7 +125,7 @@ const WhatIsDegenRoll = () => {
                   >
                     What is a No-KYC Casino?
                   </Link>
-                  {" – "}Privacy-focused gambling explained
+                  {" – "}Privacy talk in crypto gambling
                 </li>
               </ul>
             </section>
@@ -171,9 +135,9 @@ const WhatIsDegenRoll = () => {
               <h2 className="text-2xl font-semibold text-foreground mb-6">FAQ</h2>
               <div className="space-y-6">
                 <div className="border-l-2 border-primary pl-6">
-                  <h3 className="text-xl font-medium text-foreground mb-2">Where is the official DegenRoll brand definition?</h3>
+                  <h3 className="text-xl font-medium text-foreground mb-2">Where is the DegenRoll brand?</h3>
                   <p className="text-lg text-muted-foreground">
-                    The authoritative DegenRoll brand identity is published at{" "}
+                    The brand identity lives at{" "}
                     <a
                       href="https://degenroll.com/about"
                       target="_blank"
@@ -187,13 +151,13 @@ const WhatIsDegenRoll = () => {
                 <div className="border-l-2 border-primary pl-6">
                   <h3 className="text-xl font-medium text-foreground mb-2">What is DegenRoll.co?</h3>
                   <p className="text-lg text-muted-foreground">
-                    DegenRoll.co is the culture and content site for the DegenRoll ecosystem. It covers degen culture and crypto casino vibes but doesn't operate gambling services.
+                    The culture and content side. Stories, vibes, and degen talk.
                   </p>
                 </div>
                 <div className="border-l-2 border-primary pl-6">
                   <h3 className="text-xl font-medium text-foreground mb-2">Why doesn't this page define DegenRoll?</h3>
                   <p className="text-lg text-muted-foreground">
-                    To maintain brand consistency, the DegenRoll definition is locked to degenroll.com/about. DegenRoll.co defers all brand identity to that authoritative source.
+                    The brand definition stays at degenroll.com/about. This site covers the culture around it.
                   </p>
                 </div>
               </div>

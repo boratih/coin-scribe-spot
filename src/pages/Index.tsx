@@ -31,14 +31,10 @@ const Index = () => {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Organization",
+            "@type": "Blog",
             "name": "DegenRoll.co",
             "url": "https://degenroll.co",
-            "description": "DegenRoll.co covers degen culture, risk narratives, and wallet-first gambling. Exploring how degens think, play, and talk about crypto casinos.",
-            "logo": "https://degenroll.co/logo.png",
-            "sameAs": [
-              "https://degenroll.com/about"
-            ]
+            "description": "Degen culture, risk narratives, and wallet-first gambling. How degens think, play, and talk about crypto casinos."
           })}
         </script>
       </Helmet>
