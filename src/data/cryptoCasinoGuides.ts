@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "why-volatility-feels-honest", 
+    title: "Why Extreme Volatility Feels More Honest Than Stable Outcomes", 
+    category: "Culture", 
+    excerpt: "In degen culture, extreme volatility often feels more aligned with reality than smooth outcomes. Chaos performs what the culture already assumes is true.",
+    metaDescription: "Explore why extreme volatility often feels more honest than stable outcomes in degen culture—where chaos performs what the culture already assumes is true.",
+    image: transparencyThumb,
+    imageAlt: "Abstract illustration representing why volatility feels more honest than stability in degen culture",
+    date: "Jan 28, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "being-a-degen-identity-control", 
     title: "What \"Being a Degen\" Actually Signals About Identity and Control", 
     category: "Culture", 
