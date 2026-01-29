@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "wallet-first-responsibility-shift", 
+    title: "How Wallet-First Gambling Shifts Responsibility From Platforms to Players", 
+    category: "Culture", 
+    excerpt: "Wallet-first gambling doesn't announce a transfer of responsibility—you just feel it happen. Responsibility quietly moves from somewhere abstract to somewhere personal.",
+    metaDescription: "Explore how wallet-first gambling shifts responsibility from platforms to players—where actions feel immediate, intermediaries fade, and consent becomes the emotional anchor.",
+    image: cryptoWalletThumb,
+    imageAlt: "Abstract illustration representing responsibility shift in wallet-first gambling",
+    date: "Jan 29, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "losing-self-custody-personal", 
     title: "Why Losing From a Self-Custody Wallet Feels More Personal", 
     category: "Culture", 
