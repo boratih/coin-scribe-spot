@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "high-variance-feels-authentic", 
+    title: "Why High-Variance Play Feels More Authentic Than Controlled Gambling", 
+    category: "Culture", 
+    excerpt: "Controlled gambling feels managed. High-variance play feels exposed. Control often feels performed, while volatility feels lived.",
+    metaDescription: "Explore why high-variance play feels more authentic than controlled gambling in degen culture—where volatility matches expectation, intensity replaces reassurance, and rawness reads as real.",
+    image: transparencyThumb,
+    imageAlt: "Abstract illustration representing high-variance play authenticity in degen culture",
+    date: "Jan 29, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "psychology-choosing-uncertainty", 
     title: "The Psychology Behind Choosing Uncertainty Over Comfort", 
     category: "Culture", 
