@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "risk-as-identity-not-tradeoff", 
+    title: "Why Degens Treat Risk as Identity, Not a Tradeoff", 
+    category: "Culture", 
+    excerpt: "In degen culture, risk is something you declare—not negotiate. It's worn, referenced, and built into how people describe themselves long before they describe outcomes.",
+    metaDescription: "Explore why degen culture frames risk as self-declaration rather than cost-benefit calculation—where exposure becomes expression, loss confirms rather than threatens, and identity absorbs volatility.",
+    image: securityThumb,
+    imageAlt: "Abstract illustration representing risk as identity marker in degen culture",
+    date: "Jan 29, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "wallet-based-gambling-trust-control", 
     title: "What Wallet-Based Gambling Reveals About Trust and Control", 
     category: "Culture", 
