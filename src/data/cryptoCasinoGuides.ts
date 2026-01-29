@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "psychology-choosing-uncertainty", 
+    title: "The Psychology Behind Choosing Uncertainty Over Comfort", 
+    category: "Culture", 
+    excerpt: "For some people, uncertainty feels more aligned with reality than comfort. Uncertainty restores presence, matches internal volatility, and refuses to pretend control exists.",
+    metaDescription: "Explore why some players prefer uncertainty over comfort in degen culture—where uncertainty restores presence, matches internal volatility, and feels more honest than padded environments.",
+    image: cryptoFundamentalsThumb,
+    imageAlt: "Abstract illustration representing the psychology of choosing uncertainty over comfort",
+    date: "Jan 29, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "risk-as-identity-not-tradeoff", 
     title: "Why Degens Treat Risk as Identity, Not a Tradeoff", 
     category: "Culture", 
