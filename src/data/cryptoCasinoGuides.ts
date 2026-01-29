@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "losing-self-custody-personal", 
+    title: "Why Losing From a Self-Custody Wallet Feels More Personal", 
+    category: "Culture", 
+    excerpt: "Losing from a self-custody wallet doesn't feel like a system event—it feels like a you event. There's no buffer between the experience and your sense of ownership.",
+    metaDescription: "Explore why self-custody loss feels more personal in degen culture—where wallets function as identity markers, outcomes land directly, and there's no emotional middleman.",
+    image: cryptoWalletThumb,
+    imageAlt: "Abstract illustration representing self-custody wallet loss in degen culture",
+    date: "Jan 29, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "loss-streaks-validation", 
     title: "How Loss Streaks Become Validation Instead of Warning Signs", 
     category: "Culture", 
