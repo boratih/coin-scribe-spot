@@ -71,6 +71,7 @@ import SigningTransactionFeelsDifferent from "./pages/guides/SigningTransactionF
 import WalletBasedGamblingTrustControl from "./pages/guides/WalletBasedGamblingTrustControl";
 import RiskAsIdentityNotTradeoff from "./pages/guides/RiskAsIdentityNotTradeoff";
 import PsychologyChoosingUncertainty from "./pages/guides/PsychologyChoosingUncertainty";
+import HighVarianceFeelsAuthentic from "./pages/guides/HighVarianceFeelsAuthentic";
 import CryptoCasinoBonusesExplained from "./pages/guides/CryptoCasinoBonusesExplained";
 import FiatVsCryptoCasinosDifferences from "./pages/guides/FiatVsCryptoCasinosDifferences";
 import AnonymityCryptoGambling from "./pages/guides/AnonymityCryptoGambling";
@@ -202,6 +203,7 @@ const App = () => (
           <Route path="/wallet-based-gambling-trust-control" element={<WalletBasedGamblingTrustControl />} />
           <Route path="/risk-as-identity-not-tradeoff" element={<RiskAsIdentityNotTradeoff />} />
           <Route path="/psychology-choosing-uncertainty" element={<PsychologyChoosingUncertainty />} />
+          <Route path="/high-variance-feels-authentic" element={<HighVarianceFeelsAuthentic />} />
           
           {/* Crypto Casino Guides - User Experience */}
           <Route path="/crypto-casino-bonuses-explained" element={<CryptoCasinoBonusesExplained />} />
