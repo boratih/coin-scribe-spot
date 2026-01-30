@@ -1,4 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
+import cryptoWalletThumb from "@/assets/thumbnails/crypto-wallet-thumb.jpg";
 
 const LosingSelfCustodyPersonal = () => {
   const faqs = [
@@ -27,7 +28,7 @@ const LosingSelfCustodyPersonal = () => {
       title="Why Losing From a Self-Custody Wallet Feels More Personal"
       metaDescription="Explore why self-custody loss feels more personal in degen culture—where wallets function as identity markers, outcomes land directly, and there's no emotional middleman to absorb impact."
       canonicalUrl="https://degenroll.co/losing-self-custody-personal"
-      heroImage="/og-image.png"
+      heroImage={cryptoWalletThumb}
       heroImageAlt="Abstract representation of self-custody wallet loss"
       publishDate="2026-01-29"
       readTime="6 min read"

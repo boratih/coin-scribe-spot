@@ -1,4 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
+import rngVsPfThumb from "@/assets/thumbnails/rng-vs-pf-thumb.jpg";
 
 const PsychologyChoosingUncertainty = () => {
   const faqs = [
@@ -27,7 +28,7 @@ const PsychologyChoosingUncertainty = () => {
       title="The Psychology Behind Choosing Uncertainty Over Comfort"
       metaDescription="Explore why some players prefer uncertainty over comfort in degen culture. Uncertainty restores presence, matches internal volatility, and feels more honest than padded environments."
       canonicalUrl="https://degenroll.co/psychology-choosing-uncertainty"
-      heroImage="/og-image.png"
+      heroImage={rngVsPfThumb}
       heroImageAlt="Abstract representation of choosing uncertainty over comfort"
       publishDate="2026-01-29"
       readTime="6 min read"
