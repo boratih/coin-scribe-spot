@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "irreversible-outcomes-over-second-chances", 
+    title: "Why Some Degens Prefer Irreversible Outcomes Over Second Chances", 
+    category: "Culture", 
+    excerpt: "Second chances sound comforting. Irreversibility feels real. Irreversible outcomes sharpen attention, collapse ambiguity, and turn choices into events instead of suggestions.",
+    metaDescription: "Explore why degen culture often prefers irreversible outcomes—where finality sharpens attention, concentrates ownership, and turns choices into moments that actually count.",
+    image: securityThumb,
+    imageAlt: "Abstract illustration representing irreversible outcomes and finality",
+    date: "Jan 30, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "self-custody-mistakes-personal-narrative", 
     title: "How Self-Custody Turns Every Mistake Into a Personal Narrative", 
     category: "Culture", 
