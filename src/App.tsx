@@ -77,6 +77,7 @@ import LosingSelfCustodyPersonal from "./pages/guides/LosingSelfCustodyPersonal"
 import WalletFirstResponsibilityShift from "./pages/guides/WalletFirstResponsibilityShift";
 import WhyDegensTalkControlMoreThanWinning from "./pages/guides/WhyDegensTalkControlMoreThanWinning";
 import PsychologyTrustingWalletDistustingPlatform from "./pages/guides/PsychologyTrustingWalletDistustingPlatform";
+import HighVarianceFeelsLikeAgency from "./pages/guides/HighVarianceFeelsLikeAgency";
 import CryptoCasinoBonusesExplained from "./pages/guides/CryptoCasinoBonusesExplained";
 import FiatVsCryptoCasinosDifferences from "./pages/guides/FiatVsCryptoCasinosDifferences";
 import AnonymityCryptoGambling from "./pages/guides/AnonymityCryptoGambling";
@@ -214,6 +215,7 @@ const App = () => (
           <Route path="/wallet-first-responsibility-shift" element={<WalletFirstResponsibilityShift />} />
           <Route path="/why-degens-talk-control-more-than-winning" element={<WhyDegensTalkControlMoreThanWinning />} />
           <Route path="/psychology-trusting-wallet-distrusting-platform" element={<PsychologyTrustingWalletDistustingPlatform />} />
+          <Route path="/high-variance-feels-like-agency" element={<HighVarianceFeelsLikeAgency />} />
           
           {/* Crypto Casino Guides - User Experience */}
           <Route path="/crypto-casino-bonuses-explained" element={<CryptoCasinoBonusesExplained />} />

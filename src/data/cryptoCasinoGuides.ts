@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "high-variance-feels-like-agency", 
+    title: "Why High-Variance Play Feels Like Agency, Not Recklessness", 
+    category: "Culture", 
+    excerpt: "From the outside, high-variance play looks chaotic. From the inside, it often feels deliberate. What gets labeled as recklessness from afar is often felt as agency up close.",
+    metaDescription: "Explore why high-variance play feels like agency in degen culture—where volatility is chosen, not stumbled into, and ownership of exposure replaces control over outcomes.",
+    image: securityThumb,
+    imageAlt: "Abstract illustration representing high-variance play as agency",
+    date: "Jan 30, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "psychology-trusting-wallet-distrusting-platform", 
     title: "The Psychology of Trusting a Wallet While Distrusting the Platform", 
     category: "Culture", 
@@ -42,7 +53,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     date: "Jan 30, 2026",
     readTime: "7 min read"
   },
-  { 
+  {
     slug: "why-degens-talk-control-more-than-winning", 
     title: "Why Degens Talk About Control More Than Winning", 
     category: "Culture", 
