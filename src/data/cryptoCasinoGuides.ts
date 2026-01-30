@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "self-custody-mistakes-personal-narrative", 
+    title: "How Self-Custody Turns Every Mistake Into a Personal Narrative", 
+    category: "Culture", 
+    excerpt: "In self-custody, mistakes don't disappear into systems. They stay with you—moments that attach themselves to memory, identity, and story rather than noise to file away.",
+    metaDescription: "Explore how self-custody transforms mistakes into personal narratives in degen culture—where every misstep becomes a chapter in an ongoing story rather than noise to be erased.",
+    image: cryptoWalletThumb,
+    imageAlt: "Abstract illustration representing self-custody mistakes as personal narrative",
+    date: "Jan 30, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "high-variance-feels-like-agency", 
     title: "Why High-Variance Play Feels Like Agency, Not Recklessness", 
     category: "Culture", 
