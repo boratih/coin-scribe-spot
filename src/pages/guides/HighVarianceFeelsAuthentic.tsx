@@ -1,5 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
-import provablyFairThumb from "@/assets/thumbnails/provably-fair-thumb.jpg";
+import transparencyThumb from "@/assets/thumbnails/transparency-thumb.jpg";
 
 const HighVarianceFeelsAuthentic = () => {
   const faqs = [
@@ -28,7 +28,7 @@ const HighVarianceFeelsAuthentic = () => {
       title="Why High-Variance Play Feels More Authentic Than Controlled Gambling"
       metaDescription="Explore why high-variance play feels more authentic than controlled gambling in degen culture—where volatility matches expectation, intensity replaces reassurance, and rawness reads as real."
       canonicalUrl="https://degenroll.co/high-variance-feels-authentic"
-      heroImage={provablyFairThumb}
+      heroImage={transparencyThumb}
       heroImageAlt="Abstract representation of high-variance play authenticity"
       publishDate="2026-01-29"
       readTime="6 min read"
