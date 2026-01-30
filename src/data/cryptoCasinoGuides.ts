@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "psychology-trusting-wallet-distrusting-platform", 
+    title: "The Psychology of Trusting a Wallet While Distrusting the Platform", 
+    category: "Culture", 
+    excerpt: "\"I trust my wallet. I don't trust the platform.\" To outsiders, that sounds contradictory. To crypto-native players, it feels coherent — almost obvious. The trust isn't misplaced. It's reassigned.",
+    metaDescription: "Explore why degen culture trusts wallets but distrusts platforms—where trust shifts from protection to ownership, and the wallet becomes an extension of the self.",
+    image: cryptoWalletThumb,
+    imageAlt: "Abstract illustration representing wallet trust versus platform distrust",
+    date: "Jan 30, 2026",
+    readTime: "7 min read"
+  },
+  { 
     slug: "why-degens-talk-control-more-than-winning", 
     title: "Why Degens Talk About Control More Than Winning", 
     category: "Culture", 
