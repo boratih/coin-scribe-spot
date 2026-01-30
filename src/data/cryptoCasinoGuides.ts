@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "why-degens-talk-control-more-than-winning", 
+    title: "Why Degens Talk About Control More Than Winning", 
+    category: "Culture", 
+    excerpt: "Wins are loud. Control is quieter — and talked about more. What sticks in degen conversations isn't outcomes, but who felt in control, who lost it, who stayed present when things went sideways.",
+    metaDescription: "Explore why degen culture prioritizes control over winning—where control is felt in real time, outcomes feel external, and the experience matters more than results.",
+    image: cryptoFundamentalsThumb,
+    imageAlt: "Abstract illustration representing control versus winning in degen culture",
+    date: "Jan 30, 2026",
+    readTime: "7 min read"
+  },
+  {
     slug: "wallet-first-responsibility-shift", 
     title: "How Wallet-First Gambling Shifts Responsibility From Platforms to Players", 
     category: "Culture", 
