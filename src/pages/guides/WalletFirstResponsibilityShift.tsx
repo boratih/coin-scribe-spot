@@ -1,5 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
-import decentralizedThumb from "@/assets/thumbnails/decentralized-thumb.jpg";
+import cryptoWalletThumb from "@/assets/thumbnails/crypto-wallet-thumb.jpg";
 
 const WalletFirstResponsibilityShift = () => {
   const faqs = [
@@ -28,7 +28,7 @@ const WalletFirstResponsibilityShift = () => {
       title="How Wallet-First Gambling Shifts Responsibility From Platforms to Players"
       metaDescription="Explore how wallet-first gambling shifts responsibility from platforms to players—where actions feel immediate, intermediaries fade, and consent becomes the emotional anchor."
       canonicalUrl="https://degenroll.co/wallet-first-responsibility-shift"
-      heroImage={decentralizedThumb}
+      heroImage={cryptoWalletThumb}
       heroImageAlt="Abstract representation of responsibility shift in wallet-first gambling"
       publishDate="2026-01-29"
       readTime="6 min read"

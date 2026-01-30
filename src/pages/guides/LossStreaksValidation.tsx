@@ -1,5 +1,5 @@
 import GuideArticleLayout from "@/components/GuideArticleLayout";
-import transparencyThumb from "@/assets/thumbnails/transparency-thumb.jpg";
+import cryptoFundamentalsThumb from "@/assets/thumbnails/crypto-fundamentals-thumb.jpg";
 
 const LossStreaksValidation = () => {
   const faqs = [
@@ -28,7 +28,7 @@ const LossStreaksValidation = () => {
       title="How Loss Streaks Become Validation Instead of Warning Signs"
       metaDescription="Explore how loss streaks are reframed as validation in degen culture—where pain becomes proof of exposure, streaks generate stories, and intensity matters more than outcomes."
       canonicalUrl="https://degenroll.co/loss-streaks-validation"
-      heroImage={transparencyThumb}
+      heroImage={cryptoFundamentalsThumb}
       heroImageAlt="Abstract representation of loss streaks as validation"
       publishDate="2026-01-29"
       readTime="6 min read"
