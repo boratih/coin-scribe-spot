@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "psychology-staying-in-after-outcome-clear", 
+    title: "The Psychology of Staying In After the Outcome Is Already Clear", 
+    category: "Culture", 
+    excerpt: "There's a moment when everyone knows how this ends. And some degens stay anyway—not from confusion, but because leaving feels worse than witnessing the final seconds.",
+    metaDescription: "Explores why some players remain present through the final moments of a session even when the result is obvious—framing it as completion rather than denial.",
+    image: transparencyThumb,
+    imageAlt: "Abstract representation of presence and closure in high-stakes moments",
+    date: "Feb 2, 2026",
+    readTime: "7 min read"
+  },
+  { 
     slug: "remember-one-hit-forget-ten-wipes", 
     title: "Why Degens Remember the One Hit and Forget the Ten Wipes", 
     category: "Culture", 
