@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams, useNavigate } from "react-router-dom";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ArticleCard from "@/components/ArticleCard";
@@ -9,6 +9,15 @@ import { Button } from "@/components/ui/button";
 import { cryptoCasinoGuides as articles } from "@/data/cryptoCasinoGuides";
 
 const Index = () => {
+  const [searchParams] = useSearchParams();
+  const navigate = useNavigate();
+
+  // Redirect legacy ?category= URLs to homepage
+  useEffect(() => {
+    if (searchParams.has('category')) {
+      navigate('/', { replace: true });
+    }
+  }, [searchParams, navigate]);
   const [searchQuery, setSearchQuery] = useState("");
 
   // Filter articles based on search
