@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "self-custody-blame-ownership", 
+    title: "What Self-Custody Teaches Degens About Blame and Ownership", 
+    category: "Culture", 
+    excerpt: "Self-custody doesn't lecture you about responsibility. It removes the places where blame used to hide—and quietly rewires how degens talk about fault and ownership.",
+    metaDescription: "Explores how self-custody removes external blame targets and rewires how degens talk about fault, ownership, and responsibility—making experiences cleaner, not easier.",
+    image: cryptoWalletThumb,
+    imageAlt: "Abstract representation of wallet ownership and personal responsibility",
+    date: "Feb 2, 2026",
+    readTime: "7 min read"
+  },
+  { 
     slug: "psychology-staying-in-after-outcome-clear", 
     title: "The Psychology of Staying In After the Outcome Is Already Clear", 
     category: "Culture", 
