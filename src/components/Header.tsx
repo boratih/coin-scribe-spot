@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
@@ -6,11 +6,18 @@ import degenrollLogo from "@/assets/degenroll-logo.webp";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const handleHomeClick = () => {
+    if (location.pathname === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <div className="container flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2" onClick={handleHomeClick}>
           <img src={degenrollLogo} alt="Degenroll" className="h-10" />
         </Link>
         
@@ -18,6 +25,7 @@ const Header = () => {
           <Link 
             to="/" 
             className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            onClick={handleHomeClick}
           >
             Home
           </Link>
@@ -68,7 +76,10 @@ const Header = () => {
             <Link 
               to="/" 
               className="text-sm font-medium py-2"
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={() => {
+                setMobileMenuOpen(false);
+                handleHomeClick();
+              }}
             >
               Home
             </Link>
