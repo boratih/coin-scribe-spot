@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "quiet-anxiety-signing-transaction", 
+    title: "The Quiet Anxiety of Signing a Transaction You Can't Undo", 
+    category: "Culture", 
+    excerpt: "It's not panic. It's a pause. That half-second where everything goes quiet before you sign—the awareness that once this happens, it happens. No appeals. No reversals.",
+    metaDescription: "Explores the quiet anxiety before signing irreversible crypto transactions—where the pause signals presence, finality creates weight, and awareness makes the experience feel real.",
+    image: blockchainTechThumb,
+    imageAlt: "Abstract representation of transaction signing anxiety in crypto",
+    date: "Feb 2, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "wallet-errors-hurt-more-than-bad-bets", 
     title: "Why Wallet Errors Hurt More Than Bad Bets", 
     category: "Culture", 
