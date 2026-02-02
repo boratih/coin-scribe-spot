@@ -85,6 +85,7 @@ import VolatilityStopsFeelingRisky from "./pages/guides/VolatilityStopsFeelingRi
 import NearMissesFuelHighVariance from "./pages/guides/NearMissesFuelHighVariance";
 import RememberOneHitForgetTenWipes from "./pages/guides/RememberOneHitForgetTenWipes";
 import PsychologyStayingInAfterOutcomeClear from "./pages/guides/PsychologyStayingInAfterOutcomeClear";
+import SelfCustodyBlameOwnership from "./pages/guides/SelfCustodyBlameOwnership";
 import CryptoCasinoBonusesExplained from "./pages/guides/CryptoCasinoBonusesExplained";
 import FiatVsCryptoCasinosDifferences from "./pages/guides/FiatVsCryptoCasinosDifferences";
 import AnonymityCryptoGambling from "./pages/guides/AnonymityCryptoGambling";
@@ -230,6 +231,7 @@ const App = () => (
           <Route path="/near-misses-fuel-high-variance-play" element={<NearMissesFuelHighVariance />} />
           <Route path="/remember-one-hit-forget-ten-wipes" element={<RememberOneHitForgetTenWipes />} />
           <Route path="/psychology-staying-in-after-outcome-clear" element={<PsychologyStayingInAfterOutcomeClear />} />
+          <Route path="/self-custody-blame-ownership" element={<SelfCustodyBlameOwnership />} />
           
           {/* Crypto Casino Guides - User Experience */}
           <Route path="/crypto-casino-bonuses-explained" element={<CryptoCasinoBonusesExplained />} />
