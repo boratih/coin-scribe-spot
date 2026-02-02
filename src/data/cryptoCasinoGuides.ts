@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "irreversibility-as-cost-of-control", 
+    title: "Why Degens Accept Irreversibility as the Cost of Control", 
+    category: "Culture", 
+    excerpt: "Control without consequence feels fake. Irreversibility makes it real. Degens accept finality not reluctantly but deliberately—because without it, control would feel like theater.",
+    metaDescription: "Explore why degen culture accepts irreversibility as the price of real control—where finality transforms choice from concept to experience and makes authorship feel earned.",
+    image: securityThumb,
+    imageAlt: "Abstract representation of irreversibility and control in crypto culture",
+    date: "Feb 2, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "wallet-native-friction-emotional-weight", 
     title: "How Wallet-Native Play Turns Technical Friction Into Emotional Weight", 
     category: "Culture", 
