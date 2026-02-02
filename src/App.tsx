@@ -80,6 +80,7 @@ import PsychologyTrustingWalletDistustingPlatform from "./pages/guides/Psycholog
 import HighVarianceFeelsLikeAgency from "./pages/guides/HighVarianceFeelsLikeAgency";
 import SelfCustodyMistakesPersonalNarrative from "./pages/guides/SelfCustodyMistakesPersonalNarrative";
 import IrreversibleOutcomesOverSecondChances from "./pages/guides/IrreversibleOutcomesOverSecondChances";
+import LossReinterpretPlayingRight from "./pages/guides/LossReinterpretPlayingRight";
 import CryptoCasinoBonusesExplained from "./pages/guides/CryptoCasinoBonusesExplained";
 import FiatVsCryptoCasinosDifferences from "./pages/guides/FiatVsCryptoCasinosDifferences";
 import AnonymityCryptoGambling from "./pages/guides/AnonymityCryptoGambling";
@@ -220,6 +221,7 @@ const App = () => (
           <Route path="/high-variance-feels-like-agency" element={<HighVarianceFeelsLikeAgency />} />
           <Route path="/self-custody-mistakes-personal-narrative" element={<SelfCustodyMistakesPersonalNarrative />} />
           <Route path="/irreversible-outcomes-over-second-chances" element={<IrreversibleOutcomesOverSecondChances />} />
+          <Route path="/loss-reinterpret-playing-right" element={<LossReinterpretPlayingRight />} />
           
           {/* Crypto Casino Guides - User Experience */}
           <Route path="/crypto-casino-bonuses-explained" element={<CryptoCasinoBonusesExplained />} />
