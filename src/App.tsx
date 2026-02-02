@@ -82,6 +82,7 @@ import SelfCustodyMistakesPersonalNarrative from "./pages/guides/SelfCustodyMist
 import IrreversibleOutcomesOverSecondChances from "./pages/guides/IrreversibleOutcomesOverSecondChances";
 import LossReinterpretPlayingRight from "./pages/guides/LossReinterpretPlayingRight";
 import VolatilityStopsFeelingRisky from "./pages/guides/VolatilityStopsFeelingRisky";
+import NearMissesFuelHighVariance from "./pages/guides/NearMissesFuelHighVariance";
 import CryptoCasinoBonusesExplained from "./pages/guides/CryptoCasinoBonusesExplained";
 import FiatVsCryptoCasinosDifferences from "./pages/guides/FiatVsCryptoCasinosDifferences";
 import AnonymityCryptoGambling from "./pages/guides/AnonymityCryptoGambling";
@@ -224,6 +225,7 @@ const App = () => (
           <Route path="/irreversible-outcomes-over-second-chances" element={<IrreversibleOutcomesOverSecondChances />} />
           <Route path="/loss-reinterpret-playing-right" element={<LossReinterpretPlayingRight />} />
           <Route path="/volatility-stops-feeling-risky-necessary" element={<VolatilityStopsFeelingRisky />} />
+          <Route path="/near-misses-fuel-high-variance-play" element={<NearMissesFuelHighVariance />} />
           
           {/* Crypto Casino Guides - User Experience */}
           <Route path="/crypto-casino-bonuses-explained" element={<CryptoCasinoBonusesExplained />} />

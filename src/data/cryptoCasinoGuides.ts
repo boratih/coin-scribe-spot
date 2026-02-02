@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "near-misses-fuel-high-variance-play", 
+    title: "How Near-Misses Fuel High-Variance Play More Than Wins", 
+    category: "Culture", 
+    excerpt: "Wins end something. Near-misses activate something. In degen culture, unresolved tension is often more compelling than closure.",
+    metaDescription: "Explore why near-misses fuel high-variance play more than wins—where unresolved tension keeps attention locked in and 'almost' lingers longer than 'got it.'",
+    image: securityThumb,
+    imageAlt: "Abstract illustration representing near-misses in high-variance play",
+    date: "Feb 2, 2026",
+    readTime: "7 min read"
+  },
+  { 
     slug: "volatility-stops-feeling-risky-necessary", 
     title: "The Moment Volatility Stops Feeling Risky and Starts Feeling Necessary", 
     category: "Culture", 
@@ -42,7 +53,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     date: "Feb 2, 2026",
     readTime: "7 min read"
   },
-  { 
+  {
     slug: "loss-reinterpret-playing-right", 
     title: "Why Degens Reinterpret Loss as Proof They Were 'Playing It Right'", 
     category: "Culture", 
