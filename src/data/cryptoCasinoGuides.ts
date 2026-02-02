@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "remember-one-hit-forget-ten-wipes", 
+    title: "Why Degens Remember the One Hit and Forget the Ten Wipes", 
+    category: "Culture", 
+    excerpt: "Ten wipes feel heavy in the moment. One hit rewrites the memory. Certain moments imprint harder than others, reorganizing everything that came before.",
+    metaDescription: "Explore why degens remember one hit and forget ten wipes—where narrative gravity, emotional peaks, and memory editing reshape high-variance experiences.",
+    image: cryptoFundamentalsThumb,
+    imageAlt: "Abstract illustration representing memory and hits in degen culture",
+    date: "Feb 2, 2026",
+    readTime: "7 min read"
+  },
+  { 
     slug: "near-misses-fuel-high-variance-play", 
     title: "How Near-Misses Fuel High-Variance Play More Than Wins", 
     category: "Culture", 
@@ -42,7 +53,7 @@ export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
     date: "Feb 2, 2026",
     readTime: "7 min read"
   },
-  { 
+  {
     slug: "volatility-stops-feeling-risky-necessary", 
     title: "The Moment Volatility Stops Feeling Risky and Starts Feeling Necessary", 
     category: "Culture", 

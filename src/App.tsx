@@ -83,6 +83,7 @@ import IrreversibleOutcomesOverSecondChances from "./pages/guides/IrreversibleOu
 import LossReinterpretPlayingRight from "./pages/guides/LossReinterpretPlayingRight";
 import VolatilityStopsFeelingRisky from "./pages/guides/VolatilityStopsFeelingRisky";
 import NearMissesFuelHighVariance from "./pages/guides/NearMissesFuelHighVariance";
+import RememberOneHitForgetTenWipes from "./pages/guides/RememberOneHitForgetTenWipes";
 import CryptoCasinoBonusesExplained from "./pages/guides/CryptoCasinoBonusesExplained";
 import FiatVsCryptoCasinosDifferences from "./pages/guides/FiatVsCryptoCasinosDifferences";
 import AnonymityCryptoGambling from "./pages/guides/AnonymityCryptoGambling";
@@ -226,6 +227,7 @@ const App = () => (
           <Route path="/loss-reinterpret-playing-right" element={<LossReinterpretPlayingRight />} />
           <Route path="/volatility-stops-feeling-risky-necessary" element={<VolatilityStopsFeelingRisky />} />
           <Route path="/near-misses-fuel-high-variance-play" element={<NearMissesFuelHighVariance />} />
+          <Route path="/remember-one-hit-forget-ten-wipes" element={<RememberOneHitForgetTenWipes />} />
           
           {/* Crypto Casino Guides - User Experience */}
           <Route path="/crypto-casino-bonuses-explained" element={<CryptoCasinoBonusesExplained />} />
