@@ -89,6 +89,7 @@ import SelfCustodyBlameOwnership from "./pages/guides/SelfCustodyBlameOwnership"
 import WalletErrorsHurtMoreThanBadBets from "./pages/guides/WalletErrorsHurtMoreThanBadBets";
 import QuietAnxietySigningTransaction from "./pages/guides/QuietAnxietySigningTransaction";
 import WalletNativeFrictionEmotionalWeight from "./pages/guides/WalletNativeFrictionEmotionalWeight";
+import IrreversibilityAsCostOfControl from "./pages/guides/IrreversibilityAsCostOfControl";
 import CryptoCasinoBonusesExplained from "./pages/guides/CryptoCasinoBonusesExplained";
 import FiatVsCryptoCasinosDifferences from "./pages/guides/FiatVsCryptoCasinosDifferences";
 import AnonymityCryptoGambling from "./pages/guides/AnonymityCryptoGambling";
@@ -238,6 +239,7 @@ const App = () => (
           <Route path="/wallet-errors-hurt-more-than-bad-bets" element={<WalletErrorsHurtMoreThanBadBets />} />
           <Route path="/quiet-anxiety-signing-transaction" element={<QuietAnxietySigningTransaction />} />
           <Route path="/wallet-native-friction-emotional-weight" element={<WalletNativeFrictionEmotionalWeight />} />
+          <Route path="/irreversibility-as-cost-of-control" element={<IrreversibilityAsCostOfControl />} />
           
           {/* Crypto Casino Guides - User Experience */}
           <Route path="/crypto-casino-bonuses-explained" element={<CryptoCasinoBonusesExplained />} />
