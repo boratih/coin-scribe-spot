@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "wallet-errors-hurt-more-than-bad-bets", 
+    title: "Why Wallet Errors Hurt More Than Bad Bets", 
+    category: "Culture", 
+    excerpt: "Bad bets hurt the balance. Wallet errors hurt the self. That distinction is immediately understood—a bad bet fits the story, but a wallet error lands somewhere more personal.",
+    metaDescription: "Explores why wallet errors sting differently than losing bets—bypassing narrative cushions and challenging identity, presence, and authorship in degen culture.",
+    image: cryptoWalletThumb,
+    imageAlt: "Abstract representation of wallet errors and personal responsibility",
+    date: "Feb 2, 2026",
+    readTime: "7 min read"
+  },
+  { 
     slug: "self-custody-blame-ownership", 
     title: "What Self-Custody Teaches Degens About Blame and Ownership", 
     category: "Culture", 
