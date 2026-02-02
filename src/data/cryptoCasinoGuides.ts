@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "wallet-native-friction-emotional-weight", 
+    title: "How Wallet-Native Play Turns Technical Friction Into Emotional Weight", 
+    category: "Culture", 
+    excerpt: "In wallet-native play, friction doesn't disappear—it accumulates. What looks like delay from outside becomes significance inside. Each pause adds emotional gravity to the experience.",
+    metaDescription: "Explores how wallet-native friction transforms into emotional significance—where pauses create presence, delays build anticipation, and technical steps become psychological thresholds.",
+    image: cryptoWalletThumb,
+    imageAlt: "Abstract representation of wallet-native friction and emotional weight",
+    date: "Feb 2, 2026",
+    readTime: "6 min read"
+  },
+  { 
     slug: "quiet-anxiety-signing-transaction", 
     title: "The Quiet Anxiety of Signing a Transaction You Can't Undo", 
     category: "Culture", 
