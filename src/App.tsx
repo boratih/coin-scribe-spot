@@ -91,6 +91,7 @@ import QuietAnxietySigningTransaction from "./pages/guides/QuietAnxietySigningTr
 import WalletNativeFrictionEmotionalWeight from "./pages/guides/WalletNativeFrictionEmotionalWeight";
 import IrreversibilityAsCostOfControl from "./pages/guides/IrreversibilityAsCostOfControl";
 import HowCryptoCasinosActuallyWork from "./pages/guides/HowCryptoCasinosActuallyWork";
+import BestCryptoCasinoMarketingNarrative from "./pages/guides/BestCryptoCasinoMarketingNarrative";
 import CryptoCasinoBonusesExplained from "./pages/guides/CryptoCasinoBonusesExplained";
 import FiatVsCryptoCasinosDifferences from "./pages/guides/FiatVsCryptoCasinosDifferences";
 import AnonymityCryptoGambling from "./pages/guides/AnonymityCryptoGambling";
@@ -242,6 +243,7 @@ const App = () => (
           <Route path="/wallet-native-friction-emotional-weight" element={<WalletNativeFrictionEmotionalWeight />} />
           <Route path="/irreversibility-as-cost-of-control" element={<IrreversibilityAsCostOfControl />} />
           <Route path="/how-crypto-casinos-actually-work" element={<HowCryptoCasinosActuallyWork />} />
+          <Route path="/best-crypto-casino-marketing-narrative" element={<BestCryptoCasinoMarketingNarrative />} />
           
           {/* Crypto Casino Guides - User Experience */}
           <Route path="/crypto-casino-bonuses-explained" element={<CryptoCasinoBonusesExplained />} />

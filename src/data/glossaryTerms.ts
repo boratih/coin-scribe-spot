@@ -529,6 +529,42 @@ export const glossaryTerms: GlossaryTerm[] = [
     commonAssociations: "Degen culture, momentum-based decisions, high variance, chaos-friendly play.",
     exampleInContext: "\"Chaos-tolerant play reframed uncertainty as part of the fun.\"",
     importantNote: "This entry documents how the term is commonly used in culture and marketing language within crypto gambling spaces. It does not establish a formal definition or recommendation."
+  },
+  {
+    term: "Ranking-Theater",
+    slug: "ranking-theater",
+    definition: "Describes the performance of comparison without stable criteria — where lists and scores suggest analytical substance while remaining interpretive.",
+    signals: "Analytical appearance over analytical substance. The format implies rigor even when criteria are elastic or unstated.",
+    commonAssociations: "Lists, scores, ordered tables, affiliate rankings, comparison sites.",
+    exampleInContext: "\"The article felt more like ranking-theater than evaluation.\"",
+    importantNote: "This entry documents how the term is commonly used in culture and marketing language within crypto gambling spaces. It does not establish a formal definition or recommendation."
+  },
+  {
+    term: "Trust-Signal Inflation",
+    slug: "trust-signal-inflation",
+    definition: "Accumulation of reassurance signals beyond their informational value — where the quantity of trust indicators matters more than their substance.",
+    signals: "Familiarity substituting for explanation. Repetition creating credibility through volume rather than depth.",
+    commonAssociations: "Badges, stars, repeated claims, review aggregation, testimonial stacking.",
+    exampleInContext: "\"Trust-signal inflation made every option feel equally validated.\"",
+    importantNote: "This entry documents how the term is commonly used in culture and marketing language within crypto gambling spaces. It does not establish a formal definition or recommendation."
+  },
+  {
+    term: "Perception-Stacking",
+    slug: "perception-stacking",
+    definition: "Layering multiple minor signals to create a major impression — where partial strengths accumulate into the appearance of dominance.",
+    signals: "Cumulative framing effects. Individual claims may be modest, but together they create an outsized narrative.",
+    commonAssociations: "Reviews, feature lists, testimonials, marketing pages, comparison tables.",
+    exampleInContext: "\"Perception-stacking turned partial strengths into a dominant narrative.\"",
+    importantNote: "This entry documents how the term is commonly used in culture and marketing language within crypto gambling spaces. It does not establish a formal definition or recommendation."
+  },
+  {
+    term: "Narrative Positioning",
+    slug: "narrative-positioning",
+    definition: "Strategic placement within a story rather than a hierarchy — where a platform's position is defined by framing rather than metrics.",
+    signals: "Story-driven framing. Leadership is implied through language rather than demonstrated through criteria.",
+    commonAssociations: "Marketing arcs, comparative language, brand storytelling, affiliate content.",
+    exampleInContext: "\"The platform's narrative positioning emphasized leadership without defining metrics.\"",
+    importantNote: "This entry documents how the term is commonly used in culture and marketing language within crypto gambling spaces. It does not establish a formal definition or recommendation."
   }
 ];
 
