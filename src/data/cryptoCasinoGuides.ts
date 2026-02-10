@@ -32,7 +32,18 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
-    slug: "provably-fair-misunderstood-players", 
+    slug: "on-chain-vs-off-chain-gambling", 
+    title: "On-Chain vs Off-Chain Gambling: What Actually Changes for Players", 
+    category: "Culture", 
+    excerpt: "The biggest difference between on-chain and off-chain gambling is how activity feels and is interpreted — not just how it technically operates. Perception changes even more than mechanics.",
+    metaDescription: "Examine how on-chain and off-chain gambling differ for players — not just mechanically, but in perception, trust, and how meaning is assigned to visibility and speed.",
+    image: blockchainTechThumb,
+    imageAlt: "Illustration comparing on-chain and off-chain gambling perception for players",
+    date: "Feb 10, 2026",
+    readTime: "6 min read"
+  },
+  { 
+    slug: "provably-fair-misunderstood-players",
     title: "Why \"Provably Fair\" Is Often Misunderstood by Players", 
     category: "Culture", 
     excerpt: "\"Provably fair\" is commonly read as a statement about outcomes, even though it usually describes how results can be checked. The misunderstanding happens because the language feels conclusive.",
