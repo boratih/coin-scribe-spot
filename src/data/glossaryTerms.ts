@@ -592,6 +592,24 @@ export const glossaryTerms: GlossaryTerm[] = [
     commonAssociations: "On-chain play, self-custody, volatility, control perception.",
     exampleInContext: "\"I prefer irreversible engagement — it makes the whole session feel real.\"",
     importantNote: "This entry documents how the term is commonly used in culture and marketing language within crypto gambling spaces. It does not establish a formal definition or recommendation."
+  },
+  {
+    term: "Wallet-Level Presence",
+    slug: "wallet-level-presence",
+    definition: "Used to describe the heightened awareness players feel at the exact moment they interact directly with their self-custody wallet.",
+    signals: "Presence, attention, and emotional weight at the point of decision rather than after outcomes.",
+    commonAssociations: "Transaction signing, self-custody, pauses before action, intentional play.",
+    exampleInContext: "\"That pause before you click confirm is pure wallet-level presence.\"",
+    importantNote: "This entry documents how the term is commonly used in culture and marketing language within crypto gambling spaces. It does not establish a formal definition or recommendation."
+  },
+  {
+    term: "Signed-Risk Moment",
+    slug: "signed-risk-moment",
+    definition: "Used to describe the emotional instant when risk is consciously accepted through a wallet signature.",
+    signals: "Deliberate exposure, clarity of consent, acceptance of irreversibility.",
+    commonAssociations: "On-chain gambling, irreversibility, self-custody, degen mindset.",
+    exampleInContext: "\"You can feel the signed-risk moment before anything even happens.\"",
+    importantNote: "This entry documents how the term is commonly used in culture and marketing language within crypto gambling spaces. It does not establish a formal definition or recommendation."
   }
 ];
 

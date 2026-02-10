@@ -96,6 +96,7 @@ import WalletBasedGamblingExplained from "./pages/guides/WalletBasedGamblingExpl
 import ProvablyFairMisunderstoodPlayers from "./pages/guides/ProvablyFairMisunderstoodPlayers";
 import OnChainVsOffChainGambling from "./pages/guides/OnChainVsOffChainGambling";
 import WithdrawalSpeedMeansDifferentThings from "./pages/guides/WithdrawalSpeedMeansDifferentThings";
+import SigningFeelsMoreReal from "./pages/guides/SigningFeelsMoreReal";
 import CryptoCasinoBonusesExplained from "./pages/guides/CryptoCasinoBonusesExplained";
 import FiatVsCryptoCasinosDifferences from "./pages/guides/FiatVsCryptoCasinosDifferences";
 import AnonymityCryptoGambling from "./pages/guides/AnonymityCryptoGambling";
@@ -252,6 +253,7 @@ const App = () => (
           <Route path="/provably-fair-misunderstood-players" element={<ProvablyFairMisunderstoodPlayers />} />
           <Route path="/on-chain-vs-off-chain-gambling" element={<OnChainVsOffChainGambling />} />
           <Route path="/withdrawal-speed-means-different-things" element={<WithdrawalSpeedMeansDifferentThings />} />
+          <Route path="/signing-feels-more-real-than-deposit" element={<SigningFeelsMoreReal />} />
           
           {/* Crypto Casino Guides - User Experience */}
           <Route path="/crypto-casino-bonuses-explained" element={<CryptoCasinoBonusesExplained />} />
