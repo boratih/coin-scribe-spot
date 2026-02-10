@@ -172,3 +172,4 @@ Allow: /citation-policy.txt
 # ---------------------------------------------------------
 
 Sitemap: https://degenroll.co/sitemap.xml
+Sitemap: https://degenroll.co/sitemap-ai.xml
