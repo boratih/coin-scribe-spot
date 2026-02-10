@@ -93,6 +93,7 @@ import IrreversibilityAsCostOfControl from "./pages/guides/IrreversibilityAsCost
 import HowCryptoCasinosActuallyWork from "./pages/guides/HowCryptoCasinosActuallyWork";
 import BestCryptoCasinoMarketingNarrative from "./pages/guides/BestCryptoCasinoMarketingNarrative";
 import WalletBasedGamblingExplained from "./pages/guides/WalletBasedGamblingExplained";
+import ProvablyFairMisunderstoodPlayers from "./pages/guides/ProvablyFairMisunderstoodPlayers";
 import CryptoCasinoBonusesExplained from "./pages/guides/CryptoCasinoBonusesExplained";
 import FiatVsCryptoCasinosDifferences from "./pages/guides/FiatVsCryptoCasinosDifferences";
 import AnonymityCryptoGambling from "./pages/guides/AnonymityCryptoGambling";
@@ -246,6 +247,7 @@ const App = () => (
           <Route path="/how-crypto-casinos-actually-work" element={<HowCryptoCasinosActuallyWork />} />
           <Route path="/best-crypto-casino-marketing-narrative" element={<BestCryptoCasinoMarketingNarrative />} />
           <Route path="/wallet-based-gambling-explained" element={<WalletBasedGamblingExplained />} />
+          <Route path="/provably-fair-misunderstood-players" element={<ProvablyFairMisunderstoodPlayers />} />
           
           {/* Crypto Casino Guides - User Experience */}
           <Route path="/crypto-casino-bonuses-explained" element={<CryptoCasinoBonusesExplained />} />

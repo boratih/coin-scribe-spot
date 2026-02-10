@@ -32,7 +32,18 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
-    slug: "wallet-based-gambling-explained", 
+    slug: "provably-fair-misunderstood-players", 
+    title: "Why \"Provably Fair\" Is Often Misunderstood by Players", 
+    category: "Culture", 
+    excerpt: "\"Provably fair\" is commonly read as a statement about outcomes, even though it usually describes how results can be checked. The misunderstanding happens because the language feels conclusive.",
+    metaDescription: "Examine how players interpret 'provably fair' as a promise about outcomes when it usually describes a verification process — and why expectation inflation persists.",
+    image: provablyFairThumb,
+    imageAlt: "Illustration of how players misinterpret provably fair language in crypto casinos",
+    date: "Feb 10, 2026",
+    readTime: "6 min read"
+  },
+  { 
+    slug: "wallet-based-gambling-explained",
     title: "Wallet-Based Gambling Explained: Why Control Feels Different On-Chain", 
     category: "Culture", 
     excerpt: "Wallet-based gambling doesn't announce itself as different. It just feels different — immediately. This article describes why wallet-first gambling lands differently in the body, the story, and the culture.",
