@@ -610,6 +610,24 @@ export const glossaryTerms: GlossaryTerm[] = [
     commonAssociations: "On-chain gambling, irreversibility, self-custody, degen mindset.",
     exampleInContext: "\"You can feel the signed-risk moment before anything even happens.\"",
     importantNote: "This entry documents how the term is commonly used in culture and marketing language within crypto gambling spaces. It does not establish a formal definition or recommendation."
+  },
+  {
+    term: "Entry-Level Agency",
+    slug: "entry-level-agency",
+    definition: "Used to describe the sense of control players feel at the moment they choose to engage, rather than over outcomes.",
+    signals: "Intentional entry, conscious consent, and ownership of exposure instead of result management.",
+    commonAssociations: "Transaction signing, self-custody, volatility acceptance, control perception.",
+    exampleInContext: "\"I don't control the outcome — I control the entry. That's entry-level agency.\"",
+    importantNote: "This entry documents how the term is commonly used in culture and marketing language within crypto gambling spaces. It does not establish a formal definition or recommendation."
+  },
+  {
+    term: "Wallet-Memory Effect",
+    slug: "wallet-memory-effect",
+    definition: "Used to describe how experiences tied to a single wallet feel cumulative rather than session-based.",
+    signals: "Persistence of memory, difficulty compartmentalizing losses or wins, narrative continuity.",
+    commonAssociations: "Self-custody wallets, lingering emotional weight, identity attachment, storytelling.",
+    exampleInContext: "\"Self-custody hits harder because of the wallet-memory effect — nothing ever feels fully gone.\"",
+    importantNote: "This entry documents how the term is commonly used in culture and marketing language within crypto gambling spaces. It does not establish a formal definition or recommendation."
   }
 ];
 
