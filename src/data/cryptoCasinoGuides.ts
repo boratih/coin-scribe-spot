@@ -32,7 +32,18 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
-    slug: "irreversibility-as-cost-of-control", 
+    slug: "how-crypto-casinos-actually-work", 
+    title: "How Crypto Casinos Actually Work (Beyond the Marketing)", 
+    category: "Culture", 
+    excerpt: "Most crypto casino explanations sound clean and confident. This article maps the gap between marketing language and lived experience — across wallets, volatility, trust, and interpretation.",
+    metaDescription: "Most crypto casino explanations sound clean and confident. This article maps the gap between marketing language and lived experience — across wallets, volatility, trust, and interpretation.",
+    image: cryptoFundamentalsThumb,
+    imageAlt: "Conceptual illustration of crypto casino mechanics beyond marketing narratives",
+    date: "Feb 10, 2026",
+    readTime: "8 min read"
+  },
+  { 
+    slug: "irreversibility-as-cost-of-control",
     title: "Why Degens Accept Irreversibility as the Cost of Control", 
     category: "Culture", 
     excerpt: "Control without consequence feels fake. Irreversibility makes it real. Degens accept finality not reluctantly but deliberately—because without it, control would feel like theater.",
