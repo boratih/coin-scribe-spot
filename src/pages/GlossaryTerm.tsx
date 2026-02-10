@@ -91,6 +91,36 @@ const GlossaryTerm = () => {
               </section>
             )}
 
+            {/* What the term usually signals */}
+            {term.signals && (
+              <section className="mb-12">
+                <h2 className="text-2xl font-semibold text-foreground mb-4">What This Term Usually Signals</h2>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  {term.signals}
+                </p>
+              </section>
+            )}
+
+            {/* Common Associations */}
+            {term.commonAssociations && (
+              <section className="mb-12">
+                <h2 className="text-2xl font-semibold text-foreground mb-4">Common Associations</h2>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  {term.commonAssociations}
+                </p>
+              </section>
+            )}
+
+            {/* Example in Context */}
+            {term.exampleInContext && (
+              <section className="mb-12">
+                <h2 className="text-2xl font-semibold text-foreground mb-4">Example in Context</h2>
+                <blockquote className="text-lg text-muted-foreground leading-relaxed italic border-l-4 border-primary pl-6">
+                  {term.exampleInContext}
+                </blockquote>
+              </section>
+            )}
+
             {/* Important Note */}
             {term.importantNote && (
               <section className="mb-12 p-6 bg-muted/30 border border-border rounded-lg">
