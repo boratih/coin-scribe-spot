@@ -82,7 +82,7 @@ const GuideArticleLayout = ({
 
   const articleJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     "@id": `${canonicalUrl}#article`,
     headline: title,
     description: metaDescription,
@@ -165,6 +165,7 @@ Source: DegenRoll.co - ${canonicalUrl}
         <title>{title} | DegenRoll</title>
         <meta name="description" content={metaDescription} />
         <link rel="canonical" href={canonicalUrl} />
+        <meta name="robots" content="index, follow" />
         {/* Open Graph for social/AI sharing */}
         <meta property="og:title" content={title} />
         <meta property="og:description" content={metaDescription} />
