@@ -472,6 +472,24 @@ export const glossaryTerms: GlossaryTerm[] = [
     slug: "yield-betting",
     definition: "Players may interpret yield betting as combining gambling with passive income, though the risks compound rather than diversify.",
     extendedExplanation: "Yield mechanics add complexity and risk to gambling activity."
+  },
+  {
+    term: "Volatility-Native Play",
+    slug: "volatility-native-play",
+    definition: "Used to describe play styles where volatility isn't treated as a risk to manage away, but as the default environment players expect and engage with directly.",
+    extendedExplanation: "Signals a mindset that accepts sharp swings, sudden reversals, and emotional intensity as normal parts of the experience rather than exceptions."
+  },
+  {
+    term: "Chaos-Friendly Play",
+    slug: "chaos-friendly-play",
+    definition: "Used to describe players or sessions where instability and unpredictability are welcomed rather than resisted.",
+    extendedExplanation: "Signals comfort with disorder, tolerance for sharp variance, and a preference for experiences that push back emotionally."
+  },
+  {
+    term: "Experience-First Gambling",
+    slug: "experience-first-gambling",
+    definition: "Used to frame gambling as something evaluated by how it feels during play rather than how it resolves numerically.",
+    extendedExplanation: "Signals a focus on presence, emotional range, and narrative value over balance outcomes or optimization."
   }
 ];
 
