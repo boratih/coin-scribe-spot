@@ -32,7 +32,18 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
-    slug: "self-custody-psychology-ownership", 
+    slug: "irreversible-systems-emotional-memory", 
+    title: "Why Irreversible Systems Create Stronger Emotional Memory", 
+    category: "Culture", 
+    excerpt: "Reversible moments blur. Irreversible ones stick. When an action can't be undone, the mind treats it differently — attention sharpens, emotion spikes, memory locks in.",
+    metaDescription: "Explore why irreversible systems create stronger emotional memory — how finality forces presence, clarifies ownership, and makes moments stick in degen culture.",
+    image: securityThumb,
+    imageAlt: "Illustration of how irreversible systems create stronger emotional memory in crypto gambling",
+    date: "Feb 10, 2026",
+    readTime: "7 min read"
+  },
+  { 
+    slug: "self-custody-psychology-ownership",
     title: "Self-Custody and the Psychology of Ownership in Gambling", 
     category: "Culture", 
     excerpt: "Ownership feels different when there's nowhere to hand it off. Self-custody reshapes how control, loss, and responsibility are felt — long before outcomes show up.",
