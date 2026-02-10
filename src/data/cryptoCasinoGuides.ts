@@ -32,7 +32,18 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
-    slug: "on-chain-vs-off-chain-gambling", 
+    slug: "withdrawal-speed-means-different-things", 
+    title: "Why Withdrawal Speed Means Different Things in Crypto Casinos", 
+    category: "Culture", 
+    excerpt: "Withdrawal speed is less a single metric and more a bundle of expectations. What players imagine as 'fast,' what platforms describe as 'instant,' and what actually happens often refer to different moments.",
+    metaDescription: "Examine why withdrawal speed in crypto casinos is less a single metric and more a bundle of expectations — how marketing, mechanics, and perception diverge.",
+    image: instantTransactionsThumb,
+    imageAlt: "Illustration of how withdrawal speed expectations diverge from reality in crypto casinos",
+    date: "Feb 10, 2026",
+    readTime: "6 min read"
+  },
+  { 
+    slug: "on-chain-vs-off-chain-gambling",
     title: "On-Chain vs Off-Chain Gambling: What Actually Changes for Players", 
     category: "Culture", 
     excerpt: "The biggest difference between on-chain and off-chain gambling is how activity feels and is interpreted — not just how it technically operates. Perception changes even more than mechanics.",
