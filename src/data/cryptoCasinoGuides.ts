@@ -32,7 +32,18 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
-    slug: "signing-feels-more-real-than-deposit", 
+    slug: "self-custody-psychology-ownership", 
+    title: "Self-Custody and the Psychology of Ownership in Gambling", 
+    category: "Culture", 
+    excerpt: "Ownership feels different when there's nowhere to hand it off. Self-custody reshapes how control, loss, and responsibility are felt — long before outcomes show up.",
+    metaDescription: "Explore how self-custody reshapes the psychology of gambling — why ownership, loss, responsibility, and risk feel different when nothing is held on your behalf.",
+    image: cryptoWalletThumb,
+    imageAlt: "Illustration of self-custody psychology and ownership in crypto gambling",
+    date: "Feb 10, 2026",
+    readTime: "7 min read"
+  },
+  { 
+    slug: "signing-feels-more-real-than-deposit",
     title: "Why Signing a Transaction Feels More Real Than Clicking Deposit", 
     category: "Culture", 
     excerpt: "Clicking deposit feels like participation. Signing a transaction feels like commitment. In degen culture, that distinction isn't subtle — it's visceral.",
