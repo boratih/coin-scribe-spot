@@ -3,6 +3,9 @@ export interface GlossaryTerm {
   slug: string;
   definition: string;
   extendedExplanation?: string;
+  signals?: string;
+  commonAssociations?: string;
+  exampleInContext?: string;
   importantNote?: string;
   link?: { url: string; label: string };
 }
@@ -477,19 +480,28 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Volatility-Native Play",
     slug: "volatility-native-play",
     definition: "Used to describe play styles where volatility isn't treated as a risk to manage away, but as the default environment players expect and engage with directly.",
-    extendedExplanation: "Signals a mindset that accepts sharp swings, sudden reversals, and emotional intensity as normal parts of the experience rather than exceptions."
+    signals: "A mindset that accepts sharp swings, sudden reversals, and emotional intensity as normal parts of the experience rather than exceptions.",
+    commonAssociations: "High variance, chaos-friendly play, emotional swings, acceptance of loss, intensity over comfort.",
+    exampleInContext: "\"Once you're used to volatility-native play, calm sessions start to feel weirdly empty.\"",
+    importantNote: "This entry documents how the term is commonly used in culture and marketing language within crypto gambling spaces. It does not establish a formal definition or recommendation."
   },
   {
     term: "Chaos-Friendly Play",
     slug: "chaos-friendly-play",
     definition: "Used to describe players or sessions where instability and unpredictability are welcomed rather than resisted.",
-    extendedExplanation: "Signals comfort with disorder, tolerance for sharp variance, and a preference for experiences that push back emotionally."
+    signals: "Comfort with disorder, tolerance for sharp variance, and a preference for experiences that push back emotionally.",
+    commonAssociations: "Risk-forward behavior, high variance, irreversibility, degen mindset, intensity-seeking.",
+    exampleInContext: "\"He doesn't want smooth gameplay — he's clearly into chaos-friendly play.\"",
+    importantNote: "This entry documents how the term is commonly used in culture and marketing language within crypto gambling spaces. It does not establish a formal definition or recommendation."
   },
   {
     term: "Experience-First Gambling",
     slug: "experience-first-gambling",
     definition: "Used to frame gambling as something evaluated by how it feels during play rather than how it resolves numerically.",
-    extendedExplanation: "Signals a focus on presence, emotional range, and narrative value over balance outcomes or optimization."
+    signals: "A focus on presence, emotional range, and narrative value over balance outcomes or optimization.",
+    commonAssociations: "Wallet-first gambling, high-variance culture, narrative-driven gambling, intensity, memory-making moments.",
+    exampleInContext: "\"For him it's experience-first gambling — the swings matter more than the result.\"",
+    importantNote: "This entry documents how the term is commonly used in culture and marketing language within crypto gambling spaces. It does not establish a formal definition or recommendation."
   }
 ];
 
