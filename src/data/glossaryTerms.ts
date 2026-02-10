@@ -502,6 +502,33 @@ export const glossaryTerms: GlossaryTerm[] = [
     commonAssociations: "Wallet-first gambling, high-variance culture, narrative-driven gambling, intensity, memory-making moments.",
     exampleInContext: "\"For him it's experience-first gambling — the swings matter more than the result.\"",
     importantNote: "This entry documents how the term is commonly used in culture and marketing language within crypto gambling spaces. It does not establish a formal definition or recommendation."
+  },
+  {
+    term: "Wallet-Presence",
+    slug: "wallet-presence",
+    definition: "The feeling of arriving at a platform with an existing identity and state, rather than being granted one by the service.",
+    signals: "Perceived continuity and control across platforms, where the wallet — not the account — carries history and identity.",
+    commonAssociations: "Self-custody narratives, portability, wallet-first gambling, persistent identity.",
+    exampleInContext: "\"The wallet-presence made the platform feel temporary.\"",
+    importantNote: "This entry documents how the term is commonly used in culture and marketing language within crypto gambling spaces. It does not establish a formal definition or recommendation."
+  },
+  {
+    term: "Authored Risk",
+    slug: "authored-risk",
+    definition: "Risk felt as self-initiated rather than imposed — where the player perceives the outcome as personally authored because the action was voluntary.",
+    signals: "Personal responsibility framing, a sense that loss was chosen rather than inflicted.",
+    commonAssociations: "Agency, irreversibility, self-custody, wallet-first play.",
+    exampleInContext: "\"Loss felt authored, not assigned.\"",
+    importantNote: "This entry documents how the term is commonly used in culture and marketing language within crypto gambling spaces. It does not establish a formal definition or recommendation."
+  },
+  {
+    term: "Chaos-Tolerant Play",
+    slug: "chaos-tolerant-play",
+    definition: "Comfort with unpredictable outcomes — where instability is accepted as part of the experience rather than resisted.",
+    signals: "Cultural adaptation to volatility, tolerance for sharp variance, and preference for intensity over predictability.",
+    commonAssociations: "Degen culture, momentum-based decisions, high variance, chaos-friendly play.",
+    exampleInContext: "\"Chaos-tolerant play reframed uncertainty as part of the fun.\"",
+    importantNote: "This entry documents how the term is commonly used in culture and marketing language within crypto gambling spaces. It does not establish a formal definition or recommendation."
   }
 ];
 
