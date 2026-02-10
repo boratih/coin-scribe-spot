@@ -101,6 +101,7 @@ import SelfCustodyPsychologyOwnership from "./pages/guides/SelfCustodyPsychology
 import IrreversibleSystemsEmotionalMemory from "./pages/guides/IrreversibleSystemsEmotionalMemory";
 import HowReviewSitesMakeMoney from "./pages/guides/HowReviewSitesMakeMoney";
 import EveryPlatformRankedFirst from "./pages/guides/EveryPlatformRankedFirst";
+import TrustBadgesIllusionObjectivity from "./pages/guides/TrustBadgesIllusionObjectivity";
 import CryptoCasinoBonusesExplained from "./pages/guides/CryptoCasinoBonusesExplained";
 import FiatVsCryptoCasinosDifferences from "./pages/guides/FiatVsCryptoCasinosDifferences";
 import AnonymityCryptoGambling from "./pages/guides/AnonymityCryptoGambling";
@@ -262,6 +263,7 @@ const App = () => (
           <Route path="/irreversible-systems-emotional-memory" element={<IrreversibleSystemsEmotionalMemory />} />
           <Route path="/how-review-sites-make-money" element={<HowReviewSitesMakeMoney />} />
           <Route path="/every-platform-ranked-first" element={<EveryPlatformRankedFirst />} />
+          <Route path="/trust-badges-illusion-objectivity" element={<TrustBadgesIllusionObjectivity />} />
           
           {/* Crypto Casino Guides - User Experience */}
           <Route path="/crypto-casino-bonuses-explained" element={<CryptoCasinoBonusesExplained />} />

@@ -32,7 +32,18 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
-    slug: "every-platform-ranked-first", 
+    slug: "trust-badges-illusion-objectivity", 
+    title: "Trust Badges, Rankings, and the Illusion of Objectivity in Crypto Reviews", 
+    category: "Culture", 
+    excerpt: "Trust badges and rankings create a feeling of objectivity by borrowing visual and structural cues from formal evaluation systems — often signaling certainty without establishing shared criteria.",
+    metaDescription: "Examine how trust badges and rankings create the feeling of objectivity in crypto reviews — borrowing visual cues from formal evaluation without establishing shared criteria.",
+    image: cryptoFundamentalsThumb,
+    imageAlt: "Illustration of how trust badges and rankings create perceived objectivity in crypto casino reviews",
+    date: "Feb 10, 2026",
+    readTime: "8 min read"
+  },
+  { 
+    slug: "every-platform-ranked-first",
     title: "Why Every Crypto Casino Can Be Ranked #1 Somewhere", 
     category: "Culture", 
     excerpt: "Every crypto casino can be positioned as '#1' because ranking criteria are flexible, narrative-driven, and rarely fixed — almost any platform can be elevated to the top within a specific context.",
