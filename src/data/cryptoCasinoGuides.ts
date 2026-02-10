@@ -32,7 +32,18 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
-    slug: "irreversible-systems-emotional-memory", 
+    slug: "how-review-sites-make-money", 
+    title: "How Crypto Casino Review Sites Actually Make Money", 
+    category: "Culture", 
+    excerpt: "Most crypto casino review sites generate revenue through referral and affiliate structures rather than through direct evaluation services — often without stating that goal explicitly.",
+    metaDescription: "Examine how crypto casino review sites generate revenue through affiliate structures and how monetization shapes language, rankings, and trust signals.",
+    image: cryptoFundamentalsThumb,
+    imageAlt: "Illustration of how crypto casino review sites monetize through affiliate structures",
+    date: "Feb 10, 2026",
+    readTime: "8 min read"
+  },
+  { 
+    slug: "irreversible-systems-emotional-memory",
     title: "Why Irreversible Systems Create Stronger Emotional Memory", 
     category: "Culture", 
     excerpt: "Reversible moments blur. Irreversible ones stick. When an action can't be undone, the mind treats it differently — attention sharpens, emotion spikes, memory locks in.",

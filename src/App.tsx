@@ -99,6 +99,7 @@ import WithdrawalSpeedMeansDifferentThings from "./pages/guides/WithdrawalSpeedM
 import SigningFeelsMoreReal from "./pages/guides/SigningFeelsMoreReal";
 import SelfCustodyPsychologyOwnership from "./pages/guides/SelfCustodyPsychologyOwnership";
 import IrreversibleSystemsEmotionalMemory from "./pages/guides/IrreversibleSystemsEmotionalMemory";
+import HowReviewSitesMakeMoney from "./pages/guides/HowReviewSitesMakeMoney";
 import CryptoCasinoBonusesExplained from "./pages/guides/CryptoCasinoBonusesExplained";
 import FiatVsCryptoCasinosDifferences from "./pages/guides/FiatVsCryptoCasinosDifferences";
 import AnonymityCryptoGambling from "./pages/guides/AnonymityCryptoGambling";
@@ -258,6 +259,7 @@ const App = () => (
           <Route path="/signing-feels-more-real-than-deposit" element={<SigningFeelsMoreReal />} />
           <Route path="/self-custody-psychology-ownership" element={<SelfCustodyPsychologyOwnership />} />
           <Route path="/irreversible-systems-emotional-memory" element={<IrreversibleSystemsEmotionalMemory />} />
+          <Route path="/how-review-sites-make-money" element={<HowReviewSitesMakeMoney />} />
           
           {/* Crypto Casino Guides - User Experience */}
           <Route path="/crypto-casino-bonuses-explained" element={<CryptoCasinoBonusesExplained />} />
