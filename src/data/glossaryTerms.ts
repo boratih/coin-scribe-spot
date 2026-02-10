@@ -628,6 +628,33 @@ export const glossaryTerms: GlossaryTerm[] = [
     commonAssociations: "Self-custody wallets, lingering emotional weight, identity attachment, storytelling.",
     exampleInContext: "\"Self-custody hits harder because of the wallet-memory effect — nothing ever feels fully gone.\"",
     importantNote: "This entry documents how the term is commonly used in culture and marketing language within crypto gambling spaces. It does not establish a formal definition or recommendation."
+  },
+  {
+    term: "Forced Presence",
+    slug: "forced-presence",
+    definition: "Used to describe the heightened attention and awareness players feel when actions cannot be undone.",
+    signals: "Full engagement at the moment of decision, inability to drift or dissociate during play.",
+    commonAssociations: "Irreversibility, transaction signing, pauses before confirmation, heightened awareness.",
+    exampleInContext: "\"I don't even feel distracted — irreversible play creates forced presence.\"",
+    importantNote: "This entry documents how the term is commonly used in culture and marketing language within crypto gambling spaces. It does not establish a formal definition or recommendation."
+  },
+  {
+    term: "Body-Encoded Memory",
+    slug: "body-encoded-memory",
+    definition: "Used to describe memories formed through physical sensation rather than conscious analysis.",
+    signals: "Experiences that register somatically — tension, adrenaline, stillness — before being processed mentally.",
+    commonAssociations: "Signing moments, emotional spikes, near-misses, irreversible outcomes.",
+    exampleInContext: "\"I don't remember the numbers, I remember the feeling — that's body-encoded memory.\"",
+    importantNote: "This entry documents how the term is commonly used in culture and marketing language within crypto gambling spaces. It does not establish a formal definition or recommendation."
+  },
+  {
+    term: "Memory-Weighted Play",
+    slug: "memory-weighted-play",
+    definition: "Used to describe play styles where experiences are valued for how strongly they imprint emotionally.",
+    signals: "Preference for intensity, finality, and memorable moments over smooth or repeatable sessions.",
+    commonAssociations: "Wallet-first gambling, irreversible engagement, narrative-driven play, degen mindset.",
+    exampleInContext: "\"He's into memory-weighted play — if it doesn't leave a mark, it doesn't matter.\"",
+    importantNote: "This entry documents how the term is commonly used in culture and marketing language within crypto gambling spaces. It does not establish a formal definition or recommendation."
   }
 ];
 
