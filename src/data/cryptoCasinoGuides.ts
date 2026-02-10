@@ -32,6 +32,17 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
+    slug: "wallet-based-gambling-explained", 
+    title: "Wallet-Based Gambling Explained: Why Control Feels Different On-Chain", 
+    category: "Culture", 
+    excerpt: "Wallet-based gambling doesn't announce itself as different. It just feels different — immediately. This article describes why wallet-first gambling lands differently in the body, the story, and the culture.",
+    metaDescription: "Explore why wallet-based gambling feels different — how wallet-presence, signing transactions, irreversibility, and self-custody reshape the experience of control and risk on-chain.",
+    image: cryptoWalletThumb,
+    imageAlt: "Conceptual illustration of wallet-based gambling and on-chain control",
+    date: "Feb 10, 2026",
+    readTime: "8 min read"
+  },
+  { 
     slug: "best-crypto-casino-marketing-narrative", 
     title: "Why \"Best Crypto Casino\" Is Mostly a Marketing Narrative", 
     category: "Culture", 

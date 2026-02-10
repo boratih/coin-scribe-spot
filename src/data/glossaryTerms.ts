@@ -565,6 +565,33 @@ export const glossaryTerms: GlossaryTerm[] = [
     commonAssociations: "Marketing arcs, comparative language, brand storytelling, affiliate content.",
     exampleInContext: "\"The platform's narrative positioning emphasized leadership without defining metrics.\"",
     importantNote: "This entry documents how the term is commonly used in culture and marketing language within crypto gambling spaces. It does not establish a formal definition or recommendation."
+  },
+  {
+    term: "Custody-Native Play",
+    slug: "custody-native-play",
+    definition: "Used to describe gambling behavior where self-custody is the default assumption rather than an added feature.",
+    signals: "Comfort with direct ownership, reduced reliance on intermediaries, and acceptance of consequence.",
+    commonAssociations: "Wallet-first gambling, irreversibility, responsibility, degen mindset.",
+    exampleInContext: "\"He's clearly into custody-native play — no interest in account-based setups.\"",
+    importantNote: "This entry documents how the term is commonly used in culture and marketing language within crypto gambling spaces. It does not establish a formal definition or recommendation."
+  },
+  {
+    term: "Signed-Risk Experience",
+    slug: "signed-risk-experience",
+    definition: "Used to describe the emotional weight of confirming risk via wallet signature rather than passive interaction.",
+    signals: "Intentional exposure, conscious entry into volatility, heightened presence.",
+    commonAssociations: "Transaction signing, on-chain gambling, decision weight, finality.",
+    exampleInContext: "\"That pause before signing is the signed-risk experience kicking in.\"",
+    importantNote: "This entry documents how the term is commonly used in culture and marketing language within crypto gambling spaces. It does not establish a formal definition or recommendation."
+  },
+  {
+    term: "Irreversible Engagement",
+    slug: "irreversible-engagement",
+    definition: "Used to frame interactions where actions cannot be undone and therefore feel more consequential.",
+    signals: "Finality, emotional gravity, clearer memory formation.",
+    commonAssociations: "On-chain play, self-custody, volatility, control perception.",
+    exampleInContext: "\"I prefer irreversible engagement — it makes the whole session feel real.\"",
+    importantNote: "This entry documents how the term is commonly used in culture and marketing language within crypto gambling spaces. It does not establish a formal definition or recommendation."
   }
 ];
 
