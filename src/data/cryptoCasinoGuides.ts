@@ -32,7 +32,18 @@ export interface CryptoCasinoGuide {
 export const cryptoCasinoGuides: CryptoCasinoGuide[] = [
   // Top Articles (Priority)
   { 
-    slug: "withdrawal-speed-means-different-things", 
+    slug: "signing-feels-more-real-than-deposit", 
+    title: "Why Signing a Transaction Feels More Real Than Clicking Deposit", 
+    category: "Culture", 
+    excerpt: "Clicking deposit feels like participation. Signing a transaction feels like commitment. In degen culture, that distinction isn't subtle — it's visceral.",
+    metaDescription: "Explore why signing a wallet transaction feels more real than clicking deposit — how pauses, finality, and self-custody reshape emotional weight in degen culture.",
+    image: cryptoWalletThumb,
+    imageAlt: "Illustration of why signing a crypto transaction feels more real than clicking deposit",
+    date: "Feb 10, 2026",
+    readTime: "6 min read"
+  },
+  { 
+    slug: "withdrawal-speed-means-different-things",
     title: "Why Withdrawal Speed Means Different Things in Crypto Casinos", 
     category: "Culture", 
     excerpt: "Withdrawal speed is less a single metric and more a bundle of expectations. What players imagine as 'fast,' what platforms describe as 'instant,' and what actually happens often refer to different moments.",
